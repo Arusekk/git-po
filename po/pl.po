@@ -1,18 +1,59 @@
 # Polish translations for Git.
 # Copyright (C) 2017 m4sk1n, m4sk1n@vivaldi.net
+# Copyright (C) 2020 Arusekk <arek_koz@o2.pl>
 # This file is distributed under the same license as the Git package.
 # m4sk1n, m4sk1n@vivaldi.net, 2017.
+# Arusekk <arek_koz@o2.pl>, 2020.
+#
+# Stosowana jest następująca terminologia dla kluczowych terminów:
+#  commit         - zapis, oddać - uzasadnienie niżej
+#  commit message - komunikat zapisu
+#  tag            - tag
+#  email          - e-mail
+#  merge          - scalenie, scalić
+#  push           - wypchnąć
+#  pull           - zaciągnąć
+#  rebase         - przestawić
+#  branch         - gałąź
+#  hook           - skrypt (skrypt repozytorium)
+#  property       - właściwość
+#
+# Terminologia inspirowana tłumaczeniem do subversion, którego kluczowe terminy
+# wybrał Marcin Kasperski <Marcin.Kasperski@acn.waw.pl>.
+#
+# Ponieważ commit nie ma naturalnie doskonałego tłumaczenia, przytoczę kilka
+# możliwych par rzeczownik-czasownik (w kolejności od najlepiej oddającego
+# znaczenie do najszkaradniejszych):
+# - zapis, zapisać (record, synonim)
+# - odprawa, odprawić (check in, synonim)
+# - osadzenie, osadzić (bardziej embed, deposit, put)
+# - rewizja, zrewidować (bardziej revise, return, search)
+# - odnotowanie, odnotować (bardziej note, make note)
+# - umieszczenie, umieścić (bardziej emplace)
+# - zatwierdzenie, zatwierdzić (bardziej confirm) - użyte w subversion, ale tam znaczy to co innego
+# - oddanie, oddać (bardziej commitment, devotion)
+# - zapamiętanie, zapamiętać (bardziej remember, memorize)
+# - przeznaczenie, przeznaczyć (bardziej destine, intend, designate, allocate)
+# - zakomitować (nie jest słowem)
+# Zdecydowałem się na zapis, bo zdaje się najlepiej oddawać znaczenie.
+#
+# Myślę, że wybierając to słowo w języku angielskim (a nie było wcześniej aż tak
+# powszechne) twórcy kontroli wielu wersji mieć na myśli właśnie jakiś zapis,
+# który dokumentuje rozwój.
+# Powstawanie gita najlepiej widać w wątku "Kernel SCM saga.." w archiwach.
+# Nie podoba się?  Bardzo chętnie zobaczę lepsze tłumaczenie.
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-01-16 19:00:16+0000\n"
+"PO-Revision-Date: 2020-12-03 00:12+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.2.2\n"
-"Last-Translator: m4sk1n <m4sk1n@vivaldi.net>\n"
-"Language-Team: Polish\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10"
+" || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 20.08.3\n"
+"Last-Translator: Arek <arek_koz@o2.pl>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "Project-Id-Version: git\n"
 
@@ -39,6 +80,7 @@ msgstr ""
 #: git-sh-setup.sh:245
 msgid "Cannot pull with rebase: Your index contains uncommitted changes."
 msgstr ""
+"Nie można zaciągnąć z przestawieniem: Twój indeks zawiera nieoddane zmiany."
 
 #: git-sh-setup.sh:242
 msgid "Cannot rebase: Your index contains uncommitted changes."
@@ -163,12 +205,20 @@ msgid "Or you can abort the rebase with 'git rebase --abort'."
 msgstr ""
 
 #: git-rebase--interactive.sh:1053
-msgid "You can fix this with 'git rebase --edit-todo' and then run 'git rebase --continue'."
-msgstr "Możesz to naprawić używając 'git rebase --edit-todo' i uruchamiając później 'git rebase --continue'."
+msgid ""
+"You can fix this with 'git rebase --edit-todo' and then run 'git rebase"
+" --continue'."
+msgstr ""
+"Możesz to naprawić używając 'git rebase --edit-todo' i uruchamiając później"
+" 'git rebase --continue'."
 
 #: git-rebase--interactive.sh:1036
-msgid "Unrecognized setting $check_level for option rebase.missingCommitsCheck. Ignoring."
-msgstr "Nieznane ustawienie $check_level dla opcji rebase.missingCommitsCheck. Ignorowanie."
+msgid ""
+"Unrecognized setting $check_level for option rebase.missingCommitsCheck."
+" Ignoring."
+msgstr ""
+"Nieznane ustawienie $check_level dla opcji rebase.missingCommitsCheck."
+" Ignorowanie."
 
 #: git-rebase--interactive.sh:1025
 msgid ""
@@ -262,7 +312,8 @@ msgstr "Zatrzymano na $sha1_abbrev... $rest"
 msgid ""
 "Could not amend commit after successfully picking $sha1... $rest\n"
 "This is most likely due to an empty commit message, or the pre-commit hook\n"
-"failed. If the pre-commit hook failed, you may need to resolve the issue before\n"
+"failed. If the pre-commit hook failed, you may need to resolve the issue"
+" before\n"
 "you are able to reword the commit."
 msgstr ""
 
@@ -445,7 +496,9 @@ msgid "Unable to checkout '$sha1' in submodule path '$displaypath'"
 msgstr ""
 
 #: git-submodule.sh:656
-msgid "Fetched in submodule path '$displaypath', but it did not contain $sha1. Direct fetching of that commit failed."
+msgid ""
+"Fetched in submodule path '$displaypath', but it did not contain $sha1."
+" Direct fetching of that commit failed."
 msgstr ""
 
 #: git-submodule.sh:650
@@ -453,7 +506,9 @@ msgid "Unable to fetch in submodule path '$displaypath'"
 msgstr ""
 
 #: git-submodule.sh:632
-msgid "Unable to find current ${remote_name}/${branch} revision in submodule path '$sm_path'"
+msgid ""
+"Unable to find current ${remote_name}/${branch} revision in submodule path"
+" '$sm_path'"
 msgstr ""
 
 #: git-submodule.sh:627
@@ -481,7 +536,9 @@ msgid "Cleared directory '$displaypath'"
 msgstr "Wyczyszczono katalog '$displaypath'"
 
 #: git-submodule.sh:448
-msgid "Submodule work tree '$displaypath' contains local modifications; use '-f' to discard them"
+msgid ""
+"Submodule work tree '$displaypath' contains local modifications; use '-f' to"
+" discard them"
 msgstr ""
 
 #: git-submodule.sh:440
@@ -527,7 +584,8 @@ msgid ""
 "If you want to reuse this local git directory instead of cloning again from\n"
 "  $realrepo\n"
 "use the '--force' option. If the local git directory is not the correct repo\n"
-"or you are unsure what this means choose another name with the '--name' option."
+"or you are unsure what this means choose another name with the '--name'"
+" option."
 msgstr ""
 
 #: git-submodule.sh:243
@@ -555,7 +613,8 @@ msgstr "'$sm_path' już widnieje w indeksie"
 
 #: git-submodule.sh:194
 msgid "repo URL: '$repo' must be absolute or begin with ./|../"
-msgstr "repo URL: '$repo' musi być ścieżką absolutną lub zaczynać się od ./|../"
+msgstr ""
+"repo URL: '$repo' musi być ścieżką absolutną lub zaczynać się od ./|../"
 
 #: git-submodule.sh:184
 msgid "Relative path can only be used from the toplevel of the working tree"
@@ -821,7 +880,8 @@ msgstr ""
 msgid ""
 "When you have resolved this problem, run \"git rebase --continue\".\n"
 "If you prefer to skip this patch, run \"git rebase --skip\" instead.\n"
-"To check out the original branch and stop rebasing, run \"git rebase --abort\"."
+"To check out the original branch and stop rebasing, run \"git rebase"
+" --abort\"."
 msgstr ""
 
 #: git-merge-octopus.sh:102
@@ -853,7 +913,8 @@ msgid "Automated merge did not work."
 msgstr ""
 
 #: git-merge-octopus.sh:46
-msgid "Error: Your local changes to the following files would be overwritten by merge"
+msgid ""
+"Error: Your local changes to the following files would be overwritten by merge"
 msgstr ""
 
 #: git-bisect.sh:653
@@ -989,7 +1050,8 @@ msgid "won't bisect on cg-seek'ed tree"
 msgstr ""
 
 #: git-bisect.sh:167
-msgid "Checking out '$start_head' failed. Try 'git bisect reset <valid-branch>'."
+msgid ""
+"Checking out '$start_head' failed. Try 'git bisect reset <valid-branch>'."
 msgstr ""
 
 #: git-bisect.sh:154
@@ -1375,7 +1437,9 @@ msgid "Untracked cache enabled for '%s'"
 msgstr ""
 
 #: builtin/update-index.c:1131
-msgid "core.untrackedCache is set to false; remove or change it, if you really want to enable the untracked cache"
+msgid ""
+"core.untrackedCache is set to false; remove or change it, if you really want"
+" to enable the untracked cache"
 msgstr ""
 
 #: builtin/update-index.c:1123
@@ -1383,7 +1447,9 @@ msgid "Untracked cache disabled"
 msgstr ""
 
 #: builtin/update-index.c:1119
-msgid "core.untrackedCache is set to true; remove or change it, if you really want to disable the untracked cache"
+msgid ""
+"core.untrackedCache is set to true; remove or change it, if you really want"
+" to disable the untracked cache"
 msgstr ""
 
 #: builtin/update-index.c:1003
@@ -1699,7 +1765,8 @@ msgid ""
 "\n"
 "Write a message for tag:\n"
 "  %s\n"
-"Lines starting with '%c' will be kept; you may remove them yourself if you want to.\n"
+"Lines starting with '%c' will be kept; you may remove them yourself if you"
+" want to.\n"
 msgstr ""
 
 #: builtin/tag.c:117
@@ -1737,7 +1804,8 @@ msgid "git tag -d <tagname>..."
 msgstr ""
 
 #: builtin/tag.c:23
-msgid "git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>] <tagname> [<head>]"
+msgid ""
+"git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>] <tagname> [<head>]"
 msgstr ""
 
 #: builtin/symbolic-ref.c:43 builtin/update-ref.c:362
@@ -1777,7 +1845,9 @@ msgid "submodule--helper subcommand must be called with a subcommand"
 msgstr ""
 
 #: builtin/submodule--helper.c:1050
-msgid "Submodule (%s) branch configured to inherit branch from superproject, but the superproject is not on any branch"
+msgid ""
+"Submodule (%s) branch configured to inherit branch from superproject, but the"
+" superproject is not on any branch"
 msgstr ""
 
 #: builtin/submodule--helper.c:979
@@ -1861,7 +1931,9 @@ msgid "could not create directory '%s'"
 msgstr ""
 
 #: builtin/submodule--helper.c:613
-msgid "git submodule--helper clone [--prefix=<path>] [--quiet] [--reference <repository>] [--name <name>] [--depth <depth>] --url <url> --path <path>"
+msgid ""
+"git submodule--helper clone [--prefix=<path>] [--quiet] [--reference <"
+"repository>] [--name <name>] [--depth <depth>] --url <url> --path <path>"
 msgstr ""
 
 #: builtin/submodule--helper.c:608 builtin/submodule--helper.c:964
@@ -1890,7 +1962,8 @@ msgstr "Wartość '%s' dla submodule.alternateLocation nie jest rozpoznawana"
 
 #: builtin/submodule--helper.c:563
 msgid "Value '%s' for submodule.alternateErrorStrategy is not recognized"
-msgstr "Wartość '%s' dla submodule.alternateErrorStrategy nie jest rozpoznawana"
+msgstr ""
+"Wartość '%s' dla submodule.alternateErrorStrategy nie jest rozpoznawana"
 
 #: builtin/submodule--helper.c:524 builtin/submodule--helper.c:527
 msgid "submodule '%s' cannot add alternate: %s"
@@ -2006,7 +2079,9 @@ msgid "git show-ref --exclude-existing[=<pattern>]"
 msgstr ""
 
 #: builtin/show-ref.c:10
-msgid "git show-ref [-q | --quiet] [--verify] [--head] [-d | --dereference] [-s | --hash[=<n>]] [--abbrev[=<n>]] [--tags] [--heads] [--] [<pattern>...]"
+msgid ""
+"git show-ref [-q | --quiet] [--verify] [--head] [-d | --dereference] [-s |"
+" --hash[=<n>]] [--abbrev[=<n>]] [--tags] [--heads] [--] [<pattern>...]"
 msgstr ""
 
 #: builtin/show-branch.c:836
@@ -2044,7 +2119,8 @@ msgid "no branches given, and HEAD is not valid"
 msgstr ""
 
 #: builtin/show-branch.c:703
-msgid "--reflog is incompatible with --all, --remotes, --independent or --merge-base"
+msgid ""
+"--reflog is incompatible with --all, --remotes, --independent or --merge-base"
 msgstr ""
 
 #: builtin/show-branch.c:669
@@ -2176,7 +2252,9 @@ msgstr ""
 
 #: builtin/send-pack.c:18
 msgid ""
-"git send-pack [--all | --mirror] [--dry-run] [--force] [--receive-pack=<git-receive-pack>] [--verbose] [--thin] [--atomic] [<host>:]<directory> [<ref>...]\n"
+"git send-pack [--all | --mirror] [--dry-run] [--force] [--receive-pack=<"
+"git-receive-pack>] [--verbose] [--thin] [--atomic] [<host>:]<directory> [<ref"
+">...]\n"
 "  --all and explicit <ref> specification are mutually exclusive."
 msgstr ""
 
@@ -2488,7 +2566,8 @@ msgid "git reset [-q] [<tree-ish>] [--] <paths>..."
 msgstr ""
 
 #: builtin/reset.c:26
-msgid "git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
+msgid ""
+"git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]"
 msgstr ""
 
 #: builtin/rerere.c:58
@@ -2540,7 +2619,9 @@ msgid "the original commit '%s' has a gpg signature."
 msgstr "oryginalne rozwiązanie '%s' ma sygnaturę GPG."
 
 #: builtin/replace.c:368
-msgid "original commit '%s' contains mergetag '%s' that is discarded; use --edit instead of --graft"
+msgid ""
+"original commit '%s' contains mergetag '%s' that is discarded; use --edit"
+" instead of --graft"
 msgstr ""
 
 #: builtin/replace.c:357
@@ -2805,7 +2886,8 @@ msgstr[1] ""
 msgstr[2] ""
 
 #: builtin/remote.c:1164
-msgid "  HEAD branch (remote HEAD is ambiguous, may be one of the following):\n"
+msgid ""
+"  HEAD branch (remote HEAD is ambiguous, may be one of the following):\n"
 msgstr ""
 
 #: builtin/remote.c:1160
@@ -3075,7 +3157,8 @@ msgid "git remote set-branches [--add] <name> <branch>..."
 msgstr ""
 
 #: builtin/remote.c:19
-msgid "git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
+msgid ""
+"git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]"
 msgstr ""
 
 #: builtin/remote.c:18
@@ -3099,7 +3182,9 @@ msgid "git remote rename <old> <new>"
 msgstr ""
 
 #: builtin/remote.c:13
-msgid "git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>"
+msgid ""
+"git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags]"
+" [--mirror=<fetch|push>] <name> <url>"
 msgstr ""
 
 #: builtin/remote.c:12
@@ -3220,7 +3305,10 @@ msgid "write resulting index to <file>"
 msgstr ""
 
 #: builtin/read-tree.c:37
-msgid "git read-tree [(-m [--trivial] [--aggressive] | --reset | --prefix=<prefix>) [-u [--exclude-per-directory=<gitignore>] | -i]] [--no-sparse-checkout] [--index-output=<file>] (--empty | <tree-ish1> [<tree-ish2> [<tree-ish3>]])"
+msgid ""
+"git read-tree [(-m [--trivial] [--aggressive] | --reset | --prefix=<prefix>)"
+" [-u [--exclude-per-directory=<gitignore>] | -i]] [--no-sparse-checkout]"
+" [--index-output=<file>] (--empty | <tree-ish1> [<tree-ish2> [<tree-ish3>]])"
 msgstr ""
 
 #: builtin/push.c:579
@@ -3335,7 +3423,8 @@ msgstr ""
 #: builtin/push.c:367
 msgid ""
 "No configured push destination.\n"
-"Either specify the URL from the command-line or configure a remote repository using\n"
+"Either specify the URL from the command-line or configure a remote repository"
+" using\n"
 "\n"
 "    git remote add <name> <url>\n"
 "\n"
@@ -3393,7 +3482,8 @@ msgid ""
 msgstr ""
 
 #: builtin/push.c:242
-msgid "You didn't specify any refspecs to push, and push.default is \"nothing\"."
+msgid ""
+"You didn't specify any refspecs to push, and push.default is \"nothing\"."
 msgstr ""
 
 #: builtin/push.c:186
@@ -3508,7 +3598,8 @@ msgid ""
 msgstr ""
 
 #: builtin/pull.c:432 git-parse-remote.sh:95
-msgid "If you wish to set tracking information for this branch you can do so with:"
+msgid ""
+"If you wish to set tracking information for this branch you can do so with:"
 msgstr ""
 
 #: builtin/pull.c:423 git-parse-remote.sh:75
@@ -3555,11 +3646,14 @@ msgid ""
 msgstr ""
 
 #: builtin/pull.c:399
-msgid "There are no candidates for merging among the refs that you just fetched."
+msgid ""
+"There are no candidates for merging among the refs that you just fetched."
 msgstr ""
 
 #: builtin/pull.c:397
-msgid "There is no candidate for rebasing against among the refs that you just fetched."
+msgid ""
+"There is no candidate for rebasing against among the refs that you just"
+" fetched."
 msgstr ""
 
 #: builtin/pull.c:284
@@ -3803,11 +3897,13 @@ msgid "deflate error (%d)"
 msgstr ""
 
 #: builtin/pack-objects.c:30
-msgid "git pack-objects [<options>...] <base-name> [< <ref-list> | < <object-list>]"
+msgid ""
+"git pack-objects [<options>...] <base-name> [< <ref-list> | < <object-list>]"
 msgstr ""
 
 #: builtin/pack-objects.c:29
-msgid "git pack-objects --stdout [<options>...] [< <ref-list> | < <object-list>]"
+msgid ""
+"git pack-objects --stdout [<options>...] [< <ref-list> | < <object-list>]"
 msgstr ""
 
 #: builtin/notes.c:1019
@@ -3843,7 +3939,10 @@ msgid "Object %s has no note\n"
 msgstr ""
 
 #: builtin/notes.c:865
-msgid "Automatic notes merge failed. Fix conflicts in %s and commit the result with 'git notes merge --commit', or abort the merge with 'git notes merge --abort'.\n"
+msgid ""
+"Automatic notes merge failed. Fix conflicts in %s and commit the result with"
+" 'git notes merge --commit', or abort the merge with 'git notes merge"
+" --abort'.\n"
 msgstr ""
 
 #: builtin/notes.c:863
@@ -3883,7 +3982,9 @@ msgid "Committing unmerged notes"
 msgstr ""
 
 #: builtin/notes.c:775
-msgid "resolve notes conflicts using the given strategy (manual/ours/theirs/union/cat_sort_uniq)"
+msgid ""
+"resolve notes conflicts using the given strategy"
+" (manual/ours/theirs/union/cat_sort_uniq)"
 msgstr ""
 
 #: builtin/notes.c:773
@@ -3941,7 +4042,9 @@ msgid "missing notes on source object %s. Cannot copy."
 msgstr ""
 
 #: builtin/notes.c:525
-msgid "Cannot copy notes. Found existing notes for object %s. Use '-f' to overwrite existing notes"
+msgid ""
+"Cannot copy notes. Found existing notes for object %s. Use '-f' to overwrite"
+" existing notes"
 msgstr ""
 
 #: builtin/notes.c:504
@@ -3965,7 +4068,9 @@ msgid "Overwriting existing notes for object %s\n"
 msgstr ""
 
 #: builtin/notes.c:437
-msgid "Cannot add notes. Found existing notes for object %s. Use '-f' to overwrite existing notes"
+msgid ""
+"Cannot add notes. Found existing notes for object %s. Use '-f' to overwrite"
+" existing notes"
 msgstr ""
 
 #: builtin/notes.c:412 builtin/notes.c:483
@@ -4139,7 +4244,8 @@ msgid "git notes merge --commit [-v | -q]"
 msgstr ""
 
 #: builtin/notes.c:31
-msgid "git notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
+msgid ""
+"git notes [--ref <notes-ref>] merge [-v | -q] [-s <strategy>] <notes-ref>"
 msgstr ""
 
 #: builtin/notes.c:30
@@ -4151,7 +4257,9 @@ msgid "git notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
 msgstr ""
 
 #: builtin/notes.c:28
-msgid "git notes [--ref <notes-ref>] append [--allow-empty] [-m <msg> | -F <file> | (-c | -C) <object>] [<object>]"
+msgid ""
+"git notes [--ref <notes-ref>] append [--allow-empty] [-m <msg> | -F <file> |"
+" (-c | -C) <object>] [<object>]"
 msgstr ""
 
 #: builtin/notes.c:27
@@ -4159,7 +4267,9 @@ msgid "git notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
 msgstr ""
 
 #: builtin/notes.c:26
-msgid "git notes [--ref <notes-ref>] add [-f] [--allow-empty] [-m <msg> | -F <file> | (-c | -C) <object>] [<object>]"
+msgid ""
+"git notes [--ref <notes-ref>] add [-f] [--allow-empty] [-m <msg> | -F <file>"
+" | (-c | -C) <object>] [<object>]"
 msgstr ""
 
 #: builtin/notes.c:25
@@ -4366,7 +4476,9 @@ msgid "send results to standard output"
 msgstr ""
 
 #: builtin/merge-file.c:8
-msgid "git merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> <orig-file> <file2>"
+msgid ""
+"git merge-file [<options>] [-L <name1> [-L <orig> [-L <name2>]]] <file1> <"
+"orig-file> <file2>"
 msgstr ""
 
 #: builtin/merge-base.c:225
@@ -4911,7 +5023,8 @@ msgid "git ls-files [<options>] [<file>...]"
 msgstr ""
 
 #: builtin/log.c:1880
-msgid "Could not find a tracked remote branch, please specify <upstream> manually.\n"
+msgid ""
+"Could not find a tracked remote branch, please specify <upstream> manually.\n"
 msgstr ""
 
 #: builtin/log.c:1826
@@ -5242,7 +5355,9 @@ msgid "edit files in place"
 msgstr ""
 
 #: builtin/interpret-trailers.c:15
-msgid "git interpret-trailers [--in-place] [--trim-empty] [(--trailer <token>[(=|:)<value>])...] [<file>...]"
+msgid ""
+"git interpret-trailers [--in-place] [--trim-empty] [(--trailer <token>[(=|:)<"
+"value>])...] [<file>...]"
 msgstr ""
 
 #: builtin/init-db.c:573
@@ -5250,7 +5365,9 @@ msgid "Cannot access work tree '%s'"
 msgstr ""
 
 #: builtin/init-db.c:545
-msgid "%s (or --work-tree=<directory>) not allowed without specifying %s (or --git-dir=<directory>)"
+msgid ""
+"%s (or --work-tree=<directory>) not allowed without specifying %s (or"
+" --git-dir=<directory>)"
 msgstr ""
 
 #: builtin/init-db.c:524
@@ -5270,7 +5387,9 @@ msgid "permissions"
 msgstr ""
 
 #: builtin/init-db.c:457
-msgid "git init [-q | --quiet] [--bare] [--template=<template-directory>] [--shared[=<permissions>]] [<directory>]"
+msgid ""
+"git init [-q | --quiet] [--bare] [--template=<template-directory>]"
+" [--shared[=<permissions>]] [<directory>]"
 msgstr ""
 
 #: builtin/init-db.c:409
@@ -5711,7 +5830,8 @@ msgid "process file as it were from this path"
 msgstr ""
 
 #: builtin/hash-object.c:100
-msgid "just hash any random garbage to create corrupt objects for debugging Git"
+msgid ""
+"just hash any random garbage to create corrupt objects for debugging Git"
 msgstr ""
 
 #: builtin/hash-object.c:99
@@ -5739,7 +5859,9 @@ msgid "git hash-object  --stdin-paths"
 msgstr ""
 
 #: builtin/hash-object.c:81
-msgid "git hash-object [-t <type>] [-w] [--path=<file> | --no-filters] [--stdin] [--] <file>..."
+msgid ""
+"git hash-object [-t <type>] [-w] [--path=<file> | --no-filters] [--stdin]"
+" [--] <file>..."
 msgstr ""
 
 #: builtin/grep.c:918
@@ -5967,11 +6089,13 @@ msgid "git grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
 msgstr ""
 
 #: builtin/gc.c:441
-msgid "There are too many unreachable loose objects; run 'git prune' to remove them."
+msgid ""
+"There are too many unreachable loose objects; run 'git prune' to remove them."
 msgstr ""
 
 #: builtin/gc.c:397
-msgid "gc is already running on machine '%s' pid %<PRIuMAX> (use --force if not)"
+msgid ""
+"gc is already running on machine '%s' pid %<PRIuMAX> (use --force if not)"
 msgstr ""
 
 #: builtin/gc.c:376
@@ -6160,7 +6284,8 @@ msgid "populate log with at most <n> entries from shortlog"
 msgstr ""
 
 #: builtin/fmt-merge-msg.c:14
-msgid "git fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
+msgid ""
+"git fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
 msgstr ""
 
 #: builtin/fetch.c:1374
@@ -6976,7 +7101,9 @@ msgid "list untracked files in columns"
 msgstr ""
 
 #: builtin/commit.c:1359
-msgid "ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)"
+msgid ""
+"ignore changes to submodules, optional when: all, dirty, untracked. (Default:"
+" all)"
 msgstr ""
 
 #: builtin/commit.c:1358 parse-options.h:155
@@ -7305,7 +7432,8 @@ msgstr ""
 "Twoja nazwa i adres e-mail zostały automatycznie skonfigurowane na podstawie\n"
 "twojej nazwy użytkownika i nazwy hosta. Sprawdź, czy są one prawidłowe.\n"
 "Możesz ukryć tą wiadomość ustawiając je samodzielnie. Uruchom\n"
-"następującą komendę i postępuj zgodnie z instrukcjami w edytorze, aby edytować\n"
+"następującą komendę i postępuj zgodnie z instrukcjami w edytorze, aby"
+" edytować\n"
 "twój plik konfiguracyjny:\n"
 "\n"
 "    git config --global --edit\n"
@@ -7387,7 +7515,9 @@ msgid "--depth is ignored in local clones; use file:// instead."
 msgstr ""
 
 #: builtin/clone.c:963
-msgid "clone --recursive is not compatible with both --reference and --reference-if-able"
+msgid ""
+"clone --recursive is not compatible with both --reference and"
+" --reference-if-able"
 msgstr ""
 
 #: builtin/clone.c:957
@@ -7639,11 +7769,15 @@ msgid "git clone [<options>] [--] <repo> [<dir>]"
 msgstr ""
 
 #: builtin/clean.c:904
-msgid "clean.requireForce defaults to true and neither -i, -n, nor -f given; refusing to clean"
+msgid ""
+"clean.requireForce defaults to true and neither -i, -n, nor -f given;"
+" refusing to clean"
 msgstr ""
 
 #: builtin/clean.c:901
-msgid "clean.requireForce set to true and neither -i, -n, nor -f given; refusing to clean"
+msgid ""
+"clean.requireForce set to true and neither -i, -n, nor -f given; refusing to"
+" clean"
 msgstr ""
 
 #: builtin/clean.c:897
@@ -7779,7 +7913,8 @@ msgid "Removing %s\n"
 msgstr ""
 
 #: builtin/clean.c:25
-msgid "git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] <paths>..."
+msgid ""
+"git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] <paths>..."
 msgstr ""
 
 #: builtin/checkout.c:1268
@@ -8244,11 +8379,15 @@ msgid "<type> can be one of: blob, tree, commit, tag"
 msgstr ""
 
 #: builtin/cat-file.c:514
-msgid "git cat-file (--batch | --batch-check) [--follow-symlinks] [--textconv | --filters]"
+msgid ""
+"git cat-file (--batch | --batch-check) [--follow-symlinks] [--textconv |"
+" --filters]"
 msgstr ""
 
 #: builtin/cat-file.c:513
-msgid "git cat-file (-t [--allow-unknown-type] | -s [--allow-unknown-type] | -e | -p | <type> | --textconv | --filters) [--path=<path>] <object>"
+msgid ""
+"git cat-file (-t [--allow-unknown-type] | -s [--allow-unknown-type] | -e | -p"
+" | <type> | --textconv | --filters) [--path=<path>] <object>"
 msgstr ""
 
 #: builtin/bundle.c:68
@@ -8271,7 +8410,9 @@ msgid ""
 msgstr ""
 
 #: builtin/branch.c:849
-msgid "The --set-upstream flag is deprecated and will be removed. Consider using --track or --set-upstream-to\n"
+msgid ""
+"The --set-upstream flag is deprecated and will be removed. Consider using"
+" --track or --set-upstream-to\n"
 msgstr ""
 
 #: builtin/branch.c:846
@@ -8303,7 +8444,8 @@ msgid "no such branch '%s'"
 msgstr ""
 
 #: builtin/branch.c:797
-msgid "could not set upstream of HEAD to %s when it does not point to any branch."
+msgid ""
+"could not set upstream of HEAD to %s when it does not point to any branch."
 msgstr ""
 
 #: builtin/branch.c:793
@@ -8659,7 +8801,8 @@ msgid "no such path %s in %s"
 msgstr ""
 
 #: builtin/blame.c:2832
-msgid "--reverse --first-parent together require range along first-parent chain"
+msgid ""
+"--reverse --first-parent together require range along first-parent chain"
 msgstr ""
 
 #: builtin/blame.c:2805
@@ -9117,7 +9260,9 @@ msgstr ""
 
 #: builtin/am.c:1178
 msgid "To restore the original branch and stop patching, run \"%s --abort\"."
-msgstr "Aby przywrócić oryginalną gałąź i zaprzestać używania łatek, uruchom \"%s --abort\"."
+msgstr ""
+"Aby przywrócić oryginalną gałąź i zaprzestać używania łatek, uruchom \"%s"
+" --abort\"."
 
 #: builtin/am.c:1177
 msgid "If you prefer to skip this patch, run \"%s --skip\" instead."
@@ -9386,7 +9531,9 @@ msgid "nothing added to commit but untracked files present\n"
 msgstr ""
 
 #: wt-status.c:1605
-msgid "nothing added to commit but untracked files present (use \"git add\" to track)\n"
+msgid ""
+"nothing added to commit but untracked files present (use \"git add\" to"
+" track)\n"
 msgstr ""
 
 #: wt-status.c:1602
@@ -9497,7 +9644,8 @@ msgid "You are currently cherry-picking commit %s."
 msgstr ""
 
 #: wt-status.c:1270
-msgid "  (use \"git rebase --continue\" once you are satisfied with your changes)"
+msgid ""
+"  (use \"git rebase --continue\" once you are satisfied with your changes)"
 msgstr ""
 
 #: wt-status.c:1268
@@ -9521,7 +9669,8 @@ msgid "You are currently splitting a commit during a rebase."
 msgstr ""
 
 #: wt-status.c:1248
-msgid "You are currently splitting a commit while rebasing branch '%s' on '%s'."
+msgid ""
+"You are currently splitting a commit while rebasing branch '%s' on '%s'."
 msgstr ""
 
 #: wt-status.c:1244
@@ -9607,7 +9756,8 @@ msgid "Failed to parse --submodule option parameter: '%s'"
 msgstr ""
 
 #: diff.c:4706
-msgid "you may want to set your %s variable to at least %d and retry the command."
+msgid ""
+"you may want to set your %s variable to at least %d and retry the command."
 msgstr ""
 
 #: diff.c:4703
@@ -9945,11 +10095,15 @@ msgid "Unable to add %s to database"
 msgstr "Nie udało się dodać %s do bazy danych"
 
 #: merge-recursive.c:1081 merge-recursive.c:1095
-msgid "CONFLICT (%s/delete): %s deleted in %s and %s in %s. Version %s of %s left in tree."
+msgid ""
+"CONFLICT (%s/delete): %s deleted in %s and %s in %s. Version %s of %s left in"
+" tree."
 msgstr ""
 
 #: merge-recursive.c:1087 merge-recursive.c:1100
-msgid "CONFLICT (%s/delete): %s deleted in %s and %s in %s. Version %s of %s left in tree at %s."
+msgid ""
+"CONFLICT (%s/delete): %s deleted in %s and %s in %s. Version %s of %s left in"
+" tree at %s."
 msgstr ""
 
 #: merge-recursive.c:1143
@@ -9965,7 +10119,9 @@ msgid "renamed"
 msgstr ""
 
 #: merge-recursive.c:1225
-msgid "CONFLICT (rename/rename): Rename \"%s\"->\"%s\" in branch \"%s\" rename \"%s\"->\"%s\" in \"%s\"%s"
+msgid ""
+"CONFLICT (rename/rename): Rename \"%s\"->\"%s\" in branch \"%s\" rename \""
+"%s\"->\"%s\" in \"%s\"%s"
 msgstr ""
 
 #: merge-recursive.c:1230
@@ -10086,7 +10242,8 @@ msgstr "Nie udało się zapisać indeksu."
 #: notes-merge.c:273
 msgid ""
 "You have not concluded your previous notes merge (%s exists).\n"
-"Please, use 'git notes merge --commit' or 'git notes merge --abort' to commit/abort the previous merge before you start a new notes merge."
+"Please, use 'git notes merge --commit' or 'git notes merge --abort' to"
+" commit/abort the previous merge before you start a new notes merge."
 msgstr ""
 
 #: notes-merge.c:280
@@ -10150,7 +10307,9 @@ msgid "global 'glob' and 'noglob' pathspec settings are incompatible"
 msgstr ""
 
 #: pathspec.c:143
-msgid "global 'literal' pathspec setting is incompatible with all other global pathspec settings"
+msgid ""
+"global 'literal' pathspec setting is incompatible with all other global"
+" pathspec settings"
 msgstr ""
 
 #: pathspec.c:177
@@ -10186,7 +10345,9 @@ msgid "%s: pathspec magic not supported by this command: %s"
 msgstr ""
 
 #: pathspec.c:408
-msgid "empty strings as pathspecs will be made invalid in upcoming releases. please use . instead if you meant to match all paths"
+msgid ""
+"empty strings as pathspecs will be made invalid in upcoming releases. please"
+" use . instead if you meant to match all paths"
 msgstr ""
 
 #: pathspec.c:440
@@ -10416,10 +10577,14 @@ msgstr ""
 
 #: remote.c:2093
 msgid "Your branch is behind '%s' by %d commit, and can be fast-forwarded.\n"
-msgid_plural "Your branch is behind '%s' by %d commits, and can be fast-forwarded.\n"
-msgstr[0] "Twoja gałąź jest za '%s' o %d rozwiązanie i może zostać szybko uaktualniona.\n"
-msgstr[1] "Twoja gałąź jest za '%s' o %d rozwiązania i może zostać szybko uaktualniona.\n"
-msgstr[2] "Twoja gałąź jest za '%s' o %d rozwiązań i może zostać szybko uaktualniona.\n"
+msgid_plural ""
+"Your branch is behind '%s' by %d commits, and can be fast-forwarded.\n"
+msgstr[0] ""
+"Twoja gałąź jest za '%s' o %d rozwiązanie i może zostać szybko uaktualniona.\n"
+msgstr[1] ""
+"Twoja gałąź jest za '%s' o %d rozwiązania i może zostać szybko uaktualniona.\n"
+msgstr[2] ""
+"Twoja gałąź jest za '%s' o %d rozwiązań i może zostać szybko uaktualniona.\n"
 
 #: remote.c:2101
 msgid "  (use \"git pull\" to update your local branch)\n"
@@ -10469,7 +10634,9 @@ msgid "the receiving end does not support --signed push"
 msgstr ""
 
 #: send-pack.c:412
-msgid "not sending a push certificate since the receiving end does not support --signed push"
+msgid ""
+"not sending a push certificate since the receiving end does not support"
+" --signed push"
 msgstr ""
 
 #: send-pack.c:424
@@ -10960,7 +11127,8 @@ msgid ""
 "Your local changes to the following files would be overwritten by merge:\n"
 "%%sPlease commit your changes or stash them before you merge."
 msgstr ""
-"Twoje lokalne zmiany do następujących plików zostaną zastąpione przez scalenie:\n"
+"Twoje lokalne zmiany do następujących plików zostaną zastąpione przez"
+" scalenie:\n"
 "%%sRozwiąż swoje zmiany lub dodaj do schowka zanim je scalisz."
 
 #: unpack-trees.c:71
@@ -10968,7 +11136,8 @@ msgid ""
 "Your local changes to the following files would be overwritten by merge:\n"
 "%%s"
 msgstr ""
-"Twoje lokalne zmiany do następujących plików zostaną zastąpione przez scalenie:\n"
+"Twoje lokalne zmiany do następujących plików zostaną zastąpione przez"
+" scalenie:\n"
 "%%s"
 
 #: unpack-trees.c:74
@@ -11077,7 +11246,8 @@ msgstr ""
 
 #: unpack-trees.c:126
 msgid ""
-"The following working tree files would be overwritten by sparse checkout update:\n"
+"The following working tree files would be overwritten by sparse checkout"
+" update:\n"
 "%s"
 msgstr ""
 
@@ -11198,7 +11368,8 @@ msgid "  (commit or discard the untracked or modified content in submodules)"
 msgstr ""
 
 #: wt-status.c:224
-msgid "  (use \"git checkout -- <file>...\" to discard changes in working directory)"
+msgid ""
+"  (use \"git checkout -- <file>...\" to discard changes in working directory)"
 msgstr ""
 
 #: wt-status.c:223
@@ -11445,8 +11616,12 @@ msgid "patch fragment without header at line %d: %.*s"
 msgstr ""
 
 #: apply.c:1577
-msgid "git diff header lacks filename information when removing %d leading pathname component (line %d)"
-msgid_plural "git diff header lacks filename information when removing %d leading pathname components (line %d)"
+msgid ""
+"git diff header lacks filename information when removing %d leading pathname"
+" component (line %d)"
+msgid_plural ""
+"git diff header lacks filename information when removing %d leading pathname"
+" components (line %d)"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -11535,7 +11710,8 @@ msgid "cannot apply binary patch to '%s' without full index line"
 msgstr ""
 
 #: apply.c:3154
-msgid "the patch applies to '%s' (%s), which does not match the current contents."
+msgid ""
+"the patch applies to '%s' (%s), which does not match the current contents."
 msgstr ""
 
 #: apply.c:3162
@@ -11913,7 +12089,8 @@ msgid "git archive --list"
 msgstr ""
 
 #: archive.c:14
-msgid "git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
+msgid ""
+"git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
 msgstr ""
 
 #: archive.c:15
