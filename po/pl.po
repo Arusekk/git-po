@@ -2,8 +2,6 @@
 # Copyright (C) 2017 m4sk1n, m4sk1n@vivaldi.net
 # Copyright (C) 2020 Arusekk <arek_koz@o2.pl>
 # This file is distributed under the same license as the Git package.
-# m4sk1n, m4sk1n@vivaldi.net, 2017.
-# Arusekk <arek_koz@o2.pl>, 2020.
 #
 # Stosowana jest następująca terminologia dla kluczowych terminów:
 #  commit         - zapis, oddać - uzasadnienie niżej
@@ -14,6 +12,7 @@
 #  push           - wypchnąć
 #  pull           - zaciągnąć
 #  rebase         - przestawić
+#  stage          - przygotować
 #  branch         - gałąź
 #  hook           - skrypt (skrypt repozytorium)
 #  property       - właściwość
@@ -43,9 +42,11 @@
 # Powstawanie gita najlepiej widać w wątku "Kernel SCM saga.." w archiwach.
 # Nie podoba się?  Bardzo chętnie zobaczę lepsze tłumaczenie.
 #
+# m4sk1n, m4sk1n@vivaldi.net, 2017.
+# Arusekk <arek_koz@o2.pl>, 2020.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-03 00:12+0100\n"
+"PO-Revision-Date: 2020-12-03 00:48+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,15 +68,15 @@ msgstr "Nie udało się określić bezwzględnej ścieżki katalogu gita"
 
 #: git-sh-setup.sh:372
 msgid "You need to run this command from the toplevel of the working tree."
-msgstr ""
+msgstr "Musisz uruchomić to polecenie ze szczytu drzewa roboczego."
 
 #: git-sh-setup.sh:252
 msgid "Additionally, your index contains uncommitted changes."
-msgstr ""
+msgstr "Dodatkowo, twój indeks zawiera nieoddane zmiany."
 
 #: git-sh-setup.sh:248
 msgid "Cannot $action: Your index contains uncommitted changes."
-msgstr ""
+msgstr "Nie można wykonać $action: Twój indeks zawiera nieoddane zmiany."
 
 #: git-sh-setup.sh:245
 msgid "Cannot pull with rebase: Your index contains uncommitted changes."
@@ -84,31 +85,31 @@ msgstr ""
 
 #: git-sh-setup.sh:242
 msgid "Cannot rebase: Your index contains uncommitted changes."
-msgstr ""
+msgstr "Nie można przestawić: Twój indeks zawiera nieoddane zmiany."
 
 #: git-sh-setup.sh:229
 msgid "Cannot $action: You have unstaged changes."
-msgstr ""
+msgstr "Nie można wykonać $action: Masz nieprzygotowane zmiany."
 
 #: git-sh-setup.sh:226
 msgid "Cannot pull with rebase: You have unstaged changes."
-msgstr ""
+msgstr "Nie można zaciągnąć z przestawieniem: Masz nieprzygotowane zmiany."
 
 #: git-sh-setup.sh:223
 msgid "Cannot rewrite branches: You have unstaged changes."
-msgstr ""
+msgstr "Nie można przerobić gałęzi: Masz nieprzygotowane zmiany."
 
 #: git-sh-setup.sh:220
 msgid "Cannot rebase: You have unstaged changes."
-msgstr ""
+msgstr "Nie można przestawić: Masz nieprzygotowane zmiany."
 
 #: git-sh-setup.sh:199 git-sh-setup.sh:206
 msgid "fatal: $program_name cannot be used without a working tree."
-msgstr ""
+msgstr "krytyczny błąd: nie można użyć $program_name bez drzewa roboczego."
 
 #: git-sh-setup.sh:190
 msgid "Cannot chdir to $cdup, the toplevel of the working tree"
-msgstr ""
+msgstr "Nie można przejść chdir do $cdup, szczytu drzewa roboczego"
 
 #: git-sh-setup.sh:89 git-sh-setup.sh:94
 msgid "usage: $dashless $USAGE"
@@ -116,7 +117,7 @@ msgstr "użycie: $dashless $USAGE"
 
 #: git-rebase--interactive.sh:1294
 msgid "Note that empty commits are commented out"
-msgstr ""
+msgstr "Zważ, że puste zapisy są wykomentowane"
 
 #: git-rebase--interactive.sh:1287
 msgid ""
@@ -124,33 +125,36 @@ msgid ""
 "However, if you remove everything, the rebase will be aborted.\n"
 "\n"
 msgstr ""
+"\n"
+"Jeśli jednak usuniesz wszystko, przestawianie zostanie przerwane.\n"
+"\n"
 
 #: git-rebase--interactive.sh:1282
 msgid "Rebase $shortrevisions onto $shortonto ($todocount command)"
 msgid_plural "Rebase $shortrevisions onto $shortonto ($todocount commands)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Przestawianie $shortrevisions na $shortonto ($todocount polecenie)"
+msgstr[1] "Przestawianie $shortrevisions na $shortonto ($todocount polecenia)"
+msgstr[2] "Przestawianie $shortrevisions na $shortonto ($todocount poleceń)"
 
 #: git-rebase--interactive.sh:1177 git-rebase--interactive.sh:1182
 msgid "Could not init rewritten commits"
-msgstr ""
+msgstr "Nie można zainicjować przerobionych zapisów"
 
 #: git-rebase--interactive.sh:1167
 msgid "Could not mark as interactive"
-msgstr ""
+msgstr "Nie można oznaczyć jako interaktywne"
 
 #: git-rebase--interactive.sh:1165
 msgid "Could not create temporary $state_dir"
-msgstr ""
+msgstr "Nie można utworzyć tymczasowego $state_dir"
 
 #: git-rebase--interactive.sh:1164
 msgid "No HEAD?"
-msgstr ""
+msgstr "Brak HEAD?"
 
 #: git-rebase--interactive.sh:1159
 msgid "Could not checkout $switch_to"
-msgstr ""
+msgstr "Nie można wybrać $switch_to"
 
 #: git-rebase--interactive.sh:1146 git-rebase--interactive.sh:1304
 msgid "Could not execute editor"
@@ -164,16 +168,23 @@ msgid ""
 "    git rebase --continue\n"
 "\n"
 msgstr ""
+"\n"
+"Edytujesz plik z poleceniami trwającego interaktywnego przestawienia.\n"
+"Aby kontynuować przestawienie po edycji, wykonaj:\n"
+"    git rebase --continue\n"
+"\n"
 
 #: git-rebase--interactive.sh:1110 git-rebase--interactive.sh:1114
 msgid "Could not commit staged changes."
-msgstr ""
+msgstr "Nie udało się oddać zmian ze skrytki."
 
 #: git-rebase--interactive.sh:1105
 msgid ""
 "You have uncommitted changes in your working tree. Please commit them\n"
 "first and then run 'git rebase --continue' again."
 msgstr ""
+"Masz nieoddane zmiany w drzewie roboczym. Najpierw je oddaj\n"
+"i wtedy ponownie wykonaj „git rebase --continue”."
 
 #: git-rebase--interactive.sh:1100
 msgid "Error trying to find the author identity to amend commit"
