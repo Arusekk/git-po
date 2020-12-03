@@ -4,13 +4,16 @@
 # This file is distributed under the same license as the Git package.
 #
 # Stosowana jest następująca terminologia dla kluczowych terminów:
-#  commit         - zapis, oddać - uzasadnienie niżej
+#  commit         - zapis, złożyć - uzasadnienie niżej
 #  commit message - komunikat zapisu
 #  tag            - tag
 #  email          - e-mail
 #  merge          - scalenie, scalić
 #  push           - wypchnąć
 #  pull           - zaciągnąć
+#  checkout       - wybrać
+#  stash          - przenieść do skrytki
+#  stashed        - ze skrytki
 #  rebase         - przestawić
 #  stage          - przygotować
 #  branch         - gałąź
@@ -25,6 +28,7 @@
 # znaczenie do najszkaradniejszych):
 # - zapis, zapisać (record, synonim)
 # - odprawa, odprawić (check in, synonim)
+# - skład/złożenie, złożyć (inter, submit, put together, synonimy)
 # - osadzenie, osadzić (bardziej embed, deposit, put)
 # - rewizja, zrewidować (bardziej revise, return, search)
 # - odnotowanie, odnotować (bardziej note, make note)
@@ -34,7 +38,8 @@
 # - zapamiętanie, zapamiętać (bardziej remember, memorize)
 # - przeznaczenie, przeznaczyć (bardziej destine, intend, designate, allocate)
 # - zakomitować (nie jest słowem)
-# Zdecydowałem się na zapis, bo zdaje się najlepiej oddawać znaczenie.
+# Zdecydowałem się na zapis, bo zdaje się najlepiej oddawać znaczenie,
+# ponadto brzmi dosyć zręcznie i nie ma utartego użycia.
 #
 # Myślę, że wybierając to słowo w języku angielskim (a nie było wcześniej aż tak
 # powszechne) twórcy kontroli wielu wersji mieć na myśli właśnie jakiś zapis,
@@ -72,20 +77,20 @@ msgstr "Musisz uruchomić to polecenie ze szczytu drzewa roboczego."
 
 #: git-sh-setup.sh:252
 msgid "Additionally, your index contains uncommitted changes."
-msgstr "Dodatkowo, twój indeks zawiera nieoddane zmiany."
+msgstr "Dodatkowo, twój indeks zawiera niezłożone zmiany."
 
 #: git-sh-setup.sh:248
 msgid "Cannot $action: Your index contains uncommitted changes."
-msgstr "Nie można wykonać $action: Twój indeks zawiera nieoddane zmiany."
+msgstr "Nie można wykonać $action: Twój indeks zawiera niezłożone zmiany."
 
 #: git-sh-setup.sh:245
 msgid "Cannot pull with rebase: Your index contains uncommitted changes."
 msgstr ""
-"Nie można zaciągnąć z przestawieniem: Twój indeks zawiera nieoddane zmiany."
+"Nie można zaciągnąć z przestawieniem: Twój indeks zawiera niezłożone zmiany."
 
 #: git-sh-setup.sh:242
 msgid "Cannot rebase: Your index contains uncommitted changes."
-msgstr "Nie można przestawić: Twój indeks zawiera nieoddane zmiany."
+msgstr "Nie można przestawić: Twój indeks zawiera niezłożone zmiany."
 
 #: git-sh-setup.sh:229
 msgid "Cannot $action: You have unstaged changes."
@@ -176,14 +181,14 @@ msgstr ""
 
 #: git-rebase--interactive.sh:1110 git-rebase--interactive.sh:1114
 msgid "Could not commit staged changes."
-msgstr "Nie udało się oddać zmian ze skrytki."
+msgstr "Nie udało się złożyć zmian ze skrytki."
 
 #: git-rebase--interactive.sh:1105
 msgid ""
 "You have uncommitted changes in your working tree. Please commit them\n"
 "first and then run 'git rebase --continue' again."
 msgstr ""
-"Masz nieoddane zmiany w drzewie roboczym. Najpierw je oddaj\n"
+"Masz niezłożone zmiany w drzewie roboczym. Najpierw je złóż\n"
 "i wtedy ponownie wykonaj „git rebase --continue”."
 
 #: git-rebase--interactive.sh:1100
