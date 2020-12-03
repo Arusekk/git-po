@@ -51,7 +51,7 @@
 # Arusekk <arek_koz@o2.pl>, 2020.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-03 15:09+0100\n"
+"PO-Revision-Date: 2020-12-03 16:40+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -278,7 +278,7 @@ msgid ""
 " - $line"
 msgstr ""
 "Ostrzeżenie: komenda nie jest rozpoznawana w poniższym wierszu:\n"
-"- $line"
+" - $line"
 
 #: git-rebase--interactive.sh:907
 msgid ""
@@ -971,7 +971,7 @@ msgid ""
 msgstr ""
 "Stosowanie zmian z automatycznej skrytki spowodowało konflikty.\n"
 "Twoje zmiany są bezpieczne w skrytce.\n"
-"Możesz w każdej chwili wykonać „git stash pop” lub „git stash drop”."
+"Możesz w każdej chwili wykonać „git stash pop” lub „git stash drop”.\n"
 
 #: git-rebase.sh:170
 msgid "Cannot store $stash_sha1"
@@ -1218,11 +1218,11 @@ msgstr "użyj <n> znaków aby wyświetlić SHA-1"
 
 #: parse-options.h:240
 msgid "be more quiet"
-msgstr "bądź ciszej"
+msgstr "mniej komunikatów"
 
 #: parse-options.h:238
 msgid "be more verbose"
-msgstr "bądź bardziej gadatliwy"
+msgstr "więcej komunikatów"
 
 #: parse-options.h:160
 msgid "no-op (backward compatibility)"
@@ -1714,7 +1714,7 @@ msgstr ""
 
 #: builtin/update-index.c:213
 msgid " OK"
-msgstr ""
+msgstr " OK"
 
 #: builtin/update-index.c:206
 msgid "directory stat info does not change after deleting a directory"
@@ -2611,7 +2611,7 @@ msgstr ""
 
 #: builtin/reset.c:343
 msgid "%s reset is not allowed in a bare repository"
-msgstr ""
+msgstr "resetowanie %s nie jest dozwolone w suchym repozytorium"
 
 #: builtin/reset.c:333
 msgid "Cannot do %s reset with paths."
@@ -6603,7 +6603,7 @@ msgstr ""
 
 #: builtin/fetch.c:131 builtin/log.c:1433
 msgid "dir"
-msgstr ""
+msgstr "katalog"
 
 #: builtin/fetch.c:129 builtin/pull.c:206
 msgid "convert to a complete repository"
@@ -6739,7 +6739,7 @@ msgstr ""
 
 #: builtin/diff.c:420
 msgid "unhandled object '%s' given."
-msgstr "otrzymano nieobsługiwany obiekt '%s'."
+msgstr "otrzymano nieobsługiwany obiekt „%s”."
 
 #: builtin/diff.c:413
 msgid "more than two blobs given: '%s'"
@@ -7386,12 +7386,17 @@ msgid ""
 "with '%c' will be kept; you may remove them yourself if you want to.\n"
 "An empty message aborts the commit.\n"
 msgstr ""
+"Podaj komunikat zapisu swoich zmian. Wiersze zaczynające się\n"
+"od „%c” będą zachowane; możesz je sam(a) usunąć, jeśli chcesz.\n"
+"Pusty komunikat przerwie zapis.\n"
 
 #: builtin/commit.c:832
 msgid ""
 "Please enter the commit message for your changes. Lines starting\n"
 "with '%c' will be ignored, and an empty message aborts the commit.\n"
 msgstr ""
+"Podaj komunikat zapisu swoich zmian. Wiersze zaczynające się\n"
+"od „%c” będą ignorowane, a pusty komunikat przerwie zapis.\n"
 
 #: builtin/commit.c:819
 msgid ""
@@ -7584,15 +7589,15 @@ msgstr ""
 
 #: builtin/commit.c:43
 msgid "git status [<options>] [--] <pathspec>..."
-msgstr ""
+msgstr "git status [<opcje>] [--] <ścieżka>..."
 
 #: builtin/commit.c:38
 msgid "git commit [<options>] [--] <pathspec>..."
-msgstr ""
+msgstr "git commit [<opcje>] [--] <ścieżka>..."
 
 #: builtin/column.c:51
 msgid "--command must be the first argument"
-msgstr ""
+msgstr "--command musi być pierwszym argumentem"
 
 #: builtin/column.c:32
 msgid "Padding space between columns"
@@ -7620,7 +7625,7 @@ msgstr ""
 
 #: builtin/column.c:9
 msgid "git column [<options>]"
-msgstr ""
+msgstr "git column [<opcje>]"
 
 #: builtin/clone.c:1101
 msgid "You appear to have cloned an empty repository."
@@ -7636,7 +7641,7 @@ msgstr ""
 
 #: builtin/clone.c:1031
 msgid "--local is ignored"
-msgstr ""
+msgstr "--local jest ignorowane"
 
 #: builtin/clone.c:1026
 msgid "source repository is shallow, ignoring --local"
@@ -7662,11 +7667,11 @@ msgstr ""
 
 #: builtin/clone.c:957
 msgid "Cloning into '%s'...\n"
-msgstr "Klonowanie do '%s'...\n"
+msgstr "Klonowanie do „%s”...\n"
 
 #: builtin/clone.c:955
 msgid "Cloning into bare repository '%s'...\n"
-msgstr "Klonowanie do repozytorium bez kopii roboczej '%s'...\n"
+msgstr "Klonowanie do suchego repozytorium „%s”...\n"
 
 #: builtin/clone.c:943
 msgid "could not create work tree dir '%s'"
@@ -7695,11 +7700,11 @@ msgstr ""
 
 #: builtin/clone.c:886
 msgid "--bare and --separate-git-dir are incompatible."
-msgstr ""
+msgstr "--bare i --separate-git-dir się wykluczają."
 
 #: builtin/clone.c:883
 msgid "--bare and --origin %s options are incompatible."
-msgstr ""
+msgstr "opcje --bare i --origin %s wykluczają się."
 
 #: builtin/clone.c:870
 msgid "You must specify a repository to clone."
@@ -7731,7 +7736,7 @@ msgstr ""
 
 #: builtin/clone.c:648
 msgid "unable to update %s"
-msgstr "nie udało się zaktualizować %s"
+msgstr "nie można zaktualizować %s"
 
 #: builtin/clone.c:632
 msgid "remote did not send all necessary objects"
@@ -7796,7 +7801,7 @@ msgstr ""
 
 #: builtin/clone.c:109
 msgid "key=value"
-msgstr ""
+msgstr "klucz=wartość"
 
 #: builtin/clone.c:108 builtin/init-db.c:485
 msgid "separate git dir from working tree"
@@ -7820,7 +7825,7 @@ msgstr ""
 
 #: builtin/clone.c:101 builtin/fetch.c:124
 msgid "revision"
-msgstr ""
+msgstr "rewizja"
 
 #: builtin/clone.c:100
 msgid "create a shallow clone since a specific time"
@@ -7837,7 +7842,7 @@ msgstr ""
 
 #: builtin/clone.c:97 builtin/fetch.c:120 builtin/grep.c:668 builtin/pull.c:202
 msgid "depth"
-msgstr ""
+msgstr "głębokość"
 
 #: builtin/clone.c:96
 msgid "path to git-upload-pack on the remote"
@@ -7845,15 +7850,15 @@ msgstr ""
 
 #: builtin/clone.c:94
 msgid "checkout <branch> instead of the remote's HEAD"
-msgstr ""
+msgstr "wybierz <gałąź> zamiast zdalnego HEAD"
 
 #: builtin/clone.c:92
 msgid "use <name> instead of 'origin' to track upstream"
-msgstr ""
+msgstr "użyj <nazwy> zamiast „origin”, żeby śledzić zdalne repozytorium"
 
 #: builtin/clone.c:91 builtin/column.c:26 builtin/merge-file.c:44
 msgid "name"
-msgstr ""
+msgstr "nazwa"
 
 #: builtin/clone.c:90
 msgid "use --reference only while cloning"
@@ -7886,27 +7891,27 @@ msgstr ""
 
 #: builtin/clone.c:74
 msgid "don't use local hardlinks, always copy"
-msgstr ""
+msgstr "nie używaj twardych dowiązań, zawsze kopiuj"
 
 #: builtin/clone.c:72
 msgid "to clone from a local repository"
-msgstr "do sklonowania z lokalnego repozytorium"
+msgstr "aby sklonować z lokalnego repozytorium"
 
 #: builtin/clone.c:70
 msgid "create a mirror repository (implies bare)"
-msgstr ""
+msgstr "utwórz lustrzane repozytorium (zakłada suche)"
 
 #: builtin/clone.c:66 builtin/clone.c:68 builtin/init-db.c:478
 msgid "create a bare repository"
-msgstr ""
+msgstr "utwórz suche repozytorium"
 
 #: builtin/clone.c:65
 msgid "don't create a checkout"
-msgstr ""
+msgstr "nie wybieraj"
 
 #: builtin/clone.c:37
 msgid "git clone [<options>] [--] <repo> [<dir>]"
-msgstr ""
+msgstr "git clone [<opcje>] [--] <repozytorium> [<katalog>]"
 
 #: builtin/clean.c:904
 msgid ""
@@ -7922,44 +7927,44 @@ msgstr ""
 
 #: builtin/clean.c:897
 msgid "-x and -X cannot be used together"
-msgstr ""
+msgstr "-x i -X wykluczają się"
 
 #: builtin/clean.c:879
 msgid "remove only ignored files"
-msgstr ""
+msgstr "usuń tylko ignorowane pliki"
 
 #: builtin/clean.c:877
 msgid "remove ignored files, too"
-msgstr ""
+msgstr "usuń też ignorowane pliki"
 
 #: builtin/clean.c:876
 msgid "add <pattern> to ignore rules"
-msgstr ""
+msgstr "dodaj <wzorzec> do reguł ignorowania"
 
 #: builtin/clean.c:875 builtin/describe.c:407 builtin/grep.c:725
 #: builtin/ls-files.c:536 builtin/name-rev.c:313 builtin/show-ref.c:182
 msgid "pattern"
-msgstr ""
+msgstr "wzorzec"
 
 #: builtin/clean.c:874
 msgid "remove whole directories"
-msgstr ""
+msgstr "usuwaj całe katalogi"
 
 #: builtin/clean.c:872
 msgid "interactive cleaning"
-msgstr ""
+msgstr "interaktywne czyszczenie"
 
 #: builtin/clean.c:871
 msgid "force"
-msgstr ""
+msgstr "wymuś"
 
 #: builtin/clean.c:869
 msgid "do not print names of files removed"
-msgstr ""
+msgstr "nie wypisuj nazw usuwanym plików"
 
 #: builtin/clean.c:838
 msgid "No more files to clean, exiting."
-msgstr ""
+msgstr "Brak plików do wyczyszczenia, wyjście."
 
 #: builtin/clean.c:821
 msgid "Would remove the following item:"
@@ -7970,11 +7975,11 @@ msgstr[2] ""
 
 #: builtin/clean.c:813
 msgid "What now"
-msgstr ""
+msgstr "Co teraz"
 
 #: builtin/clean.c:812
 msgid "*** Commands ***"
-msgstr ""
+msgstr "*** Polecenia ***"
 
 #: builtin/clean.c:785
 msgid ""
@@ -7989,12 +7994,12 @@ msgstr ""
 
 #: builtin/clean.c:777
 msgid "Bye."
-msgstr ""
+msgstr "Do zobaczenia."
 
 #. TRANSLATORS: Make sure to keep [y/N] as is
 #: builtin/clean.c:752
 msgid "Remove %s [y/N]? "
-msgstr ""
+msgstr "Usunąć %s [t/N]? "
 
 #: builtin/clean.c:711
 msgid "Select items to delete"
@@ -8010,7 +8015,7 @@ msgstr ""
 
 #: builtin/clean.c:511
 msgid "Huh (%s)?"
-msgstr ""
+msgstr "Hę (%s)?"
 
 #: builtin/clean.c:295
 msgid ""
@@ -8050,12 +8055,13 @@ msgstr ""
 
 #: builtin/clean.c:29
 msgid "Removing %s\n"
-msgstr ""
+msgstr "Usuwanie %s\n"
 
 #: builtin/clean.c:25
 msgid ""
 "git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] <paths>..."
 msgstr ""
+"git clean [-d] [-f] [-i] [-n] [-q] [-e <wzorzec>] [-x | -X] [--] <ścieżki>..."
 
 #: builtin/checkout.c:1268
 msgid ""
@@ -8079,21 +8085,21 @@ msgstr ""
 
 #: builtin/checkout.c:1216
 msgid "Missing branch name; try -b"
-msgstr ""
+msgstr "Brakuje nazwy gałęzi; spróbuj -b"
 
 #: builtin/checkout.c:1211
 msgid "--track needs a branch name"
-msgstr ""
+msgstr "--track potrzebuje nazwy gałęzi"
 
 #: builtin/checkout.c:1194
 msgid "-b, -B and --orphan are mutually exclusive"
-msgstr ""
+msgstr "-b, -B i --orphan się wykluczają"
 
 #: builtin/checkout.c:1163 builtin/clone.c:63 builtin/fetch.c:119
 #: builtin/merge.c:228 builtin/pull.c:117 builtin/push.c:536
 #: builtin/send-pack.c:168
 msgid "force progress reporting"
-msgstr ""
+msgstr "wymuś zgłaszanie postępu"
 
 #: builtin/checkout.c:1162
 msgid "do not check if another worktree is holding the given ref"
@@ -8248,15 +8254,15 @@ msgstr ""
 
 #: builtin/checkout.c:682
 msgid "Switched to branch '%s'\n"
-msgstr "Przełączono do gałęzi '%s'\n"
+msgstr "Przełączono na gałąź „%s”\n"
 
 #: builtin/checkout.c:680 builtin/checkout.c:1069
 msgid "Switched to a new branch '%s'\n"
-msgstr "Przełączono do nowej gałęzi '%s'\n"
+msgstr "Przełączono na nową gałąź „%s”\n"
 
 #: builtin/checkout.c:678
 msgid "Switched to and reset branch '%s'\n"
-msgstr "Przełączono i zresetowano gałąź '%s'\n"
+msgstr "Przełączono na gałąź „%s” i zresetowano ją\n"
 
 #: builtin/checkout.c:674
 msgid "Already on '%s'\n"
@@ -8301,7 +8307,7 @@ msgstr ""
 
 #: builtin/checkout.c:230
 msgid "Unable to add merge result for '%s'"
-msgstr "Nie udało się dodać wyniku scalenia dla '%s'"
+msgstr "Nie udało się dodać wyniku scalenia dla „%s”"
 
 #: builtin/checkout.c:213
 msgid "path '%s': cannot merge"
@@ -8432,7 +8438,7 @@ msgstr ""
 
 #: builtin/check-ignore.c:18 builtin/checkout.c:1137 builtin/gc.c:325
 msgid "suppress progress reporting"
-msgstr ""
+msgstr "nie zgłaszaj postępu"
 
 #: builtin/check-attr.c:23 builtin/check-ignore.c:24
 msgid "terminate input and output records by a NUL character"
@@ -8602,7 +8608,7 @@ msgstr ""
 
 #: builtin/branch.c:770
 msgid "No commit on branch '%s' yet."
-msgstr ""
+msgstr "Jeszcze nie ma zapisów na gałęzi „%s”."
 
 #: builtin/branch.c:763
 msgid "cannot edit description of more than one branch"
@@ -8886,8 +8892,8 @@ msgid ""
 "The branch '%s' is not fully merged.\n"
 "If you are sure you want to delete it, run 'git branch -D %s'."
 msgstr ""
-"Gałąź '%s' nie jest w pełni scalona.\n"
-"Jeżeli na pewno chcesz ją usunąć, użyj 'git branch -D %s'."
+"Gałąź „%s” nie jest w pełni scalona.\n"
+"Jeżeli na pewno chcesz ją usunąć, użyj „git branch -D %s”."
 
 #: builtin/branch.c:161
 msgid "Couldn't look up commit object for '%s'"
@@ -9057,7 +9063,7 @@ msgstr ""
 
 #: builtin/blame.c:2581
 msgid "Force progress reporting"
-msgstr ""
+msgstr "Wymuś zgłaszanie postępu"
 
 #: builtin/blame.c:2580
 msgid "Show work cost statistics"
@@ -9215,7 +9221,7 @@ msgstr ""
 #: builtin/show-ref.c:175 builtin/tag.c:340 parse-options.h:132
 #: parse-options.h:134 parse-options.h:245
 msgid "n"
-msgstr ""
+msgstr "n"
 
 #: builtin/am.c:2266 builtin/am.c:2269 builtin/am.c:2272 builtin/am.c:2275
 #: builtin/am.c:2278 builtin/am.c:2281 builtin/am.c:2284 builtin/am.c:2287
@@ -9322,7 +9328,7 @@ msgstr ""
 
 #: builtin/am.c:1877
 msgid "No changes -- Patch already applied."
-msgstr ""
+msgstr "Brak zmian -- łatka już zastosowana."
 
 #: builtin/am.c:1861 builtin/am.c:1933
 msgid "Applying: %.*s"
@@ -9388,7 +9394,7 @@ msgstr ""
 
 #: builtin/am.c:1417
 msgid "unable to parse commit %s"
-msgstr "nie udało się przeanalizować rozwiązania %s"
+msgstr "nie udało się przeanalizować zapisu %s"
 
 #: builtin/am.c:1390 builtin/log.c:1550
 msgid "invalid ident line: %s"
@@ -9628,7 +9634,7 @@ msgstr ""
 #. TRANSLATORS: the action is e.g. "pull with rebase"
 #: wt-status.c:2270
 msgid "cannot %s: You have unstaged changes."
-msgstr ""
+msgstr "nie można wykonać %s: masz nieprzygotowane zmiany."
 
 #: wt-status.c:1766 wt-status.c:1769
 msgid "ahead "
@@ -9678,15 +9684,15 @@ msgstr ""
 
 #: wt-status.c:1602
 msgid "no changes added to commit\n"
-msgstr ""
+msgstr "brak zmian dodanych do zapisu\n"
 
 #: wt-status.c:1599
 msgid "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n"
-msgstr ""
+msgstr "brak zmian dodanych do zapisu (użyj „git add” i/lub „git commit -a”)\n"
 
 #: wt-status.c:1594
 msgid "No changes"
-msgstr ""
+msgstr "Brak zmian"
 
 #: wt-status.c:1588
 msgid " (use -u option to show untracked files)"
@@ -9709,7 +9715,7 @@ msgstr ""
 
 #: wt-status.c:1574
 msgid "Untracked files"
-msgstr ""
+msgstr "Nieśledzone pliki"
 
 #: wt-status.c:1560
 msgid "Initial commit"
@@ -9737,7 +9743,7 @@ msgstr ""
 
 #: wt-status.c:1524
 msgid "On branch "
-msgstr ""
+msgstr "Na gałęzi "
 
 #: wt-status.c:1327
 msgid "  (use \"git bisect reset\" to get back to the original branch)"
@@ -10176,7 +10182,7 @@ msgstr ""
 
 #: lockfile.c:160
 msgid "Unable to create '%s.lock': %s"
-msgstr "Nie udało się otworzyć '%s.lock': %s"
+msgstr "Nie udało się utworzyć „%s.lock”: %s"
 
 #: merge-recursive.c:209
 msgid "(bad commit)\n"
@@ -10702,33 +10708,30 @@ msgstr ""
 
 #: remote.c:2080
 msgid "Your branch is up-to-date with '%s'.\n"
-msgstr "Twoja gałąź jest na bieżąco z '%s'.\n"
+msgstr "Twoja gałąź jest na bieżąco z „%s”.\n"
 
 #: remote.c:2084
 msgid "Your branch is ahead of '%s' by %d commit.\n"
 msgid_plural "Your branch is ahead of '%s' by %d commits.\n"
-msgstr[0] "Twoja gałąź jest do przodu względem '%s' o %d rozwiązanie.\n"
-msgstr[1] "Twoja gałąź jest do przodu względem '%s' o %d rozwiązania.\n"
-msgstr[2] "Twoja gałąź jest do przodu względem '%s' o %d rozwiązań.\n"
+msgstr[0] "Twoja gałąź jest do przodu względem „%s” o %d zapis.\n"
+msgstr[1] "Twoja gałąź jest do przodu względem „%s” o %d zapisy.\n"
+msgstr[2] "Twoja gałąź jest do przodu względem „%s” o %d zapisów.\n"
 
 #: remote.c:2090
 msgid "  (use \"git push\" to publish your local commits)\n"
-msgstr ""
+msgstr "  (użyj „git push”, aby opublikować swoje zapisy)\n"
 
 #: remote.c:2093
 msgid "Your branch is behind '%s' by %d commit, and can be fast-forwarded.\n"
 msgid_plural ""
 "Your branch is behind '%s' by %d commits, and can be fast-forwarded.\n"
-msgstr[0] ""
-"Twoja gałąź jest za '%s' o %d rozwiązanie i może zostać szybko uaktualniona.\n"
-msgstr[1] ""
-"Twoja gałąź jest za '%s' o %d rozwiązania i może zostać szybko uaktualniona.\n"
-msgstr[2] ""
-"Twoja gałąź jest za '%s' o %d rozwiązań i może zostać szybko uaktualniona.\n"
+msgstr[0] "Twoja gałąź jest za „%s” o %d zapis i może zostać przewinięta.\n"
+msgstr[1] "Twoja gałąź jest za „%s” o %d zapisy i może zostać przewinięta.\n"
+msgstr[2] "Twoja gałąź jest za „%s” o %d zapisów i może zostać przewinięta.\n"
 
 #: remote.c:2101
 msgid "  (use \"git pull\" to update your local branch)\n"
-msgstr ""
+msgstr "  (użyj „git pull”, aby zaktualizować lokalną gałąź)\n"
 
 #: remote.c:2104
 msgid ""
@@ -10738,12 +10741,18 @@ msgid_plural ""
 "Your branch and '%s' have diverged,\n"
 "and have %d and %d different commits each, respectively.\n"
 msgstr[0] ""
+"Twoja gałąź i „%s” się rozeszły\n"
+"i mają odpowiednio %d i %d różny zapis.\n"
 msgstr[1] ""
+"Twoja gałąź i „%s” się rozeszły\n"
+"i mają odpowiednio %d i %d różne zapisy.\n"
 msgstr[2] ""
+"Twoja gałąź i „%s” się rozeszły\n"
+"i mają odpowiednio %d i %d różnych zapisów.\n"
 
 #: remote.c:2114
 msgid "  (use \"git pull\" to merge the remote branch into yours)\n"
-msgstr ""
+msgstr "  (użyj „git pull”, aby scalić zdalną gałąź ze swoją)\n"
 
 #: revision.c:2158
 msgid "your current branch appears to be broken"
@@ -10751,7 +10760,7 @@ msgstr "twoja obecna gałąź wydaje się być uszkodzona"
 
 #: revision.c:2161
 msgid "your current branch '%s' does not have any commits yet"
-msgstr "twoja obecna gałąź '%s' nie ma jeszcze żadnych rozwiązań"
+msgstr "twoja obecna gałąź „%s” nie ma jeszcze żadnych zapisów"
 
 #: revision.c:2355
 msgid "--first-parent is incompatible with --bisect"
@@ -10789,11 +10798,11 @@ msgstr ""
 
 #: sequencer.c:171
 msgid "revert"
-msgstr ""
+msgstr "odwróć"
 
 #: sequencer.c:171
 msgid "cherry-pick"
-msgstr ""
+msgstr "dobierz"
 
 #: sequencer.c:228
 msgid ""
@@ -10826,7 +10835,7 @@ msgstr ""
 
 #: sequencer.c:279 builtin/am.c:259 builtin/commit.c:749 builtin/merge.c:1032
 msgid "could not read '%s'"
-msgstr "nie można odczytać '%s'"
+msgstr "nie można odczytać „%s”"
 
 #: sequencer.c:305
 msgid "your local changes would be overwritten by %s."
@@ -11453,35 +11462,35 @@ msgstr ""
 
 #: wrapper.c:605 wrapper.c:626
 msgid "unable to access '%s'"
-msgstr "nie udało się uzyskać dostępu do '%s'"
+msgstr "brak dostępu do „%s”"
 
 #: wt-status.c:217 wt-status.c:954
 msgid "Changes not staged for commit:"
-msgstr ""
+msgstr "Zmiany nie przygotowane do złożenia:"
 
 #: wt-status.c:199 wt-status.c:945
 msgid "Changes to be committed:"
-msgstr ""
+msgstr "Zmiany do złożenia:"
 
 #: wt-status.c:188
 msgid "  (use \"git rm <file>...\" to mark resolution)"
-msgstr ""
+msgstr "  (użyj „git rm <plik>...” aby zaznaczyć rozwiązanie)"
 
 #: wt-status.c:186 wt-status.c:190
 msgid "  (use \"git add/rm <file>...\" as appropriate to mark resolution)"
-msgstr ""
+msgstr "  (użyj odpowiednio „git add/rm <plik>...” aby zaznaczyć rozwiązanie)"
 
 #: wt-status.c:184
 msgid "  (use \"git add <file>...\" to mark resolution)"
-msgstr ""
+msgstr "  (użyj „git add <plik>...” aby zaznaczyć rozwiązanie)"
 
 #: wt-status.c:180 wt-status.c:207
 msgid "  (use \"git rm --cached <file>...\" to unstage)"
-msgstr ""
+msgstr "  (użyj „git rm --cached <plik>...”, aby wycofać)"
 
 #: wt-status.c:178 wt-status.c:205
 msgid "  (use \"git reset %s <file>...\" to unstage)"
-msgstr ""
+msgstr "  (użyj „git reset %s <plik>...”, aby wycofać)"
 
 #: wt-status.c:151
 msgid "Unmerged paths:"
@@ -11501,44 +11510,46 @@ msgstr "nie udało się uzyskać obecnego katalogu roboczego"
 
 #: wt-status.c:221
 msgid "  (use \"git add <file>...\" to update what will be committed)"
-msgstr ""
+msgstr "  (użyj „git add <plik>...”, żeby zmienić, co zostanie złożone)"
 
 #: wt-status.c:226
 msgid "  (commit or discard the untracked or modified content in submodules)"
 msgstr ""
+"  (złóż lub odrzuć nieśledzoną lub zmodyfikowaną zawartość pod-modułów)"
 
 #: wt-status.c:224
 msgid ""
 "  (use \"git checkout -- <file>...\" to discard changes in working directory)"
 msgstr ""
+"  (użyj „git checkout -- <plik>...”, aby odrzucić zmiany w katalogu roboczym)"
 
 #: wt-status.c:223
 msgid "  (use \"git add/rm <file>...\" to update what will be committed)"
-msgstr ""
+msgstr "  (użyj „git add/rm <plik>...”, żeby zmienić, co zostanie złożone)"
 
 #: wt-status.c:238
 msgid "  (use \"git %s <file>...\" to include in what will be committed)"
-msgstr ""
+msgstr "  (użyj „git %s <plik>...”, żeby uwzględnić, co zostanie złożone)"
 
 #: wt-status.c:253
 msgid "both deleted:"
-msgstr ""
+msgstr "oba usunięte:"
 
 #: wt-status.c:255
 msgid "added by us:"
-msgstr ""
+msgstr "dodane przez nas:"
 
 #: wt-status.c:257
 msgid "deleted by them:"
-msgstr ""
+msgstr "usunięte przez nich:"
 
 #: wt-status.c:261
 msgid "deleted by us:"
-msgstr ""
+msgstr "usunięte przez nas:"
 
 #: wt-status.c:259
 msgid "added by them:"
-msgstr ""
+msgstr "dodane przez nich:"
 
 #: wt-status.c:818
 msgid "Submodules changed but not updated:"
@@ -11546,15 +11557,15 @@ msgstr ""
 
 #: wt-status.c:375
 msgid "untracked content, "
-msgstr ""
+msgstr "nieśledzona zawartość, "
 
 #: wt-status.c:373
 msgid "modified content, "
-msgstr ""
+msgstr "zmieniona zawartość, "
 
 #: wt-status.c:371
 msgid "new commits, "
-msgstr ""
+msgstr "nowe zapisy, "
 
 #: wt-status.c:289
 msgid "unmerged:"
@@ -11566,7 +11577,7 @@ msgstr "nieznane:"
 
 #: wt-status.c:285
 msgid "typechange:"
-msgstr ""
+msgstr "zmiana typu:"
 
 #: wt-status.c:283
 msgid "renamed:"
@@ -11590,21 +11601,23 @@ msgstr "nowy plik:"
 
 #: wt-status.c:265
 msgid "both modified:"
-msgstr ""
+msgstr "oba zmienione:"
 
 #: wt-status.c:263
 msgid "both added:"
-msgstr ""
+msgstr "oba dodane:"
 
 #: wt-status.c:901
 msgid ""
 "Do not touch the line above.\n"
 "Everything below will be removed."
 msgstr ""
+"Nie dotykaj wiersza powyżej.\n"
+"Wszystko poniżej będzie usunięte."
 
 #: wt-status.c:820
 msgid "Submodule changes to be committed:"
-msgstr ""
+msgstr "Zmiany w pod-modułach do złożenia:"
 
 #: wt-status.c:1013
 msgid "You have unmerged paths."
@@ -11612,69 +11625,71 @@ msgstr "Masz niescalone ścieżki."
 
 #: wt-status.c:1018
 msgid "  (use \"git merge --abort\" to abort the merge)"
-msgstr ""
+msgstr "  (użyj „git merge --abort”, aby przerwać scalanie)"
 
 #: wt-status.c:1016
 msgid "  (fix conflicts and run \"git commit\")"
-msgstr ""
+msgstr "  (napraw konflikty i wykonaj „git commit”)"
 
 #: wt-status.c:1023
 msgid "All conflicts fixed but you are still merging."
-msgstr ""
+msgstr "Wszystkie konflikty naprawione, ale wciąż trwa scalanie."
 
 #: wt-status.c:1026
 msgid "  (use \"git commit\" to conclude merge)"
-msgstr ""
+msgstr "  (użyj „git commit”, żeby zwieńczyć scalanie)"
 
 #: advice.c:55
 msgid "hint: %.*s\n"
-msgstr ""
+msgstr "podpowiedź: %.*s\n"
 
 #: advice.c:83
 msgid "Cherry-picking is not possible because you have unmerged files."
-msgstr ""
+msgstr "Dobieranie nie jest możliwe, ponieważ istnieją niescalone pliki."
 
 #: advice.c:85
 msgid "Committing is not possible because you have unmerged files."
-msgstr ""
+msgstr "Składanie nie jest możliwe, ponieważ istnieją niescalone pliki."
 
 #: advice.c:87
 msgid "Merging is not possible because you have unmerged files."
-msgstr ""
+msgstr "Scalanie jest możliwe, ponieważ istnieją niescalone pliki."
 
 #: advice.c:89
 msgid "Pulling is not possible because you have unmerged files."
-msgstr ""
+msgstr "Zaciąganie jest możliwe, ponieważ istnieją niescalone pliki."
 
 #: advice.c:91
 msgid "Reverting is not possible because you have unmerged files."
-msgstr ""
+msgstr "Odwracanie jest możliwe, ponieważ istnieją niescalone pliki."
 
 #: advice.c:93
 msgid "It is not possible to %s because you have unmerged files."
-msgstr ""
+msgstr "Nie można wykonać %s, ponieważ istnieją niescalone pliki."
 
 #: advice.c:101
 msgid ""
 "Fix them up in the work tree, and then use 'git add/rm <file>'\n"
 "as appropriate to mark resolution and make a commit."
 msgstr ""
+"Napraw je w drzewie roboczym, i użyj odpowiednio „git add/rm <plik>”,\n"
+"aby oznaczyć rozwiązanie i złożyć zapis."
 
 #: advice.c:109
 msgid "Exiting because of an unresolved conflict."
-msgstr ""
+msgstr "Wyjście z powodu nierozwiązanego konfliktu."
 
 #: advice.c:114 builtin/merge.c:1181
 msgid "You have not concluded your merge (MERGE_HEAD exists)."
-msgstr ""
+msgstr "Nie zwieńczono scalania (MERGE_HEAD istnieje)."
 
 #: advice.c:116
 msgid "Please, commit your changes before merging."
-msgstr ""
+msgstr "Złóż swoje zmiany przez scalaniem."
 
 #: advice.c:117
 msgid "Exiting because of unfinished merge."
-msgstr ""
+msgstr "Wyjście z powodu niedokończonego scalania."
 
 #: advice.c:123
 msgid ""
@@ -11690,46 +11705,60 @@ msgid ""
 "  git checkout -b <new-branch-name>\n"
 "\n"
 msgstr ""
+"Uwaga: wybieranie „%s”.\n"
+"\n"
+"Jesteś w stanie „odłączonego HEAD”. Możesz się rozglądać, tworzyć\n"
+"eksperymentalne zmiany i je składać, i możesz odrzucić wszystkie zapisy,"
+" których\n"
+"dokonasz w tym stanie, bez wpływu na żadną gałąź, wybierając inne drzewo.\n"
+"\n"
+"Jeśli chcesz utworzyć nową gałąź, która zachowa zapisy, które złożysz,"
+" możesz\n"
+"to zrobić (teraz lub później) używając -b w ponownym poleceniu wybrania."
+" Przykład:\n"
+"\n"
+"  git checkout -b <nazwa-nowej-gałęzi>\n"
+"\n"
 
 #: apply.c:57
 msgid "unrecognized whitespace option '%s'"
-msgstr ""
+msgstr "Nierozpoznana opcja z białych znaków: „%s”"
 
 #: apply.c:73
 msgid "unrecognized whitespace ignore option '%s'"
-msgstr ""
+msgstr "nierozpoznana opcja ignorowania z białych znaków: „%s”"
 
 #: apply.c:125
 msgid "--reject and --3way cannot be used together."
-msgstr ""
+msgstr "--reject i --3way wykluczają się."
 
 #: apply.c:127
 msgid "--cached and --3way cannot be used together."
-msgstr ""
+msgstr "--cached i --3way wykluczają się."
 
 #: apply.c:130
 msgid "--3way outside a repository"
-msgstr ""
+msgstr "--3way poza repozytorium"
 
 #: apply.c:141
 msgid "--index outside a repository"
-msgstr ""
+msgstr "--index poza repozytorium"
 
 #: apply.c:144
 msgid "--cached outside a repository"
-msgstr ""
+msgstr "--cached poza repozytorium"
 
 #: apply.c:845
 msgid "Cannot prepare timestamp regexp %s"
-msgstr ""
+msgstr "Nie można przygotować wyrażenia regularnego znacznika czasu %s"
 
 #: apply.c:854
 msgid "regexec returned %d for input: %s"
-msgstr ""
+msgstr "regexec zwrócił %d dla wejścia: %s"
 
 #: apply.c:938
 msgid "unable to find filename in patch at line %d"
-msgstr ""
+msgstr "nie znaleziono nazwy pliku w łatce w wierszu %d"
 
 #: apply.c:977
 msgid "git apply: bad git-diff - expected /dev/null, got %s on line %d"
@@ -12055,7 +12084,7 @@ msgstr ""
 
 #: apply.c:4668
 msgid "Skipped patch '%s'."
-msgstr "Pominięto ścieżkę '%s'."
+msgstr "Pominięto łatkę „%s”."
 
 #: apply.c:4676
 msgid "unrecognized input"
@@ -12202,7 +12231,7 @@ msgstr ""
 #: builtin/commit.c:1339 builtin/count-objects.c:94 builtin/fsck.c:593
 #: builtin/log.c:1860 builtin/mv.c:110 builtin/read-tree.c:114
 msgid "be verbose"
-msgstr ""
+msgstr "więcej komunikatów"
 
 #: apply.c:4976
 msgid "tolerate incorrectly detected missing new-line at the end of file"
@@ -12243,15 +12272,15 @@ msgstr ""
 
 #: archive.c:429
 msgid "fmt"
-msgstr ""
+msgstr "fmt"
 
 #: archive.c:429
 msgid "archive format"
-msgstr ""
+msgstr "format archiwum"
 
 #: archive.c:430 builtin/log.c:1429
 msgid "prefix"
-msgstr ""
+msgstr "prefiks"
 
 #: archive.c:431
 msgid "prepend prefix to each pathname in the archive"
@@ -12263,7 +12292,7 @@ msgstr ""
 #: builtin/notes.c:401 builtin/notes.c:564 builtin/read-tree.c:109
 #: parse-options.h:153
 msgid "file"
-msgstr ""
+msgstr "plik"
 
 #: archive.c:433 builtin/archive.c:89
 msgid "write the archive to this file"
@@ -12296,7 +12325,7 @@ msgstr ""
 #: archive.c:451 builtin/archive.c:90 builtin/clone.c:85 builtin/clone.c:88
 #: builtin/submodule--helper.c:601 builtin/submodule--helper.c:953
 msgid "repo"
-msgstr ""
+msgstr "repozytorium"
 
 #: archive.c:452 builtin/archive.c:91
 msgid "retrieve the archive from remote repository <repo>"
@@ -12601,7 +12630,7 @@ msgstr ""
 
 #: bundle.c:463
 msgid "cannot create '%s'"
-msgstr ""
+msgstr "nie można utworzyć "
 
 #: bundle.c:491
 msgid "index-pack died"
@@ -12629,7 +12658,7 @@ msgstr ""
 
 #: compat/obstack.c:406 compat/obstack.c:408
 msgid "memory exhausted"
-msgstr ""
+msgstr "pamięć wyczerpana"
 
 #: config.c:516
 msgid "bad config line %d in blob %s"
@@ -12657,11 +12686,11 @@ msgstr ""
 
 #: config.c:655
 msgid "out of range"
-msgstr ""
+msgstr "poza zakresem"
 
 #: config.c:655
 msgid "invalid unit"
-msgstr ""
+msgstr "nieprawidłowa jednostka"
 
 #: config.c:661
 msgid "bad numeric config value '%s' for '%s': %s"
@@ -12764,6 +12793,8 @@ msgid ""
 "CRLF will be replaced by LF in %s.\n"
 "The file will have its original line endings in your working directory."
 msgstr ""
+"CRLF zostaną zastąpione LFami %s.\n"
+"Plik zachowa swoje pierwotne końce wiersza w katalogu roboczym."
 
 #: convert.c:205
 msgid "CRLF would be replaced by LF in %s."
