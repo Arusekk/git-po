@@ -51,7 +51,7 @@
 # Arusekk <arek_koz@o2.pl>, 2020.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-03 00:48+0100\n"
+"PO-Revision-Date: 2020-12-03 15:09+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -193,7 +193,7 @@ msgstr ""
 
 #: git-rebase--interactive.sh:1100
 msgid "Error trying to find the author identity to amend commit"
-msgstr ""
+msgstr "Błąd podczas próby znalezienia tożsamości autora w poprawionym zapisie"
 
 #: git-rebase--interactive.sh:1083
 msgid ""
@@ -211,29 +211,41 @@ msgid ""
 "\n"
 "  git rebase --continue\n"
 msgstr ""
+"W drzewie roboczym są przygotowane zmiany.\n"
+"Jeśli mają być one spłaszczone\n"
+"z poprzednim zapisem, wykonaj:\n"
+"\n"
+"  git commit --amend $gpg_sign_opt_quoted\n"
+"\n"
+"Jeśli mają się znaleźć w nowym zapisie, wykonaj:\n"
+"  git commit $gpg_sign_opt_quoted\n"
+"\n"
+"W obu przypadkach po zakończeniu, kontynuuj przez:\n"
+"\n"
+"  git rebase --continue\n"
 
 #: git-rebase--interactive.sh:1078
 msgid "Could not remove CHERRY_PICK_HEAD"
-msgstr ""
+msgstr "Nie można usunąć CHERRY_PICK_HEAD"
 
 #: git-rebase--interactive.sh:1054
 msgid "Or you can abort the rebase with 'git rebase --abort'."
-msgstr ""
+msgstr "Możesz też przerwać przestawianie przez „git rebase --abort”."
 
 #: git-rebase--interactive.sh:1053
 msgid ""
 "You can fix this with 'git rebase --edit-todo' and then run 'git rebase"
 " --continue'."
 msgstr ""
-"Możesz to naprawić używając 'git rebase --edit-todo' i uruchamiając później"
-" 'git rebase --continue'."
+"Możesz to naprawić używając „git rebase --edit-todo” i uruchamiając później"
+" „git rebase --continue”."
 
 #: git-rebase--interactive.sh:1036
 msgid ""
 "Unrecognized setting $check_level for option rebase.missingCommitsCheck."
 " Ignoring."
 msgstr ""
-"Nieznane ustawienie $check_level dla opcji rebase.missingCommitsCheck."
+"Nieznane ustawienie $check_level opcji rebase.missingCommitsCheck."
 " Ignorowanie."
 
 #: git-rebase--interactive.sh:1025
@@ -243,16 +255,22 @@ msgid ""
 "Use 'git config rebase.missingCommitsCheck' to change the level of warnings.\n"
 "The possible behaviours are: ignore, warn, error."
 msgstr ""
+"Aby uniknąć tego komunikatu, użyj „drop”, aby wyraźnie jawnie usunąć zapis.\n"
+"\n"
+"Użyj „git config rebase.missingCommitsCheck”, aby zmienić poziom ostrzeżeń.\n"
+"Możliwe zachowania to: ignore, warn, error."
 
 #: git-rebase--interactive.sh:1017
 msgid ""
 "Warning: some commits may have been dropped accidentally.\n"
 "Dropped commits (newer to older):"
 msgstr ""
+"Ostrzeżenie: niektóre zapisy mogły zostać omyłkowo porzucone.\n"
+"Porzucone zapisy (od najnowszych do najstarszych):"
 
 #: git-rebase--interactive.sh:979
 msgid "could not detach HEAD"
-msgstr ""
+msgstr "nie udało się odłączyć HEAD"
 
 #: git-rebase--interactive.sh:940
 msgid ""
@@ -267,22 +285,24 @@ msgid ""
 "Warning: the SHA-1 is missing or isn't a commit in the following line:\n"
 " - $line"
 msgstr ""
+"Ostrzeżenie: brak skrótu SHA-1 lub nie jest zapisem w następującym wierszu:\n"
+" - $line"
 
 #: git-rebase--interactive.sh:749
 msgid "Could not skip unnecessary pick commands"
-msgstr ""
+msgstr "Nie można pominąć niepotrzebnych poleceń pick"
 
 #: git-rebase--interactive.sh:702
 msgid "Successfully rebased and updated $head_name."
-msgstr ""
+msgstr "Pomyślnie przestawiono i zaktualizowano $head_name."
 
 #: git-rebase--interactive.sh:667
 msgid "Please fix this using 'git rebase --edit-todo'."
-msgstr "Napraw to używając 'git rebase --edit-todo'."
+msgstr "Napraw to używając „git rebase --edit-todo”."
 
 #: git-rebase--interactive.sh:666
 msgid "Unknown command: $command $sha1 $rest"
-msgstr "Nieznana komenda: $command $sha1 $rest"
+msgstr "Nieznane polecenie: $command $sha1 $rest"
 
 #. TRANSLATORS: after these lines is a command to be issued by the user
 #: git-rebase--interactive.sh:655
@@ -293,6 +313,11 @@ msgid ""
 "\n"
 "\tgit rebase --continue"
 msgstr ""
+"Wykonanie powiodło się: $rest\n"
+"ale pozostały zmiany w indeksie i/lub drzewie roboczym.\n"
+"Złóż lub przechowaj zmiany, i wtedy wykonaj:\n"
+"\n"
+"\tgit rebase --continue"
 
 #: git-rebase--interactive.sh:642
 msgid ""
@@ -306,7 +331,7 @@ msgstr ""
 
 #: git-rebase--interactive.sh:640
 msgid "and made changes to the index and/or the working tree"
-msgstr ""
+msgstr "i pozostały zmiany w indeksie i/lub drzewie roboczym"
 
 #: git-rebase--interactive.sh:638
 msgid "Execution failed: $rest"
@@ -318,7 +343,7 @@ msgstr "Wykonywanie: $rest"
 
 #: git-rebase--interactive.sh:588
 msgid "Cannot '$squash_style' without a previous commit"
-msgstr ""
+msgstr "Nie można użyć „$squash_style” bez poprzedniego zapisu"
 
 #: git-rebase--interactive.sh:573
 msgid "Stopped at $sha1_abbrev... $rest"
@@ -332,6 +357,12 @@ msgid ""
 " before\n"
 "you are able to reword the commit."
 msgstr ""
+"Nie udało się poprawić zapisu po pomyślnym dobraniu $sha1... $rest\n"
+"Jest to najpewniej spowodowane pustym komunikatem zapisu, albo"
+" niepowodzeniem\n"
+"skryptu pre-commit. Jeśli to on zawiódł, być może trzeba naprawić ten problem"
+" zanim\n"
+"uda się przeredagować zapis."
 
 #: git-rebase--interactive.sh:484 git-rebase--interactive.sh:527
 #: git-rebase--interactive.sh:530
@@ -340,11 +371,11 @@ msgstr "Nie można zastosować $sha1... $rest"
 
 #: git-rebase--interactive.sh:444
 msgid "This is the 1st commit message:"
-msgstr "To jest pierwszą wiadomość rozwiązania:"
+msgstr "To jest komunikat pierwszego zapisu:"
 
 #: git-rebase--interactive.sh:443
 msgid "This is a combination of 2 commits."
-msgstr "To jest połączenie dwóch rozwiązań"
+msgstr "To jest połączenie dwóch zapisów."
 
 #: git-rebase--interactive.sh:440
 msgid "Cannot write $fixup_msg"
@@ -353,53 +384,53 @@ msgstr "Nie można zapisać $fixup_msg"
 #: git-rebase--interactive.sh:432
 msgid "This is a combination of $count commit."
 msgid_plural "This is a combination of $count commits."
-msgstr[0] "To jest połączenie $count rozwiązania."
-msgstr[1] "To jest połączenie $count rozwiązań."
-msgstr[2] "To jest połączenie $count rozwiązań."
+msgstr[0] "To jest połączenie $count zapisu."
+msgstr[1] "To jest połączenie $count zapisów."
+msgstr[2] "To jest połączenie $count zapisów."
 
 #: git-rebase--interactive.sh:421
 msgid "The commit message #${n} will be skipped:"
-msgstr ""
+msgstr "Komunikat zapisu nr ${n} zostanie pominięty:"
 
 #: git-rebase--interactive.sh:416
 msgid "This is the commit message #${n}:"
-msgstr ""
+msgstr "To jest komunikat zapisu nr ${n}:"
 
 #: git-rebase--interactive.sh:407
 msgid "Could not pick $sha1"
-msgstr ""
+msgstr "Nie można dobrać $sha1"
 
 #: git-rebase--interactive.sh:399
 msgid "Error redoing merge $sha1"
-msgstr ""
+msgstr "Błąd ponowienia scalenia $sha1"
 
 #: git-rebase--interactive.sh:385
 msgid "Refusing to squash a merge: $sha1"
-msgstr ""
+msgstr "Odmawiam spłaszczenia scalenia: $sha1"
 
 #: git-rebase--interactive.sh:380
 msgid "Cannot move HEAD to $first_parent"
-msgstr ""
+msgstr "Nie można przesunąć HEAD na $first_parent"
 
 #: git-rebase--interactive.sh:371
 msgid "Cannot fast-forward to $sha1"
-msgstr "Nie można użyć szybkiego przekierowania do $sha1"
+msgstr "Nie można przewinąć do $sha1"
 
 #: git-rebase--interactive.sh:369
 msgid "Fast-forward to $sha1"
-msgstr "Szybkie przekierowanie do $sha1"
+msgstr "Przewinięcie do $sha1"
 
 #: git-rebase--interactive.sh:317
 msgid "Cannot write current commit's replacement sha1"
-msgstr ""
+msgstr "Nie można wpisać zamiennego sha1 bieżącego zapisu"
 
 #: git-rebase--interactive.sh:275
 msgid "Invalid commit name: $sha1"
-msgstr "Nieprawidłowa nazwa rozwiązania: $sha1"
+msgstr "Nieprawidłowa nazwa zapisu: $sha1"
 
 #: git-rebase--interactive.sh:236
 msgid "$sha1: not a commit that can be picked"
-msgstr "$sha1: brak rozwiązania które możesz wybrać"
+msgstr "$sha1: nie jest to zapis, który można dobrać"
 
 #: git-rebase--interactive.sh:211
 msgid ""
@@ -411,18 +442,29 @@ msgid ""
 "\n"
 "\tgit rebase --continue"
 msgstr ""
+"Możesz teraz poprawić zapis przez\n"
+"\n"
+"\tgit commit --amend $gpg_sign_opt_quoted\n"
+"\n"
+"Kiedy zadowolisz się swoimi zmianami, wykonaj\n"
+"\n"
+"\tgit rebase --continue"
 
 #: git-rebase--interactive.sh:175
 msgid ""
 "\n"
 "If you remove a line here THAT COMMIT WILL BE LOST.\n"
 msgstr ""
+"\n"
+"Jeśli usuniesz tutaj wiersz, TEN ZAPIS BĘDZIE STRACONY.\n"
 
 #: git-rebase--interactive.sh:171
 msgid ""
 "\n"
 "Do not remove any line. Use 'drop' explicitly to remove a commit.\n"
 msgstr ""
+"\n"
+"Nie usuwaj żadnego wiersza. Użyj jawnie „drop”, żeby usunąć wpis.\n"
 
 #: git-rebase--interactive.sh:156
 msgid ""
@@ -438,10 +480,21 @@ msgid ""
 "\n"
 "These lines can be re-ordered; they are executed from top to bottom.\n"
 msgstr ""
+"\n"
+"Polecenia:\n"
+" p, pick = dobierz zapis\n"
+" r, reword = użyj zapisu, ale przeredaguj jego komunikat\n"
+" e, edit = użyj zapisu, ale zatrzymaj się, żeby móc go poprawić\n"
+" s, squash = użyj zapisu, ale połącz go z poprzednim (spłaszcz)\n"
+" f, fixup = jak „squash”, ale odrzuć komunikat tego zapisu\n"
+" x, exec = wykonaj polecenie (resztę wiersza) w powłoce\n"
+" d, drop = usuń zapis\n"
+"\n"
+"Kolejność wierszy może być zmieniona; są wykonywane z góry na dół.\n"
 
 #: git-rebase--interactive.sh:140
 msgid "Rebasing ($new_count/$total)"
-msgstr ""
+msgstr "Przestawianie ($new_count/$total)"
 
 #: git-parse-remote.sh:89
 msgid "See git-${cmd}(1) for details."
@@ -449,23 +502,24 @@ msgstr "Zobacz git-${cmd}(1) aby uzyskać szczegółowe informacje."
 
 #: git-submodule.sh:1112
 msgid "Synchronizing submodule url for '$displaypath'"
-msgstr ""
+msgstr "Synchronizowanie adresu URL podmodułu w „$displaypath”"
 
 #: git-submodule.sh:1045
 msgid "Failed to recurse into submodule path '$sm_path'"
-msgstr ""
+msgstr "Nie można zejść do ścieżki podmodułu „$sm_path”"
 
 #: git-submodule.sh:898
 msgid "  Warn: $display_name doesn't contain commits $sha1_src and $sha1_dst"
 msgstr ""
+"  Ostrzeżenie: $display_name nie zawiera zapisów $sha1_src ani $sha1_dst"
 
 #: git-submodule.sh:895
 msgid "  Warn: $display_name doesn't contain commit $sha1_dst"
-msgstr ""
+msgstr "  Ostrzeżenie: $display_name nie zawiera zapisu $sha1_dst"
 
 #: git-submodule.sh:892
 msgid "  Warn: $display_name doesn't contain commit $sha1_src"
-msgstr ""
+msgstr "  Ostrzeżenie: $display_name nie zawiera zapisu $sha1_src"
 
 #: git-submodule.sh:872
 msgid "unexpected mode $mod_dst"
@@ -473,79 +527,84 @@ msgstr "nieoczekiwany tryb $mod_dst"
 
 #: git-submodule.sh:820
 msgid "The --cached option cannot be used with the --files option"
-msgstr "Opcja --cached nie może być używana jednocześnie z opcją --files"
+msgstr "Opcja --cached nie może być użyta z opcją --files"
 
 #: git-submodule.sh:712
 msgid "Failed to recurse into submodule path '$displaypath'"
-msgstr ""
+msgstr "Nie można zejść do ścieżki podmodułu „$displaypath”"
 
 #: git-submodule.sh:681
 msgid "Submodule path '$displaypath': '$command $sha1'"
-msgstr ""
+msgstr "Ścieżka podmodułu „$displaypath”: „$command $sha1”"
 
 #: git-submodule.sh:680
 msgid "Execution of '$command $sha1' failed in submodule path '$displaypath'"
 msgstr ""
+"Wykonanie „$command $sha1” nie powiodło się w ścieżce podmodułu „$displaypath”"
 
 #: git-submodule.sh:675
 msgid "Submodule path '$displaypath': merged in '$sha1'"
-msgstr ""
+msgstr "Ścieżka podmodułu „$displaypath”: scalono w „$sha1”"
 
 #: git-submodule.sh:674
 msgid "Unable to merge '$sha1' in submodule path '$displaypath'"
-msgstr ""
+msgstr "Nie można scalić „$sha1” w ścieżce podmodułu „$displaypath”"
 
 #: git-submodule.sh:669
 msgid "Submodule path '$displaypath': rebased into '$sha1'"
-msgstr ""
+msgstr "Ścieżka podmodułu „$displaypath”: przestawiono na „$sha1”"
 
 #: git-submodule.sh:668
 msgid "Unable to rebase '$sha1' in submodule path '$displaypath'"
-msgstr ""
+msgstr "Nie można przestawić „$sha1” w ścieżce podmodułu „$displaypath”"
 
 #: git-submodule.sh:664
 msgid "Submodule path '$displaypath': checked out '$sha1'"
-msgstr ""
+msgstr "Ścieżka podmodułu „$displaypath”: wybrano „$sha1”"
 
 #: git-submodule.sh:663
 msgid "Unable to checkout '$sha1' in submodule path '$displaypath'"
-msgstr ""
+msgstr "Nie można wybrać „$sha1” w ścieżce podmodułu „$displaypath”"
 
 #: git-submodule.sh:656
 msgid ""
 "Fetched in submodule path '$displaypath', but it did not contain $sha1."
 " Direct fetching of that commit failed."
 msgstr ""
+"Pobrano w ścieżce podmodułu „$displaypath”, ale nie zawierał $sha1."
+" Bezpośrednie pobieranie tego zapisu nie powiodło się."
 
 #: git-submodule.sh:650
 msgid "Unable to fetch in submodule path '$displaypath'"
-msgstr ""
+msgstr "Nie można pobrać w ścieżce podmodułu „$displaypath”"
 
 #: git-submodule.sh:632
 msgid ""
 "Unable to find current ${remote_name}/${branch} revision in submodule path"
 " '$sm_path'"
 msgstr ""
+"Nie znaleziono aktualnej rewizji ${remote_name}/${branch} w ścieżce podmodułu"
+" „$sm_path”"
 
 #: git-submodule.sh:627
 msgid "Unable to fetch in submodule path '$sm_path'"
-msgstr ""
+msgstr "Nie można pobrać w ścieżce podmodułu „$sm_path”"
 
 #: git-submodule.sh:617
 msgid "Unable to find current revision in submodule path '$displaypath'"
-msgstr ""
+msgstr "Nie znaleziono aktualnej rewizji w ścieżce podmodułu „$displaypath”"
 
 #: git-submodule.sh:464
 msgid "Submodule '$name' ($url) unregistered for path '$displaypath'"
-msgstr ""
+msgstr "Podmoduł „$name” ($url) wyrejestrowany ze ścieżki „$displaypath”"
 
 #: git-submodule.sh:455
 msgid "Could not create empty submodule directory '$displaypath'"
-msgstr ""
+msgstr "Nie można utworzyć pustego katalogu podmodułu „$displaypath”"
 
 #: git-submodule.sh:452
 msgid "Could not remove submodule work tree '$displaypath'"
-msgstr ""
+msgstr "Nie można usunąć drzewa roboczego podmodułu „$displaypath”"
 
 #: git-submodule.sh:451
 msgid "Cleared directory '$displaypath'"
@@ -556,44 +615,49 @@ msgid ""
 "Submodule work tree '$displaypath' contains local modifications; use '-f' to"
 " discard them"
 msgstr ""
+"Drzewo robocze podmodułu „$displaypath” zawiera lokalne zmiany; użyj „-f”"
+" aby je odrzucić"
 
 #: git-submodule.sh:440
 msgid ""
 "Submodule work tree '$displaypath' contains a .git directory\n"
 "(use 'rm -rf' if you really want to remove it including all of its history)"
 msgstr ""
+"Drzewo robocze podmodułu „$displaypath” zawiera katalog .git\n"
+"(użyj „rm -rf” jeśli na pewno chcesz je usunąć wraz z całą jego historią)"
 
 #: git-submodule.sh:420
 msgid "Use '--all' if you really want to deinitialize all submodules"
 msgstr ""
+"Użyj „--all” jeśli na pewno chcesz odinicjalizować wszystkie podmoduły."
 
 #: git-submodule.sh:415
 msgid "pathspec and --all are incompatible"
-msgstr ""
+msgstr "ścieżka i --all się wykluczają"
 
 #: git-submodule.sh:344
 msgid "Stopping at '$displaypath'; script returned non-zero status."
-msgstr ""
+msgstr "Przerwano na „$displaypath”; skrypt zwrócił niezerowy kod."
 
 #: git-submodule.sh:324
 msgid "Entering '$displaypath'"
-msgstr "Otwieranie '$displaypath'"
+msgstr "Otwieranie „$displaypath”"
 
 #: git-submodule.sh:277
 msgid "Failed to register submodule '$sm_path'"
-msgstr ""
+msgstr "Nie można zarejestrować podmodułu „$sm_path”"
 
 #: git-submodule.sh:268
 msgid "Failed to add submodule '$sm_path'"
-msgstr ""
+msgstr "Nie można dodać podmodułu „$sm_path”"
 
 #: git-submodule.sh:263
 msgid "Unable to checkout submodule '$sm_path'"
-msgstr ""
+msgstr "Nie można wybrać podmodułu „$sm_path”"
 
 #: git-submodule.sh:251
 msgid "Reactivating local git directory for submodule '$sm_name'."
-msgstr ""
+msgstr "Reaktywacja lokalnego katalogu gita w podmodule „$sm_name”."
 
 #: git-submodule.sh:245
 msgid ""
@@ -603,18 +667,27 @@ msgid ""
 "or you are unsure what this means choose another name with the '--name'"
 " option."
 msgstr ""
+"Jeśli chcesz ponownie użyć tego lokalnego katalogu gita zamiast ponownie"
+" klonować z\n"
+"  $realrepo\n"
+"użyj opcji „--force”. Jeśli lokalny katalog gita nie leży w prawidłowym"
+" repozytorium\n"
+"lub nie jesteś pewien, co to znaczy, wybierz inną nazwę za pomocą opcji"
+" „--name”."
 
 #: git-submodule.sh:243
 msgid "A git directory for '$sm_name' is found locally with remote(s):"
 msgstr ""
+"Katalog gita podmodułu „$sm_name” znaleziono lokalnie na zdalnych"
+" repozytoriach:"
 
 #: git-submodule.sh:235
 msgid "'$sm_path' already exists and is not a valid git repo"
-msgstr "'$sm_path' już istnieje i nie jest prawidłowym repozytorium gita"
+msgstr "„$sm_path” już istnieje i nie jest prawidłowym repozytorium gita"
 
 #: git-submodule.sh:233
 msgid "Adding existing repo at '$sm_path' to the index"
-msgstr "Dodawanie istniejącego repozytorium z '$sm_path' do indeksu"
+msgstr "Dodawanie istniejącego repozytorium z „$sm_path” do indeksu"
 
 #: git-submodule.sh:215
 msgid ""
@@ -622,23 +695,27 @@ msgid ""
 "$sm_path\n"
 "Use -f if you really want to add it."
 msgstr ""
+"Poniższa ścieżka jest ignorowana przez jeden z plików .gitignore:\n"
+"$sm_path\n"
+"Użyj -f jeśli na pewno chcesz ją dodać."
 
 #: git-submodule.sh:211
 msgid "'$sm_path' already exists in the index"
-msgstr "'$sm_path' już widnieje w indeksie"
+msgstr "„$sm_path” już widnieje w indeksie"
 
 #: git-submodule.sh:194
 msgid "repo URL: '$repo' must be absolute or begin with ./|../"
 msgstr ""
-"repo URL: '$repo' musi być ścieżką absolutną lub zaczynać się od ./|../"
+"URL repozytorium: „$repo” musi być ścieżką bezwzględną lub zaczynać się od"
+" ./|../"
 
 #: git-submodule.sh:184
 msgid "Relative path can only be used from the toplevel of the working tree"
-msgstr ""
+msgstr "Ścieżka względna może być użyta tylko ze szczytu drzewa roboczego"
 
 #: git-stash.sh:652
 msgid "(To restore them type \"git stash apply\")"
-msgstr ""
+msgstr "(Aby je przywrócić, użyj „git stash apply”)"
 
 #: git-stash.sh:580
 msgid "No branch name specified"
@@ -646,39 +723,39 @@ msgstr "Nie określono nazwy gałęzi"
 
 #: git-stash.sh:572
 msgid "${REV}: Could not drop stash entry"
-msgstr ""
+msgstr "${REV}: Nie można porzucić wpisu ze skrytki"
 
 #: git-stash.sh:571
 msgid "Dropped ${REV} ($s)"
-msgstr ""
+msgstr "Porzucono ${REV} ($s)"
 
 #: git-stash.sh:562
 msgid "The stash is kept in case you need it again."
-msgstr ""
+msgstr "Wpis pozostaje w skrytce w razie, gdyby miał być znów potrzebny."
 
 #: git-stash.sh:548
 msgid "Index was not unstashed."
-msgstr ""
+msgstr "Indeks nie został wyjęty ze skrytki."
 
 #: git-stash.sh:533
 msgid "Cannot unstage modified files"
-msgstr ""
+msgstr "Nie można wycofać zmienionych plików"
 
 #: git-stash.sh:508
 msgid "Could not restore untracked files from stash"
-msgstr ""
+msgstr "Nie można przywrócić nieśledzonych plików ze skrytki"
 
 #: git-stash.sh:499
 msgid "Could not save index tree"
-msgstr ""
+msgstr "Nie można zapisać drzewa indeksu"
 
 #: git-stash.sh:497
 msgid "Conflicts in index. Try without --index."
-msgstr ""
+msgstr "Konflikty w indeksie. Spróbuj bez --index."
 
 #: git-stash.sh:489
 msgid "Cannot apply a stash in the middle of a merge"
-msgstr ""
+msgstr "Nie można zastosować zmian ze skrytki podczas scalania"
 
 #: git-stash.sh:485
 msgid "unable to refresh index"
@@ -686,23 +763,23 @@ msgstr "nie udało się odświeżyć indeksu"
 
 #: git-stash.sh:477
 msgid "'$args' is not a stash reference"
-msgstr ""
+msgstr "„$args” nie wskazuje na zmiany ze skrytki"
 
 #: git-stash.sh:466
 msgid "'$args' is not a stash-like commit"
-msgstr ""
+msgstr "„$args” nie jest zapisem ze zmianami ze skrytki"
 
 #: git-stash.sh:438
 msgid "$reference is not a valid reference"
-msgstr ""
+msgstr "$reference nie jest prawidłową referencją"
 
 #: git-stash.sh:423
 msgid "Too many revisions specified: $REV"
-msgstr ""
+msgstr "Podano za dużo rewizji: $REV"
 
 #: git-stash.sh:416
 msgid "No stash found."
-msgstr ""
+msgstr "Brak zmian w skrytce."
 
 #: git-stash.sh:403
 msgid "unknown option: $opt"
@@ -710,19 +787,19 @@ msgstr "nieznana opcja: $opt"
 
 #: git-stash.sh:285
 msgid "Cannot remove worktree changes"
-msgstr ""
+msgstr "Nie można usunąć zmian w drzewie roboczym"
 
 #: git-stash.sh:268
 msgid "Saved working directory and index state $stash_msg"
-msgstr ""
+msgstr "Zapisano katalog roboczy i stan indeksu $stash_msg"
 
 #: git-stash.sh:267
 msgid "Cannot save the current status"
-msgstr ""
+msgstr "Nie można zachować bieżącego stanu"
 
 #: git-stash.sh:263
 msgid "Cannot initialize stash"
-msgstr ""
+msgstr "Nie można zainicjować zmian w skrytce"
 
 #: git-stash.sh:259
 msgid "No local changes to save"
@@ -730,7 +807,7 @@ msgstr "Brak lokalnych zmian do zapisania"
 
 #: git-stash.sh:251
 msgid "Can't use --patch and --include-untracked or --all at the same time"
-msgstr "Nie można użyć --patch i --include-untracked lub --all jednocześnie"
+msgstr "Nie można jednocześnie użyć --patch i --include-untracked lub --all"
 
 #. TRANSLATORS: $option is an invalid option, like
 #. `--blah-blah'. The 7 spaces at the beginning of the
@@ -746,58 +823,60 @@ msgid ""
 "error: unknown option for 'stash save': $option\n"
 "       To provide a message, use git stash save -- '$option'"
 msgstr ""
+"błąd: nieznana opcja „stash save”: $option\n"
+"        Aby podać komunikat, użyj git stash save -- „$option”"
 
 #: git-stash.sh:188
 msgid "Cannot update $ref_stash with $w_commit"
-msgstr ""
+msgstr "Nie można zaktualizować $ref_stash o $w_commit"
 
 #: git-stash.sh:156
 msgid "Cannot record working tree state"
-msgstr ""
+msgstr "Nie można zapisać stanu drzewa roboczego"
 
 #: git-stash.sh:143
 msgid "Cannot remove temporary index (can't happen)"
-msgstr ""
+msgstr "Nie można usunąć tymczasowego indeksu (nie może się to zdarzyć)"
 
 #: git-stash.sh:140
 msgid "No changes selected"
-msgstr "Nie zaznaczono zmian"
+msgstr "Nie wybrano zmian"
 
 #: git-stash.sh:123 git-stash.sh:136
 msgid "Cannot save the current worktree state"
-msgstr ""
+msgstr "Nie można zapisać bieżącego stanu drzewa roboczego"
 
 #: git-stash.sh:103
 msgid "Cannot save the untracked files"
-msgstr ""
+msgstr "Nie można zapisać nieśledzonych plików"
 
 #: git-stash.sh:88
 msgid "Cannot save the current index state"
-msgstr ""
+msgstr "Nie można zapisać bieżącego stanu indeksu"
 
 #: git-stash.sh:73
 msgid "You do not have the initial commit yet"
-msgstr ""
+msgstr "Nie masz jeszcze początkowego zapisu"
 
 #: git-stash.sh:50
 msgid "git stash clear with parameters is unimplemented"
-msgstr ""
+msgstr "Nie zaimplementowano parametrów w git stash clear"
 
 #: git-rebase.sh:620
 msgid "Fast-forwarded $branch_name to $onto_name."
-msgstr ""
+msgstr "Przewinięto $branch_name do $onto_name."
 
 #: git-rebase.sh:610
 msgid "First, rewinding head to replay your work on top of it..."
-msgstr ""
+msgstr "Najpierw cofanie czoła gałęzi, aby odtworzyć na nim pracę..."
 
 #: git-rebase.sh:601
 msgid "Changes from $mb to $onto:"
-msgstr "Zmiany z $mb do $onto:"
+msgstr "Zmiany z $mb na $onto:"
 
 #: git-rebase.sh:590
 msgid "Current branch $branch_name is up to date, rebase forced."
-msgstr ""
+msgstr "Bieżąca gałąź $branch_name jest aktualna, wymuszono przestawianie."
 
 #: git-rebase.sh:586
 msgid "Current branch $branch_name is up to date."
@@ -805,35 +884,35 @@ msgstr "Obecna gałąź $branch_name jest aktualna."
 
 #: git-rebase.sh:566
 msgid "Please commit or stash them."
-msgstr ""
+msgstr "Złóż je lub zapisz w skrytce."
 
 #: git-rebase.sh:562
 msgid "Created autostash: $stash_abbrev"
-msgstr ""
+msgstr "Automatycznie zapisano w skrytce: $stash_abbrev"
 
 #: git-rebase.sh:557
 msgid "Cannot autostash"
-msgstr ""
+msgstr "Nie można automatycznie zapisać w skrytce"
 
 #: git-rebase.sh:524
 msgid "fatal: no such branch: $branch_name"
-msgstr ""
+msgstr "błąd krytyczny: brak gałęzi $branch_name"
 
 #: git-rebase.sh:501
 msgid "Does not point to a valid commit: $onto_name"
-msgstr ""
+msgstr "Nie wskazuje na prawidłowy zapis: $onto_name"
 
 #: git-rebase.sh:492 git-rebase.sh:496
 msgid "$onto_name: there is no merge base"
-msgstr ""
+msgstr "$onto_name: brak podstawy scalenia"
 
 #: git-rebase.sh:489
 msgid "$onto_name: there are more than one merge bases"
-msgstr ""
+msgstr "$onto_name: jest wiele podstaw scalenia"
 
 #: git-rebase.sh:465
 msgid "invalid upstream $upstream_name"
-msgstr ""
+msgstr "nieprawidłowe nadrzędne repozytorium $upstream_name"
 
 #: git-rebase.sh:414
 msgid ""
@@ -846,32 +925,43 @@ msgid ""
 "and run me again.  I am stopping in case you still have something\n"
 "valuable there."
 msgstr ""
+"Wygląda na to, że już jest katalog $state_dir_base,\n"
+"i zastanawiam się, czy nie jesteś w trakcie innego przestawienia.\n"
+"Jeśli tak jest, spróbuj\n"
+"\t$cmd_live_rebase\n"
+"A jeśli tak nie jest,\n"
+"\t$cmd_clear_stale_rebase\n"
+"i wykonaj mnie ponownie. Przerywam na wypadek, gdyby było tam\n"
+"coś cennego."
 
 #: git-rebase.sh:377
 msgid ""
 "You must edit all merge conflicts and then\n"
 "mark them as resolved using git add"
 msgstr ""
+"Musisz edytować wszystkie konflikty scalania\n"
+"i oznaczyć je jako rozwiązane przy pomocy git add"
 
 #: git-rebase.sh:374
 msgid "Cannot read HEAD"
-msgstr ""
+msgstr "Nie można odczytać HEAD"
 
 #: git-rebase.sh:367
 msgid "The --edit-todo action can only be used during interactive rebase."
 msgstr ""
+"Akcja --edit-todo może być użyta tylko podczas interaktywnego przestawiania."
 
 #: git-rebase.sh:356
 msgid "No rebase in progress?"
-msgstr ""
+msgstr "Nie trwa żadne przestawianie?"
 
 #: git-rebase.sh:215
 msgid "It looks like git-am is in progress. Cannot rebase."
-msgstr ""
+msgstr "Wygląda, że trwa git-am. Nie można przestawić."
 
 #: git-rebase.sh:210
 msgid "The pre-rebase hook refused to rebase."
-msgstr ""
+msgstr "Skrypt re-rebase odmówił przestawiania."
 
 #: git-rebase.sh:171
 msgid ""
@@ -879,18 +969,21 @@ msgid ""
 "Your changes are safe in the stash.\n"
 "You can run \"git stash pop\" or \"git stash drop\" at any time.\n"
 msgstr ""
+"Stosowanie zmian z automatycznej skrytki spowodowało konflikty.\n"
+"Twoje zmiany są bezpieczne w skrytce.\n"
+"Możesz w każdej chwili wykonać „git stash pop” lub „git stash drop”."
 
 #: git-rebase.sh:170
 msgid "Cannot store $stash_sha1"
-msgstr ""
+msgstr "Nie można zachować $stash_sha1"
 
 #: git-rebase.sh:167
 msgid "Applied autostash."
-msgstr ""
+msgstr "Zastosowano zmiany z automatycznej skrytki."
 
 #: git-rebase.sh:156 git-rebase.sh:395
 msgid "Could not move back to $head_name"
-msgstr ""
+msgstr "Nie można cofnąć do $head_name"
 
 #: git-rebase.sh:56
 msgid ""
@@ -899,119 +992,132 @@ msgid ""
 "To check out the original branch and stop rebasing, run \"git rebase"
 " --abort\"."
 msgstr ""
+"Kiedy rozwiążesz ten problem, wykonaj „git rebase --continue”.\n"
+"Jeśli wolisz pominąć tę łatkę/zapis, wykonaj zamiast tego „git rebase"
+" --skip”.\n"
+"Aby wybrać pierwotną gałąź i przerwać przestawianie, wykonaj „git rebase"
+" --abort”."
 
 #: git-merge-octopus.sh:102
 msgid "Simple merge did not work, trying automatic merge."
-msgstr ""
+msgstr "Proste scalenie nie zadziałało, próba automatycznego scalenia."
 
 #: git-merge-octopus.sh:97
 msgid "Trying simple merge with $pretty_name"
-msgstr ""
+msgstr "Próba prostego scalenia z $pretty_name"
 
 #: git-merge-octopus.sh:89
 msgid "Fast-forwarding to: $pretty_name"
-msgstr ""
+msgstr "Przewijanie do: $pretty_name"
 
 #: git-merge-octopus.sh:77
 msgid "Already up-to-date with $pretty_name"
-msgstr ""
+msgstr "Już aktualne z $pretty_name"
 
 #: git-merge-octopus.sh:73
 msgid "Unable to find common commit with $pretty_name"
-msgstr ""
+msgstr "Nie znaleziono wspólnego zapisu z $pretty_name"
 
 #: git-merge-octopus.sh:62
 msgid "Should not be doing an octopus."
-msgstr ""
+msgstr "Nie powinna się robić ośmiornica."
 
 #: git-merge-octopus.sh:61
 msgid "Automated merge did not work."
-msgstr ""
+msgstr "Automatyczne scalenie nie zadziałało."
 
 #: git-merge-octopus.sh:46
 msgid ""
 "Error: Your local changes to the following files would be overwritten by merge"
-msgstr ""
+msgstr "Błąd: Scalenie nadpisałoby lokalne zmiany w następujących plikach"
 
 #: git-bisect.sh:653
 msgid ""
 "invalid argument $arg for 'git bisect terms'.\n"
 "Supported options are: --term-good|--term-old and --term-bad|--term-new."
 msgstr ""
+"nieprawidłowy argument $arg do „git bisect terms”.\n"
+"Wspierane opcje to: --term-good | --term-old i --term-bad | --term-new."
 
 #: git-bisect.sh:636
 msgid "no terms defined"
-msgstr ""
+msgstr "nie zdefiniowano sformułowań"
 
 #: git-bisect.sh:606
 msgid "Invalid command: you're currently in a $TERM_BAD/$TERM_GOOD bisect."
-msgstr ""
+msgstr "Nieprawidłowe polecenie: przeszukujesz teraz $TERM_BAD/$TERM_GOOD."
 
 #: git-bisect.sh:587 git-bisect.sh:593
 msgid "can't change the meaning of term '$term'"
-msgstr ""
+msgstr "nie można zmienić znaczenia sformułowania „$term”"
 
 #: git-bisect.sh:578
 msgid "can't use the builtin command '$term' as a term"
-msgstr ""
+msgstr "nie można użyć wbudowanego polecenia „$term” jako sformułowania"
 
 #: git-bisect.sh:575
 msgid "'$term' is not a valid term"
-msgstr ""
+msgstr "„$term” nie jest prawidłowym sformułowaniem"
 
 #: git-bisect.sh:565
 msgid "please use two different terms"
-msgstr ""
+msgstr "użyj dwóch różnych sformułowań"
 
 #: git-bisect.sh:538
 msgid "bisect run success"
-msgstr ""
+msgstr "przeszukanie pomyślne"
 
 #: git-bisect.sh:531
 msgid ""
 "bisect run failed:\n"
 "'bisect_state $state' exited with error code $res"
 msgstr ""
+"przeszukanie nie powiodło się:\n"
+"„bisect_state $state” zakończyło się z kodem błędu $res"
 
 #: git-bisect.sh:525
 msgid "bisect run cannot continue any more"
-msgstr ""
+msgstr "przeszukanie nie może już kontynuować"
 
 #: git-bisect.sh:499
 msgid ""
 "bisect run failed:\n"
 "exit code $res from '$command' is < 0 or >= 128"
 msgstr ""
+"przeszukanie nie powiodło się:\n"
+"kod wyjścia $res z „$command” jest <0 lub >= 128"
 
 #: git-bisect.sh:492
 msgid "running $command"
-msgstr ""
+msgstr "wykonywanie $command"
 
 #: git-bisect.sh:480
 msgid "?? what are you talking about?"
-msgstr ""
+msgstr "?? o czym ty w ogóle mówisz?"
 
 #: git-bisect.sh:459
 msgid "cannot read $file for replaying"
-msgstr ""
+msgstr "nie można odczytać $file do odtwarzania"
 
 #: git-bisect.sh:458
 msgid "No logfile given"
-msgstr ""
+msgstr "Nie podano pliku dziennika"
 
 #: git-bisect.sh:430
 msgid ""
 "Could not check out original HEAD '$branch'.\n"
 "Try 'git bisect reset <commit>'."
 msgstr ""
+"Nie można wybrać oryginalnego HEAD „$branch”.\n"
+"Spróbuj „git bisect reset <zapis>”."
 
 #: git-bisect.sh:421
 msgid "'$invalid' is not a valid commit"
-msgstr ""
+msgstr "„$invalid” nie jest prawidłowym zapisem"
 
 #: git-bisect.sh:414 git-bisect.sh:546
 msgid "We are not bisecting."
-msgstr ""
+msgstr "Teraz nie przeszukujemy."
 
 #: git-bisect.sh:343
 msgid ""
@@ -1019,83 +1125,92 @@ msgid ""
 "You then need to give me at least one $good_syn and one $bad_syn revision.\n"
 "(You can use \"git bisect $bad_syn\" and \"git bisect $good_syn\" for that.)"
 msgstr ""
+"Należy zacząć przez „git bisect start”.\n"
+"Wtedy podaj przynajmniej jedną rewizję $good_syn i jedną $bad_syn.\n"
+"(Możesz użyć do tego „git bisect $bad_syn” i „git bisect $good_syn”.)"
 
 #: git-bisect.sh:340
 msgid ""
 "You need to give me at least one $bad_syn and one $good_syn revision.\n"
 "(You can use \"git bisect $bad_syn\" and \"git bisect $good_syn\" for that.)"
 msgstr ""
+"Wtedy podaj przynajmniej jedną rewizję $bad_syn i jedną $good_syn.\n"
+"(Możesz użyć do tego „git bisect $bad_syn” i „git bisect $good_syn”.)"
 
 #. TRANSLATORS: Make sure to include [Y] and [n] in your
 #. translation. The program will only accept English input
 #. at this point.
 #: git-bisect.sh:328
 msgid "Are you sure [Y/n]? "
-msgstr ""
+msgstr "Czy na pewno [T/n]? "
 
 #: git-bisect.sh:322
 msgid "Warning: bisecting only with a $TERM_BAD commit."
-msgstr ""
+msgstr "Uwaga: przeszukiwanie tylko z zapisem $TERM_BAD."
 
 #: git-bisect.sh:299
 msgid "'git bisect $TERM_BAD' can take only one argument."
-msgstr ""
+msgstr "„git bisect $TERM_BAD” przyjmuje tylko jeden argument."
 
 #: git-bisect.sh:290
 msgid "Bad rev input: $rev"
-msgstr ""
+msgstr "Błędne wejście rev: $rev"
 
 #: git-bisect.sh:281
 msgid "Bad rev input: $bisected_head"
-msgstr ""
+msgstr "Błędne wejście rev: $bisected_head"
 
 #: git-bisect.sh:262
 msgid "Bad rev input: $arg"
-msgstr ""
+msgstr "Błędne wejście rev: $arg"
 
 #: git-bisect.sh:233
 msgid "Bad bisect_write argument: $state"
-msgstr ""
+msgstr "Błędny argument bisect_write: $state"
 
 #: git-bisect.sh:181
 msgid "Bad HEAD - strange symbolic ref"
-msgstr ""
+msgstr "Złe wskazanie HEAD — dziwna referencja symboliczna"
 
 #: git-bisect.sh:177
 msgid "won't bisect on cg-seek'ed tree"
-msgstr ""
+msgstr "nie przeszukam na drzewie cg-seek'owanym"
 
 #: git-bisect.sh:167
 msgid ""
 "Checking out '$start_head' failed. Try 'git bisect reset <valid-branch>'."
 msgstr ""
+"Wybieranie „$start_head” nie powiodło się. Spróbuj „git bisect reset <"
+"prawidłowa-gałąź>”."
 
 #: git-bisect.sh:154
 msgid "Bad HEAD - I need a HEAD"
-msgstr ""
+msgstr "Zła zawartość HEAD — potrzebny HEAD"
 
 #: git-bisect.sh:125
 msgid "'$arg' does not appear to be a valid revision"
-msgstr ""
+msgstr "„$arg” nie wydaje się być prawidłową rewizją"
 
 #: git-bisect.sh:121
 msgid "unrecognised option: '$arg'"
-msgstr "nierozpoznana opcja: '$arg'"
+msgstr "nierozpoznana opcja: „$arg”"
 
 #. TRANSLATORS: Make sure to include [Y] and [n] in your
 #. translation. The program will only accept English input
 #. at this point.
 #: git-bisect.sh:60
 msgid "Do you want me to do it for you [Y/n]? "
-msgstr ""
+msgstr "Chcesz, żeby to teraz zrobić [T/n]? "
 
 #: git-bisect.sh:54
 msgid "You need to start by \"git bisect start\""
-msgstr "Musisz rozpocząć używając \"git bisect start\""
+msgstr "Musisz rozpocząć przez „git bisect start”"
 
 #: rerere.h:40
 msgid "update the index with reused conflict resolution if possible"
 msgstr ""
+"jeśli to możliwe, zaktualizuj indeks używając ponownie starych rozwiązań"
+" konfliktów"
 
 #: parse-options.h:246
 msgid "use <n> digits to display SHA-1s"
@@ -1103,27 +1218,27 @@ msgstr "użyj <n> znaków aby wyświetlić SHA-1"
 
 #: parse-options.h:240
 msgid "be more quiet"
-msgstr ""
+msgstr "bądź ciszej"
 
 #: parse-options.h:238
 msgid "be more verbose"
-msgstr ""
+msgstr "bądź bardziej gadatliwy"
 
 #: parse-options.h:160
 msgid "no-op (backward compatibility)"
-msgstr ""
+msgstr "nic nie robi (kompatybilność wsteczna)"
 
 #: parse-options.h:145
 msgid "expiry-date"
-msgstr ""
+msgstr "data wygaśnięcia"
 
 #: common-cmds.h:37
 msgid "Create, list, delete or verify a tag object signed with GPG"
-msgstr ""
+msgstr "Utwórz, wypisz, usuń lub zweryfikuj obiekt tagu podpisany GPG"
 
 #: common-cmds.h:36
 msgid "Show the working tree status"
-msgstr ""
+msgstr "Pokaż stan drzewa roboczego"
 
 #: common-cmds.h:35
 msgid "Show various types of objects"
@@ -1131,103 +1246,103 @@ msgstr "Pokazuj różne typy obiektów"
 
 #: common-cmds.h:34
 msgid "Remove files from the working tree and from the index"
-msgstr ""
+msgstr "Usuń pliki z drzewa roboczego i z indeksu"
 
 #: common-cmds.h:33
 msgid "Reset current HEAD to the specified state"
-msgstr ""
+msgstr "Zresetuj bieżący HEAD do podanego stanu"
 
 #: common-cmds.h:32
 msgid "Reapply commits on top of another base tip"
-msgstr ""
+msgstr "Ponownie zastosuj zapisy na czubku innej gałęzi"
 
 #: common-cmds.h:31
 msgid "Update remote refs along with associated objects"
-msgstr ""
+msgstr "Zaktualizuj zdalne referencje razem z przypisanymi obiektami"
 
 #: common-cmds.h:30
 msgid "Fetch from and integrate with another repository or a local branch"
-msgstr ""
+msgstr "Pobierz i zintegruj zmiany z innego repozytorium lub lokalnej gałęzi"
 
 #: common-cmds.h:29
 msgid "Move or rename a file, a directory, or a symlink"
-msgstr ""
+msgstr "Przenieś plik, katalog lub dowiązanie albo zmień jego nazwę"
 
 #: common-cmds.h:28
 msgid "Join two or more development histories together"
-msgstr ""
+msgstr "Połącz ze sobą dwie lub więcej historii rozwoju"
 
 #: common-cmds.h:27
 msgid "Show commit logs"
-msgstr ""
+msgstr "Pokaż dziennik zapisów"
 
 #: common-cmds.h:26
 msgid "Create an empty Git repository or reinitialize an existing one"
-msgstr ""
+msgstr "Utwórz puste repozytorium Gita lub przeinicjuj istniejące"
 
 #: common-cmds.h:25
 msgid "Print lines matching a pattern"
-msgstr ""
+msgstr "Wypisz wiersze pasujące do wzorca"
 
 #: common-cmds.h:24
 msgid "Download objects and refs from another repository"
-msgstr ""
+msgstr "Pobierz obiekty i referencje z innego repozytorium"
 
 #: common-cmds.h:23
 msgid "Show changes between commits, commit and working tree, etc"
-msgstr ""
+msgstr "Pokaż zmiany pomiędzy zapisami, zapisem i drzewem roboczym itp."
 
 #: common-cmds.h:22
 msgid "Record changes to the repository"
-msgstr ""
+msgstr "Zapisz zmiany w repozytorium"
 
 #: common-cmds.h:21
 msgid "Clone a repository into a new directory"
-msgstr ""
+msgstr "Sklonuj repozytorium do nowego katalogu"
 
 #: common-cmds.h:20
 msgid "Switch branches or restore working tree files"
-msgstr ""
+msgstr "Przełącz gałąź lub przywróć pliki drzewa roboczego"
 
 #: common-cmds.h:19
 msgid "List, create, or delete branches"
-msgstr ""
+msgstr "Wypisz, utwórz lub usuń gałęzie"
 
 #: common-cmds.h:18
 msgid "Use binary search to find the commit that introduced a bug"
-msgstr ""
+msgstr "Użyj wyszukiwania binarnego, aby znaleźć zapis, który wprowadził błędy"
 
 #: common-cmds.h:17
 msgid "Add file contents to the index"
-msgstr ""
+msgstr "Dodaj zawartość pliku do indeksu"
 
 #: common-cmds.h:13
 msgid "collaborate (see also: git help workflows)"
-msgstr ""
+msgstr "współpracuj (zobacz też: git help workflows)"
 
 #: common-cmds.h:12
 msgid "grow, mark and tweak your common history"
-msgstr ""
+msgstr "poszerzaj, oznaczaj i dostosowuj wspólną historię"
 
 #: common-cmds.h:11
 msgid "examine the history and state (see also: git help revisions)"
-msgstr ""
+msgstr "badaj historię i stan (zobacz też: git help revisions)"
 
 #: common-cmds.h:10
 msgid "work on the current change (see also: git help everyday)"
-msgstr ""
+msgstr "pracuj nad bieżącą zmianą (zobacz też: git help everyday)"
 
 #: common-cmds.h:9
 msgid "start a working area (see also: git help tutorial)"
-msgstr ""
+msgstr "przyszykuj obszar do pracy (zobacz też: git help tutorial)"
 
 #: http.c:351
 msgid "Public key pinning not supported with cURL < 7.44.0"
-msgstr ""
+msgstr "Klucz publiczny niewspierany z cURLem < 7.44.0"
 
 #: http.c:342
 msgid "Delegation control is not supported with cURL < 7.22.0"
-msgstr ""
+msgstr "Kontrola powierzania niewspierana z cURLem < 7.22.0"
 
 #: git.c:14
 msgid ""
@@ -1235,10 +1350,14 @@ msgid ""
 "concept guides. See 'git help <command>' or 'git help <concept>'\n"
 "to read about a specific subcommand or concept."
 msgstr ""
+"„git help -a” i „git help -g” wypisują dostępne polecenia gita i wyjaśnienia\n"
+"niektórych koncepcji.  Zobacz „git help <polecenie>” lub „git help <pojęcie"
+">”,\n"
+"aby poczytać o konkretnym poleceniu lub pojęciu."
 
 #: credential-cache--daemon.c:271
 msgid "print debugging messages to stderr"
-msgstr ""
+msgstr "wypisuj informacje diagnostyczne na stderr"
 
 #: credential-cache--daemon.c:223
 msgid ""
@@ -1247,146 +1366,151 @@ msgid ""
 "\n"
 "\tchmod 0700 %s"
 msgstr ""
+"Uprawnienia do twojego katalogu gniazd są zbyt swobodne; inni\n"
+"użytkownicy mogą odczytać twoje przechowywane poświadczenia. Rozważ użycie:\n"
+"\n"
+"\tchmod 0700 %s"
 
 #: upload-pack.c:1034
 msgid "interrupt transfer after <n> seconds of inactivity"
-msgstr ""
+msgstr "przerwij łączność po <n> sekundach nieaktywności"
 
 #: upload-pack.c:1032
 msgid "do not try <directory>/.git/ if <directory> is no Git directory"
-msgstr ""
+msgstr "nie sprawdzaj <katalog>/.git/ jeśli <katalog> nie jest katalogiem Gita"
 
 #: upload-pack.c:1030
 msgid "exit immediately after initial ref advertisement"
-msgstr ""
+msgstr "wyjdź natychmiast po początkowym ogłoszeniu referencji"
 
 #: upload-pack.c:1028
 msgid "quit after a single request/response exchange"
-msgstr ""
+msgstr "wyjdź po pojedynczej wymianie żądania/odpowiedzi"
 
 #: upload-pack.c:22
 msgid "git upload-pack [<options>] <dir>"
-msgstr ""
+msgstr "git upload-pack [<opcje>] <katalog>"
 
 #: builtin/write-tree.c:30
 msgid "only useful for debugging"
-msgstr ""
+msgstr "przydatne tylko do odpluskwiania"
 
 #: builtin/write-tree.c:27
 msgid "write tree object for a subdirectory <prefix>"
-msgstr ""
+msgstr "zapisz obiekt drzewa katalogu <prefiks>"
 
 #: builtin/write-tree.c:26
 msgid "<prefix>/"
-msgstr ""
+msgstr "<prefiks>/"
 
 #: builtin/write-tree.c:13
 msgid "git write-tree [--missing-ok] [--prefix=<prefix>/]"
-msgstr ""
+msgstr "git write-tree [--missing-ok] [--prefix=<prefiks>/]"
 
 #: builtin/worktree.c:519
 msgid "'%s' is not locked"
-msgstr ""
+msgstr "„%s” nie jest zablokowany"
 
 #: builtin/worktree.c:491
 msgid "'%s' is already locked"
-msgstr ""
+msgstr "„%s” już jest zablokowany"
 
 #: builtin/worktree.c:489
 msgid "'%s' is already locked, reason: %s"
-msgstr ""
+msgstr "„%s” już jest zablokowany, powód: %s"
 
 #: builtin/worktree.c:484 builtin/worktree.c:517
 msgid "The main working tree cannot be locked or unlocked"
-msgstr ""
+msgstr "Główne drzewo robocze nie może być blokowane ani odblokowywane"
 
 #: builtin/worktree.c:482 builtin/worktree.c:515
 msgid "'%s' is not a working tree"
-msgstr ""
+msgstr "„%s” nie jest drzewem roboczym"
 
 #: builtin/worktree.c:470
 msgid "reason for locking"
-msgstr ""
+msgstr "powód blokady"
 
 #: builtin/worktree.c:337
 msgid "-b, -B, and --detach are mutually exclusive"
-msgstr ""
+msgstr "-b, -B i --detach się wykluczają"
 
 #: builtin/worktree.c:329
 msgid "populate the new working tree"
-msgstr ""
+msgstr "wypełnij nowe drzewo robocze"
 
 #: builtin/worktree.c:327
 msgid "create or reset a branch"
-msgstr ""
+msgstr "utwórz lub zresetuj gałąź"
 
 #: builtin/worktree.c:325
 msgid "create a new branch"
-msgstr ""
+msgstr "utwórz nową gałąź"
 
 #: builtin/worktree.c:323
 msgid "checkout <branch> even if already checked out in other worktree"
-msgstr ""
+msgstr "wybierz <gałąź> nawet jeśli już jest wybrana w innym drzewie roboczym"
 
 #: builtin/worktree.c:272
 msgid "Preparing %s (identifier %s)"
-msgstr ""
+msgstr "Przygotowywanie %s (identyfikator %s)"
 
 #: builtin/worktree.c:236
 msgid "could not create directory of '%s'"
-msgstr ""
+msgstr "nie można utworzyć katalogu „%s”"
 
 #: builtin/worktree.c:204
 msgid "'%s' already exists"
-msgstr ""
+msgstr "„%s” już istnieje"
 
 #: builtin/worktree.c:80
 msgid "Removing worktrees/%s: gitdir file points to non-existent location"
 msgstr ""
+"Usuwanie drzew roboczych/%s: plik gitdir wskazuje nieistniejące położenie"
 
 #: builtin/worktree.c:64
 msgid "Removing worktrees/%s: invalid gitdir file"
-msgstr ""
+msgstr "Usuwanie drzew roboczych/%s: nieprawidłowy plik gitdir"
 
 #: builtin/worktree.c:53
 msgid "Removing worktrees/%s: unable to read gitdir file (%s)"
-msgstr ""
+msgstr "Usuwanie drzew roboczych/%s: nie można przeczytać pliku gitdir (%s)"
 
 #: builtin/worktree.c:48
 msgid "Removing worktrees/%s: gitdir file does not exist"
-msgstr ""
+msgstr "Usuwanie drzew roboczych/%s: plik gitdir nie istnieje"
 
 #: builtin/worktree.c:42
 msgid "Removing worktrees/%s: not a valid directory"
-msgstr ""
+msgstr "Usuwanie drzew roboczych/%s: nie jest prawidłowym katalogiem"
 
 #: builtin/worktree.c:19
 msgid "git worktree unlock <path>"
-msgstr ""
+msgstr "git worktree unlock <ścieżka>"
 
 #: builtin/worktree.c:18
 msgid "git worktree prune [<options>]"
-msgstr ""
+msgstr "git worktree prune [<opcje>]"
 
 #: builtin/worktree.c:17
 msgid "git worktree lock [<options>] <path>"
-msgstr ""
+msgstr "git worktree lock [<opcje>] <ścieżka>"
 
 #: builtin/worktree.c:16
 msgid "git worktree list [<options>]"
-msgstr ""
+msgstr "git worktree list [<opcje>]"
 
 #: builtin/worktree.c:15
 msgid "git worktree add [<options>] <path> [<branch>]"
-msgstr ""
+msgstr "git worktree add [<opcje>] <ścieżka> [<gałąź>]"
 
 #: builtin/verify-tag.c:34
 msgid "print tag contents"
-msgstr ""
+msgstr "wypisz zawartość tagu"
 
 #: builtin/verify-tag.c:17
 msgid "git verify-tag [-v | --verbose] <tag>..."
-msgstr ""
+msgstr "git verify-tag [-v | --verbose] <tag>..."
 
 #: builtin/verify-pack.c:66
 msgid "show statistics only"
@@ -1394,23 +1518,23 @@ msgstr "pokazuj tylko statystyki"
 
 #: builtin/verify-pack.c:64
 msgid "verbose"
-msgstr ""
+msgstr "gadatliwy"
 
 #: builtin/verify-pack.c:54
 msgid "git verify-pack [-v | --verbose] [-s | --stat-only] <pack>..."
-msgstr ""
+msgstr "git verify-pack [-v | --verbose] [-s | --stat-only] <paczka>..."
 
 #: builtin/verify-commit.c:73 builtin/verify-tag.c:35
 msgid "print raw gpg status output"
-msgstr ""
+msgstr "wypisz surowe wyjście stanu gpg"
 
 #: builtin/verify-commit.c:72
 msgid "print commit contents"
-msgstr ""
+msgstr "wypisz zawartość zapisu"
 
 #: builtin/verify-commit.c:17
 msgid "git verify-commit [-v | --verbose] <commit>..."
-msgstr ""
+msgstr "git verify-commit [-v | --verbose] <zapis>..."
 
 #: builtin/update-server-info.c:14
 msgid "update the info files from scratch"
