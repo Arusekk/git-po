@@ -51,7 +51,7 @@
 # Arusekk <arek_koz@o2.pl>, 2020.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-08 22:29+0100\n"
+"PO-Revision-Date: 2020-12-09 23:26+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1599,7 +1599,7 @@ msgstr ""
 
 #: builtin/update-index.c:1001
 msgid "test if the filesystem supports untracked cache"
-msgstr ""
+msgstr "sprawdź, czy system plików wspiera pamięć o nieśledzonych"
 
 #: builtin/update-index.c:999
 msgid "enable/disable untracked cache"
@@ -1647,7 +1647,7 @@ msgstr "z --stdin: wiersze wejścia są zakończone znakami NUL"
 
 #: builtin/update-index.c:966
 msgid "remove named paths even if present in worktree"
-msgstr ""
+msgstr "usuń nazwane ścieżki, nawet jeśli występują w drzewie roboczym"
 
 #: builtin/update-index.c:964
 msgid "add to index only; do not add content to object database"
@@ -1687,7 +1687,7 @@ msgstr ""
 
 #: builtin/update-index.c:931
 msgid "refresh even if index contains unmerged entries"
-msgstr ""
+msgstr "odśwież, nawet jeśli indeks zawiera niescalone elementy"
 
 #: builtin/update-index.c:929
 msgid "notice files missing from worktree"
@@ -2154,7 +2154,7 @@ msgstr "Zarejestrowano pod-moduł „%s” (%s) w „%s”\n"
 
 #: builtin/submodule--helper.c:369
 msgid "Failed to register url for submodule path '%s'"
-msgstr ""
+msgstr "Nie można zarejestrować adresu do ścieżki pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:329 builtin/submodule--helper.c:343
 msgid "No url found for submodule path '%s' in .gitmodules"
@@ -2333,7 +2333,7 @@ msgstr "zamiennik na more=-1"
 
 #: builtin/show-branch.c:645
 msgid "show <n> more commits after the common ancestor"
-msgstr ""
+msgstr "pokaż <n> dodatkowych zapisów po wspólnym przodku"
 
 #: builtin/show-branch.c:643
 msgid "color '*!+-' corresponding to the branch"
@@ -2436,7 +2436,7 @@ msgstr "nie usuwanie „%s” rekurencyjne bez -r"
 
 #: builtin/rm.c:274
 msgid "exit with a zero status even if nothing matched"
-msgstr ""
+msgstr "zwróć zero, nawet jeśli nic nie dopasowano"
 
 #: builtin/rm.c:272
 msgid "allow recursive removal"
@@ -2659,7 +2659,7 @@ msgstr ""
 
 #: builtin/reset.c:322
 msgid "--patch is incompatible with --{hard,mixed,soft}"
-msgstr ""
+msgstr "--patch i --{hard,mixed,soft} się wykluczają"
 
 #: builtin/reset.c:313
 msgid "Failed to resolve '%s' as a valid tree."
@@ -2695,7 +2695,7 @@ msgstr "mniej komunikatów, wypisuj tylko błędy"
 
 #: builtin/reset.c:183
 msgid "Cannot do a %s reset in the middle of a merge."
-msgstr ""
+msgstr "Nie można wykonać resetu %s podczas scalania."
 
 #: builtin/reset.c:100
 msgid "HEAD is now at %s"
@@ -2735,7 +2735,7 @@ msgstr "mieszany"
 
 #: builtin/reset.c:28
 msgid "git reset --patch [<tree-ish>] [--] [<paths>...]"
-msgstr ""
+msgstr "git reset --patch [<drzewo>] [--] [<ścieżki>...]"
 
 #: builtin/reset.c:27
 msgid "git reset [-q] [<tree-ish>] [--] <paths>..."
@@ -2844,7 +2844,7 @@ msgstr "--keep-unreachable i -A się wykluczają"
 
 #: builtin/repack.c:200
 msgid "cannot delete packs in a precious-objects repo"
-msgstr ""
+msgstr "nie można usuwać paczek w repozytorium o cennych obiektach"
 
 #: builtin/repack.c:190
 msgid "repack objects in packs marked with .keep"
@@ -2876,7 +2876,7 @@ msgstr "z -a przepakuj wszystkie nieosiągalne obiekty"
 
 #: builtin/repack.c:178
 msgid "with -A, do not loosen objects older than this"
-msgstr ""
+msgstr "z -A, nie luzuj obiektów starszych niż podana data"
 
 #: builtin/repack.c:177
 msgid "approxidate"
@@ -2908,7 +2908,7 @@ msgstr ""
 
 #: builtin/repack.c:162
 msgid "same as -a, and turn unreachable objects loose"
-msgstr ""
+msgstr "to samo, co -a, i zamień nieosiągalne obiekty w luźne"
 
 #: builtin/repack.c:160
 msgid "pack everything in a single pack"
@@ -2924,7 +2924,7 @@ msgstr "Nieznane pod-polecenie: %s"
 
 #: builtin/remote.c:1591
 msgid "be verbose; must be placed before a subcommand"
-msgstr ""
+msgstr "więcej komunikatów; musi być umieszczone przed pod-poleceniem"
 
 #: builtin/remote.c:1577
 msgid "Will not delete all non-push URLs"
@@ -3304,7 +3304,7 @@ msgstr "git remote show [<opcje>] <nazwa>"
 
 #: builtin/remote.c:50
 msgid "git remote set-branches --add <name> <branch>..."
-msgstr ""
+msgstr "git remote set-branches --add <nazwa> <gałąź>..."
 
 #: builtin/remote.c:49
 msgid "git remote set-branches <name> <branch>..."
@@ -3801,7 +3801,7 @@ msgstr "Nie można przestawić na wiele gałęzi."
 
 #: builtin/pull.c:858
 msgid "Cannot merge multiple branches into empty head."
-msgstr ""
+msgstr "Nie można scalić wielu gałęzi w puste czoło."
 
 #: builtin/pull.c:843
 msgid ""
@@ -3977,7 +3977,7 @@ msgstr "Usuwanie zduplikowanych obiektów"
 
 #: builtin/prune-packed.c:7
 msgid "git prune-packed [-n | --dry-run] [-q | --quiet]"
-msgstr ""
+msgstr "git prune-packed [-n | --dry-run] [-q | --quiet]"
 
 #: builtin/pack-refs.c:15
 msgid "prune loose refs (default)"
@@ -4121,7 +4121,7 @@ msgstr ""
 
 #: builtin/pack-objects.c:2797
 msgid "show progress meter during object writing phase"
-msgstr ""
+msgstr "pokaż miernik postępu podczas fazy zapisywania obiektów"
 
 #: builtin/pack-objects.c:2795
 msgid "show progress meter"
@@ -4214,7 +4214,7 @@ msgstr ""
 
 #: builtin/notes.c:863
 msgid "failed to store link to current notes ref (%s)"
-msgstr ""
+msgstr "nie można zapisać dowiązania do bieżącej referencji uwag (%s)"
 
 #: builtin/notes.c:860
 msgid "a notes merge into %s is already in-progress at %s"
@@ -4280,7 +4280,7 @@ msgstr ""
 
 #: builtin/notes.c:711
 msgid "could not find commit from NOTES_MERGE_PARTIAL."
-msgstr ""
+msgstr "nie znaleziono zapisu z NOTES_MERGE_PARTIAL."
 
 #: builtin/notes.c:709
 msgid "failed to read ref NOTES_MERGE_PARTIAL"
@@ -4306,7 +4306,7 @@ msgstr ""
 
 #: builtin/notes.c:537
 msgid "missing notes on source object %s. Cannot copy."
-msgstr ""
+msgstr "brakuje uwag do obiektu źródłowego %s. Nie można skopiować."
 
 #: builtin/notes.c:525
 msgid ""
@@ -4442,7 +4442,7 @@ msgstr "nie można uruchomić „show” na obiekcie „%s”"
 
 #: builtin/notes.c:94
 msgid "Write/edit the notes for the following object:"
-msgstr ""
+msgstr "Zapisz/edytuj uwagi do następującego obiektu:"
 
 #: builtin/notes.c:89
 msgid "git notes get-ref"
@@ -4765,7 +4765,7 @@ msgstr ""
 
 #: builtin/merge-base.c:225
 msgid "find where <commit> forked from reflog of <ref>"
-msgstr ""
+msgstr "znajdź, gdzie <zapis> odgałęził się od dziennika referencji <ref>"
 
 #: builtin/merge-base.c:223
 msgid "is the first one ancestor of the other?"
@@ -4789,7 +4789,7 @@ msgstr "git merge-base --fork-point <referencja> [<zapis>]"
 
 #: builtin/merge-base.c:32
 msgid "git merge-base --is-ancestor <commit> <commit>"
-msgstr ""
+msgstr "git merge-base --is-ancestor <zapis> <zapis>"
 
 #: builtin/merge-base.c:31
 msgid "git merge-base --independent <commit>..."
@@ -4801,7 +4801,7 @@ msgstr ""
 
 #: builtin/merge-base.c:29
 msgid "git merge-base [-a | --all] <commit> <commit>..."
-msgstr ""
+msgstr "git merge-base [-a | --all] <zapis> <zapis>..."
 
 #: builtin/merge.c:1572
 msgid "Automatic merge went well; stopped before committing as requested\n"
@@ -4885,7 +4885,7 @@ msgstr "Nieprzewinięty zapis nie ma sensu przy pustym czele (HEAD) gałęzi"
 
 #: builtin/merge.c:1222
 msgid "Squash commit into empty head not supported yet"
-msgstr ""
+msgstr "Spłaszczenie zapisu w puste czoło nie jest jeszcze wspierane"
 
 #: builtin/merge.c:1205
 msgid "No commit specified and merge.defaultToUpstream not set."
@@ -5086,7 +5086,7 @@ msgstr ""
 
 #: builtin/merge.c:204 builtin/pull.c:139
 msgid "create a single commit instead of doing a merge"
-msgstr ""
+msgstr "utwórz pojedynczy zapis zamiast scalać"
 
 #: builtin/merge.c:201 builtin/pull.c:136
 msgid "add (at most <n>) entries from shortlog to merge commit message"
@@ -5103,7 +5103,7 @@ msgstr "pokaż statystyki różnic pod koniec scalenia"
 
 #: builtin/merge.c:195 builtin/pull.c:127
 msgid "do not show a diffstat at the end of the merge"
-msgstr ""
+msgstr "nie pokazuj statystyk różnic pod koniec scalenia"
 
 #: builtin/merge.c:145
 msgid "Available custom strategies are:"
@@ -5281,7 +5281,7 @@ msgstr ""
 
 #: builtin/ls-files.c:522
 msgid "show staged contents' object name in the output"
-msgstr ""
+msgstr "pokaż w wyjściu nazwę obiektu przygotowanej zawartości"
 
 #: builtin/ls-files.c:519
 msgid "show ignored files in the output"
@@ -5322,7 +5322,7 @@ msgstr ""
 
 #: builtin/log.c:1826
 msgid "git cherry [-v] [<upstream> [<head> [<limit>]]]"
-msgstr ""
+msgstr "git cherry [-v] [<nadrzędna> [<czoło> [<limit>]]]"
 
 #: builtin/log.c:1777
 msgid "Failed to create output files"
@@ -5370,7 +5370,7 @@ msgstr "dodaj podpis z pliku"
 
 #: builtin/log.c:1472
 msgid "add prerequisite tree info to the patch series"
-msgstr ""
+msgstr "dodaj informacje o wymaganym początkowym drzewie do serii łatek"
 
 #: builtin/log.c:1471
 msgid "base-commit"
@@ -5386,7 +5386,7 @@ msgstr "podpis"
 
 #: builtin/log.c:1467
 msgid "enable message threading, styles: shallow, deep"
-msgstr ""
+msgstr "zezwól na wątkowanie komunikatów, style: shallow, deep"
 
 #: builtin/log.c:1463
 msgid "inline the patch"
@@ -5704,7 +5704,7 @@ msgstr ""
 
 #: builtin/init-db.c:404
 msgid "Reinitialized existing Git repository in %s%s\n"
-msgstr ""
+msgstr "Przeinicjowano istniejące repozytorium Gita w %s%s\n"
 
 #: builtin/init-db.c:403
 msgid "Reinitialized existing shared Git repository in %s%s\n"
@@ -5974,7 +5974,7 @@ msgstr "paczka przekracza maksymalny dozwolony rozmiar"
 
 #: builtin/index-pack.c:299
 msgid "pack too large for current definition of off_t"
-msgstr ""
+msgstr "paczka za duża na obecną definicję off_t"
 
 #: builtin/index-pack.c:292
 msgid "used more bytes than were available"
@@ -6384,7 +6384,7 @@ msgstr "nie można odczytać drzewa (%s)"
 
 #: builtin/grep.c:277
 msgid "invalid number of threads specified (%d) for %s"
-msgstr ""
+msgstr "podano nieprawidłową liczbę wątków (%d) do %s"
 
 #: builtin/grep.c:219
 msgid "grep: failed to create thread: %s"
@@ -6605,11 +6605,11 @@ msgstr "Nie ma takiego zdalnego repozytorium ani ich grupy: %s"
 
 #: builtin/fetch.c:1355
 msgid "fetch --all does not make sense with refspecs"
-msgstr ""
+msgstr "--all i referencje się wykluczają"
 
 #: builtin/fetch.c:1353
 msgid "fetch --all does not take a repository argument"
-msgstr ""
+msgstr "fetch --all nie przyjmuje argumentów z repozytoriów"
 
 #: builtin/fetch.c:1331
 msgid "--unshallow on a complete repository does not make sense"
@@ -6617,7 +6617,7 @@ msgstr ""
 
 #: builtin/fetch.c:1329
 msgid "--depth and --unshallow cannot be used together"
-msgstr ""
+msgstr "--depth i --unshallow wykluczają się"
 
 #: builtin/fetch.c:1324
 msgid "--deepen and --depth are mutually exclusive"
@@ -7056,7 +7056,7 @@ msgstr "wypisz rozmiary w formacie czytelnym dla człowieka"
 
 #: builtin/count-objects.c:86
 msgid "git count-objects [-v] [-H | --human-readable]"
-msgstr ""
+msgstr "git count-objects [-v] [-H | --human-readable]"
 
 #: builtin/config.c:625
 msgid ""
@@ -7849,7 +7849,7 @@ msgstr "--local jest ignorowane"
 
 #: builtin/clone.c:1026
 msgid "source repository is shallow, ignoring --local"
-msgstr ""
+msgstr "źródłowe repozytorium jest płytkie, ignorowanie --local"
 
 #: builtin/clone.c:1023
 msgid "--shallow-exclude is ignored in local clones; use file:// instead."
@@ -8339,7 +8339,7 @@ msgstr "dokonaj trójstronnego scalenia z nową gałęzią"
 
 #: builtin/checkout.c:1151
 msgid "force checkout (throw away local modifications)"
-msgstr ""
+msgstr "wymuś wybranie (wyrzuć lokalne zmiany)"
 
 #: builtin/checkout.c:1149
 msgid "checkout their version for unmerged files"
@@ -8555,7 +8555,7 @@ msgstr "ścieżka „%s” nie ma potrzebnych wersji"
 
 #: builtin/checkout.c:152
 msgid "path '%s' does not have all necessary versions"
-msgstr ""
+msgstr "ścieżka „%s” nie ma wszystkich potrzebnych wersji"
 
 #: builtin/checkout.c:136 builtin/checkout.c:169
 msgid "path '%s' does not have their version"
@@ -8702,7 +8702,7 @@ msgstr ""
 
 #: builtin/cat-file.c:575
 msgid "show all objects with --batch or --batch-check"
-msgstr ""
+msgstr "pokaż wszystkie obiekty z --batch lub --batch-check"
 
 #: builtin/cat-file.c:573
 msgid "follow in-tree symlinks (used with --batch or --batch-check)"
@@ -8855,7 +8855,7 @@ msgstr "Jeszcze nie ma zapisów na gałęzi „%s”."
 
 #: builtin/branch.c:763
 msgid "cannot edit description of more than one branch"
-msgstr ""
+msgstr "nie można edytować opisu więcej niż jednej gałęzi"
 
 #: builtin/branch.c:758
 msgid "Cannot give description to detached HEAD"
@@ -9007,7 +9007,7 @@ msgstr ""
 
 #: builtin/branch.c:597
 msgid "Branch renamed to %s, but HEAD is not updated!"
-msgstr ""
+msgstr "Nazwa gałęzi zmieniona na %s, ale HEAD nie jest zaktualizowane!"
 
 #: builtin/branch.c:594
 msgid "Renamed a misnamed branch '%s' away"
@@ -9589,7 +9589,7 @@ msgstr "Stosowanie: %.*s"
 
 #: builtin/am.c:1824
 msgid "Dirty index: cannot apply patches (dirty: %s)"
-msgstr ""
+msgstr "Brudny indeks: nie można zastosować łatek (brudny: %s)"
 
 #. TRANSLATORS: Make sure to include [y], [n], [e], [v] and [a]
 #. in your translation. The program will only accept English
@@ -9639,7 +9639,7 @@ msgstr ""
 
 #: builtin/am.c:1612
 msgid "Using index info to reconstruct a base tree..."
-msgstr ""
+msgstr "Używanie informacji z indeksu do odtworzenia drzewa podstawy..."
 
 #: builtin/am.c:1610
 msgid "Repository lacks necessary blobs to fall back on 3-way merge."
@@ -9764,7 +9764,7 @@ msgstr "Użyj -f jeżeli na pewno chcesz je dodać.\n"
 
 #: builtin/add.c:283 builtin/update-index.c:948
 msgid "override the executable bit of the listed files"
-msgstr ""
+msgstr "wymuś bit wykonywalności podanych plików"
 
 #: builtin/add.c:283 builtin/update-index.c:947
 msgid "(+/-)x"
@@ -10089,7 +10089,7 @@ msgstr ""
 
 #: wt-status.c:1236
 msgid "  (use \"git rebase --skip\" to skip this patch)"
-msgstr ""
+msgstr "  (użyj „git rebase --skip” aby pominąć tę łatkę)"
 
 #: wt-status.c:1234
 msgid "  (fix conflicts and then run \"git rebase --continue\")"
@@ -10101,7 +10101,7 @@ msgstr "Jesteś w trakcie przestawiania."
 
 #: wt-status.c:1215
 msgid "You are currently rebasing branch '%s' on '%s'."
-msgstr ""
+msgstr "Jesteś w trakcie przestawiania gałęzi „%s” na „%s”."
 
 #: wt-status.c:1202
 msgid "  (use \"git rebase --edit-todo\" to view and edit)"
@@ -10754,7 +10754,7 @@ msgstr ""
 
 #: pathspec.c:177
 msgid "invalid parameter for pathspec magic 'prefix'"
-msgstr ""
+msgstr "nieprawidłowy parametr magicznej ścieżki „prefix:”"
 
 #: pathspec.c:183
 msgid "Invalid pathspec magic '%.*s' in '%s'"
@@ -10866,7 +10866,7 @@ msgstr "nierozpoznany argument %%(objectname): %s"
 
 #: ref-filter.c:135
 msgid "expected format: %%(align:<width>,<position>)"
-msgstr ""
+msgstr "oczekiwany format: %%(align:<szerokość>,<pozycja>)"
 
 #: ref-filter.c:147
 msgid "unrecognized position:%s"
@@ -10882,7 +10882,7 @@ msgstr "nierozpoznany argument %%(align): %s"
 
 #: ref-filter.c:161
 msgid "positive width expected with the %%(align) atom"
-msgstr ""
+msgstr "oczekiwano dodatniej szerokości z atomem %%(align)"
 
 #: ref-filter.c:244
 msgid "malformed field name: %.*s"
@@ -10906,7 +10906,7 @@ msgstr ":strip= wymaga liczby dodatniej"
 
 #: ref-filter.c:883
 msgid "ref '%s' does not have %ld components to :strip"
-msgstr ""
+msgstr "referencja „%s” nie ma %ld komponentów do odcięcia :strip="
 
 #: ref-filter.c:1046
 msgid "unknown %.*s format %s"
@@ -11088,7 +11088,7 @@ msgstr ""
 
 #: send-pack.c:429
 msgid "the receiving end does not support push options"
-msgstr ""
+msgstr "odbierający koniec nie wspiera opcji wypychania"
 
 #: sequencer.c:171
 msgid "revert"
@@ -11276,7 +11276,7 @@ msgstr "nieprawidłowy plik opcji: „%s”"
 
 #: sequencer.c:1101
 msgid "a cherry-pick or revert is already in progress"
-msgstr ""
+msgstr "już trwa dobieranie lub odwracanie"
 
 #: sequencer.c:1106
 msgid "could not create sequencer directory '%s'"
@@ -11288,7 +11288,7 @@ msgstr "spróbuj \"git cherry-pick (--continue | --quit | --abort)\""
 
 #: sequencer.c:1151 sequencer.c:1289
 msgid "no cherry-pick or revert in progress"
-msgstr "nie trwa dopieranie ani odwracanie"
+msgstr "nie trwa dobieranie ani odwracanie"
 
 #: sequencer.c:1120
 msgid "could not lock HEAD"
@@ -12524,7 +12524,7 @@ msgstr ""
 
 #: apply.c:4943
 msgid "apply a patch without touching the working tree"
-msgstr ""
+msgstr "zastosuj łatkę bez dotykania drzewa roboczego"
 
 #: apply.c:4945
 msgid "accept a patch that touches outside the working area"
@@ -12691,7 +12691,7 @@ msgstr "polecenie"
 
 #: archive.c:454 builtin/archive.c:93
 msgid "path to the remote git-upload-archive command"
-msgstr ""
+msgstr "ścieżka do zdalnego polecenia git-upload-archive"
 
 #: archive.c:461
 msgid "Unexpected option --remote"
@@ -12860,11 +12860,11 @@ msgstr "Ustawiono, by gałąź %s śledziła lokalną referencję %s."
 
 #: branch.c:119
 msgid "Unable to write upstream branch configuration"
-msgstr ""
+msgstr "Nie można zapisać konfiguracji gałęzi nadrzędnej"
 
 #: branch.c:156
 msgid "Not tracking: ambiguous information for ref %s"
-msgstr ""
+msgstr "Nie śledzenie: niejednoznaczna informacja dla referencji %s"
 
 #: branch.c:185
 msgid "'%s' is not a valid branch name."
