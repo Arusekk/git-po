@@ -54,7 +54,7 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-17 15:11+0100\n"
+"PO-Revision-Date: 2020-12-17 17:27+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -18028,14 +18028,14 @@ msgid "bad packed object CRC for %s"
 msgstr "ignoruj spakowane obiekty"
 
 #: builtin/pack-objects.c:454
-#, fuzzy, c-format
+#, c-format
 msgid "corrupt packed object for %s"
-msgstr "ignoruj spakowane obiekty"
+msgstr "uszkodzony spakowany obiekt dla %s"
 
 #: builtin/pack-objects.c:585
-#, fuzzy, c-format
+#, c-format
 msgid "recursive delta detected for object %s"
-msgstr "nie odebrano oczekiwanego obiektu %s"
+msgstr "wykryto rekurencyjną deltę dla obiektu %s"
 
 #: builtin/pack-objects.c:796
 #, c-format
@@ -18102,7 +18102,7 @@ msgstr ""
 #: builtin/pack-objects.c:2656
 #, c-format
 msgid "Delta compression using up to %d threads"
-msgstr ""
+msgstr "Kompresja delt z użyciem do %d wątków"
 
 #: builtin/pack-objects.c:2795
 #, fuzzy, c-format
@@ -18165,9 +18165,9 @@ msgid "unable to force loose object"
 msgstr "nie można zapisać obiektu uwagi"
 
 #: builtin/pack-objects.c:3365
-#, fuzzy, c-format
+#, c-format
 msgid "not a rev '%s'"
-msgstr "nie można odczytać „%s”"
+msgstr "nie jest rewizją „%s”"
 
 #: builtin/pack-objects.c:3368
 #, c-format
@@ -18175,9 +18175,8 @@ msgid "bad revision '%s'"
 msgstr "zła rewizja „%s”"
 
 #: builtin/pack-objects.c:3393
-#, fuzzy
 msgid "unable to add recent objects"
-msgstr "nie można przetworzyć obiektu: %s"
+msgstr "nie można dodać ostatnich obiektów"
 
 #: builtin/pack-objects.c:3446
 #, c-format
@@ -18283,7 +18282,7 @@ msgstr "rozpakuj nieosiągalne obiekty nowsze niż <czas>"
 
 #: builtin/pack-objects.c:3539
 msgid "use the sparse reachability algorithm"
-msgstr ""
+msgstr "użyj rzadkiego algorytmu osiągalności"
 
 #: builtin/pack-objects.c:3541
 msgid "create thin packs"
@@ -18298,9 +18297,8 @@ msgid "ignore packs that have companion .keep file"
 msgstr "pomiń paczki, którym towarzyszy plik .keep"
 
 #: builtin/pack-objects.c:3547
-#, fuzzy
 msgid "ignore this pack"
-msgstr "użyj wąskiej paczki"
+msgstr "pomiń tę paczkę"
 
 #: builtin/pack-objects.c:3549
 msgid "pack compression level"
@@ -18320,23 +18318,20 @@ msgid "write a bitmap index together with the pack index"
 msgstr "zapisz indeks bitmapy razem z indeksem paczek"
 
 #: builtin/pack-objects.c:3559
-#, fuzzy
 msgid "write a bitmap index if possible"
-msgstr "zapisz indeks bitmapy"
+msgstr "zapisz indeks bitmapy jeśli możliwe"
 
 #: builtin/pack-objects.c:3563
-#, fuzzy
 msgid "handling for missing objects"
-msgstr "zezwól na brakujące obiekty"
+msgstr "traktowanie brakujących obiektów"
 
 #: builtin/pack-objects.c:3566
 msgid "do not pack objects in promisor packfiles"
 msgstr ""
 
 #: builtin/pack-objects.c:3568
-#, fuzzy
 msgid "respect islands during delta compression"
-msgstr "rozmiar okna użytego do kompresji delt"
+msgstr "uszanuj wyspy podczas kompresji delt"
 
 #: builtin/pack-objects.c:3570
 msgid "protocol"
@@ -18349,7 +18344,7 @@ msgstr ""
 #: builtin/pack-objects.c:3600
 #, c-format
 msgid "delta chain depth %d is too deep, forcing %d"
-msgstr ""
+msgstr "łańcuch delt za głęboki: %d, wymuszanie %d"
 
 #: builtin/pack-objects.c:3605
 #, c-format
@@ -18380,9 +18375,8 @@ msgid "cannot use --filter without --stdout"
 msgstr "-a i -d się wykluczają"
 
 #: builtin/pack-objects.c:3735
-#, fuzzy
 msgid "Enumerating objects"
-msgstr "Zapisywanie obiektów"
+msgstr "Wymienianie obiektów"
 
 #: builtin/pack-objects.c:3766
 #, c-format
@@ -18440,9 +18434,8 @@ msgid "git pull [<options>] [<repository> [<refspec>...]]"
 msgstr "git pull [<opcje>] [<repozytorium> [<referencja>...]]"
 
 #: builtin/pull.c:123
-#, fuzzy
 msgid "control for recursive fetching of submodules"
-msgstr "steruj rekurencyjnym pobieraniem pod-modułów"
+msgstr "sterowanie rekurencyjnym pobieraniem pod-modułów"
 
 #: builtin/pull.c:127
 msgid "Options related to merging"
@@ -18457,9 +18450,8 @@ msgid "allow fast-forward"
 msgstr "zezwól na przewijanie"
 
 #: builtin/pull.c:167 parse-options.h:339
-#, fuzzy
 msgid "automatically stash/stash pop before and after"
-msgstr "automatycznie dodaj zmiany do schowka i przywróć je po przestawieniu"
+msgstr "automatycznie dodaj zmiany do schowka przed i przywróć je po"
 
 #: builtin/pull.c:183
 msgid "Options related to fetching"
@@ -18571,9 +18563,9 @@ msgstr ""
 "ze zdalnego repozytorium, ale nie pobrano stamtąd żadnej takiej."
 
 #: builtin/pull.c:609
-#, fuzzy, c-format
+#, c-format
 msgid "unable to access commit %s"
-msgstr "nie można przeanalizować zapisu %s"
+msgstr "brak dostępu do zapisu %s"
 
 #: builtin/pull.c:915
 msgid "ignoring --verify-signatures for rebase"
@@ -18652,7 +18644,7 @@ msgstr ""
 "Aby wybrać którąś opcję na zawsze, zobacz push.default w „git help config”."
 
 #: builtin/push.c:167
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The upstream branch of your current branch does not match\n"
 "the name of your current branch.  To push to the upstream branch\n"
@@ -18672,7 +18664,7 @@ msgstr ""
 "\n"
 "Aby wypchnąć je do zdalnej gałęzi o tej samej nazwie, użyj\n"
 "\n"
-"    git push %s %s\n"
+"    git push %s HEAD\n"
 "%s"
 
 #: builtin/push.c:182
@@ -18837,7 +18829,7 @@ msgstr "wymagaj, żeby stara wartość referencji wskazywała tę wartość"
 
 #: builtin/push.c:566 builtin/send-pack.c:208
 msgid "require remote updates to be integrated locally"
-msgstr ""
+msgstr "wymagaj, by zdalne aktualizacje były wcielone lokalnie"
 
 #: builtin/push.c:569
 msgid "control recursive pushing of submodules"
@@ -18951,11 +18943,11 @@ msgstr "git range-diff [<opcje>] <podstawa> <stary-czubek> <nowy-czubek>"
 
 #: builtin/range-diff.c:22
 msgid "Percentage by which creation is weighted"
-msgstr ""
+msgstr "Procent, według jakiego ważone jest tworzenie"
 
 #: builtin/range-diff.c:24
 msgid "use simple diff colors"
-msgstr ""
+msgstr "użyj prostych kolorów zmian"
 
 #: builtin/range-diff.c:26
 msgid "notes"
@@ -18963,21 +18955,20 @@ msgstr "uwagi"
 
 #: builtin/range-diff.c:26
 msgid "passed to 'git log'"
-msgstr ""
+msgstr "przekazywane do „git log”"
 
 #: builtin/range-diff.c:50 builtin/range-diff.c:54
-#, fuzzy, c-format
+#, c-format
 msgid "no .. in range: '%s'"
-msgstr "nie ma takiej gałęzi: „%s”"
+msgstr "brak .. w zakresie: „%s”"
 
 #: builtin/range-diff.c:64
 msgid "single arg format must be symmetric range"
 msgstr ""
 
 #: builtin/range-diff.c:79
-#, fuzzy
 msgid "need two commit ranges"
-msgstr "edytuj komunikat zapisu"
+msgstr "potrzeba dwóch zakresów zapisów"
 
 #: builtin/read-tree.c:41
 msgid ""
@@ -19059,9 +19050,8 @@ msgid "suppress feedback messages"
 msgstr "pomiń komunikaty informacyjne"
 
 #: builtin/read-tree.c:188
-#, fuzzy
 msgid "You need to resolve your current index first"
-msgstr "musisz najpierw rozwiązać bieżący indeks"
+msgstr "Musisz najpierw rozwiązać bieżący indeks"
 
 #: builtin/rebase.c:35
 msgid ""
@@ -19335,7 +19325,7 @@ msgstr ""
 "\n"
 
 #: builtin/rebase.c:1254
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "If you wish to set tracking information for this branch you can do so with:\n"
 "\n"
@@ -19343,11 +19333,13 @@ msgid ""
 "\n"
 msgstr ""
 "Jeśli chcesz ustawić informacje o śledzeniu w tej gałęzi, możesz to zrobić "
-"przez:"
+"przez:\n"
+"    git branch --set-upstream-to=%s/<gałąź> %s\n"
+"\n"
 
 #: builtin/rebase.c:1284
 msgid "exec commands cannot contain newlines"
-msgstr ""
+msgstr "polecenia exec nie mogą zawierać znaków nowego wiersza"
 
 #: builtin/rebase.c:1288
 msgid "empty exec command"
@@ -19364,13 +19356,12 @@ msgid "use the merge-base of upstream and branch as the current base"
 msgstr "żądana zdalna gałąź „%s” nie istnieje"
 
 #: builtin/rebase.c:1322
-#, fuzzy
 msgid "allow pre-rebase hook to run"
-msgstr "Skrypt pre-rebase odmówił przestawiania."
+msgstr "pozwól wykonać skrypt pre-rebase"
 
 #: builtin/rebase.c:1324
 msgid "be quiet. implies --no-stat"
-msgstr ""
+msgstr "bądź cicho. zakłada --no-stat"
 
 #: builtin/rebase.c:1330
 #, fuzzy
@@ -19414,9 +19405,8 @@ msgid "continue"
 msgstr "kontynuuj"
 
 #: builtin/rebase.c:1356
-#, fuzzy
 msgid "skip current patch and continue"
-msgstr "pomiń obecną ścieżkę"
+msgstr "pomiń obecną łatkę i kontynuuj"
 
 #: builtin/rebase.c:1358
 #, fuzzy
@@ -19425,7 +19415,7 @@ msgstr "  (użyj „git rebase --abort”, aby wybrać pierwotną gałąź)"
 
 #: builtin/rebase.c:1361
 msgid "abort but keep HEAD where it is"
-msgstr ""
+msgstr "przerwij, ale zostaw HEAD, gdzie jest"
 
 #: builtin/rebase.c:1362
 #, fuzzy
@@ -19435,7 +19425,7 @@ msgstr ""
 
 #: builtin/rebase.c:1365
 msgid "show the patch file being applied or merged"
-msgstr ""
+msgstr "pokaż plik łatki właśnie stosowanej lub scalanej"
 
 #: builtin/rebase.c:1368
 msgid "use apply strategies to rebase"
