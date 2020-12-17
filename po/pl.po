@@ -54,7 +54,7 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-17 14:47+0100\n"
+"PO-Revision-Date: 2020-12-17 15:11+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -3137,77 +3137,77 @@ msgid "in the future"
 msgstr "w przyszłości"
 
 #: date.c:144
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> second ago"
 msgid_plural "%<PRIuMAX> seconds ago"
-msgstr[0] "%lu sekundę temu"
-msgstr[1] "%lu sekundy temu"
-msgstr[2] "%lu sekund temu"
+msgstr[0] "%<PRIuMAX> sekundę temu"
+msgstr[1] "%<PRIuMAX> sekundy temu"
+msgstr[2] "%<PRIuMAX> sekund temu"
 
 #: date.c:151
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> minute ago"
 msgid_plural "%<PRIuMAX> minutes ago"
-msgstr[0] "%lu minutę temu"
-msgstr[1] "%lu minuty temu"
-msgstr[2] "%lu minut temu"
+msgstr[0] "%<PRIuMAX> minutę temu"
+msgstr[1] "%<PRIuMAX> minuty temu"
+msgstr[2] "%<PRIuMAX> minut temu"
 
 #: date.c:158
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> hour ago"
 msgid_plural "%<PRIuMAX> hours ago"
-msgstr[0] "%lu godzinę temu"
-msgstr[1] "%lu godziny temu"
-msgstr[2] "%lu godzin temu"
+msgstr[0] "%<PRIuMAX> godzinę temu"
+msgstr[1] "%<PRIuMAX> godziny temu"
+msgstr[2] "%<PRIuMAX> godzin temu"
 
 #: date.c:165
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> day ago"
 msgid_plural "%<PRIuMAX> days ago"
-msgstr[0] "%lu dzień temu"
-msgstr[1] "%lu dni temu"
-msgstr[2] "%lu dni temu"
+msgstr[0] "%<PRIuMAX> dzień temu"
+msgstr[1] "%<PRIuMAX> dni temu"
+msgstr[2] "%<PRIuMAX> dni temu"
 
 #: date.c:171
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> week ago"
 msgid_plural "%<PRIuMAX> weeks ago"
-msgstr[0] "%lu tydzień temu"
-msgstr[1] "%lu tygodnie temu"
-msgstr[2] "%lu tygodni temu"
+msgstr[0] "%<PRIuMAX> tydzień temu"
+msgstr[1] "%<PRIuMAX> tygodnie temu"
+msgstr[2] "%<PRIuMAX> tygodni temu"
 
 #: date.c:178
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> month ago"
 msgid_plural "%<PRIuMAX> months ago"
-msgstr[0] "%lu miesiąc temu"
-msgstr[1] "%lu miesiące temu"
-msgstr[2] "%lu miesięcy temu"
+msgstr[0] "%<PRIuMAX> miesiąc temu"
+msgstr[1] "%<PRIuMAX> miesiące temu"
+msgstr[2] "%<PRIuMAX> miesięcy temu"
 
 #: date.c:189
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> year"
 msgid_plural "%<PRIuMAX> years"
-msgstr[0] "%lu rok"
-msgstr[1] "%lu lata"
-msgstr[2] "%lu lat"
+msgstr[0] "%<PRIuMAX> rok"
+msgstr[1] "%<PRIuMAX> lata"
+msgstr[2] "%<PRIuMAX> lat"
 
 #. TRANSLATORS: "%s" is "<n> years"
 #: date.c:192
-#, fuzzy, c-format
+#, c-format
 msgid "%s, %<PRIuMAX> month ago"
 msgid_plural "%s, %<PRIuMAX> months ago"
-msgstr[0] "%s, %lu miesiąc temu"
-msgstr[1] "%s, %lu miesiące temu"
-msgstr[2] "%s, %lu miesięcy temu"
+msgstr[0] "%s, %<PRIuMAX> miesiąc temu"
+msgstr[1] "%s, %<PRIuMAX> miesiące temu"
+msgstr[2] "%s, %<PRIuMAX> miesięcy temu"
 
 #: date.c:197 date.c:202
-#, fuzzy, c-format
+#, c-format
 msgid "%<PRIuMAX> year ago"
 msgid_plural "%<PRIuMAX> years ago"
-msgstr[0] "%lu rok temu"
-msgstr[1] "%lu lata temu"
-msgstr[2] "%lu lat temu"
+msgstr[0] "%<PRIuMAX> rok temu"
+msgstr[1] "%<PRIuMAX> lata temu"
+msgstr[2] "%<PRIuMAX> lat temu"
 
 #: delta-islands.c:272
 msgid "Propagating island marks"
@@ -3363,7 +3363,7 @@ msgstr "nie można utworzyć „%s”"
 #: diff.c:4964 diff.c:4970
 #, c-format
 msgid "%s expects <n>/<m> form"
-msgstr ""
+msgstr "%s oczekuje formy <n>/<m>"
 
 #: diff.c:4982
 #, c-format
@@ -3489,7 +3489,7 @@ msgstr "pokazuj tylko nazwy plików zamiast pasujących wierszy"
 
 #: diff.c:5406
 msgid "<width>[,<name-width>[,<count>]]"
-msgstr ""
+msgstr "<szerokość>[,<szerokość-nazwy>[,<liczba>]]"
 
 #: diff.c:5407
 #, fuzzy
@@ -3514,7 +3514,7 @@ msgstr ""
 
 #: diff.c:5418
 msgid "<count>"
-msgstr ""
+msgstr "<liczba>"
 
 #: diff.c:5419
 msgid "generate diffstat with limited lines"
@@ -3579,7 +3579,7 @@ msgstr "Utwórz płytki klon ucięty do podanej liczby rewizji"
 
 #: diff.c:5455 diff.c:5460 diff.c:5465
 msgid "<char>"
-msgstr ""
+msgstr "<znak>"
 
 #: diff.c:5456
 msgid "specify the character to indicate a new line instead of '+'"
@@ -3598,9 +3598,8 @@ msgid "Diff rename options"
 msgstr "Opcje zmiany nazw różnic"
 
 #: diff.c:5470
-#, fuzzy
 msgid "<n>[/<m>]"
-msgstr "<n>[,<podstawa>]"
+msgstr "<n>[/<m>]"
 
 #: diff.c:5471
 msgid "break complete rewrite changes into pairs of delete and create"
@@ -3678,7 +3677,7 @@ msgstr "<wyr-reg>"
 
 #: diff.c:5518
 msgid "ignore changes whose all lines match <regex>"
-msgstr ""
+msgstr "ignoruj zmiany, których wszystkie wiersze pasują do <wyr-reg>"
 
 #: diff.c:5521
 msgid "heuristic to shift diff hunk boundaries for easy reading"
@@ -3718,7 +3717,7 @@ msgstr ""
 
 #: diff.c:5540
 msgid "use <regex> to decide what a word is"
-msgstr ""
+msgstr "użyj <wyr-reg>, aby zdecydować, czym jest słowo"
 
 #: diff.c:5543
 msgid "equivalent to --word-diff=color --word-diff-regex=<regex>"
@@ -3816,9 +3815,8 @@ msgid "show all changes in the changeset with -S or -G"
 msgstr "pokaż pasujące pliki w czytniku"
 
 #: diff.c:5594
-#, fuzzy
 msgid "treat <string> in -S as extended POSIX regular expression"
-msgstr "użyj rozszerzonych wyrażeń regularnych POSIX"
+msgstr "traktuj <łańcuch> w -S jako rozszerzone wyrażenie regularne POSIX"
 
 #: diff.c:5597
 #, fuzzy
@@ -4490,7 +4488,7 @@ msgstr "nieprawidłowy format daty: %s"
 
 #: list-objects-filter-options.c:81
 msgid "expected 'tree:<depth>'"
-msgstr ""
+msgstr "oczekiwano „tree:<głębokość>”"
 
 #: list-objects-filter-options.c:96
 msgid "sparse:path filters support has been dropped"
@@ -18392,6 +18390,9 @@ msgid ""
 "Total %<PRIu32> (delta %<PRIu32>), reused %<PRIu32> (delta %<PRIu32>), pack-"
 "reused %<PRIu32>"
 msgstr ""
+"Razem %<PRIu32> (delty %<PRIu32>), użyte ponownie %<PRIu32> (delty %<PRIu32"
+">), paczki "
+"użyte ponownie %<PRIu32>"
 
 #: builtin/pack-refs.c:8
 msgid "git pack-refs [<options>]"
@@ -19795,10 +19796,12 @@ msgid ""
 "git reflog delete [--rewrite] [--updateref] [--dry-run | -n] [--verbose] "
 "<refs>..."
 msgstr ""
+"git reflog delete [--rewrite] [--updateref] [--dry-run | -n] [--verbose] "
+"<referencje>..."
 
 #: builtin/reflog.c:25
 msgid "git reflog exists <ref>"
-msgstr ""
+msgstr "git reflog exists <referencja>"
 
 #: builtin/reflog.c:568 builtin/reflog.c:573
 #, c-format
@@ -20493,9 +20496,8 @@ msgid "git replace [-f] --graft <commit> [<parent>...]"
 msgstr "git replace [-f] --graft <zapis> [<rodzic>...]"
 
 #: builtin/replace.c:25
-#, fuzzy
 msgid "git replace [-f] --convert-graft-file"
-msgstr "git replace [-f] --edit <obiekt>"
+msgstr "git replace [-f] --convert-graft-file"
 
 #: builtin/replace.c:26
 msgid "git replace -d <object>..."
@@ -21189,7 +21191,7 @@ msgstr "Pokazuj adres e-mail każdego autora"
 
 #: builtin/shortlog.c:371
 msgid "<w>[,<i1>[,<i2>]]"
-msgstr ""
+msgstr "<w>[,<i1>[,<i2>]]"
 
 #: builtin/shortlog.c:372
 msgid "Linewrap output"
@@ -21449,7 +21451,7 @@ msgstr "nie można przetworzyć łatki „%s”"
 
 #: builtin/sparse-checkout.c:413
 msgid "git sparse-checkout (set|add) (--stdin | <patterns>)"
-msgstr ""
+msgstr "git sparse-checkout (set|add) (--stdin | <wzorce>)"
 
 #: builtin/sparse-checkout.c:438
 #, fuzzy, c-format
@@ -22075,15 +22077,15 @@ msgid "disallow cloning into non-empty directory"
 msgstr "stosowanie na pustej historii"
 
 #: builtin/submodule--helper.c:1848
-#, fuzzy
 msgid ""
 "git submodule--helper clone [--prefix=<path>] [--quiet] [--reference "
 "<repository>] [--name <name>] [--depth <depth>] [--single-branch] --url "
 "<url> --path <path>"
 msgstr ""
 "git submodule--helper clone [--prefix=<ścieżka>] [--quiet] [--reference "
-"<repozytorium>] [--name <nazwa>] [--depth <głębokość>] --url <adres> --path "
-"<ścieżka>"
+"<repozytorium>] [--name <nazwa>] [--depth <głębokość>] [--single-branch]"
+" --url "
+"<adres> --path <ścieżka>"
 
 #: builtin/submodule--helper.c:1873
 #, c-format
@@ -22332,9 +22334,8 @@ msgstr ""
 "[<wzorzec>...]"
 
 #: builtin/tag.c:30
-#, fuzzy
 msgid "git tag -v [--format=<format>] <tagname>..."
-msgstr "git tag -v <nazwa-tagu>..."
+msgstr "git tag -v [--format=<format>] <nazwa-tagu>..."
 
 #: builtin/tag.c:89
 #, c-format
@@ -22882,9 +22883,8 @@ msgid "show statistics only"
 msgstr "pokazuj tylko statystyki"
 
 #: builtin/verify-tag.c:18
-#, fuzzy
 msgid "git verify-tag [-v | --verbose] [--format=<format>] <tag>..."
-msgstr "git verify-tag [-v | --verbose] <tag>..."
+msgstr "git verify-tag [-v | --verbose] [--format=<format>] <tag>..."
 
 #: builtin/verify-tag.c:36
 msgid "print tag contents"
@@ -22941,7 +22941,7 @@ msgstr "nie można odczytać drzewa (%s)"
 #: builtin/worktree.c:115
 #, c-format
 msgid "short read (expected %<PRIuMAX> bytes, read %<PRIuMAX>)"
-msgstr ""
+msgstr "przykrótki odczyt (oczekiwano %<PRIuMAX> bajtów, odczytano %<PRIuMAX>)"
 
 #: builtin/worktree.c:123
 #, fuzzy
@@ -22965,9 +22965,8 @@ msgid "report pruned working trees"
 msgstr "zgłaszaj przycięte uwagi"
 
 #: builtin/worktree.c:223
-#, fuzzy
 msgid "expire working trees older than <time>"
-msgstr "wygaś obiekty starsze niż <czas>"
+msgstr "wygaś drzewa robocze starsze niż <czas>"
 
 #: builtin/worktree.c:293
 #, c-format
@@ -23377,14 +23376,12 @@ msgid "Public key pinning not supported with cURL < 7.44.0"
 msgstr "Klucz publiczny niewspierany z cURLem < 7.44.0"
 
 #: http.c:910
-#, fuzzy
 msgid "CURLSSLOPT_NO_REVOKE not supported with cURL < 7.44.0"
-msgstr "Klucz publiczny niewspierany z cURLem < 7.44.0"
+msgstr "CURLSSLOPT_NO_REVOKE niewspierane z cURLem < 7.44.0"
 
 #: http.c:989
-#, fuzzy
 msgid "Protocol restrictions not supported with cURL < 7.19.4"
-msgstr "Klucz publiczny niewspierany z cURLem < 7.44.0"
+msgstr "Ograniczenia protokołów niewspierane z cURLem < 7.19.4"
 
 #: http.c:1132
 #, c-format
@@ -23579,9 +23576,8 @@ msgid "be more quiet"
 msgstr "mniej komunikatów"
 
 #: parse-options.h:317
-#, fuzzy
 msgid "use <n> digits to display object names"
-msgstr "użyj <n> znaków aby wyświetlić SHA-1"
+msgstr "użyj <n> cyfr, aby wyświetlić nazwy obiektów"
 
 #: parse-options.h:336
 msgid "how to strip spaces and #comments from message"
@@ -25398,7 +25394,7 @@ msgstr ""
 #: git-send-email.perl:866
 #, perl-format
 msgid "Are you sure you want to use <%s> [y/N]? "
-msgstr ""
+msgstr "Czy na pewno użyć <%s> [y/N]? "
 
 #: git-send-email.perl:921
 msgid ""
