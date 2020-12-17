@@ -54,9 +54,9 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-16 22:54+0100\n"
+"PO-Revision-Date: 2020-12-17 14:47+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
-"Language-Team: Polish\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3047,7 +3047,7 @@ msgstr "nie można skopiować uwag z „%s” do „%s”"
 #: convert.c:462
 #, c-format
 msgid "encoding '%s' from %s to %s and back is not the same"
-msgstr ""
+msgstr "kodowanie „%s” z %s na %s i z powrotem nie jest tym samym"
 
 #: convert.c:665
 #, fuzzy, c-format
@@ -3255,9 +3255,8 @@ msgid "multiple merge bases found"
 msgstr ""
 
 #: diff-no-index.c:238
-#, fuzzy
 msgid "git diff --no-index [<options>] <path> <path>"
-msgstr "git worktree add [<opcje>] <ścieżka> [<gałąź>]"
+msgstr "git diff --no-index [<opcje>] <ścieżka> <ścieżka>"
 
 #: diff-no-index.c:263
 msgid ""
@@ -3476,7 +3475,7 @@ msgstr ""
 
 #: diff.c:5398
 msgid "condensed summary such as creations, renames and mode changes"
-msgstr ""
+msgstr "zwarte podsumowanie takie jak utworzenia czy zmiany nazw i trybów"
 
 #: diff.c:5401
 #, fuzzy
@@ -3595,9 +3594,8 @@ msgid "specify the character to indicate a context instead of ' '"
 msgstr ""
 
 #: diff.c:5469
-#, fuzzy
 msgid "Diff rename options"
-msgstr "Opcje ogólne"
+msgstr "Opcje zmiany nazw różnic"
 
 #: diff.c:5470
 #, fuzzy
@@ -3609,9 +3607,8 @@ msgid "break complete rewrite changes into pairs of delete and create"
 msgstr ""
 
 #: diff.c:5475
-#, fuzzy
 msgid "detect renames"
-msgstr "nazwa zdalnego repozytorium"
+msgstr "wykrywaj zmiany nazw"
 
 #: diff.c:5479
 msgid "omit the preimage for deletes"
@@ -3626,9 +3623,8 @@ msgid "use unmodified files as source to find copies"
 msgstr ""
 
 #: diff.c:5488
-#, fuzzy
 msgid "disable rename detection"
-msgstr "Wykrywanie niedokładnych zmian nazw"
+msgstr "wyłącz wykrywanie zmian nazw"
 
 #: diff.c:5491
 msgid "use empty blobs as rename source"
@@ -4338,6 +4334,7 @@ msgstr "Podstawowe podręczniki Gita to:\n"
 #: help.c:429
 msgid "See 'git help <command>' to read about a specific subcommand"
 msgstr ""
+"Zobacz „git help <polecenie>”, aby przeczytać o konkretnym pod-poleceniu"
 
 #: help.c:434
 #, fuzzy
@@ -4367,21 +4364,19 @@ msgid "Uh oh. Your system reports no Git commands at all."
 msgstr "O jejciu. Twój system w ogóle nie zgłasza żadnych poleceń gita."
 
 #: help.c:613
-#, fuzzy, c-format
+#, c-format
 msgid "WARNING: You called a Git command named '%s', which does not exist."
-msgstr ""
-"Ostrzeżenie: Wywołano polecenie gita „%s”, które nie istnieje.\n"
-"Zakładam dalej, że chodziło o „%s”"
+msgstr "Ostrzeżenie: Wywołano polecenie Gita „%s”, które nie istnieje."
 
 #: help.c:618
 #, c-format
 msgid "Continuing under the assumption that you meant '%s'."
-msgstr ""
+msgstr "Zakładam dalej, że chodziło o „%s”."
 
 #: help.c:623
 #, c-format
 msgid "Continuing in %0.1f seconds, assuming that you meant '%s'."
-msgstr ""
+msgstr "Kontynuowanie za %0.1f sekundy, zakładam, że chodziło o „%s”."
 
 #: help.c:635
 msgid ""
@@ -4391,13 +4386,18 @@ msgid_plural ""
 "\n"
 "The most similar commands are"
 msgstr[0] ""
+"\n"
+"Najpodobniejsze polecenie to"
 msgstr[1] ""
+"\n"
+"Najpodobniejsze polecenia to"
 msgstr[2] ""
+"\n"
+"Najpodobniejsze polecenia to"
 
 #: help.c:675
-#, fuzzy
 msgid "git version [<options>]"
-msgstr "git column [<opcje>]"
+msgstr "git version [<opcje>]"
 
 #: help.c:730
 #, c-format
@@ -4423,11 +4423,11 @@ msgstr[2] ""
 
 #: ident.c:353
 msgid "Author identity unknown\n"
-msgstr ""
+msgstr "Nieznana tożsamość autora\n"
 
 #: ident.c:356
 msgid "Committer identity unknown\n"
-msgstr ""
+msgstr "Nieznana tożsamość składającego\n"
 
 #: ident.c:362
 msgid ""
@@ -4457,16 +4457,16 @@ msgstr ""
 
 #: ident.c:397
 msgid "no email was given and auto-detection is disabled"
-msgstr ""
+msgstr "nie podano adresu e-mail, a automatyczne wykrywanie jest wyłączone"
 
 #: ident.c:402
 #, c-format
 msgid "unable to auto-detect email address (got '%s')"
-msgstr ""
+msgstr "nie można wykryć automatycznie adresu e-mail (otrzymano „%s”)"
 
 #: ident.c:419
 msgid "no name was given and auto-detection is disabled"
-msgstr ""
+msgstr "nie podano nazwiska, a automatyczne wykrywanie jest wyłączone"
 
 #: ident.c:425
 #, fuzzy, c-format
@@ -4476,12 +4476,12 @@ msgstr "nie można odczytać drzewa (%s)"
 #: ident.c:433
 #, c-format
 msgid "empty ident name (for <%s>) not allowed"
-msgstr ""
+msgstr "puste nazwisko (do <%s>) niedozwolone"
 
 #: ident.c:439
 #, c-format
 msgid "name consists only of disallowed characters: %s"
-msgstr ""
+msgstr "nazwisko składa się wyłącznie z niedozwolonych znaków: %s"
 
 #: ident.c:454 builtin/commit.c:634
 #, c-format
@@ -4497,9 +4497,9 @@ msgid "sparse:path filters support has been dropped"
 msgstr ""
 
 #: list-objects-filter-options.c:109
-#, fuzzy, c-format
+#, c-format
 msgid "invalid filter-spec '%s'"
-msgstr "nieprawidłowa referencja: %s"
+msgstr "nieprawidłowy filtr: %s"
 
 #: list-objects-filter-options.c:125
 #, c-format
@@ -4519,9 +4519,9 @@ msgid "unable to upgrade repository format to support partial clone"
 msgstr ""
 
 #: list-objects-filter.c:492
-#, fuzzy, c-format
+#, c-format
 msgid "unable to access sparse blob in '%s'"
-msgstr "brak dostępu do „%s”"
+msgstr "brak dostępu do rzadkiego bloba w „%s”"
 
 #: list-objects-filter.c:495
 #, fuzzy, c-format
@@ -4728,12 +4728,12 @@ msgstr ""
 "pozostaje w drzewie."
 
 #: merge-recursive.c:1479
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "CONFLICT (%s/delete): %s deleted in %s and %s to %s in %s. Version %s of %s "
 "left in tree."
 msgstr ""
-"KONFLIKT (%s/usunięcie): %s usunięto w %s a %s w %s. Wersja %s pliku %s "
+"KONFLIKT (%s/usunięcie): %s usunięto w %s a %s do %s w %s. Wersja %s pliku %s "
 "pozostaje w drzewie."
 
 #: merge-recursive.c:1486
@@ -4746,12 +4746,12 @@ msgstr ""
 "pozostaje w drzewie na %s."
 
 #: merge-recursive.c:1491
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "CONFLICT (%s/delete): %s deleted in %s and %s to %s in %s. Version %s of %s "
 "left in tree at %s."
 msgstr ""
-"KONFLIKT (%s/usunięcie): %s usunięto w %s a %s w %s. Wersja %s pliku %s "
+"KONFLIKT (%s/usunięcie): %s usunięto w %s a %s do %s w %s. Wersja %s pliku %s "
 "pozostaje w drzewie na %s."
 
 #: merge-recursive.c:1526
@@ -4763,20 +4763,20 @@ msgid "renamed"
 msgstr "zmieniono nazwę"
 
 #: merge-recursive.c:1577 merge-recursive.c:2484 merge-recursive.c:3129
-#, fuzzy, c-format
+#, c-format
 msgid "Refusing to lose dirty file at %s"
-msgstr "Odmawiam utraty nieśledzonego pliku w „%s”"
+msgstr "Odmawiam utraty brudnego pliku w %s"
 
 #: merge-recursive.c:1587
-#, fuzzy, c-format
+#, c-format
 msgid "Refusing to lose untracked file at %s, even though it's in the way."
-msgstr "Odmawiam utraty nieśledzonego pliku w „%s”"
+msgstr "Odmawiam utraty nieśledzonego pliku w %s, mimo że nie zawadza."
 
 #: merge-recursive.c:1645
-#, fuzzy, c-format
+#, c-format
 msgid "CONFLICT (rename/add): Rename %s->%s in %s.  Added %s in %s"
 msgstr ""
-"KONFLIKT (zmiana nazwy/dodanie): Zmiana nazwy %s->%s w %s. %s dodano w %s"
+"KONFLIKT (zmiana nazwy/dodanie): Zmiana nazwy %s->%s w %s. Dodano %s w %s"
 
 #: merge-recursive.c:1676
 #, c-format
@@ -4784,9 +4784,10 @@ msgid "%s is a directory in %s adding as %s instead"
 msgstr "%s jest katalogiem w %s dodawanie zamiast tego jako %s"
 
 #: merge-recursive.c:1681
-#, fuzzy, c-format
+#, c-format
 msgid "Refusing to lose untracked file at %s; adding as %s instead"
-msgstr "Odmawiam utraty nieśledzonego pliku w „%s”"
+msgstr ""
+"Odmawiam utraty nieśledzonego pliku w %s; dodawanie zamiast tego jako %s"
 
 #: merge-recursive.c:1708
 #, c-format
@@ -4822,6 +4823,8 @@ msgid ""
 "CONFLICT (implicit dir rename): Existing file/dir at %s in the way of "
 "implicit directory rename(s) putting the following path(s) there: %s."
 msgstr ""
+"KONFLIKT (domyślna zmiana nazwy katalogu): Istniejący plik/katalog %s zawadza "
+"domyślnej zmianie nazwy wstawiając tam następujące ścieżki: %s."
 
 #: merge-recursive.c:2110
 #, c-format
@@ -4831,13 +4834,14 @@ msgid ""
 msgstr ""
 
 #: merge-recursive.c:2202
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "CONFLICT (rename/rename): Rename directory %s->%s in %s. Rename directory %s-"
 ">%s in %s"
 msgstr ""
-"KONFLIKT (zmiana nazwy/zmiana nazwy): Zmiana nazwy %s->%s w %s. Zmiana nazwy "
-"%s->%s w %s"
+"KONFLIKT (zmiana nazwy/zmiana nazwy): Zmiana nazwy katalogu %s->%s w %s."
+" Zmiana nazwy "
+"katalogu %s->%s w %s"
 
 #: merge-recursive.c:2447
 #, c-format
@@ -4845,6 +4849,8 @@ msgid ""
 "WARNING: Avoiding applying %s -> %s rename to %s, because %s itself was "
 "renamed."
 msgstr ""
+"Ostrzeżenie: unikam zastosowania zmiany nazwy %s -> %s na %s, bo %s "
+"sam zmienił nazwę."
 
 #: merge-recursive.c:2973
 #, c-format
@@ -4904,6 +4910,8 @@ msgid ""
 "CONFLICT (file location): %s added in %s inside a directory that was renamed "
 "in %s, suggesting it should perhaps be moved to %s."
 msgstr ""
+"KONFLIKT (położenie pliku): %s dodano w %s w katalogu, którego nazwa została "
+"zmieniona w %s, co sugeruje, że być może powinien trafić do %s."
 
 #: merge-recursive.c:3222
 #, c-format
@@ -4918,6 +4926,9 @@ msgid ""
 "CONFLICT (file location): %s renamed to %s in %s, inside a directory that "
 "was renamed in %s, suggesting it should perhaps be moved to %s."
 msgstr ""
+"KONFLIKT (położenie pliku): zmieniono nazwę %s na %s w %s, w katalogu,"
+" którego "
+"nazwa została zmieniona w %s, co sugeruje, że być może powinien trafić do %s."
 
 #: merge-recursive.c:3339
 #, c-format
@@ -5797,7 +5808,6 @@ msgstr ""
 "Ignorowanie."
 
 #: rebase-interactive.c:42
-#, fuzzy
 msgid ""
 "\n"
 "Commands:\n"
@@ -5820,13 +5830,21 @@ msgid ""
 msgstr ""
 "\n"
 "Polecenia:\n"
-" p, pick = dobierz zapis\n"
-" r, reword = użyj zapisu, ale przeredaguj jego komunikat\n"
-" e, edit = użyj zapisu, ale zatrzymaj się, żeby móc go poprawić\n"
-" s, squash = użyj zapisu, ale połącz go z poprzednim (spłaszcz)\n"
-" f, fixup = jak „squash”, ale odrzuć komunikat tego zapisu\n"
-" x, exec = wykonaj polecenie (resztę wiersza) w powłoce\n"
-" d, drop = usuń zapis\n"
+"p, pick <zapis> = dobierz zapis\n"
+"r, reword <zapis> = użyj zapisu, ale przeredaguj jego komunikat\n"
+"e, edit <zapis> = użyj zapisu, ale zatrzymaj się, żeby go poprawić\n"
+"s, squash <zapis> = użyj zapisu, ale połącz go z poprzednim (spłaszcz)\n"
+"f, fixup <zapis> = jak „squash”, ale odrzuć komunikat tego zapisu\n"
+"x, exec <polecenie> = wykonaj polecenie (resztę wiersza) w powłoce\n"
+"b, break = zatrzymaj się tu (kontynuuj przestawianie przez „git rebase"
+" --continue”)\n"
+"d, drop <zapis> = usuń zapis\n"
+"l, label <etykietka> = nazwij bieżące HEAD\n"
+"t, reset <etykietka> = zresetuj HEAD do etykietki\n"
+"m, merge [-C <zapis> | -c <zapis>] <etykietka> [# <wiersz>]\n"
+".       utwórz zapis scalenia używając oryginalnego komunikatu scalenia\n"
+".       (albo <wiersza>, jeśli nie podano oryginalnego zapisu scalenia.\n"
+".       Użyj -c <zapis>, aby przeredagować komunikat zapisu."
 "\n"
 "Kolejność wierszy może być zmieniona; są wykonywane z góry na dół.\n"
 
@@ -7108,9 +7126,9 @@ msgid "%s: cannot parse parent commit %s"
 msgstr "%s: nie można przetworzyć rodzica zapisu %s"
 
 #: sequencer.c:2011
-#, fuzzy, c-format
+#, c-format
 msgid "could not rename '%s' to '%s'"
-msgstr "nie można ustawić „%s” na „%s”"
+msgstr "nie można zmienić nazwy „%s” na „%s”"
 
 #: sequencer.c:2071
 #, c-format
@@ -8307,6 +8325,8 @@ msgid ""
 "Could not run 'git rev-list <commits> --not --remotes -n 1' command in "
 "submodule %s"
 msgstr ""
+"Nie można wykonać polecenia „git rev-list <zapisy> --not --remotes -n 1” w "
+"pod-module %s"
 
 #: submodule.c:1127
 #, fuzzy, c-format
@@ -8685,9 +8705,9 @@ msgid "Would set upstream of '%s' to '%s' of '%s'\n"
 msgstr "Ustawiłoby gałąź nadrzędną „%s” na „%s” z „%s”\n"
 
 #: transport.c:145
-#, fuzzy, c-format
+#, c-format
 msgid "could not read bundle '%s'"
-msgstr "nie można odczytać pliku „%s”"
+msgstr "nie można odczytać wiązki „%s”"
 
 #: transport.c:220
 #, c-format
@@ -8696,11 +8716,11 @@ msgstr "transport: nieprawidłowa opcja głębokości „%s”"
 
 #: transport.c:269
 msgid "see protocol.version in 'git help config' for more details"
-msgstr ""
+msgstr "więcej szczegółów pod protocol.version w „git help config”"
 
 #: transport.c:270
 msgid "server options require protocol version 2 or later"
-msgstr ""
+msgstr "opcje serwera wymagają wersji protokołu 2 lub późniejszej"
 
 #: transport.c:727
 #, fuzzy
@@ -8709,12 +8729,12 @@ msgstr "nie można przetworzyć skryptu autorstwa"
 
 #: transport.c:802
 msgid "support for protocol v2 not implemented yet"
-msgstr ""
+msgstr "wsparcie dla protokołu v2 jeszcze niezaimplementowane"
 
 #: transport.c:936
-#, fuzzy, c-format
+#, c-format
 msgid "unknown value for config '%s': %s"
-msgstr "nierozpoznana wartość „%s” klucza „%s”"
+msgstr "nierozpoznana wartość klucza „%s”: %s"
 
 #: transport.c:1002
 #, fuzzy, c-format
@@ -8766,9 +8786,8 @@ msgid "Aborting."
 msgstr "Przerywanie."
 
 #: transport.c:1315
-#, fuzzy
 msgid "failed to push all needed submodules"
-msgstr "Nie można dodać podmodułu „$sm_path”"
+msgstr "nie można wypchnąć wszystkich potrzebnych zagnieżdżonych pod-modułów"
 
 #: tree-walk.c:32
 msgid "too-short tree object"
@@ -8842,7 +8861,7 @@ msgstr ""
 "%%s"
 
 #: unpack-trees.c:130
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Updating the following directories would lose untracked files in them:\n"
 "%s"
@@ -8968,11 +8987,13 @@ msgid "Entry '%s' overlaps with '%s'.  Cannot bind."
 msgstr "Element „%s” pokrywa się z „%s”. Nie można związać."
 
 #: unpack-trees.c:175
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Cannot update submodule:\n"
 "%s"
-msgstr "uszkodzona łatka pod-modułu %s"
+msgstr ""
+"Nie można zaktualizować pod-modułu:\n"
+"%s"
 
 #: unpack-trees.c:178
 #, c-format
@@ -8981,13 +9002,18 @@ msgid ""
 "patterns:\n"
 "%s"
 msgstr ""
+"Następujące ścieżki nie są aktualne i zostały mimo rzadkich "
+"wzorców:\n"
+"%s"
 
 #: unpack-trees.c:180
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The following paths are unmerged and were left despite sparse patterns:\n"
 "%s"
-msgstr "Poniższe ścieżki są ignorowane przez jeden z plików .gitignore:\n"
+msgstr ""
+"Następujące ścieżki są niescalone i zostały mimo rzadkich wzorców:\n"
+"%s"
 
 #: unpack-trees.c:182
 #, c-format
@@ -8996,6 +9022,9 @@ msgid ""
 "patterns:\n"
 "%s"
 msgstr ""
+"Następujące ścieżki już istniały i nie są zaktualizowane mimo rzadkich "
+"wzorców:\n"
+"%s"
 
 #: unpack-trees.c:262
 #, c-format
@@ -9008,6 +9037,8 @@ msgid ""
 "After fixing the above paths, you may want to run `git sparse-checkout "
 "reapply`.\n"
 msgstr ""
+"Po naprawieniu powyższych ścieżek możesz chcieć wykonać „git "
+"sparse-checkout reapply”.\n"
 
 #: unpack-trees.c:350
 msgid "Updating files"
@@ -9021,13 +9052,12 @@ msgid ""
 msgstr ""
 
 #: unpack-trees.c:1498
-#, fuzzy
 msgid "Updating index flags"
-msgstr "Aktualizowanie %s"
+msgstr "Aktualizowanie flag indeksu"
 
 #: upload-pack.c:1550
 msgid "expected flush after fetch arguments"
-msgstr ""
+msgstr "oczekiwano wypróżnienia po argumentach pobrania"
 
 #: urlmatch.c:163
 msgid "invalid URL scheme name or missing '://' suffix"
@@ -9071,61 +9101,56 @@ msgstr "nie można odczytać „%s”"
 #: worktree.c:283
 #, c-format
 msgid "'%s' at main working tree is not the repository directory"
-msgstr ""
+msgstr "„%s” w głównym drzewie roboczym nie jest katalogiem repozytorium"
 
 #: worktree.c:294
 #, c-format
 msgid "'%s' file does not contain absolute path to the working tree location"
 msgstr ""
+"plik „%s” nie zawiera ścieżki bezwzględnej do położenia drzewa roboczego"
 
 #: worktree.c:306
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' does not exist"
-msgstr "ścieżka „%s” nie istnieje"
+msgstr "„%s” nie istnieje"
 
 #: worktree.c:312
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a .git file, error code %d"
-msgstr "„%s” nie jest zablokowany"
+msgstr "„%s” nie jest plikiem .git, kod błędu %d"
 
 #: worktree.c:321
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' does not point back to '%s'"
-msgstr "„%s” nie wskazuje na zapis"
+msgstr "„%s” nie wskazuje z powrotem na „%s”"
 
 #: worktree.c:587
-#, fuzzy
 msgid "not a directory"
-msgstr "To nie jest repozytorium gita"
+msgstr "nie jest katalogiem"
 
 #: worktree.c:596
-#, fuzzy
 msgid ".git is not a file"
-msgstr "git show %s: zły plik"
+msgstr ".git nie jest plikiem"
 
 #: worktree.c:598
 msgid ".git file broken"
-msgstr ""
+msgstr "plik .git zepsuty"
 
 #: worktree.c:600
-#, fuzzy
 msgid ".git file incorrect"
-msgstr "uszkodzony plik indeksu"
+msgstr "plik .git nieprawidłowy"
 
 #: worktree.c:670
-#, fuzzy
 msgid "not a valid path"
-msgstr "nieprawidłowy obiekt: %s"
+msgstr "nieprawidłowa ścieżka"
 
 #: worktree.c:676
-#, fuzzy
 msgid "unable to locate repository; .git is not a file"
-msgstr "nie można zapisać tymczasowego pliku indeksu"
+msgstr "nie można odnaleźć repozytorium; .git nie jest plikiem"
 
 #: worktree.c:679
-#, fuzzy
 msgid "unable to locate repository; .git file broken"
-msgstr "nie można zapisać tymczasowego pliku indeksu"
+msgstr "nie można odnaleźć repozytorium; plik .git zepsuty"
 
 #: worktree.c:685
 msgid "gitdir unreadable"
@@ -9133,7 +9158,7 @@ msgstr "katalog gita nie do odczytania"
 
 #: worktree.c:689
 msgid "gitdir incorrect"
-msgstr ""
+msgstr "katalog gita nieprawidłowy"
 
 #: wrapper.c:197 wrapper.c:367
 #, c-format
@@ -9154,14 +9179,13 @@ msgid "Unmerged paths:"
 msgstr "Niescalone ścieżki"
 
 #: wt-status.c:187 wt-status.c:219
-#, fuzzy
 msgid "  (use \"git restore --staged <file>...\" to unstage)"
-msgstr "  (użyj „git reset %s <plik>...”, aby wycofać)"
+msgstr "  (użyj „git restore --staged <plik>...”, aby wycofać)"
 
 #: wt-status.c:190 wt-status.c:222
-#, fuzzy, c-format
+#, c-format
 msgid "  (use \"git restore --source=%s --staged <file>...\" to unstage)"
-msgstr "  (użyj „git reset %s <plik>...”, aby wycofać)"
+msgstr "  (użyj „git restore --source=%s --staged <plik>...”, aby wycofać)"
 
 #: wt-status.c:193 wt-status.c:225
 msgid "  (use \"git rm --cached <file>...\" to unstage)"
@@ -9196,11 +9220,10 @@ msgid "  (use \"git add/rm <file>...\" to update what will be committed)"
 msgstr "  (użyj „git add/rm <plik>...”, żeby zmienić, co zostanie złożone)"
 
 #: wt-status.c:241
-#, fuzzy
 msgid ""
 "  (use \"git restore <file>...\" to discard changes in working directory)"
 msgstr ""
-"  (użyj „git checkout -- <plik>...”, aby odrzucić zmiany w katalogu roboczym)"
+"  (użyj „git restore <plik>...”, aby odrzucić zmiany w katalogu roboczym)"
 
 #: wt-status.c:243
 msgid "  (commit or discard the untracked or modified content in submodules)"
@@ -9301,13 +9324,12 @@ msgid "Submodule changes to be committed:"
 msgstr "Zmiany w pod-modułach do złożenia:"
 
 #: wt-status.c:1018
-#, fuzzy
 msgid ""
 "Do not modify or remove the line above.\n"
 "Everything below it will be ignored."
 msgstr ""
-"Nie dotykaj wiersza powyżej.\n"
-"Wszystko poniżej będzie usunięte."
+"Nie zmieniaj ani nie usuwaj wiersza powyżej.\n"
+"Wszystko po nim będzie pominięte."
 
 #: wt-status.c:1110
 #, c-format
@@ -9359,7 +9381,7 @@ msgstr "  (użyj „git am --abort”, aby przywrócić pierwotną gałąź)"
 
 #: wt-status.c:1305
 msgid "git-rebase-todo is missing."
-msgstr ""
+msgstr "brakuje git-rebase-todo."
 
 #: wt-status.c:1307
 msgid "No commands done."
@@ -9453,9 +9475,8 @@ msgid ""
 msgstr "  (użyj „git rebase --continue”, kiedy zadowolisz się swoimi zmianami)"
 
 #: wt-status.c:1415
-#, fuzzy
 msgid "Cherry-pick currently in progress."
-msgstr "nie trwa dobieranie ani odwracanie"
+msgstr "Trwa właśnie dobieranie."
 
 #: wt-status.c:1418
 #, c-format
@@ -9467,9 +9488,8 @@ msgid "  (fix conflicts and run \"git cherry-pick --continue\")"
 msgstr "  (napraw konflikty i wykonaj „git cherry-pick --continue”)"
 
 #: wt-status.c:1428
-#, fuzzy
 msgid "  (run \"git cherry-pick --continue\" to continue)"
-msgstr "  (napraw konflikty i wykonaj „git cherry-pick --continue”)"
+msgstr "  (wykonaj „git cherry-pick --continue”, aby kontynuować)"
 
 #: wt-status.c:1431
 msgid "  (all conflicts fixed: run \"git cherry-pick --continue\")"
@@ -9477,9 +9497,8 @@ msgstr ""
 "  (wszystkie konflikty naprawione: wykonaj „git cherry-pick --continue”)"
 
 #: wt-status.c:1433
-#, fuzzy
 msgid "  (use \"git cherry-pick --skip\" to skip this patch)"
-msgstr "  (użyj „git am --skip” aby pominąć tę łatkę)"
+msgstr "  (użyj „git cherry-pick --skip”, aby pominąć tę łatkę)"
 
 #: wt-status.c:1435
 msgid "  (use \"git cherry-pick --abort\" to cancel the cherry-pick operation)"
@@ -10306,25 +10325,32 @@ msgid "git archive: expected a flush"
 msgstr "git archive: oczekiwano wypróżnienia"
 
 #: builtin/bisect--helper.c:23
-#, fuzzy
 msgid "git bisect--helper --bisect-reset [<commit>]"
-msgstr "git bisect--helper --next-all [--no-checkout]"
+msgstr "git bisect--helper --bisect-reset [<zapis>]"
 
 #: builtin/bisect--helper.c:24
 msgid ""
 "git bisect--helper --bisect-write [--no-log] <state> <revision> <good_term> "
 "<bad_term>"
 msgstr ""
+"git bisect--helper --bisect-write [--no-log] <stan> <rewizja> <"
+"dobre_określenie> "
+"<złe_określenie>"
 
 #: builtin/bisect--helper.c:25
 msgid ""
 "git bisect--helper --bisect-check-and-set-terms <command> <good_term> "
 "<bad_term>"
 msgstr ""
+"git bisect--helper --bisect-check-and-set-terms <polecenie> <dobre_określenie"
+"> "
+"<złe_określenie>"
 
 #: builtin/bisect--helper.c:26
 msgid "git bisect--helper --bisect-next-check <good_term> <bad_term> [<term>]"
 msgstr ""
+"git bisect--helper --bisect-next-check <dobre_określenie> <złe_określenie> [<"
+"określenie>]"
 
 #: builtin/bisect--helper.c:27
 #, fuzzy
@@ -10341,6 +10367,10 @@ msgid ""
 "=<term>] [--no-checkout] [--first-parent] [<bad> [<good>...]] [--] "
 "[<paths>...]"
 msgstr ""
+"git bisect--helper --bisect-start [--term-{new,bad}=<określenie>"
+" --term-{old,good}"
+"=<określenie>] [--no-checkout] [--first-parent] [<złe> [<dobre>...]] [--] "
+"[<ścieżki>...]"
 
 #: builtin/bisect--helper.c:30
 #, fuzzy
@@ -10353,14 +10383,12 @@ msgid "git bisect--helper --bisect-auto-next"
 msgstr "git bisect--helper --next-all [--no-checkout]"
 
 #: builtin/bisect--helper.c:32
-#, fuzzy
 msgid "git bisect--helper --bisect-state (bad|new) [<rev>]"
-msgstr "git bisect--helper --next-all [--no-checkout]"
+msgstr "git bisect--helper --bisect-state (bad|new) [<rewizja>]"
 
 #: builtin/bisect--helper.c:33
-#, fuzzy
 msgid "git bisect--helper --bisect-state (good|old) [<rev>...]"
-msgstr "git bisect--helper --next-all [--no-checkout]"
+msgstr "git bisect--helper --bisect-state (good|old) [<rewizja>...]"
 
 #: builtin/bisect--helper.c:108
 #, fuzzy, c-format
@@ -10402,12 +10430,11 @@ msgid "'%s' is not a valid commit"
 msgstr "„%s” nie jest zapisem"
 
 #: builtin/bisect--helper.c:211
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "could not check out original HEAD '%s'. Try 'git bisect reset <commit>'."
 msgstr ""
-"Nie można wybrać oryginalnego HEAD „$branch”.\n"
-"Spróbuj „git bisect reset <zapis>”."
+"nie można wybrać oryginalnego HEAD „%s”. Spróbuj „git bisect reset <zapis>”."
 
 #: builtin/bisect--helper.c:255
 #, fuzzy, c-format
@@ -10513,10 +10540,10 @@ msgid "bad HEAD - I need a HEAD"
 msgstr "Zła zawartość HEAD — potrzebny HEAD"
 
 #: builtin/bisect--helper.c:712
-#, fuzzy, c-format
+#, c-format
 msgid "checking out '%s' failed. Try 'git bisect start <valid-branch>'."
 msgstr ""
-"Wybieranie „$start_head” nie powiodło się. Spróbuj „git bisect reset "
+"wybieranie „%s” nie powiodło się. Spróbuj „git bisect start "
 "<prawidłowa-gałąź>”."
 
 #: builtin/bisect--helper.c:733
@@ -10736,14 +10763,12 @@ msgid "rev"
 msgstr "odwracanie"
 
 #: builtin/blame.c:885
-#, fuzzy
 msgid "Ignore <rev> when blaming"
-msgstr "pomiń indeks przy sprawdzaniu"
+msgstr "Pomiń <rewizję> przy obwinianiu"
 
 #: builtin/blame.c:886
-#, fuzzy
 msgid "Ignore revisions from <file>"
-msgstr "odczytaj komunikat z pliku"
+msgstr "Pomiń rewizje z <pliku>"
 
 #: builtin/blame.c:887
 msgid "color redundant metadata from previous line differently"
@@ -10782,9 +10807,8 @@ msgid "range"
 msgstr "zakres"
 
 #: builtin/blame.c:895
-#, fuzzy
 msgid "Process only line range <start>,<end> or function :<funcname>"
-msgstr "Przetwórz tylko zakres wierszy n,m, licząc od 1"
+msgstr "Przetwórz tylko zakres <start>,<end> lub funkcję :<nazwa-funkcji>"
 
 #: builtin/blame.c:947
 msgid "--progress can't be used with --incremental or porcelain formats"
@@ -10815,9 +10839,8 @@ msgid "Blaming lines"
 msgstr "Obwinianie wierszy"
 
 #: builtin/branch.c:29
-#, fuzzy
 msgid "git branch [<options>] [-r | -a] [--merged] [--no-merged]"
-msgstr "git branch [<opcje>] [-r | -a] [--merged | --no-merged]"
+msgstr "git branch [<opcje>] [-r | -a] [--merged] [--no-merged]"
 
 #: builtin/branch.c:30
 msgid "git branch [<options>] [-l] [-f] <branch-name> [<start-point>]"
@@ -10832,18 +10855,16 @@ msgid "git branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
 msgstr "git branch [<opcje>] (-m | -M) [<stara-gałąż>] <nowa-gałąź>"
 
 #: builtin/branch.c:33
-#, fuzzy
 msgid "git branch [<options>] (-c | -C) [<old-branch>] <new-branch>"
-msgstr "git branch [<opcje>] (-m | -M) [<stara-gałąż>] <nowa-gałąź>"
+msgstr "git branch [<opcje>] (-c | -C) [<stara-gałąż>] <nowa-gałąź>"
 
 #: builtin/branch.c:34
 msgid "git branch [<options>] [-r | -a] [--points-at]"
 msgstr "git branch [<opcje>] [-r | -a] [--points-at]"
 
 #: builtin/branch.c:35
-#, fuzzy
 msgid "git branch [<options>] [-r | -a] [--format]"
-msgstr "git branch [<opcje>] [-r | -a] [--points-at]"
+msgstr "git branch [<opcje>] [-r | -a] [--format]"
 
 #: builtin/branch.c:154
 #, c-format
@@ -11227,11 +11248,12 @@ msgid "Branch '%s' has no upstream information"
 msgstr "Gałąź „%s” nie ma informacji o gałęzi nadrzędnej"
 
 #: builtin/branch.c:839
-#, fuzzy
 msgid ""
 "The -a, and -r, options to 'git branch' do not take a branch name.\n"
 "Did you mean to use: -a|-r --list <pattern>?"
-msgstr "opcje -a i -r do „git branch” nie mają sensu bez nazwy gałęzi"
+msgstr ""
+"Opcje -a i -r do „git branch” nie przyjmują nazwy gałęzi.\n"
+"Czy chodziło o: -a | -r --list <wzorzec>?"
 
 #: builtin/branch.c:843
 #, fuzzy
@@ -11265,7 +11287,7 @@ msgstr ""
 
 #: builtin/bugreport.c:90
 msgid "git bugreport [-o|--output-directory <file>] [-s|--suffix <format>]"
-msgstr ""
+msgstr "git bugreport [-o|--output-directory <plik>] [-s|--suffix <format>]"
 
 #: builtin/bugreport.c:97
 msgid ""
@@ -11324,22 +11346,20 @@ msgid "Created new report at '%s'.\n"
 msgstr ""
 
 #: builtin/bundle.c:15 builtin/bundle.c:23
-#, fuzzy
 msgid "git bundle create [<options>] <file> <git-rev-list args>"
-msgstr "git remote add [<opcje>] <nazwa> <adres>"
+msgstr "git bundle create [<opcje>] <plik> <argumenty git-rev-list>"
 
 #: builtin/bundle.c:16 builtin/bundle.c:28
-#, fuzzy
 msgid "git bundle verify [<options>] <file>"
-msgstr "git rm [<opcje>] [--] <plik>..."
+msgstr "git bundle verify [<opcje>] <plik>"
 
 #: builtin/bundle.c:17 builtin/bundle.c:33
 msgid "git bundle list-heads <file> [<refname>...]"
-msgstr ""
+msgstr "git bundle list-heads <plik> [<referencja>...]"
 
 #: builtin/bundle.c:18 builtin/bundle.c:38
 msgid "git bundle unbundle <file> [<refname>...]"
-msgstr ""
+msgstr "git bundle unbundle <plik> [<referencja>...]"
 
 #: builtin/bundle.c:67 builtin/pack-objects.c:3480
 msgid "do not show progress meter"
@@ -11397,13 +11417,12 @@ msgstr ""
 "p | <rodzaj> | --textconv | --filters) [--path=<ścieżka>] <obiekt>"
 
 #: builtin/cat-file.c:599
-#, fuzzy
 msgid ""
 "git cat-file (--batch[=<format>] | --batch-check[=<format>]) [--follow-"
 "symlinks] [--textconv | --filters]"
 msgstr ""
-"git cat-file (--batch | --batch-check) [--follow-symlinks] [--textconv | --"
-"filters]"
+"git cat-file (--batch[=<format>] | --batch-check[=<format>]) [--follow-"
+"symlinks] [--textconv | --filters]"
 
 #: builtin/cat-file.c:620
 #, fuzzy
@@ -11614,14 +11633,12 @@ msgid "git checkout [<options>] [<branch>] -- <file>..."
 msgstr "git checkout [<opcje>] [<gałąź>] -- <plik>..."
 
 #: builtin/checkout.c:37
-#, fuzzy
 msgid "git switch [<options>] [<branch>]"
-msgstr "git checkout [<opcje>] <gałąź>"
+msgstr "git switch [<opcje>] <gałąź>"
 
 #: builtin/checkout.c:42
-#, fuzzy
 msgid "git restore [<options>] [--source=<branch>] <file>..."
-msgstr "git checkout [<opcje>] [<gałąź>] -- <plik>..."
+msgstr "git restore [<opcje>] [--source=<gałąź>] <plik>..."
 
 #: builtin/checkout.c:188 builtin/checkout.c:227
 #, c-format
@@ -12110,9 +12127,8 @@ msgid "create reflog for new branch"
 msgstr "utwórz dziennik referencji nowej gałęzi"
 
 #: builtin/checkout.c:1771
-#, fuzzy
 msgid "second guess 'git checkout <no-such-branch>' (default)"
-msgstr "spróbuj zgadnąć „git checkout <nieistniejąca-gałąź>”"
+msgstr "spróbuj zgadnąć „git checkout <nieistniejąca-gałąź>” (domyślnie)"
 
 #: builtin/checkout.c:1772
 #, fuzzy
@@ -12130,9 +12146,8 @@ msgid "create/reset and switch to a branch"
 msgstr "utwórz/zresetuj i wybierz gałąź"
 
 #: builtin/checkout.c:1821
-#, fuzzy
 msgid "second guess 'git switch <no-such-branch>'"
-msgstr "spróbuj zgadnąć „git checkout <nieistniejąca-gałąź>”"
+msgstr "spróbuj zgadnąć „git switch <nieistniejąca-gałąź>”"
 
 #: builtin/checkout.c:1823
 #, fuzzy
@@ -12547,7 +12562,6 @@ msgid "done.\n"
 msgstr "gotowe.\n"
 
 #: builtin/clone.c:513
-#, fuzzy
 msgid ""
 "Clone succeeded, but checkout failed.\n"
 "You can inspect what was checked out with 'git status'\n"
@@ -12555,7 +12569,7 @@ msgid ""
 msgstr ""
 "Klonowanie powiodło się, ale już nie wybieranie.\n"
 "Możesz zobaczyć, co zostało wybrane w „git status”\n"
-"i ponowić wybranie z „git checkout -f HEAD”\n"
+"i ponowić przez „git restore --source=HEAD :/”\n"
 
 #: builtin/clone.c:590
 #, c-format
@@ -12740,6 +12754,8 @@ msgstr "--command musi być pierwszym argumentem"
 msgid ""
 "git commit-graph verify [--object-dir <objdir>] [--shallow] [--[no-]progress]"
 msgstr ""
+"git commit-graph verify [--object-dir <katalog-obiektów>] [--shallow]"
+" [--[no-]progress]"
 
 #: builtin/commit-graph.c:14 builtin/commit-graph.c:27
 msgid ""
@@ -12747,6 +12763,9 @@ msgid ""
 "split[=<strategy>]] [--reachable|--stdin-packs|--stdin-commits] [--changed-"
 "paths] [--[no-]max-new-filters <n>] [--[no-]progress] <split options>"
 msgstr ""
+"git commit-graph write [--object-dir <katalog-obiektów>] [--append] [--"
+"split[=<strategia>]] [--reachable|--stdin-packs|--stdin-commits] [--changed-"
+"paths] [--[no-]max-new-filters <n>] [--[no-]progress] <opcje podziału>"
 
 #: builtin/commit-graph.c:64
 #, fuzzy, c-format
@@ -12820,9 +12839,8 @@ msgid "maximum ratio between two levels of a split commit-graph"
 msgstr ""
 
 #: builtin/commit-graph.c:232
-#, fuzzy
 msgid "only expire files older than a given date-time"
-msgstr "wygaś obiekty starsze niż <czas>"
+msgstr "wygaś tylko obiekty starsze niż podany czas"
 
 #: builtin/commit-graph.c:234
 msgid "maximum number of changed-path Bloom filters to compute"
@@ -12841,6 +12859,9 @@ msgid ""
 "git commit-tree [(-p <parent>)...] [-S[<keyid>]] [(-m <message>)...] [(-F "
 "<file>)...] <tree>"
 msgstr ""
+"git commit-tree [(-p <rodzic>)...] [-S[<id-klucza>]] [(-m <komunikat>)...]"
+" [(-F "
+"<plik>)...] <drzewo>"
 
 #: builtin/commit-tree.c:31
 #, c-format
@@ -13291,7 +13312,7 @@ msgstr "nie odpytuj zdalnych repozytoriów"
 
 #: builtin/commit.c:1395
 msgid "detect renames, optionally set similarity index"
-msgstr ""
+msgstr "wykryj zmiany nazw, opcjonalnie ustaw wskaźnik podobieństwa"
 
 #: builtin/commit.c:1415
 msgid "Unsupported combination of ignored and untracked-files arguments"
@@ -13449,15 +13470,15 @@ msgid "Aborting commit; you did not edit the message.\n"
 msgstr "Przerywanie zapisu; nie wpisano komunikatu.\n"
 
 #: builtin/commit.c:1696
-#, fuzzy
 msgid ""
 "repository has been updated, but unable to write\n"
 "new_index file. Check that disk is not full and quota is\n"
 "not exceeded, and then \"git restore --staged :/\" to recover."
 msgstr ""
-"Repozytorium zostało zaktualizowane, ale nie można zapisać\n"
+"repozytorium zostało zaktualizowane, ale nie można zapisać\n"
 "pliku new_index.  Sprawdź, czy jest jeszcze miejsce na dysku\n"
-"i nie jest przekroczony przydział, i wykonaj „git reset HEAD”, by się "
+"i nie jest przekroczony przydział, i wykonaj „git restore --staged :/”, by"
+" się "
 "pozbierać."
 
 #: builtin/config.c:11
@@ -13837,7 +13858,7 @@ msgstr "Nie można uzyskać obecnego katalogu roboczego"
 
 #: builtin/describe.c:26
 msgid "git describe [<options>] [<commit-ish>...]"
-msgstr "git describe [<zapis>] [<rewizja>...]"
+msgstr "git describe [<opcje>] [<zapis>...]"
 
 #: builtin/describe.c:27
 msgid "git describe [<options>] --dirty"
@@ -13966,9 +13987,8 @@ msgid "only consider tags matching <pattern>"
 msgstr "uwzględnij tylko tagi pasujące do <wzorca>"
 
 #: builtin/describe.c:568
-#, fuzzy
 msgid "do not consider tags matching <pattern>"
-msgstr "uwzględnij tylko tagi pasujące do <wzorca>"
+msgstr "nie uwzględniaj tagów pasujących do <wzorca>"
 
 #: builtin/describe.c:570 builtin/name-rev.c:535
 msgid "show abbreviated commit object as fallback"
@@ -13983,9 +14003,8 @@ msgid "append <mark> on dirty working tree (default: \"-dirty\")"
 msgstr "dodaj <znamię> do brudnego drzewa roboczego (domyślnie „-dirty”)"
 
 #: builtin/describe.c:575
-#, fuzzy
 msgid "append <mark> on broken working tree (default: \"-broken\")"
-msgstr "dodaj <znamię> do brudnego drzewa roboczego (domyślnie „-dirty”)"
+msgstr "dodaj <znamię> do zepsutego drzewa roboczego (domyślnie „-broken”)"
 
 #: builtin/describe.c:593
 msgid "--long is incompatible with --abbrev=0"
@@ -14053,9 +14072,8 @@ msgid "%s...%s: multiple merge bases, using %s"
 msgstr ""
 
 #: builtin/difftool.c:30
-#, fuzzy
 msgid "git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
-msgstr "git log [<opcje>] [<zakres-rewizji>] [[--] <ścieżka>...]"
+msgstr "git difftool [<opcje>] [<zapis> [<zapis>]] [--] [<ścieżka>...]"
 
 #: builtin/difftool.c:260
 #, c-format
@@ -14160,15 +14178,15 @@ msgstr "-b, -B i --detach się wykluczają"
 
 #: builtin/difftool.c:749
 msgid "no <tool> given for --tool=<tool>"
-msgstr ""
+msgstr "nie podano <narzędzia> do --tool=<narzędzie>"
 
 #: builtin/difftool.c:756
 msgid "no <cmd> given for --extcmd=<cmd>"
-msgstr ""
+msgstr "nie podano <polecenia> do --extcmd=<polecenie>"
 
 #: builtin/env--helper.c:6
 msgid "git env--helper --type=[bool|ulong] <options> <env-var>"
-msgstr ""
+msgstr "git env--helper --type=[bool|ulong] <opcje> <zmienna-środ>"
 
 #: builtin/env--helper.c:42 builtin/hash-object.c:98
 msgid "type"
@@ -14270,7 +14288,7 @@ msgstr "od:do"
 
 #: builtin/fast-export.c:1227
 msgid "convert <from> to <to> in anonymized output"
-msgstr ""
+msgstr "zamień <z> na <na> w zanonimizowanym wyjściu"
 
 #: builtin/fast-export.c:1230
 msgid "Reference parents which are not in fast-export stream by object id"
@@ -14735,14 +14753,12 @@ msgid "git for-each-ref [--points-at <object>]"
 msgstr "git for-each-ref [--points-at <obiekt>]"
 
 #: builtin/for-each-ref.c:12
-#, fuzzy
 msgid "git for-each-ref [--merged [<commit>]] [--no-merged [<commit>]]"
-msgstr "git for-each-ref [(--merged | --no-merged) [<obiekt>]]"
+msgstr "git for-each-ref [--merged [<zapis>]] [--no-merged [<zapis>]]"
 
 #: builtin/for-each-ref.c:13
-#, fuzzy
 msgid "git for-each-ref [--contains [<commit>]] [--no-contains [<commit>]]"
-msgstr "git for-each-ref [--contains [<obiekt>]]"
+msgstr "git for-each-ref [--contains [<zapis>]] [--no-contains [<zapis>]]"
 
 #: builtin/for-each-ref.c:28
 msgid "quote placeholders suitably for shells"
@@ -14765,9 +14781,8 @@ msgid "show only <n> matched refs"
 msgstr "pokazuj tylko <n> pasujących referencji"
 
 #: builtin/for-each-ref.c:39 builtin/tag.c:440
-#, fuzzy
 msgid "respect format colors"
-msgstr "oczekiwany format: %%(color:<kolor>)"
+msgstr "uszanuj kolory formatu"
 
 #: builtin/for-each-ref.c:42
 msgid "print only refs which points at the given object"
@@ -14791,9 +14806,8 @@ msgid "print only refs which don't contain the commit"
 msgstr "wypisz tylko referencje zawierające ten zapis"
 
 #: builtin/for-each-repo.c:9
-#, fuzzy
 msgid "git for-each-repo --config=<config> <command-args>"
-msgstr "git for-each-ref [--contains [<obiekt>]]"
+msgstr "git for-each-repo --config=<konfiguracja> <argumenty-polecenia>"
 
 #: builtin/for-each-repo.c:37
 msgid "config"
@@ -14805,7 +14819,7 @@ msgstr ""
 
 #: builtin/for-each-repo.c:46
 msgid "missing --config=<config>"
-msgstr ""
+msgstr "brakuje --config=<konfiguracja>"
 
 #: builtin/fsck.c:69 builtin/fsck.c:148 builtin/fsck.c:149
 msgid "unknown"
@@ -15156,6 +15170,7 @@ msgstr ""
 msgid ""
 "git maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"
 msgstr ""
+"git maintenance run [--auto] [--[no-]quiet] [--task=<zadanie>] [--schedule]"
 
 #: builtin/gc.c:738
 msgid "--no-schedule is not allowed"
@@ -15227,7 +15242,7 @@ msgstr "„%s” i %s wykluczają się"
 
 #: builtin/gc.c:1409
 msgid "run tasks based on the state of the repository"
-msgstr ""
+msgstr "uruchamiaj zadania w oparciu o stan repozytorium"
 
 #: builtin/gc.c:1410
 msgid "frequency"
@@ -15235,50 +15250,49 @@ msgstr "częstotliwość"
 
 #: builtin/gc.c:1411
 msgid "run tasks based on frequency"
-msgstr ""
+msgstr "uruchamiaj zadania w oparciu o częstotliwość"
 
 #: builtin/gc.c:1414
 msgid "do not report progress or other information over stderr"
 msgstr ""
+"nie zgłaszaj postępu ani innych informacji na standardowe wyjście"
+" diagnostyczne"
 
 #: builtin/gc.c:1415
 msgid "task"
 msgstr "zadanie"
 
 #: builtin/gc.c:1416
-#, fuzzy
 msgid "run a specific task"
-msgstr "nie podano ścieżki"
+msgstr "uruchom konkretne zadanie"
 
 #: builtin/gc.c:1433
 msgid "use at most one of --auto and --schedule=<frequency>"
-msgstr ""
+msgstr "--auto i --schedule=<frequency> się wykluczają"
 
 #: builtin/gc.c:1467
-#, fuzzy
 msgid "failed to run 'git config'"
-msgstr "nie można pisać do „%s”"
+msgstr "nie można wykonać „git config”"
 
 #: builtin/gc.c:1512
 msgid "another process is scheduling background maintenance"
-msgstr ""
+msgstr "inny proces planuje porządki w tle"
 
 #: builtin/gc.c:1525
 msgid "failed to run 'crontab -l'; your system might not support 'cron'"
-msgstr ""
+msgstr "nie można wykonać „crontab -l”; ten system może nie wspierać crona"
 
 #: builtin/gc.c:1544
 msgid "failed to run 'crontab'; your system might not support 'cron'"
-msgstr ""
+msgstr "nie można wykonać „crontab”; ten system może nie wspierać crona"
 
 #: builtin/gc.c:1550
-#, fuzzy
 msgid "failed to open stdin of 'crontab'"
-msgstr "nie można otworzyć „%s”"
+msgstr "nie można otworzyć standardowego wejścia „crontab”"
 
 #: builtin/gc.c:1592
 msgid "'crontab' died"
-msgstr ""
+msgstr "„crontab” padł"
 
 #: builtin/gc.c:1605
 #, fuzzy
@@ -15286,9 +15300,8 @@ msgid "failed to add repo to global config"
 msgstr "nie można przeanalizować konfiguracji wiersza poleceń"
 
 #: builtin/gc.c:1615
-#, fuzzy
 msgid "git maintenance <subcommand> [<options>]"
-msgstr "git notes merge --commit [<opcje>]"
+msgstr "git maintenance <pod-polecenie> [<opcje>]"
 
 #: builtin/gc.c:1634
 #, fuzzy, c-format
@@ -16278,14 +16291,12 @@ msgid "Use mail map file"
 msgstr "Użyj pliku mapy adresów"
 
 #: builtin/log.c:183
-#, fuzzy
 msgid "only decorate refs that match <pattern>"
-msgstr "użyj tylko referencji pasujących do <wzorca>"
+msgstr "dekoruj tylko referencje pasujące do <wzorca>"
 
 #: builtin/log.c:185
-#, fuzzy
 msgid "do not decorate refs that match <pattern>"
-msgstr "użyj tylko referencji pasujących do <wzorca>"
+msgstr "nie dekoruj referencji pasujących do <wzorca>"
 
 #: builtin/log.c:186
 msgid "decorate options"
@@ -16296,11 +16307,12 @@ msgid ""
 "Trace the evolution of line range <start>,<end> or function :<funcname> in "
 "<file>"
 msgstr ""
+"Śledź ewolucję zakresu wierszy <start>,<end> lub funkcji :<nazwa-funkcji> "
+"w <pliku>"
 
 #: builtin/log.c:212
-#, fuzzy
 msgid "-L<range>:<file> cannot be used with pathspec"
-msgstr "%s: %s i %s wykluczają się"
+msgstr "-L<zakres>:<plik> i ścieżki się wykluczają"
 
 #: builtin/log.c:302
 #, c-format
@@ -17416,6 +17428,8 @@ msgid ""
 "git multi-pack-index [<options>] (write|verify|expire|repack --batch-"
 "size=<size>)"
 msgstr ""
+"git multi-pack-index [<opcje>] (write|verify|expire|repack --batch-"
+"size=<rozmiar>)"
 
 #: builtin/multi-pack-index.c:26
 msgid "object directory containing set of packfile and pack-index pairs"
@@ -17564,9 +17578,8 @@ msgid "only use refs matching <pattern>"
 msgstr "użyj tylko referencji pasujących do <wzorca>"
 
 #: builtin/name-rev.c:529
-#, fuzzy
 msgid "ignore refs matching <pattern>"
-msgstr "użyj tylko referencji pasujących do <wzorca>"
+msgstr "pomiń referencje pasujące do <wzorca>"
 
 #: builtin/name-rev.c:531
 msgid "list all commits reachable from all refs"
@@ -17636,9 +17649,8 @@ msgid "git notes [--ref <notes-ref>] remove [<object>...]"
 msgstr "git notes [--ref <ref-uwagi>] remove [<obiekt>...]"
 
 #: builtin/notes.c:38
-#, fuzzy
 msgid "git notes [--ref <notes-ref>] prune [-n] [-v]"
-msgstr "git notes [--ref <ref-uwagi>] prune [-n | -v]"
+msgstr "git notes [--ref <ref-uwag>] prune [-n] [-v]"
 
 #: builtin/notes.c:39
 msgid "git notes [--ref <notes-ref>] get-ref"
@@ -18180,9 +18192,8 @@ msgid "bad index version '%s'"
 msgstr "zła wersja indeksu „%s”"
 
 #: builtin/pack-objects.c:3488
-#, fuzzy
 msgid "<version>[,<offset>]"
-msgstr "wersja[,offset]"
+msgstr "<wersja>[,<pozycja>]"
 
 #: builtin/pack-objects.c:3489
 msgid "write the pack index file in the specified idx format version"
@@ -18399,9 +18410,8 @@ msgid "git prune-packed [-n | --dry-run] [-q | --quiet]"
 msgstr "git prune-packed [-n | --dry-run] [-q | --quiet]"
 
 #: builtin/prune.c:14
-#, fuzzy
 msgid "git prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
-msgstr "git prune [-n] [-v] [--expire <czas>] [--] [<czoło>...]"
+msgstr "git prune [-n] [-v] [--progress] [--expire <czas>] [--] [<czoło>...]"
 
 #: builtin/prune.c:133
 msgid "report pruned objects"
@@ -18817,9 +18827,8 @@ msgid "force updates"
 msgstr "wymuszone aktualizacje"
 
 #: builtin/push.c:562 builtin/send-pack.c:204
-#, fuzzy
 msgid "<refname>:<expect>"
-msgstr "referencja>:<oczekiwana"
+msgstr "<referencja>:<oczekiwana>"
 
 #: builtin/push.c:563 builtin/send-pack.c:205
 msgid "require old value of ref to be at this value"
@@ -18928,16 +18937,16 @@ msgstr "opcje wypychania nie mogą zawierać znaków końca wiersza"
 #: builtin/range-diff.c:8
 msgid "git range-diff [<options>] <old-base>..<old-tip> <new-base>..<new-tip>"
 msgstr ""
+"git range-diff [<opcje>] <stara-podstawa>..<stary-czubek> <nowa-podstawa>..<"
+"nowy-czubek>"
 
 #: builtin/range-diff.c:9
-#, fuzzy
 msgid "git range-diff [<options>] <old-tip>...<new-tip>"
-msgstr "git merge [<opcje>] [<zapis>...]"
+msgstr "git range-diff [<opcje>] <stary-czubek>...<nowy-czubek>"
 
 #: builtin/range-diff.c:10
-#, fuzzy
 msgid "git range-diff [<options>] <base> <old-tip> <new-tip>"
-msgstr "git mv [<opcje>] <źródło>... <cel>"
+msgstr "git range-diff [<opcje>] <podstawa> <stary-czubek> <nowy-czubek>"
 
 #: builtin/range-diff.c:22
 msgid "Percentage by which creation is weighted"
@@ -19058,16 +19067,20 @@ msgid ""
 "git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] "
 "[<upstream> [<branch>]]"
 msgstr ""
+"git rebase [-i] [options] [--exec <polecenie>] [--onto <nowa-podstawa> |"
+" --keep-base] "
+"[<gałąź-nadrzędna> [<gałąź>]]"
 
 #: builtin/rebase.c:37
 msgid ""
 "git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
 msgstr ""
+"git rebase [-i] [options] [--exec <polecenie>] [--onto <nowa-podstawa>]"
+" --root [<gałąź>]"
 
 #: builtin/rebase.c:39
-#, fuzzy
 msgid "git rebase --continue | --abort | --skip | --edit-todo"
-msgstr "git am [<opcje>] (--continue | --skip | --abort)"
+msgstr "git rebase --continue | --abort | --skip | --edit-todo"
 
 #: builtin/rebase.c:193 builtin/rebase.c:217 builtin/rebase.c:244
 #, fuzzy, c-format
@@ -19094,9 +19107,8 @@ msgid "a base commit must be provided with --upstream or --onto"
 msgstr ""
 
 #: builtin/rebase.c:480
-#, fuzzy
 msgid "git rebase--interactive [<options>]"
-msgstr "git repack [<opcje>]"
+msgstr "git rebase--interactive [<opcje>]"
 
 #: builtin/rebase.c:493 builtin/rebase.c:1388
 msgid "keep commits which start empty"
@@ -19305,7 +19317,7 @@ msgid ""
 msgstr ""
 
 #: builtin/rebase.c:1238
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s\n"
 "Please specify which branch you want to rebase against.\n"
@@ -19313,7 +19325,13 @@ msgid ""
 "\n"
 "    git rebase '<branch>'\n"
 "\n"
-msgstr "Podaj, względem jakiej gałęzi przestawić."
+msgstr ""
+"%s\n"
+"Podaj, względem jakiej gałęzi chcesz przestawiać.\n"
+"See git-rebase(1) for details.\n"
+"\n"
+"    git rebase '<branch>'\n"
+"\n"
 
 #: builtin/rebase.c:1254
 #, fuzzy, c-format
@@ -19457,9 +19475,8 @@ msgid "try to rebase merges instead of skipping them"
 msgstr ""
 
 #: builtin/rebase.c:1410
-#, fuzzy
 msgid "use 'merge-base --fork-point' to refine upstream"
-msgstr "git merge-base --fork-point <referencja> [<zapis>]"
+msgstr "użyj „git merge-base --fork-point”, aby poprawić gałąź nadrzędną"
 
 #: builtin/rebase.c:1412
 #, fuzzy
@@ -19769,6 +19786,9 @@ msgid ""
 "rewrite] [--updateref] [--stale-fix] [--dry-run | -n] [--verbose] [--all] "
 "<refs>..."
 msgstr ""
+"git reflog expire [--expire=<czas>] [--expire-unreachable=<czas>] [--"
+"rewrite] [--updateref] [--stale-fix] [--dry-run | -n] [--verbose] [--all] "
+"<referencje>..."
 
 #: builtin/reflog.c:22
 msgid ""
@@ -20739,19 +20759,17 @@ msgstr ""
 "git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<zapis>]"
 
 #: builtin/reset.c:33
-#, fuzzy
 msgid "git reset [-q] [<tree-ish>] [--] <pathspec>..."
-msgstr "git reset [-q] [<drzewo>] [--] <ścieżki>..."
+msgstr "git reset [-q] [<drzewo>] [--] <ścieżka>..."
 
 #: builtin/reset.c:34
 msgid ""
 "git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]"
-msgstr ""
+msgstr "git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<drzewo>]"
 
 #: builtin/reset.c:35
-#, fuzzy
 msgid "git reset --patch [<tree-ish>] [--] [<pathspec>...]"
-msgstr "git reset --patch [<drzewo>] [--] [<ścieżki>...]"
+msgstr "git reset --patch [<drzewo>] [--] [<ścieżka>...]"
 
 #: builtin/reset.c:41
 msgid "mixed"
@@ -21133,14 +21151,12 @@ msgid "print status from remote helper"
 msgstr "wypisuj stan zdalnego pomocnika"
 
 #: builtin/shortlog.c:16
-#, fuzzy
 msgid "git shortlog [<options>] [<revision-range>] [[--] <path>...]"
-msgstr "git shortlog [<opcje>] [<zakres-rewizji>] [[--] [<ścieżka>...]]"
+msgstr "git shortlog [<opcje>] [<zakres-rewizji>] [[--] <ścieżka>...]"
 
 #: builtin/shortlog.c:17
-#, fuzzy
 msgid "git log --pretty=short | git shortlog [<options>]"
-msgstr "git worktree list [<opcje>]"
+msgstr "git log --pretty=short | git shortlog [<opcje>]"
 
 #: builtin/shortlog.c:135
 msgid "using multiple --group options with stdin is not supported"
@@ -21389,7 +21405,7 @@ msgstr ""
 
 #: builtin/sparse-checkout.c:21
 msgid "git sparse-checkout (init|list|set|add|reapply|disable) <options>"
-msgstr ""
+msgstr "git sparse-checkout (init|list|set|add|reapply|disable) <opcje>"
 
 #: builtin/sparse-checkout.c:50
 #, fuzzy
@@ -21464,27 +21480,24 @@ msgid "error while refreshing working directory"
 msgstr "Nie można uzyskać obecnego katalogu roboczego"
 
 #: builtin/stash.c:22 builtin/stash.c:38
-#, fuzzy
 msgid "git stash list [<options>]"
-msgstr "git worktree list [<opcje>]"
+msgstr "git stash list [<opcje>]"
 
 #: builtin/stash.c:23 builtin/stash.c:43
-#, fuzzy
 msgid "git stash show [<options>] [<stash>]"
-msgstr "git remote show [<opcje>] <nazwa>"
+msgstr "git stash show [<opcje>] [<schowek>]"
 
 #: builtin/stash.c:24 builtin/stash.c:48
 msgid "git stash drop [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash drop [-q|--quiet] [<schowek>]"
 
 #: builtin/stash.c:25
 msgid "git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash ( pop | apply ) [--index] [-q|--quiet] [<schowek>]"
 
 #: builtin/stash.c:26 builtin/stash.c:63
-#, fuzzy
 msgid "git stash branch <branchname> [<stash>]"
-msgstr "git branch [<opcje>] [-l] [-f] <nazwa-gałęzi> [<początek>]"
+msgstr "git stash branch <gałąź> [<schowek>]"
 
 #: builtin/stash.c:27 builtin/stash.c:68
 msgid "git stash clear"
@@ -21497,24 +21510,30 @@ msgid ""
 "          [--pathspec-from-file=<file> [--pathspec-file-nul]]\n"
 "          [--] [<pathspec>...]]"
 msgstr ""
+"git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
+"          [-u|--include-untracked] [-a|--all] [-m|--message <komunikat>]\n"
+"          [--pathspec-from-file=<plik> [--pathspec-file-nul]]\n"
+"          [--] [<ścieżka>...]]"
 
 #: builtin/stash.c:32 builtin/stash.c:85
 msgid ""
 "git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
 "          [-u|--include-untracked] [-a|--all] [<message>]"
 msgstr ""
+"git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
+"          [-u|--include-untracked] [-a|--all] [<komunikat>]"
 
 #: builtin/stash.c:53
 msgid "git stash pop [--index] [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash pop [--index] [-q|--quiet] [<schowek>]"
 
 #: builtin/stash.c:58
 msgid "git stash apply [--index] [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash apply [--index] [-q|--quiet] [<schowek>]"
 
 #: builtin/stash.c:73
 msgid "git stash store [-m|--message <message>] [-q|--quiet] <commit>"
-msgstr ""
+msgstr "git stash store [-m|--message <komunikat>] [-q|--quiet] <zapis>"
 
 #: builtin/stash.c:78
 msgid ""
@@ -21522,6 +21541,9 @@ msgid ""
 "          [-u|--include-untracked] [-a|--all] [-m|--message <message>]\n"
 "          [--] [<pathspec>...]]"
 msgstr ""
+"git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
+"          [-u|--include-untracked] [-a|--all] [-m|--message <komunikat>]\n"
+"          [--] [<ścieżka>...]]"
 
 #: builtin/stash.c:128
 #, fuzzy, c-format
@@ -21621,7 +21643,7 @@ msgstr "komunikat skrytki"
 
 #: builtin/stash.c:827
 msgid "\"git stash store\" requires one <commit> argument"
-msgstr ""
+msgstr "„git stash store” wymaga jednego argumentu z <zapisem>"
 
 #: builtin/stash.c:1042
 msgid "No changes selected"
@@ -21782,7 +21804,7 @@ msgstr "schodź do pod-modułów"
 
 #: builtin/submodule--helper.c:572
 msgid "git submodule--helper foreach [--quiet] [--recursive] [--] <command>"
-msgstr ""
+msgstr "git submodule--helper foreach [--quiet] [--recursive] [--] <polecenie>"
 
 #: builtin/submodule--helper.c:599
 #, c-format
@@ -21817,9 +21839,8 @@ msgid "Suppress output for initializing a submodule"
 msgstr "Powstrzymaj wyjście przy inicjalizacji pod-modułu"
 
 #: builtin/submodule--helper.c:714
-#, fuzzy
 msgid "git submodule--helper init [<options>] [<path>]"
-msgstr "git submodule--helper init [<ścieżka>]"
+msgstr "git submodule--helper init [<opcje>] [<ścieżka>]"
 
 #: builtin/submodule--helper.c:787 builtin/submodule--helper.c:922
 #, c-format
@@ -21853,9 +21874,8 @@ msgid "recurse into nested submodules"
 msgstr "schodź do pod-modułów"
 
 #: builtin/submodule--helper.c:893
-#, fuzzy
 msgid "git submodule status [--quiet] [--cached] [--recursive] [<path>...]"
-msgstr "git submodule--helper update_clone [--prefix=<ścieżka>] [<ścieżka>...]"
+msgstr "git submodule status [--quiet] [--cached] [--recursive] [<ścieżka>...]"
 
 #: builtin/submodule--helper.c:917
 msgid "git submodule--helper name <path>"
@@ -21905,9 +21925,8 @@ msgid "limit the summary size"
 msgstr "ogranicz do głównych gałęzi"
 
 #: builtin/submodule--helper.c:1311
-#, fuzzy
 msgid "git submodule--helper summary [<options>] [<commit>] [--] [<path>]"
-msgstr "git submodule--helper init [<ścieżka>]"
+msgstr "git submodule--helper summary [<opcje>] [<zapis>] [--] [<ścieżka>]"
 
 #: builtin/submodule--helper.c:1335
 #, fuzzy
@@ -21945,9 +21964,8 @@ msgid "Suppress output of synchronizing submodule url"
 msgstr "Powstrzymaj wyjście przy inicjalizacji pod-modułu"
 
 #: builtin/submodule--helper.c:1492
-#, fuzzy
 msgid "git submodule--helper sync [--quiet] [--recursive] [<path>]"
-msgstr "git submodule--helper init [<ścieżka>]"
+msgstr "git submodule--helper sync [--quiet] [--recursive] [<ścieżka>]"
 
 #: builtin/submodule--helper.c:1546
 #, fuzzy, c-format
@@ -22000,6 +22018,7 @@ msgstr "schodź do pod-modułów"
 msgid ""
 "git submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
 msgstr ""
+"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<ścieżka>...]]"
 
 #: builtin/submodule--helper.c:1644
 msgid "Use '--all' if you really want to deinitialize all submodules"
@@ -22154,9 +22173,8 @@ msgid "don't print cloning progress"
 msgstr "nie wypisuj postępu klonowania"
 
 #: builtin/submodule--helper.c:2357
-#, fuzzy
 msgid "git submodule--helper update-clone [--prefix=<path>] [<path>...]"
-msgstr "git submodule--helper update_clone [--prefix=<ścieżka>] [<ścieżka>...]"
+msgstr "git submodule--helper update-clone [--prefix=<ścieżka>] [<ścieżka>...]"
 
 #: builtin/submodule--helper.c:2370
 msgid "bad value for update parameter"
@@ -22182,9 +22200,8 @@ msgid "recurse into submodules"
 msgstr "schodź do pod-modułów"
 
 #: builtin/submodule--helper.c:2580
-#, fuzzy
 msgid "git submodule--helper absorb-git-dirs [<options>] [<path>...]"
-msgstr "git submodule--helper list [--prefix=<ścieżka>] [<ścieżka>...]"
+msgstr "git submodule--helper absorb-git-dirs [<opcje>] [<ścieżka>...]"
 
 #: builtin/submodule--helper.c:2636
 msgid "check if it is safe to write to the .gitmodules file"
@@ -22196,19 +22213,16 @@ msgid "unset the config in the .gitmodules file"
 msgstr "przygotowanie zaktualizowanego .gitmodules nie powiodło się"
 
 #: builtin/submodule--helper.c:2644
-#, fuzzy
 msgid "git submodule--helper config <name> [<value>]"
-msgstr "git submodule--helper name <ścieżka>"
+msgstr "git submodule--helper config <nazwa> [<wartość>]"
 
 #: builtin/submodule--helper.c:2645
-#, fuzzy
 msgid "git submodule--helper config --unset <name>"
-msgstr "git submodule--helper init [<ścieżka>]"
+msgstr "git submodule--helper config --unset <nazwa>"
 
 #: builtin/submodule--helper.c:2646
-#, fuzzy
 msgid "git submodule--helper config --check-writeable"
-msgstr "git submodule--helper init [<ścieżka>]"
+msgstr "git submodule--helper config --check-writeable"
 
 #: builtin/submodule--helper.c:2665 git-submodule.sh:150
 #, fuzzy, sh-format
@@ -22222,9 +22236,8 @@ msgid "Suppress output for setting url of a submodule"
 msgstr "Powstrzymaj wyjście przy inicjalizacji pod-modułu"
 
 #: builtin/submodule--helper.c:2685
-#, fuzzy
 msgid "git submodule--helper set-url [--quiet] <path> <newurl>"
-msgstr "git submodule--helper init [<ścieżka>]"
+msgstr "git submodule--helper set-url [--quiet] <ścieżka> <nowy-adres>"
 
 #: builtin/submodule--helper.c:2718
 #, fuzzy
@@ -22237,15 +22250,14 @@ msgid "set the default tracking branch"
 msgstr "wypisz gałęzie śledzące"
 
 #: builtin/submodule--helper.c:2724
-#, fuzzy
 msgid "git submodule--helper set-branch [-q|--quiet] (-d|--default) <path>"
-msgstr "git submodule--helper list [--prefix=<ścieżka>] [<ścieżka>...]"
+msgstr "git submodule--helper set-branch [-q|--quiet] (-d|--default) <ścieżka>"
 
 #: builtin/submodule--helper.c:2725
-#, fuzzy
 msgid ""
 "git submodule--helper set-branch [-q|--quiet] (-b|--branch) <branch> <path>"
-msgstr "git submodule--helper list [--prefix=<ścieżka>] [<ścieżka>...]"
+msgstr ""
+"git submodule--helper set-branch [-q|--quiet] (-b|--branch) <gałąź> <ścieżka>"
 
 #: builtin/submodule--helper.c:2732
 #, fuzzy
@@ -22296,28 +22308,28 @@ msgid "reason of the update"
 msgstr "powód aktualizacji"
 
 #: builtin/tag.c:25
-#, fuzzy
 msgid ""
 "git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>]\n"
 "\t\t<tagname> [<head>]"
 msgstr ""
-"git tag [-a | -s | -u <id-klucza>] [-f] [-m <komunikat> | -F <plik>] <tag> "
-"[<czoło>]"
+"git tag [-a | -s | -u <id-klucza>] [-f] [-m <komunikat> | -F <plik>]\n"
+"\t\t<tag> [<czoło>]"
 
 #: builtin/tag.c:27
 msgid "git tag -d <tagname>..."
 msgstr "git tag -d <nazwa-tagu>..."
 
 #: builtin/tag.c:28
-#, fuzzy
 msgid ""
 "git tag -l [-n[<num>]] [--contains <commit>] [--no-contains <commit>] [--"
 "points-at <object>]\n"
 "\t\t[--format=<format>] [--merged <commit>] [--no-merged <commit>] "
 "[<pattern>...]"
 msgstr ""
-"git tag -l [-n[<num>]] [--contains <zapis>] [--points-at <obiekt>]\n"
-"\t\t[--format=<format>] [--[no-]merged [<zapis>]] [<wzorzec>...]"
+"git tag -l [-n[<num>]] [--contains <zapis>] [--no-contains <zapis>] [--"
+"points-at <obiekt>]\n"
+"\t\t[--format=<format>] [--merged <zapis>] [--no-merged <zapis>] "
+"[<wzorzec>...]"
 
 #: builtin/tag.c:30
 #, fuzzy
@@ -22879,9 +22891,8 @@ msgid "print tag contents"
 msgstr "wypisz zawartość tagu"
 
 #: builtin/worktree.c:17
-#, fuzzy
 msgid "git worktree add [<options>] <path> [<commit-ish>]"
-msgstr "git worktree add [<opcje>] <ścieżka> [<gałąź>]"
+msgstr "git worktree add [<opcje>] <ścieżka> [<zapis>]"
 
 #: builtin/worktree.c:18
 msgid "git worktree list [<options>]"
@@ -22892,18 +22903,16 @@ msgid "git worktree lock [<options>] <path>"
 msgstr "git worktree lock [<opcje>] <ścieżka>"
 
 #: builtin/worktree.c:20
-#, fuzzy
 msgid "git worktree move <worktree> <new-path>"
-msgstr "git worktree lock [<opcje>] <ścieżka>"
+msgstr "git worktree move <drzewo-robocze> <nowa-ścieżka>"
 
 #: builtin/worktree.c:21
 msgid "git worktree prune [<options>]"
 msgstr "git worktree prune [<opcje>]"
 
 #: builtin/worktree.c:22
-#, fuzzy
 msgid "git worktree remove [<options>] <worktree>"
-msgstr "git worktree lock [<opcje>] <ścieżka>"
+msgstr "git worktree remove [<opcje>] <drzewo-robocze>"
 
 #: builtin/worktree.c:23
 msgid "git worktree unlock <path>"
@@ -23213,9 +23222,8 @@ msgid "too many commits marked reachable"
 msgstr ""
 
 #: t/helper/test-serve-v2.c:7
-#, fuzzy
 msgid "test-tool serve-v2 [<options>]"
-msgstr "git notes prune [<opcje>]"
+msgstr "test-tool serve-v2 [<opcje>]"
 
 #: t/helper/test-serve-v2.c:19
 #, fuzzy
@@ -23231,9 +23239,16 @@ msgid ""
 "           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n"
 "           <command> [<args>]"
 msgstr ""
+"git [--version] [--help] [-C <ścieżka>] [-c <nazwa>=<wartość>]\n"
+"           [--exec-path[=<ścieżka>]] [--html-path] [--man-path]"
+" [--info-path]\n"
+"           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--"
+"bare]\n"
+"           [--git-dir=<ścieżka>] [--work-tree=<ścieżka>] [--namespace=<nazwa"
+">]\n"
+"           <polecenie> [<argumenty>]"
 
 #: git.c:35
-#, fuzzy
 msgid ""
 "'git help -a' and 'git help -g' list available subcommands and some\n"
 "concept guides. See 'git help <command>' or 'git help <concept>'\n"
@@ -23244,7 +23259,8 @@ msgstr ""
 "wyjaśnienia\n"
 "niektórych koncepcji.  Zobacz „git help <polecenie>” lub „git help "
 "<pojęcie>”,\n"
-"aby poczytać o konkretnym poleceniu lub pojęciu."
+"aby poczytać o konkretnym poleceniu lub pojęciu.\n"
+"W „git help git” znajdziesz przegląd systemu."
 
 #: git.c:187
 #, c-format
@@ -23513,7 +23529,7 @@ msgstr "dodanie zmian do schowka nie powiodło się"
 
 #: remote-curl.c:1479
 msgid "remote-curl: usage: git remote-curl <remote> [<url>]"
-msgstr ""
+msgstr "remote-curl: użycie: git remote-curl <zdalne-repozytorium> [<adres>]"
 
 #: remote-curl.c:1511
 msgid "remote-curl: error reading command stream from git"
@@ -24615,7 +24631,6 @@ msgid "Rebasing ($new_count/$total)"
 msgstr "Przestawianie ($new_count/$total)"
 
 #: git-rebase--preserve-merges.sh:197
-#, fuzzy
 msgid ""
 "\n"
 "Commands:\n"
@@ -24637,13 +24652,19 @@ msgid ""
 msgstr ""
 "\n"
 "Polecenia:\n"
-" p, pick = dobierz zapis\n"
-" r, reword = użyj zapisu, ale przeredaguj jego komunikat\n"
-" e, edit = użyj zapisu, ale zatrzymaj się, żeby móc go poprawić\n"
-" s, squash = użyj zapisu, ale połącz go z poprzednim (spłaszcz)\n"
-" f, fixup = jak „squash”, ale odrzuć komunikat tego zapisu\n"
-" x, exec = wykonaj polecenie (resztę wiersza) w powłoce\n"
-" d, drop = usuń zapis\n"
+"p, pick <zapis> = dobierz zapis\n"
+"r, reword <zapis> = użyj zapisu, ale przeredaguj jego komunikat\n"
+"e, edit <zapis> = użyj zapisu, ale zatrzymaj się, żeby go poprawić\n"
+"s, squash <zapis> = użyj zapisu, ale połącz go z poprzednim (spłaszcz)\n"
+"f, fixup <zapis> = jak „squash”, ale odrzuć komunikat tego zapisu\n"
+"x, exec <polecenie> = wykonaj polecenie (resztę wiersza) w powłoce\n"
+"d, drop <zapis> = usuń zapis\n"
+"l, label <etykietka> = nazwij bieżące HEAD\n"
+"t, reset <etykietka> = zresetuj HEAD do etykietki\n"
+"m, merge [-C <zapis> | -c <zapis>] <etykietka> [# <wiersz>]\n"
+".       utwórz zapis scalenia używając oryginalnego komunikatu scalenia\n"
+".       (albo <wiersza>, jeśli nie podano oryginalnego zapisu scalenia.\n"
+".       Użyj -c <zapis>, aby przeredagować komunikat zapisu."
 "\n"
 "Kolejność wierszy może być zmieniona; są wykonywane z góry na dół.\n"
 
