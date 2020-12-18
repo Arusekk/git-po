@@ -54,7 +54,7 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-17 17:27+0100\n"
+"PO-Revision-Date: 2020-12-18 22:21+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -19079,19 +19079,17 @@ msgid "unusable todo list: '%s'"
 msgstr "plik z instrukcjami się nie nadaje: „%s”"
 
 #: builtin/rebase.c:310
-#, fuzzy, c-format
+#, c-format
 msgid "could not create temporary %s"
-msgstr "nie można utworzyć pliku tymczasowego"
+msgstr "nie można utworzyć tymczasowego %s"
 
 #: builtin/rebase.c:316
-#, fuzzy
 msgid "could not mark as interactive"
-msgstr "Nie można oznaczyć jako interaktywne"
+msgstr "nie można oznaczyć jako interaktywne"
 
 #: builtin/rebase.c:369
-#, fuzzy
 msgid "could not generate todo list"
-msgstr "nie można zapisać do %s"
+msgstr "nie można wygenerować listy zadań do zrobienia"
 
 #: builtin/rebase.c:411
 msgid "a base commit must be provided with --upstream or --onto"
@@ -19103,33 +19101,31 @@ msgstr "git rebase--interactive [<opcje>]"
 
 #: builtin/rebase.c:493 builtin/rebase.c:1388
 msgid "keep commits which start empty"
-msgstr ""
+msgstr "zachowaj zapisy, które zaczynają puste"
 
 #: builtin/rebase.c:497 builtin/revert.c:128
 msgid "allow commits with empty messages"
 msgstr "pozwól na zapisy z pustymi komunikatami"
 
 #: builtin/rebase.c:499
-#, fuzzy
 msgid "rebase merge commits"
-msgstr "zły tag scalenia w zapisie „%s”"
+msgstr "przestawiaj zapisy scaleń"
 
 #: builtin/rebase.c:501
 msgid "keep original branch points of cousins"
-msgstr ""
+msgstr "zachowaj pierwotne rozgałęzienia kuzynów"
 
 #: builtin/rebase.c:503
 msgid "move commits that begin with squash!/fixup!"
 msgstr ""
 
 #: builtin/rebase.c:504
-#, fuzzy
 msgid "sign commits"
-msgstr "podpisuj zapisy GPG"
+msgstr "podpisuj zapisy"
 
 #: builtin/rebase.c:506 builtin/rebase.c:1327
 msgid "display a diffstat of what changed upstream"
-msgstr ""
+msgstr "wyświetl statystyki zmian nadrzędnych"
 
 #: builtin/rebase.c:508
 msgid "continue rebase"
@@ -19140,14 +19136,12 @@ msgid "skip commit"
 msgstr "pomiń zapis"
 
 #: builtin/rebase.c:511
-#, fuzzy
 msgid "edit the todo list"
-msgstr "nie można zapisać do rev-list"
+msgstr "edytuj listę zadań do zrobienia"
 
 #: builtin/rebase.c:513
-#, fuzzy
 msgid "show the current patch"
-msgstr "pomiń obecną ścieżkę"
+msgstr "pokaż bieżącą łatkę"
 
 #: builtin/rebase.c:516
 msgid "shorten commit ids in the todo list"
@@ -19195,28 +19189,24 @@ msgid "the upstream commit"
 msgstr "Usuń informacje o gałęzi nadrzędnej"
 
 #: builtin/rebase.c:535
-#, fuzzy
 msgid "head-name"
-msgstr "nagłówek"
+msgstr "nazwa-czoła"
 
 #: builtin/rebase.c:535
-#, fuzzy
 msgid "head name"
-msgstr "do przodu "
+msgstr "nazwa czoła"
 
 #: builtin/rebase.c:540
 msgid "rebase strategy"
 msgstr "strategia przestawiania"
 
 #: builtin/rebase.c:541
-#, fuzzy
 msgid "strategy-opts"
-msgstr "strategia"
+msgstr "opcje-strategii"
 
 #: builtin/rebase.c:542
-#, fuzzy
 msgid "strategy options"
-msgstr "opcje dekoracyjne"
+msgstr "opcje strategii"
 
 #: builtin/rebase.c:543
 msgid "switch-to"
@@ -19224,26 +19214,23 @@ msgstr "przełącz-na"
 
 #: builtin/rebase.c:544
 msgid "the branch or commit to checkout"
-msgstr ""
+msgstr "gałąź lub zapis do wybrania"
 
 #: builtin/rebase.c:545
-#, fuzzy
 msgid "onto-name"
-msgstr "nazwa"
+msgstr "nazwa-na"
 
 #: builtin/rebase.c:545
-#, fuzzy
 msgid "onto name"
-msgstr "nazwa zdalnego repozytorium"
+msgstr "nazwa rewizji „na”"
 
 #: builtin/rebase.c:546
 msgid "cmd"
 msgstr "polecenie"
 
 #: builtin/rebase.c:546
-#, fuzzy
 msgid "the command to run"
-msgstr "Nie wykonano żadnych poleceń."
+msgstr "polecenie do wykonania"
 
 #: builtin/rebase.c:549 builtin/rebase.c:1421
 msgid "automatically re-schedule any `exec` that fails"
@@ -19251,7 +19238,7 @@ msgstr ""
 
 #: builtin/rebase.c:565
 msgid "--[no-]rebase-cousins has no effect without --rebase-merges"
-msgstr ""
+msgstr "--[no-]rebase-cousins nic nie robi bez --rebase-merges"
 
 #: builtin/rebase.c:581
 #, c-format
@@ -19259,9 +19246,9 @@ msgid "%s requires the merge backend"
 msgstr ""
 
 #: builtin/rebase.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "could not get 'onto': '%s'"
-msgstr "nie można ustawić „%s” na „%s”"
+msgstr "nie można uzyskać „onto”: „%s”"
 
 #: builtin/rebase.c:641
 #, fuzzy, c-format
@@ -19398,7 +19385,7 @@ msgstr "ignoruj zmiany w białych znakach przy znajdywaniu kontekstu"
 
 #: builtin/rebase.c:1348 builtin/rebase.c:1351
 msgid "cherry-pick all commits, even if unchanged"
-msgstr ""
+msgstr "dobierz wszystkie zapisy, nawet jeśli niezmienione"
 
 #: builtin/rebase.c:1353
 msgid "continue"
@@ -19446,7 +19433,7 @@ msgstr ""
 
 #: builtin/rebase.c:1385
 msgid "how to handle commits that become empty"
-msgstr ""
+msgstr "jak traktować zapisy, które staną się puste"
 
 #: builtin/rebase.c:1392
 msgid "move commits that begin with squash!/fixup! under -i"
@@ -19457,9 +19444,8 @@ msgid "add exec lines after each commit of the editable list"
 msgstr ""
 
 #: builtin/rebase.c:1403
-#, fuzzy
 msgid "allow rebasing commits with empty messages"
-msgstr "pozwól na zapisy z pustymi komunikatami"
+msgstr "pozwól przestawiać zapisy z pustymi komunikatami"
 
 #: builtin/rebase.c:1407
 msgid "try to rebase merges instead of skipping them"
@@ -19470,9 +19456,8 @@ msgid "use 'merge-base --fork-point' to refine upstream"
 msgstr "użyj „git merge-base --fork-point”, aby poprawić gałąź nadrzędną"
 
 #: builtin/rebase.c:1412
-#, fuzzy
 msgid "use the given merge strategy"
-msgstr "opcja strategii scalania"
+msgstr "użyj podanej strategii scalania"
 
 #: builtin/rebase.c:1414 builtin/revert.c:115
 msgid "option"
@@ -19480,7 +19465,7 @@ msgstr "opcja"
 
 #: builtin/rebase.c:1415
 msgid "pass the argument through to the merge strategy"
-msgstr ""
+msgstr "przekaż argument do strategii scalania"
 
 #: builtin/rebase.c:1418
 msgid "rebase all reachable commits up to the root(s)"
@@ -19497,29 +19482,27 @@ msgid ""
 msgstr ""
 
 #: builtin/rebase.c:1446
-#, fuzzy
 msgid "It looks like 'git am' is in progress. Cannot rebase."
-msgstr "Wygląda, że trwa git-am. Nie można przestawić."
+msgstr "Wygląda, że trwa „git am”. Nie można przestawić."
 
 #: builtin/rebase.c:1487
 msgid ""
 "git rebase --preserve-merges is deprecated. Use --rebase-merges instead."
 msgstr ""
+"git rebase --preserve-merges jest przestarzałe. Użyj zamiast tego"
+" --rebase-merges."
 
 #: builtin/rebase.c:1492
-#, fuzzy
 msgid "cannot combine '--keep-base' with '--onto'"
-msgstr "--squash i --no-ff się wykluczają."
+msgstr "„--keep-base” i „--onto” się wykluczają."
 
 #: builtin/rebase.c:1494
-#, fuzzy
 msgid "cannot combine '--keep-base' with '--root'"
-msgstr "--squash i --no-ff się wykluczają."
+msgstr "„--keep-base” i „--root” się wykluczają."
 
 #: builtin/rebase.c:1498
-#, fuzzy
 msgid "cannot combine '--root' with '--fork-point'"
-msgstr "--squash i --no-ff się wykluczają."
+msgstr "„--keep-base” i „--fork-point” się wykluczają."
 
 #: builtin/rebase.c:1501
 msgid "No rebase in progress?"
@@ -19543,17 +19526,16 @@ msgstr ""
 "i oznaczyć je jako rozwiązane przy pomocy git add"
 
 #: builtin/rebase.c:1559
-#, fuzzy
 msgid "could not discard worktree changes"
-msgstr "Nie można usunąć zmian w drzewie roboczym"
+msgstr "nie można odrzucić zmian w drzewie roboczym"
 
 #: builtin/rebase.c:1578
-#, fuzzy, c-format
+#, c-format
 msgid "could not move back to %s"
-msgstr "Nie można cofnąć do $head_name"
+msgstr "nie można cofnąć do %s"
 
 #: builtin/rebase.c:1624
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "It seems that there is already a %s directory, and\n"
 "I wonder if you are in the middle of another rebase.  If that is the\n"
@@ -19564,32 +19546,31 @@ msgid ""
 "and run me again.  I am stopping in case you still have something\n"
 "valuable there.\n"
 msgstr ""
-"Wygląda na to, że już jest katalog $state_dir_base,\n"
+"Wygląda na to, że już jest katalog %s,\n"
 "i zastanawiam się, czy nie jesteś w trakcie innego przestawienia.\n"
 "Jeśli tak jest, spróbuj\n"
-"\t$cmd_live_rebase\n"
+"\t%s\n"
 "A jeśli tak nie jest,\n"
-"\t$cmd_clear_stale_rebase\n"
+"\t%s\n"
 "i wykonaj mnie ponownie. Przerywam na wypadek, gdyby było tam\n"
-"coś cennego."
+"coś cennego.\n"
 
 #: builtin/rebase.c:1652
-#, fuzzy
 msgid "switch `C' expects a numerical value"
-msgstr "przełącznik „%c” oczekuje wartości liczbowej"
+msgstr "przełącznik „C” oczekuje wartości liczbowej"
 
 #: builtin/rebase.c:1694
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown mode: %s"
-msgstr "Nieznany typ: %d"
+msgstr "Nieznany tryb: %d"
 
 #: builtin/rebase.c:1733
 msgid "--strategy requires --merge or --interactive"
-msgstr ""
+msgstr "--strategy wymaga --merge lub --interactive"
 
 #: builtin/rebase.c:1763
 msgid "cannot combine apply options with merge options"
-msgstr ""
+msgstr "nie można łączyć opcji stosowania z opcjami scalania"
 
 #: builtin/rebase.c:1776
 #, fuzzy, c-format
@@ -19598,46 +19579,45 @@ msgstr "Nieznane pod-polecenie: %s"
 
 #: builtin/rebase.c:1806
 msgid "--reschedule-failed-exec requires --exec or --interactive"
-msgstr ""
+msgstr "--reschedule-failed wymaga --exec lub --interactive"
 
 #: builtin/rebase.c:1826
 msgid "cannot combine '--preserve-merges' with '--rebase-merges'"
-msgstr ""
+msgstr "„--preserve-merges” i „--rebase-merges” się wykluczają"
 
 #: builtin/rebase.c:1830
 msgid ""
 "error: cannot combine '--preserve-merges' with '--reschedule-failed-exec'"
-msgstr ""
+msgstr "błąd: „--preserve-merges” i „--reschedule-failed-exec” się wykluczają"
 
 #: builtin/rebase.c:1854
-#, fuzzy, c-format
+#, c-format
 msgid "invalid upstream '%s'"
-msgstr "nieprawidłowa ścieżka „%s”"
+msgstr "nieprawidłowa gałąź nadrzędna „%s”"
 
 #: builtin/rebase.c:1860
-#, fuzzy
 msgid "Could not create new root commit"
-msgstr "nie można przetworzyć nowo utworzonego zapisu"
+msgstr "Nie można utworzyć nowego zapisu korzenia"
 
 #: builtin/rebase.c:1886
 #, c-format
 msgid "'%s': need exactly one merge base with branch"
-msgstr ""
+msgstr "„%s”: potrzeba dokładnie jednej podstawy scalania z gałęzią"
 
 #: builtin/rebase.c:1889
-#, fuzzy, c-format
+#, c-format
 msgid "'%s': need exactly one merge base"
-msgstr "Potrzeba dokładnie jednego zakresu."
+msgstr "„%s”: potrzeba dokładnie jednej podstawy scalania"
 
 #: builtin/rebase.c:1897
-#, fuzzy, c-format
+#, c-format
 msgid "Does not point to a valid commit '%s'"
-msgstr "Nie wskazuje na prawidłowy zapis: $onto_name"
+msgstr "Nie wskazuje na prawidłowy zapis „%s”"
 
 #: builtin/rebase.c:1923
-#, fuzzy, c-format
+#, c-format
 msgid "fatal: no such branch/commit '%s'"
-msgstr "nie ma takiej gałęzi „%s”"
+msgstr "błąd krytyczny: brak gałęzi/zapisu „%s”"
 
 #: builtin/rebase.c:1931 builtin/submodule--helper.c:40
 #: builtin/submodule--helper.c:2414
@@ -19655,58 +19635,55 @@ msgid "Please commit or stash them."
 msgstr "Złóż je lub dodaj do schowka."
 
 #: builtin/rebase.c:1999
-#, fuzzy, c-format
+#, c-format
 msgid "could not switch to %s"
-msgstr "nie można zapisać do %s"
+msgstr "nie można przełączyć na %s"
 
 #: builtin/rebase.c:2010
-#, fuzzy
 msgid "HEAD is up to date."
-msgstr "HEAD wskazuje teraz na"
+msgstr "HEAD jest aktualne."
 
 #: builtin/rebase.c:2012
-#, fuzzy, c-format
+#, c-format
 msgid "Current branch %s is up to date.\n"
-msgstr "Obecna gałąź $branch_name jest aktualna."
+msgstr "Obecna gałąź %s jest aktualna.\n"
 
 #: builtin/rebase.c:2020
-#, fuzzy
 msgid "HEAD is up to date, rebase forced."
-msgstr "Bieżąca gałąź $branch_name jest aktualna, wymuszono przestawianie."
+msgstr "HEAD jest aktualne, wymuszono przestawianie."
 
 #: builtin/rebase.c:2022
-#, fuzzy, c-format
+#, c-format
 msgid "Current branch %s is up to date, rebase forced.\n"
-msgstr "Bieżąca gałąź $branch_name jest aktualna, wymuszono przestawianie."
+msgstr "Bieżąca gałąź %s jest aktualna, wymuszono przestawianie.\n"
 
 #: builtin/rebase.c:2030
 msgid "The pre-rebase hook refused to rebase."
 msgstr "Skrypt pre-rebase odmówił przestawiania."
 
 #: builtin/rebase.c:2037
-#, fuzzy, c-format
+#, c-format
 msgid "Changes to %s:\n"
-msgstr "Wypychanie do %s\n"
+msgstr "Zmiany w %s:\n"
 
 #: builtin/rebase.c:2040
-#, fuzzy, c-format
+#, c-format
 msgid "Changes from %s to %s:\n"
-msgstr "Zmiany z $mb na $onto:"
+msgstr "Zmiany z %s na %s:\n"
 
 #: builtin/rebase.c:2065
-#, fuzzy, c-format
+#, c-format
 msgid "First, rewinding head to replay your work on top of it...\n"
-msgstr "Najpierw cofanie czoła gałęzi, aby odtworzyć na nim pracę..."
+msgstr "Najpierw cofanie czoła gałęzi, aby odtworzyć na nim pracę...\n"
 
 #: builtin/rebase.c:2074
-#, fuzzy
 msgid "Could not detach HEAD"
-msgstr "nie można odłączyć HEAD"
+msgstr "Nie można odłączyć HEAD"
 
 #: builtin/rebase.c:2083
-#, fuzzy, c-format
+#, c-format
 msgid "Fast-forwarded %s to %s.\n"
-msgstr "Przewinięcie do $sha1"
+msgstr "Przewinięto %s do %s.\n"
 
 #: builtin/receive-pack.c:34
 msgid "git receive-pack <git-dir>"
@@ -19799,9 +19776,9 @@ msgid "'%s' is not a valid timestamp"
 msgstr "„%s” nie jest prawidłowym znacznikiem czasu"
 
 #: builtin/reflog.c:606
-#, fuzzy, c-format
+#, c-format
 msgid "Marking reachable objects..."
-msgstr "zachowaj nieosiągalne obiekty"
+msgstr "Oznaczanie osiągalnych obiektów..."
 
 #: builtin/reflog.c:644
 #, c-format
@@ -19809,9 +19786,8 @@ msgid "%s points nowhere!"
 msgstr "%s nigdzie nie wskazuje!"
 
 #: builtin/reflog.c:696
-#, fuzzy
 msgid "no reflog specified to delete"
-msgstr "nie podano zdalnego repozytorium"
+msgstr "nie podano dziennika referencji do skasowania"
 
 #: builtin/reflog.c:705
 #, fuzzy, c-format
@@ -19830,7 +19806,7 @@ msgstr "nieprawidłowy format daty: %s"
 
 #: builtin/reflog.c:765
 msgid "git reflog [ show | expire | delete | exists ]"
-msgstr ""
+msgstr "git reflog [ show | expire | delete | exists ]"
 
 #: builtin/remote.c:17
 msgid "git remote [-v | --verbose]"
