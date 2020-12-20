@@ -54,7 +54,7 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-18 22:21+0100\n"
+"PO-Revision-Date: 2020-12-20 17:48+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -2461,6 +2461,14 @@ msgid ""
 "Turn this message off by running\n"
 "\"git config advice.graftFileDeprecated false\""
 msgstr ""
+"Wsparcie dla <KATALOG_GITA>/info/grafts jest przestarzałe\n"
+"i zostanie usunięte w przyszłej wersji Gita.\n"
+"\n"
+"Użyj „git replace --convert-graft-file”\n"
+"aby zamienić szczepki w zastępcze referencje.\n"
+"\n"
+"Wyłącz ten komunikat uruchamiając\n"
+"„git config advice.graftFileDeprecated false”"
 
 #: commit.c:1172
 #, c-format
@@ -19562,7 +19570,7 @@ msgstr "przełącznik „C” oczekuje wartości liczbowej"
 #: builtin/rebase.c:1694
 #, c-format
 msgid "Unknown mode: %s"
-msgstr "Nieznany tryb: %d"
+msgstr "Nieznany tryb: %s"
 
 #: builtin/rebase.c:1733
 msgid "--strategy requires --merge or --interactive"
@@ -19965,9 +19973,9 @@ msgid "(delete)"
 msgstr "(usunięcie)"
 
 #: builtin/remote.c:655
-#, fuzzy, c-format
+#, c-format
 msgid "could not set '%s'"
-msgstr "nie można usunąć ustawienia „%s”"
+msgstr "nie można ustawić „%s”"
 
 #: builtin/remote.c:660
 #, c-format
@@ -19976,11 +19984,14 @@ msgid ""
 "\t%s:%d\n"
 "now names the non-existent remote '%s'"
 msgstr ""
+"Konfiguracja remote.pushDefault %s w:\n"
+"\t%s:%d\n"
+"wskazuje teraz nieistniejące zdalne repozytorium „%s”"
 
 #: builtin/remote.c:691 builtin/remote.c:836 builtin/remote.c:946
-#, fuzzy, c-format
+#, c-format
 msgid "No such remote: '%s'"
-msgstr "Nie ma takiego zdalnego repozytorium „%s”"
+msgstr "Nie ma takiego zdalnego repozytorium: „%s”"
 
 #: builtin/remote.c:710
 #, c-format
@@ -20058,9 +20069,9 @@ msgid "rebases interactively onto remote %s"
 msgstr "przestawia interaktywnie na zdalne repozytorium %s"
 
 #: builtin/remote.c:1058
-#, fuzzy, c-format
+#, c-format
 msgid "rebases interactively (with merges) onto remote %s"
-msgstr "przestawia interaktywnie na zdalne repozytorium %s"
+msgstr "przestawia interaktywnie (ze scaleniami) na zdalne repozytorium %s"
 
 #: builtin/remote.c:1061
 #, c-format
@@ -20331,18 +20342,22 @@ msgid ""
 "Incremental repacks are incompatible with bitmap indexes.  Use\n"
 "--no-write-bitmap-index or disable the pack.writebitmaps configuration."
 msgstr ""
+"Przyrostowe przepakowania są niekompatybilne z indeksami bitmap.  Użyj\n"
+"--no-write-bitmap-index lub wyłącz konfigurację pack.writebitmaps."
 
 #: builtin/repack.c:197
 msgid "could not start pack-objects to repack promisor objects"
-msgstr ""
+msgstr "nie można uruchomić pack-objects, żeby przepakować obiecujące obiekty"
 
 #: builtin/repack.c:268 builtin/repack.c:447
 msgid "repack: Expecting full hex object ID lines only from pack-objects."
 msgstr ""
+"repack: Oczekiwano tylko wierszy z pełnych szesnastkowych identyfikatorów"
+" obiektów z pack-objects."
 
 #: builtin/repack.c:295
 msgid "could not finish pack-objects to repack promisor objects"
-msgstr ""
+msgstr "nie można ukończyć pack-objects, żeby przepakować obiecujące obiekty"
 
 #: builtin/repack.c:323
 msgid "pack everything in a single pack"
@@ -20377,9 +20392,8 @@ msgid "write bitmap index"
 msgstr "zapisz indeks bitmapy"
 
 #: builtin/repack.c:341
-#, fuzzy
 msgid "pass --delta-islands to git-pack-objects"
-msgstr "przekaż --local do git-pack-objects"
+msgstr "przekaż --delta-islands do git-pack-objects"
 
 #: builtin/repack.c:342
 msgid "approxidate"
@@ -20410,9 +20424,8 @@ msgid "limits the maximum delta depth"
 msgstr "ogranicza maksymalną głębokość delty"
 
 #: builtin/repack.c:353
-#, fuzzy
 msgid "limits the maximum number of threads"
-msgstr "ogranicza maksymalną głębokość delty"
+msgstr "ogranicza maksymalną liczbę wątków"
 
 #: builtin/repack.c:355
 msgid "maximum size of each packfile"
@@ -20423,9 +20436,8 @@ msgid "repack objects in packs marked with .keep"
 msgstr "przepakuj obiekty w paczki oznaczone przez .keep"
 
 #: builtin/repack.c:359
-#, fuzzy
 msgid "do not repack this pack"
-msgstr "twórz wąskie paczki"
+msgstr "nie przepakowuj tej paczki"
 
 #: builtin/repack.c:369
 msgid "cannot delete packs in a precious-objects repo"
@@ -20437,17 +20449,17 @@ msgstr "--keep-unreachable i -A się wykluczają"
 
 #: builtin/repack.c:456
 msgid "Nothing new to pack."
-msgstr ""
+msgstr "Nic nowego do spakowania."
 
 #: builtin/repack.c:486
 #, c-format
 msgid "missing required file: %s"
-msgstr ""
+msgstr "brakuje wymaganego pliku: %s"
 
 #: builtin/repack.c:488
-#, fuzzy, c-format
+#, c-format
 msgid "could not unlink: %s"
-msgstr "nie można zablokować „%s”"
+msgstr "nie można usunąć przez unlink: %s"
 
 #: builtin/replace.c:22
 msgid "git replace [-f] <object> <replacement>"
@@ -20479,26 +20491,28 @@ msgid ""
 "invalid replace format '%s'\n"
 "valid formats are 'short', 'medium' and 'long'"
 msgstr ""
+"nieprawidłowy format zamiany „%s”\n"
+"prawidłowe formaty to „short”, „medium” i „long”"
 
 #: builtin/replace.c:125
-#, fuzzy, c-format
+#, c-format
 msgid "replace ref '%s' not found"
-msgstr "nie znaleziono gałęzi „%s”."
+msgstr "nie znaleziono zamiennej referencji „%s”"
 
 #: builtin/replace.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "Deleted replace ref '%s'"
-msgstr "usuń zastępcze referencje"
+msgstr "Usunięto zastępczą referencję „%s”"
 
 #: builtin/replace.c:153
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid ref name"
-msgstr "„%s” nie jest prawidłową nazwą zdalnego repozytorium"
+msgstr "„%s” nie jest prawidłową nazwą referencji"
 
 #: builtin/replace.c:158
-#, fuzzy, c-format
+#, c-format
 msgid "replace ref '%s' already exists"
-msgstr "tag „%s” już istnieje"
+msgstr "referencja zastępcza „%s” już istnieje"
 
 #: builtin/replace.c:178
 #, c-format
@@ -20507,76 +20521,73 @@ msgid ""
 "'%s' points to a replaced object of type '%s'\n"
 "while '%s' points to a replacement object of type '%s'."
 msgstr ""
+"Obiekty muszą być tego samego typu.\n"
+"„%s” wskazuje na zastąpiony obiekt „%s”,\n"
+"a „%s” wskazuje na zastępczy obiekt „%s”."
 
 #: builtin/replace.c:229
-#, fuzzy, c-format
+#, c-format
 msgid "unable to open %s for writing"
-msgstr "Nie można otworzyć „%s” do zapisywania"
+msgstr "nie można otworzyć „%s” do zapisywania"
 
 #: builtin/replace.c:242
 msgid "cat-file reported failure"
-msgstr ""
+msgstr "cat-file zgłosiło błąd"
 
 #: builtin/replace.c:258
-#, fuzzy, c-format
+#, c-format
 msgid "unable to open %s for reading"
-msgstr "nie można otworzyć lub odczytać %s"
+msgstr "nie można otworzyć %s do odczytu"
 
 #: builtin/replace.c:272
-#, fuzzy
 msgid "unable to spawn mktree"
-msgstr "nie można odczytać drzewa (%s)"
+msgstr "nie można uruchomić mktree"
 
 #: builtin/replace.c:276
-#, fuzzy
 msgid "unable to read from mktree"
-msgstr "nie można odczytać drzewa (%s)"
+msgstr "nie można odczytać z mktree"
 
 #: builtin/replace.c:285
-#, fuzzy
 msgid "mktree reported failure"
-msgstr "odwrócenie nie powiodło się"
+msgstr "mktree zgłosiło błąd"
 
 #: builtin/replace.c:289
-#, fuzzy
 msgid "mktree did not return an object name"
-msgstr "zdalna maszyna nie przysłała wszystkich potrzebnych obiektów"
+msgstr "mktree nie zwróciło nazwy obiektu"
 
 #: builtin/replace.c:298
-#, fuzzy, c-format
+#, c-format
 msgid "unable to fstat %s"
-msgstr "nie można zaktualizować %s"
+msgstr "nie można wykonać fstat na %s"
 
 #: builtin/replace.c:303
-#, fuzzy
 msgid "unable to write object to database"
-msgstr "nie można zapisać obiektu uwagi"
+msgstr "nie można zapisać obiektu do bazy danych"
 
 #: builtin/replace.c:322 builtin/replace.c:378 builtin/replace.c:424
 #: builtin/replace.c:454
-#, fuzzy, c-format
+#, c-format
 msgid "not a valid object name: '%s'"
-msgstr "Nieprawidłowa nazwa obiektu: „%s”"
+msgstr "nieprawidłowa nazwa obiektu: „%s”"
 
 #: builtin/replace.c:326
-#, fuzzy, c-format
+#, c-format
 msgid "unable to get object type for %s"
-msgstr "nie można przeprowadzić grep z obiektu rodzaju %s"
+msgstr "nie można uzyskać rodzaju obiektu %s"
 
 #: builtin/replace.c:342
-#, fuzzy
 msgid "editing object file failed"
-msgstr "nie można odczytać referencji przeszukiwania"
+msgstr "edycja pliku obiektu nie powiodła się"
 
 #: builtin/replace.c:351
 #, c-format
 msgid "new object is the same as the old one: '%s'"
-msgstr ""
+msgstr "nowy obiekt jest tym samym, co stary: „%s”"
 
 #: builtin/replace.c:384
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse %s as a commit"
-msgstr "nie można przetworzyć zapisu HEAD"
+msgstr "nie można przetworzyć %s jako zapisu"
 
 #: builtin/replace.c:416
 #, c-format
@@ -20598,9 +20609,9 @@ msgstr ""
 "edit zamiast --graft"
 
 #: builtin/replace.c:469
-#, fuzzy, c-format
+#, c-format
 msgid "the original commit '%s' has a gpg signature"
-msgstr "oryginalny zapis „%s” ma podpis GPG."
+msgstr "oryginalny zapis „%s” ma podpis GPG"
 
 #: builtin/replace.c:470
 msgid "the signature will be removed in the replacement commit!"
@@ -20614,19 +20625,21 @@ msgstr "nie można zapisać zastępczego zapisu dla: „%s”"
 #: builtin/replace.c:488
 #, c-format
 msgid "graft for '%s' unnecessary"
-msgstr ""
+msgstr "szczepka w „%s” niepotrzebna"
 
 #: builtin/replace.c:492
 #, c-format
 msgid "new commit is the same as the old one: '%s'"
-msgstr ""
+msgstr "nowy zapis jest tym samym, co stary: „%s”"
 
 #: builtin/replace.c:527
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "could not convert the following graft(s):\n"
 "%s"
-msgstr "Usunięto by następujący element:"
+msgstr ""
+"nie można skonwertować następujących szczepek:\n"
+"%s"
 
 #: builtin/replace.c:548
 msgid "list replace refs"
@@ -20645,9 +20658,8 @@ msgid "change a commit's parents"
 msgstr "zmień rodziców zapisu"
 
 #: builtin/replace.c:552
-#, fuzzy
 msgid "convert existing graft file"
-msgstr "wymuś nadpisanie istniejących plików"
+msgstr "skonwertuj istniejący plik szczepek"
 
 #: builtin/replace.c:553
 msgid "replace the ref if it exists"
@@ -20662,45 +20674,40 @@ msgid "use this format"
 msgstr "użyj tego formatu"
 
 #: builtin/replace.c:569
-#, fuzzy
 msgid "--format cannot be used when not listing"
-msgstr "--fix-thin i --stdin wykluczają się"
+msgstr "nie można użyć --format bez wymieniania"
 
 #: builtin/replace.c:577
-#, fuzzy
 msgid "-f only makes sense when writing a replacement"
-msgstr "-z ma sens tylko z --stdin"
+msgstr "-f ma sens tylko przy wypisywaniu zamiennika"
 
 #: builtin/replace.c:581
-#, fuzzy
 msgid "--raw only makes sense with --edit"
-msgstr "-z ma sens tylko z --stdin"
+msgstr "--raw ma sens tylko z --edit"
 
 #: builtin/replace.c:587
 msgid "-d needs at least one argument"
-msgstr ""
+msgstr "-d potrzebuje przynajmniej jednego argumentu"
 
 #: builtin/replace.c:593
 msgid "bad number of arguments"
-msgstr ""
+msgstr "zła liczba argumentów"
 
 #: builtin/replace.c:599
-#, fuzzy
 msgid "-e needs exactly one argument"
-msgstr "Potrzeba dokładnie jednego zakresu."
+msgstr "-e potrzebuje dokładnie jednego argumentu"
 
 #: builtin/replace.c:605
 msgid "-g needs at least one argument"
-msgstr ""
+msgstr "-g potrzebuje przynajmniej jednego argumentu"
 
 #: builtin/replace.c:611
 msgid "--convert-graft-file takes no argument"
-msgstr ""
+msgstr "--convert-graft-file nie przyjmuje argumentu"
 
 #: builtin/replace.c:617
-#, fuzzy
 msgid "only one pattern can be given with -l"
-msgstr "łącz wzorce podane przez -e"
+msgstr "z -l można podać tylko jeden wzorzec"
 
 #: builtin/rerere.c:13
 msgid "git rerere [clear | forget <path>... | status | remaining | diff | gc]"
@@ -20713,12 +20720,12 @@ msgstr "zarejestruj gładkie rozwiązania w indeksie"
 
 #: builtin/rerere.c:79
 msgid "'git rerere forget' without paths is deprecated"
-msgstr ""
+msgstr "„git rerere forget” bez ścieżek jest przestarzałe"
 
 #: builtin/rerere.c:113
-#, fuzzy, c-format
+#, c-format
 msgid "unable to generate diff for '%s'"
-msgstr "nie można utworzyć „%s”"
+msgstr "nie można wygenerować różnic dla „%s”"
 
 #: builtin/reset.c:32
 msgid ""
@@ -20853,6 +20860,10 @@ msgid ""
 "use '--quiet' to avoid this.  Set the config setting reset.quiet to true\n"
 "to make this the default.\n"
 msgstr ""
+"\n"
+"Przejrzenie nieprzygotowanych zmian po resecie zajęło %.2f sekund.\n"
+"Możesz użyć „--quiet”, żeby tego uniknąć.  Ustaw konfigurację reset.quiet\n"
+"na true, aby było to domyślne.\n"
 
 #: builtin/reset.c:434
 #, c-format
@@ -20865,20 +20876,19 @@ msgstr "Nie można zapisać nowego pliku indeksu."
 
 #: builtin/rev-list.c:499
 msgid "cannot combine --exclude-promisor-objects and --missing"
-msgstr ""
+msgstr "--exclude-promisor-objects i --missing się wykluczają"
 
 #: builtin/rev-list.c:560
 msgid "object filtering requires --objects"
-msgstr ""
+msgstr "filtrowanie obiektów wymaga --objects"
 
 #: builtin/rev-list.c:610
 msgid "rev-list does not support display of notes"
 msgstr "rev-list nie wspiera wyświetlania uwag"
 
 #: builtin/rev-list.c:615
-#, fuzzy
 msgid "marked counting is incompatible with --objects"
-msgstr "--first-parent i --bisect się wykluczają"
+msgstr "znaczone zliczanie i --objects się wykluczają"
 
 #: builtin/rev-parse.c:409
 msgid "git rev-parse --parseopt [<options>] -- [<args>...]"
@@ -20928,9 +20938,9 @@ msgid "git cherry-pick <subcommand>"
 msgstr "git cherry-pick <pod-polecenie>"
 
 #: builtin/revert.c:72
-#, fuzzy, c-format
+#, c-format
 msgid "option `%s' expects a number greater than zero"
-msgstr "przełącznik „%c” oczekuje wartości liczbowej"
+msgstr "opcja „%s” oczekuje liczby większej niż zero"
 
 #: builtin/revert.c:92
 #, c-format
@@ -20950,9 +20960,8 @@ msgid "cancel revert or cherry-pick sequence"
 msgstr "anuluj sekwencję odwracania lub dobierania"
 
 #: builtin/revert.c:105
-#, fuzzy
 msgid "skip current commit and continue"
-msgstr "wypisz zawartość zapisu"
+msgstr "pomiń bieżący zapis i kontynuuj"
 
 #: builtin/revert.c:107
 msgid "don't automatically commit"
@@ -20963,13 +20972,12 @@ msgid "edit the commit message"
 msgstr "edytuj komunikat zapisu"
 
 #: builtin/revert.c:111
-#, fuzzy
 msgid "parent-number"
-msgstr "numer rodzica"
+msgstr "numer-rodzica"
 
 #: builtin/revert.c:112
 msgid "select mainline parent"
-msgstr ""
+msgstr "wybierz rodzica w głównym nurcie"
 
 #: builtin/revert.c:114
 msgid "merge strategy"
@@ -21072,13 +21080,12 @@ msgstr "zwróć zero, nawet jeśli nic nie dopasowano"
 
 #: builtin/rm.c:282
 msgid "No pathspec was given. Which files should I remove?"
-msgstr ""
+msgstr "Nie podano żadnych ścieżek. Które pliki usunąć?"
 
 #: builtin/rm.c:305
-#, fuzzy
 msgid "please stage your changes to .gitmodules or stash them to proceed"
 msgstr ""
-"Przygotuj swoje zmiany w .gitmodules lub dodaj do schowka, aby kontynuować"
+"przygotuj swoje zmiany w .gitmodules lub dodaj do schowka, aby kontynuować"
 
 #: builtin/rm.c:323
 #, c-format
@@ -21128,20 +21135,20 @@ msgstr "git log --pretty=short | git shortlog [<opcje>]"
 
 #: builtin/shortlog.c:135
 msgid "using multiple --group options with stdin is not supported"
-msgstr ""
+msgstr "użycie wielu opcji --group ze standardowym wejściem nie jest wspierane"
 
 #: builtin/shortlog.c:145
 msgid "using --group=trailer with stdin is not supported"
-msgstr ""
+msgstr "użycie --group=trailer ze standardowym wejściem nie jest wspierane"
 
 #: builtin/shortlog.c:335
-#, fuzzy, c-format
+#, c-format
 msgid "unknown group type: %s"
-msgstr "Nieznany typ: %d"
+msgstr "nieznany rodzaj grupy: %s"
 
 #: builtin/shortlog.c:363
 msgid "Group by committer rather than author"
-msgstr ""
+msgstr "Grupuj według składającego, a nie autora"
 
 #: builtin/shortlog.c:366
 msgid "sort output according to the number of commits per author"
@@ -21169,12 +21176,11 @@ msgstr "pole"
 
 #: builtin/shortlog.c:375
 msgid "Group by field"
-msgstr ""
+msgstr "Grupuj według pola"
 
 #: builtin/shortlog.c:403
-#, fuzzy
 msgid "too many arguments given outside repository"
-msgstr "%s: „%s” jest poza repozytorium"
+msgstr "podano zbyt wiele argumentów poza repozytorium"
 
 #: builtin/show-branch.c:13
 msgid ""
@@ -21322,7 +21328,7 @@ msgstr "algorytm-skrótu"
 
 #: builtin/show-index.c:31
 msgid "Unknown hash algorithm"
-msgstr ""
+msgstr "Nieznany algorytm skrótu"
 
 #: builtin/show-ref.c:12
 msgid ""
@@ -21376,34 +21382,33 @@ msgid "git sparse-checkout (init|list|set|add|reapply|disable) <options>"
 msgstr "git sparse-checkout (init|list|set|add|reapply|disable) <opcje>"
 
 #: builtin/sparse-checkout.c:50
-#, fuzzy
 msgid "git sparse-checkout list"
-msgstr "git archive --list"
+msgstr "git sparse-checkout list"
 
 #: builtin/sparse-checkout.c:76
 msgid "this worktree is not sparse (sparse-checkout file may not exist)"
 msgstr ""
+"to drzewo robocze nie jest rzadkie (plik rzadkiego wybrania może nie istnieć)"
 
 #: builtin/sparse-checkout.c:228
-#, fuzzy
 msgid "failed to create directory for sparse-checkout file"
-msgstr "nie można utworzyć katalogu %s"
+msgstr "nie można utworzyć katalogu dla pliku rzadkiego wybrania"
 
 #: builtin/sparse-checkout.c:269
 msgid "unable to upgrade repository format to enable worktreeConfig"
-msgstr ""
+msgstr "nie można podnieść formatu repozytorium, aby włączyć worktreeConfig"
 
 #: builtin/sparse-checkout.c:271
 msgid "failed to set extensions.worktreeConfig setting"
-msgstr ""
+msgstr "nie można ustawić konfiguracji extensions.worktreeConfig"
 
 #: builtin/sparse-checkout.c:288
 msgid "git sparse-checkout init [--cone]"
-msgstr ""
+msgstr "git sparse-checkout init [--cone]"
 
 #: builtin/sparse-checkout.c:307
 msgid "initialize the sparse-checkout in cone mode"
-msgstr ""
+msgstr "zainicjuj rzadkie wybranie w trybie stożka"
 
 #: builtin/sparse-checkout.c:344
 #, c-format
@@ -21411,41 +21416,38 @@ msgid "failed to open '%s'"
 msgstr "nie można otworzyć „%s”"
 
 #: builtin/sparse-checkout.c:401
-#, fuzzy, c-format
+#, c-format
 msgid "could not normalize path %s"
-msgstr "nie można przetworzyć łatki „%s”"
+msgstr "nie można unormować ścieżki %s"
 
 #: builtin/sparse-checkout.c:413
 msgid "git sparse-checkout (set|add) (--stdin | <patterns>)"
 msgstr "git sparse-checkout (set|add) (--stdin | <wzorce>)"
 
 #: builtin/sparse-checkout.c:438
-#, fuzzy, c-format
+#, c-format
 msgid "unable to unquote C-style string '%s'"
-msgstr "nie można odczytać nawiązania symbolicznego %s"
+msgstr "nie można odcytować łańcucha w stylu C „%s”"
 
 #: builtin/sparse-checkout.c:492 builtin/sparse-checkout.c:516
 msgid "unable to load existing sparse-checkout patterns"
-msgstr ""
+msgstr "nie można załadować istniejących wzorców rzadkiego wybrania"
 
 #: builtin/sparse-checkout.c:561
-#, fuzzy
 msgid "read patterns from standard in"
-msgstr "wczytaj aktualizacje ze standardowego wejścia"
+msgstr "wczytaj wzorce ze standardowego wejścia"
 
 #: builtin/sparse-checkout.c:576
 msgid "git sparse-checkout reapply"
-msgstr ""
+msgstr "git sparse-checkout reapply"
 
 #: builtin/sparse-checkout.c:595
-#, fuzzy
 msgid "git sparse-checkout disable"
-msgstr "pomiń stosowanie filtru rzadkiego wybrania"
+msgstr "git sparse-checkout disable"
 
 #: builtin/sparse-checkout.c:623
-#, fuzzy
 msgid "error while refreshing working directory"
-msgstr "Nie można uzyskać obecnego katalogu roboczego"
+msgstr "błąd podczas odświeżania katalogu roboczego"
 
 #: builtin/stash.c:22 builtin/stash.c:38
 msgid "git stash list [<options>]"
@@ -21514,85 +21516,78 @@ msgstr ""
 "          [--] [<ścieżka>...]]"
 
 #: builtin/stash.c:128
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a stash-like commit"
-msgstr "„$args” nie jest zapisem ze zmianami ze schowka"
+msgstr "„%s” nie jest zapisem ze zmianami ze schowka"
 
 #: builtin/stash.c:148
-#, fuzzy, c-format
+#, c-format
 msgid "Too many revisions specified:%s"
-msgstr "Podano za dużo rewizji: $REV"
+msgstr "Podano za dużo rewizji: %s"
 
 #: builtin/stash.c:162
-#, fuzzy
 msgid "No stash entries found."
 msgstr "Brak zmian w schowku."
 
 #: builtin/stash.c:176
-#, fuzzy, c-format
+#, c-format
 msgid "%s is not a valid reference"
-msgstr "„%s” nie jest prawidłową referencją."
+msgstr "%s nie jest prawidłową referencją."
 
 #: builtin/stash.c:225
 msgid "git stash clear with parameters is unimplemented"
 msgstr "Nie zaimplementowano parametrów w git stash clear"
 
 #: builtin/stash.c:404
-#, fuzzy
 msgid "cannot apply a stash in the middle of a merge"
-msgstr "Nie można zastosować zmian ze schowka podczas scalania"
+msgstr "nie można zastosować zmian ze schowka podczas scalania"
 
 #: builtin/stash.c:415
-#, fuzzy, c-format
+#, c-format
 msgid "could not generate diff %s^!."
-msgstr "nie można odczytać „%s”."
+msgstr "nie można wygenerować zmian %s^!."
 
 #: builtin/stash.c:422
-#, fuzzy
 msgid "conflicts in index. Try without --index."
-msgstr "Konflikty w indeksie. Spróbuj bez --index."
+msgstr "konflikty w indeksie. Spróbuj bez --index."
 
 #: builtin/stash.c:428
-#, fuzzy
 msgid "could not save index tree"
-msgstr "Nie można zapisać drzewa indeksu"
+msgstr "nie można zapisać drzewa indeksu"
 
 #: builtin/stash.c:437
-#, fuzzy
 msgid "could not restore untracked files from stash"
-msgstr "Nie można przywrócić nieśledzonych plików ze schowka"
+msgstr "nie można przywrócić nieśledzonych plików ze schowka"
 
 #: builtin/stash.c:451
-#, fuzzy, c-format
+#, c-format
 msgid "Merging %s with %s"
-msgstr "Scalanie %s z %s\n"
+msgstr "Scalanie %s z %s"
 
 #: builtin/stash.c:461
 msgid "Index was not unstashed."
 msgstr "Indeks nie został wyjęty ze schowka."
 
 #: builtin/stash.c:522 builtin/stash.c:620
-#, fuzzy
 msgid "attempt to recreate the index"
-msgstr "nie można odczytać indeksu"
+msgstr "spróbuj odtworzyć indeks"
 
 #: builtin/stash.c:566
-#, fuzzy, c-format
+#, c-format
 msgid "Dropped %s (%s)"
-msgstr "Porzucono ${REV} ($s)"
+msgstr "Porzucono %s (%s)"
 
 #: builtin/stash.c:569
-#, fuzzy, c-format
+#, c-format
 msgid "%s: Could not drop stash entry"
-msgstr "${REV}: Nie można porzucić wpisu ze schowka"
+msgstr "%s: Nie można porzucić wpisu ze schowka"
 
 #: builtin/stash.c:582
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a stash reference"
-msgstr "„$args” nie wskazuje na zmiany ze schowka"
+msgstr "„%s” nie wskazuje na zmiany ze schowka"
 
 #: builtin/stash.c:632
-#, fuzzy
 msgid "The stash entry is kept in case you need it again."
 msgstr "Wpis pozostaje w schowku w razie, gdyby miał być znów potrzebny."
 
@@ -21601,9 +21596,9 @@ msgid "No branch name specified"
 msgstr "Nie określono nazwy gałęzi"
 
 #: builtin/stash.c:799 builtin/stash.c:836
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot update %s with %s"
-msgstr "Nie można zaktualizować $ref_stash o $w_commit"
+msgstr "Nie można zaktualizować %s o %s"
 
 #: builtin/stash.c:817 builtin/stash.c:1471 builtin/stash.c:1536
 msgid "stash message"
@@ -21642,9 +21637,8 @@ msgid "Can't use --patch and --include-untracked or --all at the same time"
 msgstr "Nie można jednocześnie użyć --patch i --include-untracked lub --all"
 
 #: builtin/stash.c:1291
-#, fuzzy
 msgid "Did you forget to 'git add'?"
-msgstr "Może chodziło o „git add .”?\n"
+msgstr "Czyżby zabrakło „git add”?"
 
 #: builtin/stash.c:1306
 msgid "No local changes to save"
@@ -21659,9 +21653,9 @@ msgid "Cannot save the current status"
 msgstr "Nie można zachować bieżącego stanu"
 
 #: builtin/stash.c:1333
-#, fuzzy, c-format
+#, c-format
 msgid "Saved working directory and index state %s"
-msgstr "Zapisano katalog roboczy i stan indeksu $stash_msg"
+msgstr "Zapisano katalog roboczy i stan indeksu %s"
 
 #: builtin/stash.c:1423
 msgid "Cannot remove worktree changes"
@@ -21669,32 +21663,31 @@ msgstr "Nie można usunąć zmian w drzewie roboczym"
 
 #: builtin/stash.c:1462 builtin/stash.c:1527
 msgid "keep index"
-msgstr ""
+msgstr "zachowaj indeks"
 
 #: builtin/stash.c:1464 builtin/stash.c:1529
 msgid "stash in patch mode"
-msgstr ""
+msgstr "dodaj do schowka w trybie łatki"
 
 #: builtin/stash.c:1465 builtin/stash.c:1530
-#, fuzzy
 msgid "quiet mode"
-msgstr "cicho"
+msgstr "tryb cichy"
 
 #: builtin/stash.c:1467 builtin/stash.c:1532
-#, fuzzy
 msgid "include untracked files in stash"
-msgstr "wypisz nieśledzone pliki w kolumnach"
+msgstr "uwzględnij nieśledzone pliki w schowku"
 
 #: builtin/stash.c:1469 builtin/stash.c:1534
-#, fuzzy
 msgid "include ignore files"
-msgstr "pokaż ignorowane pliki"
+msgstr "uwzględnij pomijane pliki"
 
 #: builtin/stash.c:1569
 msgid ""
 "the stash.useBuiltin support has been removed!\n"
 "See its entry in 'git help config' for details."
 msgstr ""
+"wsparcie stash.useBuiltin zostało usunięte!\n"
+"Zobacz szczegóły pod jego opisem w „git help config”."
 
 #: builtin/stripspace.c:18
 msgid "git stripspace [-s | --strip-comments]"
@@ -21719,7 +21712,7 @@ msgstr "Oczekiwano pełnej nazwy referencji, otrzymano %s"
 
 #: builtin/submodule--helper.c:64
 msgid "submodule--helper print-default-remote takes no arguments"
-msgstr ""
+msgstr "submodule--helper print-default-remote nie przyjmuje argumentów"
 
 #: builtin/submodule--helper.c:102
 #, c-format
@@ -21741,9 +21734,9 @@ msgid "No url found for submodule path '%s' in .gitmodules"
 msgstr "Nie znaleziono adresu dla ścieżki pod-modułu „%s” w .gitmodules"
 
 #: builtin/submodule--helper.c:524
-#, fuzzy, c-format
+#, c-format
 msgid "Entering '%s'\n"
-msgstr "nadpisywanie „%s”"
+msgstr "Otwieranie „%s”\n"
 
 #: builtin/submodule--helper.c:527
 #, c-format
@@ -21751,6 +21744,8 @@ msgid ""
 "run_command returned non-zero status for %s\n"
 "."
 msgstr ""
+"run_command zwróciło niezerowy kod wyjścia z %s\n"
+"."
 
 #: builtin/submodule--helper.c:549
 #, c-format
@@ -21759,16 +21754,17 @@ msgid ""
 "submodules of %s\n"
 "."
 msgstr ""
+"run_command zwróciło niezerowy kod wyjścia podczas przechodzenia "
+"zagnieżdżonych pod-modułów %s\n"
+"."
 
 #: builtin/submodule--helper.c:565
-#, fuzzy
 msgid "Suppress output of entering each submodule command"
-msgstr "Powstrzymaj wyjście przy inicjalizacji pod-modułu"
+msgstr "Powstrzymaj wyjście przy podawaniu każdego polecenia pod-modułu"
 
 #: builtin/submodule--helper.c:567 builtin/submodule--helper.c:1487
-#, fuzzy
 msgid "Recurse into nested submodules"
-msgstr "schodź do pod-modułów"
+msgstr "Schodź do zagnieżdżonych pod-modułów"
 
 #: builtin/submodule--helper.c:572
 msgid "git submodule--helper foreach [--quiet] [--recursive] [--] <command>"
@@ -21780,6 +21776,9 @@ msgid ""
 "could not look up configuration '%s'. Assuming this repository is its own "
 "authoritative upstream."
 msgstr ""
+"nie można odnaleźć konfiguracji „%s”. Zakładanie, że to repozytorium samo"
+" sobie "
+"nadrzędnym."
 
 #: builtin/submodule--helper.c:666
 #, c-format
@@ -21816,30 +21815,28 @@ msgid "no submodule mapping found in .gitmodules for path '%s'"
 msgstr "nie znaleziono w .gitmodules przypisania pod-modułów dla ścieżki „%s”"
 
 #: builtin/submodule--helper.c:835
-#, fuzzy, c-format
+#, c-format
 msgid "could not resolve HEAD ref inside the submodule '%s'"
-msgstr "nie można rozwiązać referencji „%s”"
+msgstr "nie można rozwiązać referencji HEAD w pod-module „%s”"
 
 #: builtin/submodule--helper.c:862 builtin/submodule--helper.c:1457
-#, fuzzy, c-format
+#, c-format
 msgid "failed to recurse into submodule '%s'"
-msgstr "Nie można zejść do ścieżki podmodułu „$sm_path”"
+msgstr "Nie można zejść do pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:886 builtin/submodule--helper.c:1623
-#, fuzzy
 msgid "Suppress submodule status output"
-msgstr "dodaj to przed wyjściem ścieżki pod-modułu"
+msgstr "Powstrzymaj wyjście stanu pod-modułów"
 
 #: builtin/submodule--helper.c:887
 msgid ""
 "Use commit stored in the index instead of the one stored in the submodule "
 "HEAD"
-msgstr ""
+msgstr "Użyj zapisu z indeksu zamiast tego z HEAD pod-modułu"
 
 #: builtin/submodule--helper.c:888
-#, fuzzy
 msgid "recurse into nested submodules"
-msgstr "schodź do pod-modułów"
+msgstr "schodź do zagnieżdżonych pod-modułów"
 
 #: builtin/submodule--helper.c:893
 msgid "git submodule status [--quiet] [--cached] [--recursive] [<path>...]"
@@ -21852,12 +21849,12 @@ msgstr "git submodule--helper name <ścieżka>"
 #: builtin/submodule--helper.c:989
 #, c-format
 msgid "* %s %s(blob)->%s(submodule)"
-msgstr ""
+msgstr "* %s %s(blob)->%s(pod-moduł)"
 
 #: builtin/submodule--helper.c:992
 #, c-format
 msgid "* %s %s(submodule)->%s(blob)"
-msgstr ""
+msgstr "* %s %s(pod-moduł)->%s(blob)"
 
 #: builtin/submodule--helper.c:1005
 #, fuzzy, c-format
@@ -21865,122 +21862,116 @@ msgid "%s"
 msgstr "%s"
 
 #: builtin/submodule--helper.c:1055
-#, fuzzy, c-format
+#, c-format
 msgid "couldn't hash object from '%s'"
-msgstr "nie można przetworzyć obiektu „%s”"
+msgstr "nie można skrócić obiektu z „%s”"
 
 #: builtin/submodule--helper.c:1059
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected mode %o\n"
-msgstr "nieoczekiwany tryb $mod_dst"
+msgstr "nieoczekiwany tryb %o\n"
 
 #: builtin/submodule--helper.c:1300
-#, fuzzy
 msgid "use the commit stored in the index instead of the submodule HEAD"
-msgstr "wybierz <gałąź> zamiast zdalnego HEAD"
+msgstr "użyj zapisu z indeksu zamiast z HEAD pod-modułu"
 
 #: builtin/submodule--helper.c:1302
 msgid "to compare the commit in the index with that in the submodule HEAD"
-msgstr ""
+msgstr "aby porównać zapis w indeksie z tym z HEAD pod-modułu"
 
 #: builtin/submodule--helper.c:1304
 msgid "skip submodules with 'ignore_config' value set to 'all'"
-msgstr ""
+msgstr "pomiń pod-moduły z wartością „ignore_config” ustawioną na „all”"
 
 #: builtin/submodule--helper.c:1306
-#, fuzzy
 msgid "limit the summary size"
-msgstr "ogranicz do głównych gałęzi"
+msgstr "ogranicz rozmiar podsumowania"
 
 #: builtin/submodule--helper.c:1311
 msgid "git submodule--helper summary [<options>] [<commit>] [--] [<path>]"
 msgstr "git submodule--helper summary [<opcje>] [<zapis>] [--] [<ścieżka>]"
 
 #: builtin/submodule--helper.c:1335
-#, fuzzy
 msgid "could not fetch a revision for HEAD"
-msgstr "nie można odłączyć HEAD"
+msgstr "nie można pobrać rewizji dla HEAD"
 
 #: builtin/submodule--helper.c:1340
-#, fuzzy
 msgid "--cached and --files are mutually exclusive"
-msgstr "--deepend i --depth się wykluczają"
+msgstr "--cached i --files się wykluczają"
 
 #: builtin/submodule--helper.c:1407
-#, fuzzy, c-format
+#, c-format
 msgid "Synchronizing submodule url for '%s'\n"
-msgstr "Synchronizowanie adresu URL podmodułu w „$displaypath”"
+msgstr "Synchronizowanie adresu URL pod-modułu w „%s”\n"
 
 #: builtin/submodule--helper.c:1413
-#, fuzzy, c-format
+#, c-format
 msgid "failed to register url for submodule path '%s'"
-msgstr "Nie można zarejestrować adresu do ścieżki pod-modułu „%s”"
+msgstr "nie można zarejestrować adresu do ścieżki pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:1427
-#, fuzzy, c-format
+#, c-format
 msgid "failed to get the default remote for submodule '%s'"
-msgstr "Nie można zarejestrować trybu aktualizacji do ścieżki pod-modułu „%s”"
+msgstr "nie można uzyskać domyślnego zdalnego repozytorium pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:1438
-#, fuzzy, c-format
+#, c-format
 msgid "failed to update remote for submodule '%s'"
-msgstr "Nie można zarejestrować trybu aktualizacji do ścieżki pod-modułu „%s”"
+msgstr "nie można zaktualizować zdalnego repozytorium pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:1485
-#, fuzzy
 msgid "Suppress output of synchronizing submodule url"
-msgstr "Powstrzymaj wyjście przy inicjalizacji pod-modułu"
+msgstr "Powstrzymaj wyjście przy synchronizacji adresu pod-modułu"
 
 #: builtin/submodule--helper.c:1492
 msgid "git submodule--helper sync [--quiet] [--recursive] [<path>]"
 msgstr "git submodule--helper sync [--quiet] [--recursive] [<ścieżka>]"
 
 #: builtin/submodule--helper.c:1546
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Submodule work tree '%s' contains a .git directory (use 'rm -rf' if you "
 "really want to remove it including all of its history)"
 msgstr ""
-"Drzewo robocze podmodułu „$displaypath” zawiera katalog .git\n"
+"Drzewo robocze pod-modułu „%s” zawiera katalog .git "
 "(użyj „rm -rf” jeśli na pewno chcesz je usunąć wraz z całą jego historią)"
 
 #: builtin/submodule--helper.c:1558
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Submodule work tree '%s' contains local modifications; use '-f' to discard "
 "them"
 msgstr ""
-"Drzewo robocze pod-modułu „$displaypath” zawiera lokalne zmiany; użyj „-f” "
+"Drzewo robocze pod-modułu „%s” zawiera lokalne zmiany; użyj „-f”, "
 "aby je odrzucić"
 
 #: builtin/submodule--helper.c:1566
-#, fuzzy, c-format
+#, c-format
 msgid "Cleared directory '%s'\n"
-msgstr "Wyczyszczono katalog „$displaypath”"
+msgstr "Wyczyszczono katalog „%s”\n"
 
 #: builtin/submodule--helper.c:1568
-#, fuzzy, c-format
+#, c-format
 msgid "Could not remove submodule work tree '%s'\n"
-msgstr "Nie można usunąć drzewa roboczego podmodułu „$displaypath”"
+msgstr "Nie można usunąć drzewa roboczego pod-modułu „%s”\n"
 
 #: builtin/submodule--helper.c:1579
-#, fuzzy, c-format
+#, c-format
 msgid "could not create empty submodule directory %s"
-msgstr "Nie można utworzyć pustego katalogu podmodułu „$displaypath”"
+msgstr "nie można utworzyć pustego katalogu pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:1595
-#, fuzzy, c-format
+#, c-format
 msgid "Submodule '%s' (%s) unregistered for path '%s'\n"
-msgstr "Zarejestrowano pod-moduł „%s” (%s) w „%s”\n"
+msgstr "Wyrejestrowano pod-moduł „%s” (%s) ze ścieżki „%s”\n"
 
 #: builtin/submodule--helper.c:1624
 msgid "Remove submodule working trees even if they contain local changes"
-msgstr ""
+msgstr "Usuń drzewa robocze pod-modułów nawet jeśli zawierają lokalne zmiany"
 
 #: builtin/submodule--helper.c:1625
-#, fuzzy
 msgid "Unregister all submodules"
-msgstr "schodź do pod-modułów"
+msgstr "Wyrejestruj wszystkie pod-moduły"
 
 #: builtin/submodule--helper.c:1630
 msgid ""
@@ -22038,9 +22029,8 @@ msgid "force cloning progress"
 msgstr "wymuś postęp klonowania"
 
 #: builtin/submodule--helper.c:1841 builtin/submodule--helper.c:2350
-#, fuzzy
 msgid "disallow cloning into non-empty directory"
-msgstr "stosowanie na pustej historii"
+msgstr "nie pozwól sklonować do niepustego katalogu"
 
 #: builtin/submodule--helper.c:1848
 msgid ""
@@ -22056,7 +22046,7 @@ msgstr ""
 #: builtin/submodule--helper.c:1873
 #, c-format
 msgid "refusing to create/use '%s' in another submodule's git dir"
-msgstr ""
+msgstr "odmawiam utworzenia/użyj „%s” w katalogu gita innego pod-modułu"
 
 #: builtin/submodule--helper.c:1884
 #, c-format
@@ -22064,9 +22054,9 @@ msgid "clone of '%s' into submodule path '%s' failed"
 msgstr "klonowanie „%s” do ścieżki pod-modułu „%s” nie powiodło się"
 
 #: builtin/submodule--helper.c:1888
-#, fuzzy, c-format
+#, c-format
 msgid "directory not empty: '%s'"
-msgstr "katalog źródłowy jest pusty"
+msgstr "katalog nie jest pusty: „%s”"
 
 #: builtin/submodule--helper.c:1900
 #, c-format
@@ -22074,14 +22064,15 @@ msgid "could not get submodule directory for '%s'"
 msgstr "nie można uzyskać katalogu pod-modułu dla „%s”"
 
 #: builtin/submodule--helper.c:1936
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid update mode '%s' for submodule path '%s'"
-msgstr "Nie można zarejestrować trybu aktualizacji do ścieżki pod-modułu „%s”"
+msgstr "Nieprawidłowy tryb aktualizacji „%s” do ścieżki pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:1940
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid update mode '%s' configured for submodule path '%s'"
-msgstr "Nie można zarejestrować trybu aktualizacji do ścieżki pod-modułu „%s”"
+msgstr ""
+"Nieprawidłowy tryb aktualizacji „%s” ustawiony w ścieżce pod-modułu „%s”"
 
 #: builtin/submodule--helper.c:2041
 #, c-format
@@ -22093,9 +22084,9 @@ msgid "Maybe you want to use 'update --init'?"
 msgstr "Może chcesz użyć „update --init”?"
 
 #: builtin/submodule--helper.c:2075
-#, fuzzy, c-format
+#, c-format
 msgid "Skipping unmerged submodule %s"
-msgstr "Pomijanie niescalonego pod-modułu"
+msgstr "Pomijanie niescalonego pod-modułu %s"
 
 #: builtin/submodule--helper.c:2104
 #, c-format
@@ -22158,12 +22149,11 @@ msgstr ""
 "nad-projekt nie jest na żadnej gałęzi"
 
 #: builtin/submodule--helper.c:2541
-#, fuzzy, c-format
+#, c-format
 msgid "could not get a repository handle for submodule '%s'"
-msgstr "nie można uzyskać katalogu pod-modułu dla „%s”"
+msgstr "nie można uzyskać uchwytu repozytorium pod-modułu dla „%s”"
 
 #: builtin/submodule--helper.c:2574
-#, fuzzy
 msgid "recurse into submodules"
 msgstr "schodź do pod-modułów"
 
@@ -22173,12 +22163,11 @@ msgstr "git submodule--helper absorb-git-dirs [<opcje>] [<ścieżka>...]"
 
 #: builtin/submodule--helper.c:2636
 msgid "check if it is safe to write to the .gitmodules file"
-msgstr ""
+msgstr "sprawdź, czy bezpiecznie jest zapisać plik .gitmodules"
 
 #: builtin/submodule--helper.c:2639
-#, fuzzy
 msgid "unset the config in the .gitmodules file"
-msgstr "przygotowanie zaktualizowanego .gitmodules nie powiodło się"
+msgstr "usuń konfigurację z pliku .gitmodules"
 
 #: builtin/submodule--helper.c:2644
 msgid "git submodule--helper config <name> [<value>]"
@@ -22193,29 +22182,25 @@ msgid "git submodule--helper config --check-writeable"
 msgstr "git submodule--helper config --check-writeable"
 
 #: builtin/submodule--helper.c:2665 git-submodule.sh:150
-#, fuzzy, sh-format
+#, sh-format
 msgid "please make sure that the .gitmodules file is in the working tree"
-msgstr ""
-"Przygotuj swoje zmiany w .gitmodules lub dodaj do schowka, aby kontynuować"
+msgstr "upewnij się, że plik .gitmodules jest w drzewie roboczym"
 
 #: builtin/submodule--helper.c:2681
-#, fuzzy
 msgid "Suppress output for setting url of a submodule"
-msgstr "Powstrzymaj wyjście przy inicjalizacji pod-modułu"
+msgstr "Powstrzymaj wyjście przy ustawianiu adresu pod-modułu"
 
 #: builtin/submodule--helper.c:2685
 msgid "git submodule--helper set-url [--quiet] <path> <newurl>"
 msgstr "git submodule--helper set-url [--quiet] <ścieżka> <nowy-adres>"
 
 #: builtin/submodule--helper.c:2718
-#, fuzzy
 msgid "set the default tracking branch to master"
-msgstr "wypisz gałęzie śledzące"
+msgstr "ustaw domyślną gałąź śledzącą na master"
 
 #: builtin/submodule--helper.c:2720
-#, fuzzy
 msgid "set the default tracking branch"
-msgstr "wypisz gałęzie śledzące"
+msgstr "ustaw domyślną gałąź śledzącą"
 
 #: builtin/submodule--helper.c:2724
 msgid "git submodule--helper set-branch [-q|--quiet] (-d|--default) <path>"
@@ -22228,19 +22213,17 @@ msgstr ""
 "git submodule--helper set-branch [-q|--quiet] (-b|--branch) <gałąź> <ścieżka>"
 
 #: builtin/submodule--helper.c:2732
-#, fuzzy
 msgid "--branch or --default required"
-msgstr "wymagana nazwa gałęzi"
+msgstr "wymagane --branch lub --default"
 
 #: builtin/submodule--helper.c:2735
-#, fuzzy
 msgid "--branch and --default are mutually exclusive"
-msgstr "--deepend i --depth się wykluczają"
+msgstr "--branch i --default się wykluczają"
 
 #: builtin/submodule--helper.c:2792 git.c:438 git.c:711
-#, fuzzy, c-format
+#, c-format
 msgid "%s doesn't support --super-prefix"
-msgstr "Serwer nie wspiera --deepen"
+msgstr "%s nie wspiera --super-prefix"
 
 #: builtin/submodule--helper.c:2798
 #, c-format
@@ -22357,6 +22340,10 @@ msgid ""
 "\n"
 "\tgit tag -f %s %s^{}"
 msgstr ""
+"Utworzono zagnieżdżony tag. Obiekt wskazywany przez nowy tag sam jest\n"
+"tagiem. Jeśli chodziło o otagowanie obiektu, na który wskazuje, użyj:\n"
+"\n"
+"\tgit tag -f %s %s^{}"
 
 #: builtin/tag.c:232
 msgid "bad object type."
@@ -22400,9 +22387,8 @@ msgid "tag message"
 msgstr "wiadomość tagu"
 
 #: builtin/tag.c:416
-#, fuzzy
 msgid "force edit of tag message"
-msgstr "wymuś edycję zapisu"
+msgstr "wymuś edycję komunikatu tagu"
 
 #: builtin/tag.c:417
 msgid "annotated and GPG-signed tag"
@@ -22454,29 +22440,24 @@ msgid "--column and -n are incompatible"
 msgstr "--column i -n się wykluczają"
 
 #: builtin/tag.c:505
-#, fuzzy
 msgid "-n option is only allowed in list mode"
-msgstr "opcja -n może być użyta tylko z -l."
+msgstr "opcja -n może być użyta tylko w trybie wymieniania"
 
 #: builtin/tag.c:507
-#, fuzzy
 msgid "--contains option is only allowed in list mode"
-msgstr "opcja --contains może być użyta tylko z -l."
+msgstr "opcja --contains może być użyta tylko w trybie wymieniania"
 
 #: builtin/tag.c:509
-#, fuzzy
 msgid "--no-contains option is only allowed in list mode"
-msgstr "opcja --contains może być użyta tylko z -l."
+msgstr "opcja --no-contains może być użyta tylko w trybie wymieniania"
 
 #: builtin/tag.c:511
-#, fuzzy
 msgid "--points-at option is only allowed in list mode"
-msgstr "opcja --points-at może być użyta tylko z -l."
+msgstr "opcja --points-at może być użyta tylko w trybie wymieniania"
 
 #: builtin/tag.c:513
-#, fuzzy
 msgid "--merged and --no-merged options are only allowed in list mode"
-msgstr "opcje --merged i --no-merged mogą być użyte tylko z -l"
+msgstr "opcje --merged i --no-merged mogą być użyte tylko w trybie wymieniania"
 
 #: builtin/tag.c:524
 msgid "only one -F or -m option is allowed."
@@ -22621,7 +22602,7 @@ msgstr "wyczyść bit pominięcia drzewa roboczego"
 
 #: builtin/update-index.c:1020
 msgid "do not touch index-only entries"
-msgstr ""
+msgstr "nie dotykaj elementów będących tylko w indeksie"
 
 #: builtin/update-index.c:1022
 msgid "add to index only; do not add content to object database"
@@ -22685,39 +22666,35 @@ msgstr "włącz pamięć o nieśledzonych bez sprawdzania systemu plików"
 
 #: builtin/update-index.c:1063
 msgid "write out the index even if is not flagged as changed"
-msgstr ""
+msgstr "wypisz indeks, nawet jeśli nie oznaczony jako zmieniony"
 
 #: builtin/update-index.c:1065
-#, fuzzy
 msgid "enable or disable file system monitor"
-msgstr "włącz lub wyłącz podzielony indeks"
+msgstr "włącz lub wyłącz monitorowanie systemu plików"
 
 #: builtin/update-index.c:1067
-#, fuzzy
 msgid "mark files as fsmonitor valid"
-msgstr "oznacz pliki jako „bez zmian”"
+msgstr "oznacz pliki jako prawidłowo monitorowane"
 
 #: builtin/update-index.c:1070
 msgid "clear fsmonitor valid bit"
-msgstr ""
+msgstr "wyczyść bit prawidłowego monitorowania"
 
 #: builtin/update-index.c:1173
-#, fuzzy
 msgid ""
 "core.splitIndex is set to false; remove or change it, if you really want to "
 "enable split index"
 msgstr ""
-"ustawiono core.untrackedCache na false; usuń to lub zmień, jeśli "
-"rzeczywiście chcesz włączyć pamięć o nieśledzonych"
+"ustawiono core.splitIndex na false; usuń to lub zmień, jeśli "
+"rzeczywiście chcesz włączyć rozdzielony indeks"
 
 #: builtin/update-index.c:1182
-#, fuzzy
 msgid ""
 "core.splitIndex is set to true; remove or change it, if you really want to "
 "disable split index"
 msgstr ""
-"ustawiono core.untrackedCache na true; usuń to lub zmień, jeśli rzeczywiście "
-"chcesz wyłączyć pamięć o nieśledzonych"
+"ustawiono core.splitIndex na true; usuń to lub zmień, jeśli "
+"rzeczywiście chcesz wyłączyć rozdzielony indeks"
 
 #: builtin/update-index.c:1194
 msgid ""
@@ -22745,23 +22722,21 @@ msgid "Untracked cache enabled for '%s'"
 msgstr "Włączono pamięć nieśledzonych w „%s”"
 
 #: builtin/update-index.c:1218
-#, fuzzy
 msgid "core.fsmonitor is unset; set it if you really want to enable fsmonitor"
 msgstr ""
-"ustawiono core.untrackedCache na false; usuń to lub zmień, jeśli "
-"rzeczywiście chcesz włączyć pamięć o nieśledzonych"
+"nie ustawiono core.fsmonitor; ustaw je, jeśli rzeczywiście chcesz "
+"włączyć monitorowanie systemu plików"
 
 #: builtin/update-index.c:1222
 msgid "fsmonitor enabled"
 msgstr "włączone monitorowanie systemu plików"
 
 #: builtin/update-index.c:1225
-#, fuzzy
 msgid ""
 "core.fsmonitor is set; remove it if you really want to disable fsmonitor"
 msgstr ""
-"ustawiono core.untrackedCache na true; usuń to lub zmień, jeśli rzeczywiście "
-"chcesz wyłączyć pamięć o nieśledzonych"
+"ustawiono core.fsmonitor; usuń je, jeśli rzeczywiście chcesz "
+"wyłączyć monitorowanie systemu plików"
 
 #: builtin/update-index.c:1229
 msgid "fsmonitor disabled"
@@ -22910,25 +22885,21 @@ msgid "short read (expected %<PRIuMAX> bytes, read %<PRIuMAX>)"
 msgstr "przykrótki odczyt (oczekiwano %<PRIuMAX> bajtów, odczytano %<PRIuMAX>)"
 
 #: builtin/worktree.c:123
-#, fuzzy
 msgid "invalid gitdir file"
-msgstr "nieprawidłowy wiersz Date"
+msgstr "nieprawidłowy plik gitdir"
 
 #: builtin/worktree.c:131
-#, fuzzy
 msgid "gitdir file points to non-existent location"
-msgstr ""
-"Usuwanie drzew roboczych/%s: plik gitdir wskazuje nieistniejące położenie"
+msgstr "plik gitdir wskazuje nieistniejące położenie"
 
 #: builtin/worktree.c:146
-#, fuzzy, c-format
+#, c-format
 msgid "Removing %s/%s: %s"
-msgstr "Usuwanie %s"
+msgstr "Usuwanie %s/%s: %s"
 
 #: builtin/worktree.c:221
-#, fuzzy
 msgid "report pruned working trees"
-msgstr "zgłaszaj przycięte uwagi"
+msgstr "zgłaszaj przycięte drzewa robocze"
 
 #: builtin/worktree.c:223
 msgid "expire working trees older than <time>"
@@ -22940,9 +22911,9 @@ msgid "'%s' already exists"
 msgstr "„%s” już istnieje"
 
 #: builtin/worktree.c:302
-#, fuzzy, c-format
+#, c-format
 msgid "unusable worktree destination '%s'"
-msgstr "nie można odczytać pliku podpisu „%s”"
+msgstr "cel drzewa roboczego „%s” nie nadaje się do użytku"
 
 #: builtin/worktree.c:307
 #, c-format
@@ -22950,6 +22921,9 @@ msgid ""
 "'%s' is a missing but locked worktree;\n"
 "use '%s -f -f' to override, or 'unlock' and 'prune' or 'remove' to clear"
 msgstr ""
+"„%s” jest brakującym, ale zablokowanym drzewem roboczym;\n"
+"użyj „%s -f -f”, aby wymusić, lub „unlock” i „prune” lub „remove”, aby"
+" wyczyścić"
 
 #: builtin/worktree.c:309
 #, c-format
@@ -22957,6 +22931,8 @@ msgid ""
 "'%s' is a missing but already registered worktree;\n"
 "use '%s -f' to override, or 'prune' or 'remove' to clear"
 msgstr ""
+"„%s” jest brakującym, ale już zarejestrowanym drzewem roboczym;\n"
+"użyj „%s -f”, aby wymusić, bądź „prune” lub „remove”, aby wyczyścić"
 
 #: builtin/worktree.c:360
 #, c-format
@@ -22964,24 +22940,24 @@ msgid "could not create directory of '%s'"
 msgstr "nie można utworzyć katalogu „%s”"
 
 #: builtin/worktree.c:494 builtin/worktree.c:500
-#, fuzzy, c-format
+#, c-format
 msgid "Preparing worktree (new branch '%s')"
-msgstr "Błąd usuwania gałęzi „%s”"
+msgstr "Przygotowywanie drzewa roboczego (nowa gałąź „%s”)"
 
 #: builtin/worktree.c:496
 #, c-format
 msgid "Preparing worktree (resetting branch '%s'; was at %s)"
-msgstr ""
+msgstr "Przygotowywanie drzewa roboczego (resetowanie gałęzi „%s”; była na %s)"
 
 #: builtin/worktree.c:505
 #, c-format
 msgid "Preparing worktree (checking out '%s')"
-msgstr ""
+msgstr "Przygotowywanie drzewa roboczego (wybieranie „%s”)"
 
 #: builtin/worktree.c:511
-#, fuzzy, c-format
+#, c-format
 msgid "Preparing worktree (detached HEAD %s)"
-msgstr "Przygotowywanie %s (identyfikator %s)"
+msgstr "Przygotowywanie drzewa roboczego (oddzielone HEAD %s)"
 
 #: builtin/worktree.c:552
 msgid "checkout <branch> even if already checked out in other worktree"
@@ -23000,19 +22976,16 @@ msgid "populate the new working tree"
 msgstr "wypełnij nowe drzewo robocze"
 
 #: builtin/worktree.c:560
-#, fuzzy
 msgid "keep the new working tree locked"
-msgstr "wypełnij nowe drzewo robocze"
+msgstr "pozostaw nowe drzewo robocze zablokowane"
 
 #: builtin/worktree.c:563
-#, fuzzy
 msgid "set up tracking mode (see git-branch(1))"
-msgstr "ustaw tryb śledzenia (zobacz git-pull(1))"
+msgstr "ustaw tryb śledzenia (zobacz git-branch(1))"
 
 #: builtin/worktree.c:566
-#, fuzzy
 msgid "try to match the new branch name with a remote-tracking branch"
-msgstr "gałąź nadrzędna „%s” nie jest przechowana jako gałąź śledząca"
+msgstr "spróbuj dopasować nazwę nowej gałęzi do gałęzi śledzącej"
 
 #: builtin/worktree.c:574
 msgid "-b, -B, and --detach are mutually exclusive"
@@ -23120,22 +23093,26 @@ msgid ""
 "cannot remove a locked working tree, lock reason: %s\n"
 "use 'remove -f -f' to override or unlock first"
 msgstr ""
+"nie można usunąć zablokowanego drzewa roboczego, powód blokady: %s\n"
+"użyj „remove -f -f”, żeby to wymusić lub najpierw odblokować"
 
 #: builtin/worktree.c:1010
 msgid ""
 "cannot remove a locked working tree;\n"
 "use 'remove -f -f' to override or unlock first"
 msgstr ""
+"nie można usunąć zablokowanego drzewa roboczego;\n"
+"użyj „remove -f -f”, żeby to wymusić lub najpierw odblokować"
 
 #: builtin/worktree.c:1013
 #, c-format
 msgid "validation failed, cannot remove working tree: %s"
-msgstr ""
+msgstr "sprawdzenie nie powiodło się, nie można usunąć drzewa roboczego: %s"
 
 #: builtin/worktree.c:1037
-#, fuzzy, c-format
+#, c-format
 msgid "repair: %s: %s"
-msgstr "Nieprawidłowy %s: „%s”"
+msgstr "naprawa: %s: %s"
 
 #: builtin/worktree.c:1040
 #, c-format
