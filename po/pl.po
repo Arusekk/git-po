@@ -54,7 +54,7 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-20 17:48+0100\n"
+"PO-Revision-Date: 2020-12-21 12:57+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -2064,19 +2064,19 @@ msgid "HEAD of working tree %s is not updated"
 msgstr "nie zaktualizowano HEAD drzewa roboczego %s"
 
 #: bundle.c:41
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized bundle hash algorithm: %s"
-msgstr "nierozpoznana łatka binarna w wierszu %d"
+msgstr "nierozpoznany algorytm skrótu wiązki: %s"
 
 #: bundle.c:45
-#, fuzzy, c-format
+#, c-format
 msgid "unknown capability '%s'"
-msgstr "nieznana opcja %s"
+msgstr "nieznana zdolność (capability) „%s”"
 
 #: bundle.c:71
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' does not look like a v2 or v3 bundle file"
-msgstr "„%s” nie wygląda jak plik wiązki v2"
+msgstr "„%s” nie wygląda jak plik wiązki v2 ani v3"
 
 #: bundle.c:110
 #, c-format
@@ -2094,9 +2094,8 @@ msgid "Repository lacks these prerequisite commits:"
 msgstr "W repozytorium brakuje tych wymaganych zapisów:"
 
 #: bundle.c:192
-#, fuzzy
 msgid "need a repository to verify a bundle"
-msgstr "Należy podać repozytorium, aby utworzyć wiązkę."
+msgstr "należy podać repozytorium, aby sprawdzić wiązkę"
 
 #: bundle.c:243
 #, c-format
@@ -2119,9 +2118,8 @@ msgstr[1] "Wiązka potrzebuje tych %d referencji:"
 msgstr[2] "Wiązka potrzebuje tych %d referencji:"
 
 #: bundle.c:319
-#, fuzzy
 msgid "unable to dup bundle descriptor"
-msgstr "nie można zaktualizować %s"
+msgstr "nie można wykonać dup deskryptora wiązki"
 
 #: bundle.c:326
 msgid "Could not spawn pack-objects"
@@ -2141,14 +2139,14 @@ msgid "ref '%s' is excluded by the rev-list options"
 msgstr "referencja „%s” jest wyłączona przez opcje listy rewizji"
 
 #: bundle.c:498
-#, fuzzy, c-format
+#, c-format
 msgid "unsupported bundle version %d"
-msgstr "nieobsługiwana wersja indeksu %s"
+msgstr "nieobsługiwana wersja wiązki %d"
 
 #: bundle.c:500
 #, c-format
 msgid "cannot write bundle version %d with algorithm %s"
-msgstr ""
+msgstr "nie można zapisać wersji wiązki %d z algorytmem %s"
 
 #: bundle.c:522 builtin/log.c:209 builtin/log.c:1927 builtin/shortlog.c:408
 #, c-format
@@ -22860,24 +22858,22 @@ msgid "git worktree unlock <path>"
 msgstr "git worktree unlock <ścieżka>"
 
 #: builtin/worktree.c:60 builtin/worktree.c:973
-#, fuzzy, c-format
+#, c-format
 msgid "failed to delete '%s'"
-msgstr "nie można wykonać „%s”"
+msgstr "nie można skasować „%s”"
 
 #: builtin/worktree.c:85
-#, fuzzy
 msgid "not a valid directory"
-msgstr "nieprawidłowy obiekt: %s"
+msgstr "nie jest prawidłowym katalogiem"
 
 #: builtin/worktree.c:91
-#, fuzzy
 msgid "gitdir file does not exist"
-msgstr "Usuwanie drzew roboczych/%s: plik gitdir nie istnieje"
+msgstr "plik gitdir nie istnieje"
 
 #: builtin/worktree.c:96 builtin/worktree.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "unable to read gitdir file (%s)"
-msgstr "nie można odczytać drzewa (%s)"
+msgstr "nie można odczytać pliku gitdir (%s)"
 
 #: builtin/worktree.c:115
 #, c-format
@@ -22992,10 +22988,8 @@ msgid "-b, -B, and --detach are mutually exclusive"
 msgstr "-b, -B i --detach się wykluczają"
 
 #: builtin/worktree.c:635
-#, fuzzy
 msgid "--[no-]track can only be used if a new branch is created"
-msgstr ""
-"Akcja --edit-todo może być użyta tylko podczas interaktywnego przestawiania."
+msgstr "--[no-]track można użyć tylko przy tworzeniu nowej gałęzi"
 
 #: builtin/worktree.c:758
 msgid "reason for locking"
@@ -23029,21 +23023,22 @@ msgstr "„%s” nie jest zablokowany"
 #: builtin/worktree.c:848
 msgid "working trees containing submodules cannot be moved or removed"
 msgstr ""
+"nie można przenosić ani usuwać drzew roboczych zawierających pod-moduły"
 
 #: builtin/worktree.c:856
-#, fuzzy
 msgid "force move even if worktree is dirty or locked"
-msgstr "wymuś przeniesienie/zmianę nazwy nawet jeśli cel istnieje"
+msgstr ""
+"wymuś przeniesienie, nawet jeśli drzewo robocze jest brudne lub zablokowane"
 
 #: builtin/worktree.c:879 builtin/worktree.c:1003
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is a main working tree"
-msgstr "„%s” nie jest drzewem roboczym"
+msgstr "„%s” jest głównym drzewem roboczym"
 
 #: builtin/worktree.c:884
-#, fuzzy, c-format
+#, c-format
 msgid "could not figure out destination name from '%s'"
-msgstr "nie można uzyskać katalogu pod-modułu dla „%s”"
+msgstr "nie można uzyskać nazwy celu z „%s”"
 
 #: builtin/worktree.c:897
 #, c-format
@@ -23051,41 +23046,47 @@ msgid ""
 "cannot move a locked working tree, lock reason: %s\n"
 "use 'move -f -f' to override or unlock first"
 msgstr ""
+"nie można przenieść zablokowanego drzewa roboczego, powód blokady: %s\n"
+"użyj „move -f -f”, żeby to wymusić lub najpierw odblokować"
 
 #: builtin/worktree.c:899
 msgid ""
 "cannot move a locked working tree;\n"
 "use 'move -f -f' to override or unlock first"
 msgstr ""
+"nie można przenieść zablokowanego drzewa roboczego;\n"
+"użyj „move -f -f”, żeby to wymusić lub najpierw odblokować"
 
 #: builtin/worktree.c:902
 #, c-format
 msgid "validation failed, cannot move working tree: %s"
-msgstr ""
+msgstr "sprawdzenie nie powiodło się, nie można przenieść drzewa roboczego: %s"
 
 #: builtin/worktree.c:907
-#, fuzzy, c-format
+#, c-format
 msgid "failed to move '%s' to '%s'"
-msgstr "nie można otworzyć „%s”: %s"
+msgstr "nie można przenieść „%s” do „%s”"
 
 #: builtin/worktree.c:953
-#, fuzzy, c-format
+#, c-format
 msgid "failed to run 'git status' on '%s'"
-msgstr "nie można pisać do „%s”"
+msgstr "nie można wykonać „git status” na „%s”"
 
 #: builtin/worktree.c:957
 #, c-format
 msgid "'%s' contains modified or untracked files, use --force to delete it"
 msgstr ""
+"„%s” zawiera zmienione lub nieśledzone pliki, użyj --force, aby skasować"
 
 #: builtin/worktree.c:962
-#, fuzzy, c-format
+#, c-format
 msgid "failed to run 'git status' on '%s', code %d"
-msgstr "nie można pisać do „%s”"
+msgstr "nie można wykonać „git status” na „%s”, kod %d"
 
 #: builtin/worktree.c:985
 msgid "force removal even if worktree is dirty or locked"
 msgstr ""
+"wymuś usunięcie, nawet jeśli drzewo robocze jest brudne lub zablokowane"
 
 #: builtin/worktree.c:1008
 #, c-format
@@ -23776,20 +23777,19 @@ msgstr ""
 
 #: command-list.h:100
 msgid "Prepare patches for e-mail submission"
-msgstr ""
+msgstr "Przygotuj łatki do wysłania pocztą e-mail"
 
 #: command-list.h:101
-#, fuzzy
 msgid "Verifies the connectivity and validity of the objects in the database"
-msgstr "zapisz obiekt do bazy danych obiektu"
+msgstr "Sprawdza spójność i poprawność obiektów w bazie danych"
 
 #: command-list.h:102
 msgid "Cleanup unnecessary files and optimize the local repository"
-msgstr ""
+msgstr "Wyczyść niepotrzebne pliki i zoptymalizuj lokalne repozytorium"
 
 #: command-list.h:103
 msgid "Extract commit ID from an archive created using git-archive"
-msgstr ""
+msgstr "Wydobądź identyfikator zapisu z archiwum utworzonego z git-archive"
 
 #: command-list.h:104
 msgid "Print lines matching a pattern"
@@ -23797,37 +23797,35 @@ msgstr "Wypisz wiersze pasujące do wzorca"
 
 #: command-list.h:105
 msgid "A portable graphical interface to Git"
-msgstr ""
+msgstr "Przenośny interfejs graficzny do Gita"
 
 #: command-list.h:106
 msgid "Compute object ID and optionally creates a blob from a file"
-msgstr ""
+msgstr "Oblicz identyfikator obiektu i opcjonalnie utwórz blob z pliku"
 
 #: command-list.h:107
 msgid "Display help information about Git"
-msgstr ""
+msgstr "Wyświetl pomocne informacje o Gicie"
 
 #: command-list.h:108
 msgid "Server side implementation of Git over HTTP"
-msgstr ""
+msgstr "Implementacja Gita po HTTP po stronie serwera"
 
 #: command-list.h:109
-#, fuzzy
 msgid "Download from a remote Git repository via HTTP"
-msgstr "Pobierz obiekty i referencje z innego repozytorium"
+msgstr "Pobierz obiekty ze zdalnego repozytorium przez HTTP"
 
 #: command-list.h:110
-#, fuzzy
 msgid "Push objects over HTTP/DAV to another repository"
-msgstr "Pobierz obiekty i referencje z innego repozytorium"
+msgstr "Wypchnij obiekty po HTTP/DAV do innego repozytorium"
 
 #: command-list.h:111
 msgid "Send a collection of patches from stdin to an IMAP folder"
-msgstr ""
+msgstr "Wyślij zbiór łatek ze standardowego wejścia do katalogu IMAP"
 
 #: command-list.h:112
 msgid "Build pack index file for an existing packed archive"
-msgstr ""
+msgstr "Zbuduj plik indeksu paczki istniejącemu spakowanemu archiwum"
 
 #: command-list.h:113
 msgid "Create an empty Git repository or reinitialize an existing one"
@@ -23835,91 +23833,85 @@ msgstr "Utwórz puste repozytorium Gita lub przeinicjuj istniejące"
 
 #: command-list.h:114
 msgid "Instantly browse your working repository in gitweb"
-msgstr ""
+msgstr "Przeglądaj na miejscu swoje robocze repozytorium w gitweb"
 
 #: command-list.h:115
 msgid "Add or parse structured information in commit messages"
-msgstr ""
+msgstr "Dodaj lub przetwórz ustrukturyzowane informacje z komunikatów zapisów"
 
 #: command-list.h:116
-#, fuzzy
 msgid "The Git repository browser"
-msgstr "To nie jest repozytorium gita"
+msgstr "Przeglądarka repozytorium Gita"
 
 #: command-list.h:117
 msgid "Show commit logs"
 msgstr "Pokaż dziennik zapisów"
 
 #: command-list.h:118
-#, fuzzy
 msgid "Show information about files in the index and the working tree"
-msgstr "i pozostały zmiany w indeksie i/lub drzewie roboczym"
+msgstr "Pokaż informacje o plikach w indeksie i drzewie roboczym"
 
 #: command-list.h:119
-#, fuzzy
 msgid "List references in a remote repository"
-msgstr "repozytorium odniesienia"
+msgstr "Wypisz referencje w zdalnym repozytorium"
 
 #: command-list.h:120
-#, fuzzy
 msgid "List the contents of a tree object"
-msgstr "wypisz tylko tagi tego obiektu"
+msgstr "Wypisz zawartość obiektu drzewa"
 
 #: command-list.h:121
 msgid "Extracts patch and authorship from a single e-mail message"
-msgstr ""
+msgstr "Wydobądź łatkę i autorstwo z pojedynczego listu e-mail"
 
 #: command-list.h:122
 msgid "Simple UNIX mbox splitter program"
-msgstr ""
+msgstr "Prosty program do dzielenia Uniksowej skrzynki mbox"
 
 #: command-list.h:123
 msgid "Run tasks to optimize Git repository data"
-msgstr ""
+msgstr "Wykonuj zadania, by zoptymalizować dane repozytorium Gita"
 
 #: command-list.h:124
 msgid "Join two or more development histories together"
 msgstr "Połącz ze sobą dwie lub więcej historii rozwoju"
 
 #: command-list.h:125
-#, fuzzy
 msgid "Find as good common ancestors as possible for a merge"
-msgstr "znajdź przodków pojedynczego n-stronnego scalenia"
+msgstr "Znajdź najlepszych możliwych przodków scalenia"
 
 #: command-list.h:126
-#, fuzzy
 msgid "Run a three-way file merge"
-msgstr "Uciekanie się do trójstronnego scalania...\n"
+msgstr "Wykonaj trójstronne scalenie pliku"
 
 #: command-list.h:127
-#, fuzzy
 msgid "Run a merge for files needing merging"
-msgstr "trójstronne scalanie jeśli nie trzeba scalać na poziomie plików"
+msgstr "Wykonaj scalenie w plikach wymagających scalenia"
 
 #: command-list.h:128
 msgid "The standard helper program to use with git-merge-index"
-msgstr ""
+msgstr "Standardowy program pomocniczy do użycia z git-merge-index"
 
 #: command-list.h:129
 msgid "Run merge conflict resolution tools to resolve merge conflicts"
 msgstr ""
+"Uruchom narzędzia do rozwiązywania konfliktów, aby rozwiązać konflikty"
+" scalania"
 
 #: command-list.h:130
 msgid "Show three-way merge without touching index"
-msgstr ""
+msgstr "Pokaż trójstronne scalenie bez dotykania indeksu"
 
 #: command-list.h:131
 msgid "Write and verify multi-pack-indexes"
-msgstr ""
+msgstr "Wypisz i sprawdź indeksy multi-pack"
 
 #: command-list.h:132
-#, fuzzy
 msgid "Creates a tag object"
-msgstr "edytuj istniejący obiekt"
+msgstr "Tworzy obiekt tagu"
 
 #: command-list.h:133
 msgid "Build a tree-object from ls-tree formatted text"
-msgstr ""
+msgstr "Zbuduj obiekt drzewa z tekstu sformatowanego jak ls-tree"
 
 #: command-list.h:134
 msgid "Move or rename a file, a directory, or a symlink"
@@ -23927,43 +23919,39 @@ msgstr "Przenieś plik, katalog lub dowiązanie albo zmień jego nazwę"
 
 #: command-list.h:135
 msgid "Find symbolic names for given revs"
-msgstr ""
+msgstr "Znajdź nazwy symboliczne dla podanych rewizji"
 
 #: command-list.h:136
-#, fuzzy
 msgid "Add or inspect object notes"
-msgstr "nie odebrano oczekiwanego obiektu %s"
+msgstr "Dodaj lub zbadaj uwagi do obiektów"
 
 #: command-list.h:137
 msgid "Import from and submit to Perforce repositories"
-msgstr ""
+msgstr "Importuj z repozytoriów Perforce i przesyłaj do nich"
 
 #: command-list.h:138
-#, fuzzy
 msgid "Create a packed archive of objects"
-msgstr "ignoruj spakowane obiekty"
+msgstr "Utwórz spakowane archiwum obiektów"
 
 #: command-list.h:139
-#, fuzzy
 msgid "Find redundant pack files"
-msgstr "nie można wykonać pread na pliku paczki"
+msgstr "Znajdź zbędne pliki paczek"
 
 #: command-list.h:140
 msgid "Pack heads and tags for efficient repository access"
-msgstr ""
+msgstr "Spakuj czoła i tagi do wydajnego dostępu do repozytorium"
 
 #: command-list.h:141
 msgid "Compute unique ID for a patch"
-msgstr ""
+msgstr "Oblicz unikatowy identyfikator łatki"
 
 #: command-list.h:142
-#, fuzzy
 msgid "Prune all unreachable objects from the object database"
-msgstr "zapisz obiekt do bazy danych obiektu"
+msgstr "Przytnij wszystkie nieosiągalne obiekty z bazy danych obiektów"
 
 #: command-list.h:143
 msgid "Remove extra objects that are already in pack files"
-msgstr ""
+msgstr "Usuń dodatkowe obiekty, które już są w plikach paczek"
 
 #: command-list.h:144
 msgid "Fetch from and integrate with another repository or a local branch"
@@ -23974,32 +23962,28 @@ msgid "Update remote refs along with associated objects"
 msgstr "Zaktualizuj zdalne referencje razem z przypisanymi obiektami"
 
 #: command-list.h:146
-#, fuzzy
 msgid "Applies a quilt patchset onto the current branch"
-msgstr "Nie zdefiniowano gałęzi nadrzędnej wobec bieżącej."
+msgstr "Stosuje zestaw łatek quilta na bieżącą gałąź"
 
 #: command-list.h:147
 msgid "Compare two commit ranges (e.g. two versions of a branch)"
-msgstr ""
+msgstr "Porównaj dwa zakresy zapisów (np. dwie wersje gałęzi)"
 
 #: command-list.h:148
-#, fuzzy
 msgid "Reads tree information into the index"
-msgstr "zaktualizuj informacje stat w pliku indeksu"
+msgstr "Wczytuje informacje o drzewie do indeksu"
 
 #: command-list.h:149
 msgid "Reapply commits on top of another base tip"
 msgstr "Ponownie zastosuj zapisy na czubku innej gałęzi"
 
 #: command-list.h:150
-#, fuzzy
 msgid "Receive what is pushed into the repository"
-msgstr "Zapisz zmiany w repozytorium"
+msgstr "Odbierz to, co zostało wypchnięte do repozytorium"
 
 #: command-list.h:151
-#, fuzzy
 msgid "Manage reflog information"
-msgstr "pokaż informacje o resolve-undo"
+msgstr "Zarządzaj informacjami o dzienniku referencji"
 
 #: command-list.h:152
 #, fuzzy
