@@ -54,7 +54,7 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-21 23:16+0100\n"
+"PO-Revision-Date: 2020-12-22 13:02+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -3369,7 +3369,7 @@ msgstr "nie można utworzyć „%s”"
 #: diff.c:4964 diff.c:4970
 #, c-format
 msgid "%s expects <n>/<m> form"
-msgstr "%s oczekuje formy <n>/<m>"
+msgstr "%s oczekuje postaci <n>/<m>"
 
 #: diff.c:4982
 #, c-format
@@ -4279,7 +4279,7 @@ msgstr "współpracuj (zobacz też: git help workflows)"
 
 #: help.c:31
 msgid "Main Porcelain Commands"
-msgstr ""
+msgstr "Główne porcelanowe polecenia"
 
 #: help.c:32
 msgid "Ancillary Commands / Manipulators"
@@ -4295,19 +4295,19 @@ msgstr ""
 
 #: help.c:35
 msgid "Low-level Commands / Manipulators"
-msgstr ""
+msgstr "Polecenia niskopoziomowe / manipulatory"
 
 #: help.c:36
 msgid "Low-level Commands / Interrogators"
-msgstr ""
+msgstr "Polecenia niskopoziomowe / przesłuchiwacze"
 
 #: help.c:37
 msgid "Low-level Commands / Syncing Repositories"
-msgstr ""
+msgstr "Polecenia niskopoziomowe / synchronizacja repozytoriów"
 
 #: help.c:38
 msgid "Low-level Commands / Internal Helpers"
-msgstr ""
+msgstr "Polecenia niskopoziomowe / wewnętrzne pomocniki"
 
 #: help.c:300
 #, c-format
@@ -5843,8 +5843,8 @@ msgstr ""
 "l, label <etykietka> = nazwij bieżące HEAD\n"
 "t, reset <etykietka> = zresetuj HEAD do etykietki\n"
 "m, merge [-C <zapis> | -c <zapis>] <etykietka> [# <wiersz>]\n"
-".       utwórz zapis scalenia używając oryginalnego komunikatu scalenia\n"
-".       (albo <wiersza>, jeśli nie podano oryginalnego zapisu scalenia.\n"
+".       utwórz zapis scalenia używając pierwotnego komunikatu scalenia\n"
+".       (albo <wiersza>, jeśli nie podano pierwotnego zapisu scalenia.\n"
 ".       Użyj -c <zapis>, aby przeredagować komunikat zapisu."
 "\n"
 "Kolejność wierszy może być zmieniona; są wykonywane z góry na dół.\n"
@@ -6753,7 +6753,7 @@ msgstr "dobieranie"
 
 #: sequencer.c:357
 msgid "rebase"
-msgstr ""
+msgstr "przestawianie"
 
 #: sequencer.c:359
 #, fuzzy, c-format
@@ -6855,15 +6855,15 @@ msgstr "nie można otworzyć „%s” do odczytu"
 
 #: sequencer.c:839
 msgid "'GIT_AUTHOR_NAME' already given"
-msgstr ""
+msgstr "już podano „GIT_AUTHOR_NAME”"
 
 #: sequencer.c:844
 msgid "'GIT_AUTHOR_EMAIL' already given"
-msgstr ""
+msgstr "już podano „GIT_AUTHOR_EMAIL”"
 
 #: sequencer.c:849
 msgid "'GIT_AUTHOR_DATE' already given"
-msgstr ""
+msgstr "już podano „GIT_AUTHOR_DATE”"
 
 #: sequencer.c:853
 #, fuzzy, c-format
@@ -6872,15 +6872,15 @@ msgstr "Nieznany format archiwum „%s”"
 
 #: sequencer.c:858
 msgid "missing 'GIT_AUTHOR_NAME'"
-msgstr ""
+msgstr "brak „GIT_AUTHOR_NAME”"
 
 #: sequencer.c:860
 msgid "missing 'GIT_AUTHOR_EMAIL'"
-msgstr ""
+msgstr "brak „GIT_AUTHOR_EMAIL”"
 
 #: sequencer.c:862
 msgid "missing 'GIT_AUTHOR_DATE'"
-msgstr ""
+msgstr "brak „GIT_AUTHOR_DATE”"
 
 #: sequencer.c:927
 #, c-format
@@ -7551,9 +7551,8 @@ msgid "unknown command %d"
 msgstr "nieznana podkomenda: %s"
 
 #: sequencer.c:4271
-#, fuzzy
 msgid "could not read orig-head"
-msgstr "Nie można odczytać referencji %s"
+msgstr "nie można odczytać pierwotnego czoła"
 
 #: sequencer.c:4276
 #, fuzzy
@@ -7699,7 +7698,7 @@ msgstr "Nie można uzyskać obecnego katalogu roboczego"
 
 #: setup.c:423
 msgid "this operation must be run in a work tree"
-msgstr ""
+msgstr "to działanie musi być wykonane w drzewie roboczym"
 
 #: setup.c:661
 #, c-format
@@ -7748,7 +7747,7 @@ msgstr "To nie jest repozytorium gita"
 #: setup.c:812
 #, c-format
 msgid "'$%s' too big"
-msgstr ""
+msgstr "„$%s” za duże"
 
 #: setup.c:826
 #, fuzzy, c-format
@@ -8737,7 +8736,7 @@ msgstr "nie znaleziono gałęzi „%s”."
 
 #: transport.c:1055
 msgid "git-over-rsync is no longer supported"
-msgstr ""
+msgstr "git-over-rsync nie jest już wspierany"
 
 #: transport.c:1157
 #, c-format
@@ -9221,8 +9220,7 @@ msgstr ""
 
 #: wt-status.c:243
 msgid "  (commit or discard the untracked or modified content in submodules)"
-msgstr ""
-"  (złóż lub odrzuć nieśledzoną lub zmodyfikowaną zawartość pod-modułów)"
+msgstr "  (złóż lub odrzuć nieśledzoną lub zmienioną zawartość pod-modułów)"
 
 #: wt-status.c:254
 #, c-format
@@ -9271,7 +9269,7 @@ msgstr "usunięto:"
 
 #: wt-status.c:294
 msgid "modified:"
-msgstr "zmodyfikowano:"
+msgstr "zmieniono:"
 
 #: wt-status.c:296
 msgid "renamed:"
@@ -9546,7 +9544,7 @@ msgstr "  (użyj „git bisect reset”, aby powrócić na pierwotną gałąź)"
 #: wt-status.c:1492
 #, c-format
 msgid "You are in a sparse checkout with %d%% of tracked files present."
-msgstr ""
+msgstr "Jesteś w rzadkim wybraniu z obecnym %d%% śledzonych plików."
 
 #: wt-status.c:1731
 msgid "On branch "
@@ -9659,7 +9657,7 @@ msgstr "HEAD (brak gałęzi)"
 
 #: wt-status.c:1975
 msgid "different"
-msgstr ""
+msgstr "różne"
 
 #: wt-status.c:1977 wt-status.c:1985
 msgid "behind "
@@ -9810,7 +9808,7 @@ msgstr "ostrzegaj przed dodawaniem wbudowanego repozytorium"
 
 #: builtin/add.c:351
 msgid "backend for `git stash -p`"
-msgstr "zaplecze „git stash -p”"
+msgstr "silnik do „git stash -p”"
 
 #: builtin/add.c:369
 #, c-format
@@ -10224,7 +10222,7 @@ msgstr "pomiń obecną ścieżkę"
 
 #: builtin/am.c:2287
 msgid "restore the original branch and abort the patching operation."
-msgstr "przywróć oryginalną gałąź i przerwij łatanie."
+msgstr "przywróć pierwotną gałąź i przerwij łatanie."
 
 #: builtin/am.c:2290
 msgid "abort the patching operation but keep HEAD where it is."
@@ -10432,7 +10430,7 @@ msgstr "„%s” nie jest prawidłowym zapisem"
 msgid ""
 "could not check out original HEAD '%s'. Try 'git bisect reset <commit>'."
 msgstr ""
-"nie można wybrać oryginalnego HEAD „%s”. Spróbuj „git bisect reset <zapis>”."
+"nie można wybrać pierwotnego HEAD „%s”. Spróbuj „git bisect reset <zapis>”."
 
 #: builtin/bisect--helper.c:255
 #, c-format
@@ -10710,7 +10708,7 @@ msgstr "Pokaż wynik wyjściowy elementów oskarżenia"
 
 #: builtin/blame.c:875
 msgid "Show original filename (Default: auto)"
-msgstr "Pokazuj oryginalną nazwę pliku (Domyślnie: automatycznie)"
+msgstr "Pokazuj pierwotną nazwę pliku (Domyślnie: automatycznie)"
 
 #: builtin/blame.c:876
 msgid "Show original linenumber (Default: off)"
@@ -15384,9 +15382,8 @@ msgid "show line numbers"
 msgstr "pokaż numery wierszy"
 
 #: builtin/grep.c:878
-#, fuzzy
 msgid "show column number of first match"
-msgstr "pokazuj tylko nazwy plików bez trafień"
+msgstr "pokaż numer kolumny pierwszego dopasowania"
 
 #: builtin/grep.c:879
 msgid "don't show filenames"
@@ -15417,9 +15414,8 @@ msgid "print NUL after filenames"
 msgstr "wypisuj NUL po nazwach plików"
 
 #: builtin/grep.c:894
-#, fuzzy
 msgid "show only matching parts of a line"
-msgstr "pokaż niepasujące wiersze"
+msgstr "pokaż tylko pasujące fragmenty wiersza"
 
 #: builtin/grep.c:896
 msgid "show the number of matches instead of matching lines"
@@ -15600,9 +15596,8 @@ msgid "print list of useful guides"
 msgstr "wypisz listę przydatnych podręczników"
 
 #: builtin/help.c:50
-#, fuzzy
 msgid "print all configuration variable names"
-msgstr "nie można utworzyć pliku konfiguracyjnego %s"
+msgstr "wypisz wszystkie nazwy zmiennych konfiguracji"
 
 #: builtin/help.c:52
 msgid "show man page"
@@ -15617,9 +15612,8 @@ msgid "show info page"
 msgstr "pokaż stronę podręcznika info"
 
 #: builtin/help.c:57
-#, fuzzy
 msgid "print command description"
-msgstr "wypisz zawartość zapisu"
+msgstr "wypisz opis polecenia"
 
 #: builtin/help.c:62
 msgid "git help [--all] [--guides] [--man | --web | --info] [<command>]"
@@ -15680,14 +15674,14 @@ msgid "no info viewer handled the request"
 msgstr "żaden czytnik podręcznika info nie obsłużył żądania"
 
 #: builtin/help.c:520 builtin/help.c:531 git.c:337
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is aliased to '%s'"
-msgstr "„git %s” jest skrótem na „%s”"
+msgstr "„%s” jest skrótem na „%s”"
 
 #: builtin/help.c:534 git.c:369
-#, fuzzy, c-format
+#, c-format
 msgid "bad alias.%s string: %s"
-msgstr "Zły łańcuch branch.%s.mergeoptions: %s"
+msgstr "zły łańcuch alias.%s: %s"
 
 #: builtin/help.c:563 builtin/help.c:593
 #, c-format
@@ -15696,7 +15690,7 @@ msgstr "użycie: %s%s"
 
 #: builtin/help.c:577
 msgid "'git help config' for more information"
-msgstr ""
+msgstr "więcej informacji w „git help config”"
 
 #: builtin/index-pack.c:221
 #, c-format
@@ -15812,9 +15806,9 @@ msgid "unable to read %s"
 msgstr "nie można odczytać %s"
 
 #: builtin/index-pack.c:824
-#, fuzzy, c-format
+#, c-format
 msgid "cannot read existing object info %s"
-msgstr "nie można odczytać istniejącego obiektu %s"
+msgstr "nie można odczytać informacji istniejącego obiektu %s"
 
 #: builtin/index-pack.c:832
 #, c-format
@@ -15827,9 +15821,8 @@ msgid "invalid blob object %s"
 msgstr "nieprawidłowy obiekt blob %s"
 
 #: builtin/index-pack.c:849 builtin/index-pack.c:868
-#, fuzzy
 msgid "fsck error in packed object"
-msgstr "ignoruj spakowane obiekty"
+msgstr "błąd fsck w spakowanym obiekcie"
 
 #: builtin/index-pack.c:870
 #, c-format
@@ -15914,14 +15907,14 @@ msgid "packfile name '%s' does not end with '.pack'"
 msgstr "nazwa pliku paczki „%s” nie kończy się na „.pack”"
 
 #: builtin/index-pack.c:1469
-#, fuzzy, c-format
+#, c-format
 msgid "cannot write %s file '%s'"
-msgstr "nie można zapisać pliku keep „%s”"
+msgstr "nie można zapisać pliku %s „%s”"
 
 #: builtin/index-pack.c:1477
-#, fuzzy, c-format
+#, c-format
 msgid "cannot close written %s file '%s'"
-msgstr "nie można zamknąć zapisanego pliku keep „%s”"
+msgstr "nie można zamknąć zapisanego pliku %s „%s”"
 
 #: builtin/index-pack.c:1501
 msgid "error while closing pack file"
@@ -15977,32 +15970,29 @@ msgid "bad %s"
 msgstr "błędny %s"
 
 #: builtin/index-pack.c:1806 builtin/init-db.c:391 builtin/init-db.c:623
-#, fuzzy, c-format
+#, c-format
 msgid "unknown hash algorithm '%s'"
-msgstr "Nieznany format archiwum „%s”"
+msgstr "nieznany algorytm skrótu „%s”"
 
 #: builtin/index-pack.c:1821
 msgid "--fix-thin cannot be used without --stdin"
 msgstr "--fix-thin i --stdin wykluczają się"
 
 #: builtin/index-pack.c:1823
-#, fuzzy
 msgid "--stdin requires a git repository"
-msgstr "--index poza repozytorium"
+msgstr "--stdin wymaga repozytorium gita"
 
 #: builtin/index-pack.c:1825
-#, fuzzy
 msgid "--object-format cannot be used with --stdin"
-msgstr "--fix-thin i --stdin wykluczają się"
+msgstr "--object-format i --stdin wykluczają się"
 
 #: builtin/index-pack.c:1831
 msgid "--verify with no packfile name given"
 msgstr "--verify bez podanej nazwy pliku paczki"
 
 #: builtin/index-pack.c:1892 builtin/unpack-objects.c:582
-#, fuzzy
 msgid "fsck error in pack objects"
-msgstr "błąd w obiekcie: %s"
+msgstr "błąd fsck w obiektach paczek"
 
 #: builtin/init-db.c:64
 #, c-format
@@ -16035,9 +16025,9 @@ msgid "ignoring template %s"
 msgstr "pomijanie szablonu %s"
 
 #: builtin/init-db.c:124
-#, fuzzy, c-format
+#, c-format
 msgid "templates not found in %s"
-msgstr "szablony nie znalezione %s"
+msgstr "nie znaleziono szablonów w %s"
 
 #: builtin/init-db.c:139
 #, c-format
@@ -16045,9 +16035,9 @@ msgid "not copying templates from '%s': %s"
 msgstr "nie kopiowanie szablonów z „%s”: %s"
 
 #: builtin/init-db.c:274
-#, fuzzy, c-format
+#, c-format
 msgid "invalid initial branch name: '%s'"
-msgstr "Nieprawidłowa nazwa gałęzi: „%s”"
+msgstr "nieprawidłowa początkowa nazwa gałęzi: „%s”"
 
 #: builtin/init-db.c:366
 #, c-format
@@ -16061,7 +16051,7 @@ msgstr "nie można przenieść %s do %s"
 
 #: builtin/init-db.c:385
 msgid "attempt to reinitialize repository with different hash"
-msgstr ""
+msgstr "próba ponownego zainicjowania repozytorium innym skrótem"
 
 #: builtin/init-db.c:409 builtin/init-db.c:412
 #, c-format
@@ -16071,7 +16061,7 @@ msgstr "%s już istnieje"
 #: builtin/init-db.c:443
 #, c-format
 msgid "re-init: ignored --initial-branch=%s"
-msgstr ""
+msgstr "re-init: pominięto --initial-branch=%s"
 
 #: builtin/init-db.c:474
 #, c-format
@@ -16111,22 +16101,20 @@ msgstr ""
 "podaj, że repozytorium gita ma być współdzielone pomiędzy użytkownikami"
 
 #: builtin/init-db.c:562
-#, fuzzy
 msgid "override the name of the initial branch"
-msgstr "wymuś bit wykonywalności podanych plików"
+msgstr "wymuś nazwę początkowej gałęzi"
 
 #: builtin/init-db.c:563 builtin/verify-pack.c:74
 msgid "hash"
-msgstr ""
+msgstr "skrót"
 
 #: builtin/init-db.c:564 builtin/show-index.c:22 builtin/verify-pack.c:75
 msgid "specify the hash algorithm to use"
-msgstr ""
+msgstr "podaj algorytm skrótu do użycia"
 
 #: builtin/init-db.c:571
-#, fuzzy
 msgid "--separate-git-dir and --bare are mutually exclusive"
-msgstr "--deepend i --depth się wykluczają"
+msgstr "--separate-git-dir i --bare się wykluczają"
 
 #: builtin/init-db.c:600 builtin/init-db.c:605
 #, c-format
@@ -16174,39 +16162,35 @@ msgstr "obcinaj puste końcówki"
 
 #: builtin/interpret-trailers.c:99
 msgid "where to place the new trailer"
-msgstr ""
+msgstr "gdzie umieścić nową końcówkę"
 
 #: builtin/interpret-trailers.c:101
-#, fuzzy
 msgid "action if trailer already exists"
-msgstr "drzewo robocze „%s” już istnieje."
+msgstr "działanie, jeśli końcówka już istnieje"
 
 #: builtin/interpret-trailers.c:103
 msgid "action if trailer is missing"
-msgstr ""
+msgstr "działanie, jeśli brakuje końcówki"
 
 #: builtin/interpret-trailers.c:105
-#, fuzzy
 msgid "output only the trailers"
-msgstr "obcinaj puste końcówki"
+msgstr "wypisz tylko końcówki"
 
 #: builtin/interpret-trailers.c:106
-#, fuzzy
 msgid "do not apply config rules"
-msgstr "odczytaj wartości konfiguracji"
+msgstr "nie stosuj reguł konfiguracji"
 
 #: builtin/interpret-trailers.c:107
 msgid "join whitespace-continued values"
-msgstr ""
+msgstr "złącz wartości kontynuowane od białych znaków"
 
 #: builtin/interpret-trailers.c:108
-#, fuzzy
 msgid "set parsing options"
-msgstr "Opcje scalania"
+msgstr "ustaw opcje przetwarzania"
 
 #: builtin/interpret-trailers.c:110
 msgid "do not treat --- specially"
-msgstr ""
+msgstr "nie traktuj specjalnie ---"
 
 #: builtin/interpret-trailers.c:111
 msgid "trailer"
@@ -16217,9 +16201,8 @@ msgid "trailer(s) to add"
 msgstr "końcówka(-i) do dodania"
 
 #: builtin/interpret-trailers.c:123
-#, fuzzy
 msgid "--trailer with --only-input does not make sense"
-msgstr "--name-only nie ma sensu"
+msgstr "--trailer i --only-input wykluczają się"
 
 #: builtin/interpret-trailers.c:133
 msgid "no input file given for in-place editing"
@@ -16281,14 +16264,14 @@ msgid "git show %s: bad file"
 msgstr "git show %s: zły plik"
 
 #: builtin/log.c:579 builtin/log.c:674
-#, fuzzy, c-format
+#, c-format
 msgid "could not read object %s"
-msgstr "Nie można odczytać obiektu %s"
+msgstr "nie można odczytać obiektu %s"
 
 #: builtin/log.c:699
-#, fuzzy, c-format
+#, c-format
 msgid "unknown type: %d"
-msgstr "Nieznany typ: %d"
+msgstr "nieznany rodzaj: %d"
 
 #: builtin/log.c:848
 #, c-format
@@ -16300,28 +16283,25 @@ msgid "format.headers without value"
 msgstr "format.headers bez wartości"
 
 #: builtin/log.c:984
-#, fuzzy, c-format
+#, c-format
 msgid "cannot open patch file %s"
-msgstr "Nie można otworzyć pliku łatki %s"
+msgstr "nie można otworzyć pliku łatki %s"
 
 #: builtin/log.c:1001
-#, fuzzy
 msgid "need exactly one range"
-msgstr "Potrzeba dokładnie jednego zakresu."
+msgstr "potrzeba dokładnie jednego zakresu"
 
 #: builtin/log.c:1011
 msgid "not a range"
 msgstr "to nie jest zakres"
 
 #: builtin/log.c:1175
-#, fuzzy
 msgid "cover letter needs email format"
-msgstr "List motywacyjny wymaga formatu e-mail"
+msgstr "list motywacyjny wymaga formatu e-mail"
 
 #: builtin/log.c:1181
-#, fuzzy
 msgid "failed to create cover-letter file"
-msgstr "Nie można utworzyć plików wyjściowych"
+msgstr "nie można utworzyć pliku z listem motywacyjnym"
 
 #: builtin/log.c:1262
 #, c-format
@@ -16333,9 +16313,8 @@ msgid "git format-patch [<options>] [<since> | <revision-range>]"
 msgstr "git format-patch [<opcje>] [<od-kiedy> | <zakres-rewizji>]"
 
 #: builtin/log.c:1347
-#, fuzzy
 msgid "two output directories?"
-msgstr "Dwa katalogi wyjściowe?"
+msgstr "dwa katalogi wyjściowe?"
 
 #: builtin/log.c:1498 builtin/log.c:2318 builtin/log.c:2320 builtin/log.c:2332
 #, c-format
@@ -16344,25 +16323,24 @@ msgstr "nieznany zapis %s"
 
 #: builtin/log.c:1509 builtin/replace.c:58 builtin/replace.c:207
 #: builtin/replace.c:210
-#, fuzzy, c-format
+#, c-format
 msgid "failed to resolve '%s' as a valid ref"
-msgstr "nie można rozwiązać „%s” jako prawidłowej referencji."
+msgstr "nie można rozwiązać „%s” jako prawidłowej referencji"
 
 #: builtin/log.c:1518
 msgid "could not find exact merge base"
-msgstr "nie odnaleziono dokładnej podstawy scalania."
+msgstr "nie znaleziono dokładnej podstawy scalania"
 
 #: builtin/log.c:1528
-#, fuzzy
 msgid ""
 "failed to get upstream, if you want to record base commit automatically,\n"
 "please use git branch --set-upstream-to to track a remote branch.\n"
 "Or you could specify base commit by --base=<base-commit-id> manually"
 msgstr ""
-"Nie udało się uzyskać nadrzędnego repozytorium, jeśli chcesz automatycznie\n"
-"zapisać zapis podstawy, użyj git branch --set-upstream-to, aby śledzić "
-"zdalną gałąź.\n"
-"Albo możesz podać zapis podstawy ręcznie przez --base=<id-zapisu-podstawy>."
+"nie udało się uzyskać nadrzędnego repozytorium, jeśli chcesz automatycznie\n"
+"zapisać zapis podstawy, użyj git branch --set-upstream-to, aby śledzić zdalną"
+" gałąź.\n"
+"Albo możesz podać zapis podstawy ręcznie przez --base=<id-zapisu-podstawy>"
 
 #: builtin/log.c:1551
 msgid "failed to find exact merge base"
@@ -16381,14 +16359,13 @@ msgid "cannot get patch id"
 msgstr "nie można uzyskać identyfikatora łatki"
 
 #: builtin/log.c:1693
-#, fuzzy
 msgid "failed to infer range-diff origin of current series"
-msgstr "nie można zapisać dowiązania do bieżącej referencji uwag (%s)"
+msgstr "nie można wywnioskować źródła różnic zakresów z bieżącej serii"
 
 #: builtin/log.c:1695
 #, c-format
 msgid "using '%s' as range-diff origin of current series"
-msgstr ""
+msgstr "użycie „%s” jako źródła różnic zakresów z bieżącej serii"
 
 #: builtin/log.c:1739
 msgid "use [PATCH n/m] even with a single patch"
@@ -16427,9 +16404,8 @@ msgid "mark the series as Nth re-roll"
 msgstr "oznacz serię jako N-te podejście"
 
 #: builtin/log.c:1758
-#, fuzzy
 msgid "max length of output filename"
-msgstr "maksymalny rozmiar pojedynczego wyjściowego pliku paczki"
+msgstr "maksymalna długość nazwy wynikowego pliku"
 
 #: builtin/log.c:1760
 msgid "Use [RFC PATCH] instead of [PATCH]"
@@ -16553,21 +16529,22 @@ msgid "don't print the patch filenames"
 msgstr "nie wypisuj nazw plików łatek"
 
 #: builtin/log.c:1812
-#, fuzzy
 msgid "show progress while generating patches"
-msgstr "pokaż miernik postępu podczas fazy zapisywania obiektów"
+msgstr "pokaż postęp podczas generowania łatek"
 
 #: builtin/log.c:1814
 msgid "show changes against <rev> in cover letter or single patch"
 msgstr ""
+"pokaż zmiany względem <rewizji> w liście motywacyjnym lub pojedynczej łatce"
 
 #: builtin/log.c:1817
 msgid "show changes against <refspec> in cover letter or single patch"
 msgstr ""
+"pokaż zmiany względem <referencji> w liście motywacyjnym lub pojedynczej łatce"
 
 #: builtin/log.c:1819
 msgid "percentage by which creation is weighted"
-msgstr ""
+msgstr "procent, według jakiego ważone jest tworzenie"
 
 #: builtin/log.c:1905
 #, c-format
@@ -16634,14 +16611,12 @@ msgid "unable to read signature file '%s'"
 msgstr "nie można odczytać pliku podpisu „%s”"
 
 #: builtin/log.c:2150
-#, fuzzy
 msgid "Generating patches"
-msgstr "edycja łatki nie powiodła się"
+msgstr "Generowanie łatek"
 
 #: builtin/log.c:2194
-#, fuzzy
 msgid "failed to create output files"
-msgstr "Nie można utworzyć plików wyjściowych"
+msgstr "nie można utworzyć plików wyjściowych"
 
 #: builtin/log.c:2253
 msgid "git cherry [-v] [<upstream> [<head> [<limit>]]]"
@@ -16668,9 +16643,8 @@ msgid "use lowercase letters for 'assume unchanged' files"
 msgstr "użyj małych liter do plików o „założonej niezmienności”"
 
 #: builtin/ls-files.c:531
-#, fuzzy
 msgid "use lowercase letters for 'fsmonitor clean' files"
-msgstr "użyj małych liter do plików o „założonej niezmienności”"
+msgstr "użyj małych liter do plików „prawidłowo monitorowanych”"
 
 #: builtin/ls-files.c:533
 msgid "show cached files in the output (default)"
@@ -16846,7 +16820,7 @@ msgstr "wypisz całe drzewo; nie tylko bieżący katalog (zakłada --full-name)"
 #: builtin/mailsplit.c:241
 #, c-format
 msgid "empty mbox: '%s'"
-msgstr ""
+msgstr "pusta skrzynka mbox: „%s”"
 
 #: builtin/merge-base.c:32
 msgid "git merge-base [-a | --all] <commit> <commit>..."
@@ -16894,7 +16868,7 @@ msgid ""
 "<orig-file> <file2>"
 msgstr ""
 "git merge-file [<opcje>] [-L <nazwa1> [-L <oryg> [-L <nazwa2>]]] <plik1> "
-"<plik-oryg> <plik2>"
+"<plik-pierw> <plik2>"
 
 #: builtin/merge-file.c:35
 msgid "send results to standard output"
@@ -16969,16 +16943,15 @@ msgid "git merge --abort"
 msgstr "git merge --abort"
 
 #: builtin/merge.c:59
-#, fuzzy
 msgid "git merge --continue"
-msgstr "git merge --abort"
+msgstr "git merge --continue"
 
 #: builtin/merge.c:122
 msgid "switch `m' requires a value"
 msgstr "przełącznik „m” wymaga wartości"
 
 #: builtin/merge.c:145
-#, fuzzy, c-format
+#, c-format
 msgid "option `%s' requires a value"
 msgstr "opcja „%s” wymaga wartości"
 
@@ -17065,23 +17038,20 @@ msgid "abort the current in-progress merge"
 msgstr "przerwij bieżące trwające scalanie"
 
 #: builtin/merge.c:291
-#, fuzzy
 msgid "--abort but leave index and working tree alone"
-msgstr "zresetuj HEAD, indeks i drzewo robocze"
+msgstr "jak --abort, ale zostaw w spokoju indeks i drzewo robocze"
 
 #: builtin/merge.c:293
-#, fuzzy
 msgid "continue the current in-progress merge"
-msgstr "przerwij bieżące trwające scalanie"
+msgstr "kontynuuj bieżące trwające scalanie"
 
 #: builtin/merge.c:295 builtin/pull.c:180
 msgid "allow merging unrelated histories"
 msgstr "zezwól na scalenie niepowiązanych historii"
 
 #: builtin/merge.c:302
-#, fuzzy
 msgid "bypass pre-merge-commit and commit-msg hooks"
-msgstr "omiń skrypty pre-commit i commit-msg"
+msgstr "omiń skrypty pre-merge-commit i commit-msg"
 
 #: builtin/merge.c:319
 msgid "could not run stash."
@@ -17149,7 +17119,6 @@ msgid "Not committing merge; use 'git commit' to complete the merge.\n"
 msgstr "Nie składanie scalenia; użyj „git commit”, aby ukończyć scalanie.\n"
 
 #: builtin/merge.c:822
-#, fuzzy
 msgid ""
 "Please enter a commit message to explain why this merge is necessary,\n"
 "especially if it merges an updated upstream into a topic branch.\n"
@@ -17158,22 +17127,19 @@ msgstr ""
 "Podaj komunikat zapisu, żeby wyjaśnić, dlaczego to scalenie jest konieczne,\n"
 "zwłaszcza jeśli scala zaktualizowaną gałąź nadrzędną z gałęzią tematyczną.\n"
 "\n"
-"Wiersze zaczynające się od „%c” będą zignorowane, a pusty komunikat\n"
-"przerywa zapis.\n"
 
 #: builtin/merge.c:827
-#, fuzzy
 msgid "An empty message aborts the commit.\n"
-msgstr "edytuj komunikat przed złożeniem"
+msgstr "Pusty komunikat przerywa zapis.\n"
 
 #: builtin/merge.c:830
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Lines starting with '%c' will be ignored, and an empty message aborts\n"
 "the commit.\n"
 msgstr ""
-"Podaj komunikat zapisu swoich zmian. Wiersze zaczynające się\n"
-"od „%c” będą ignorowane, a pusty komunikat przerwie zapis.\n"
+"Wiersze zaczynające się od „%c” będą ignorowane, a pusty komunikat\n"
+"przerwie zapis.\n"
 
 #: builtin/merge.c:883
 msgid "Empty commit message."
@@ -17222,9 +17188,8 @@ msgid "not something we can merge"
 msgstr "to nie jest coś, co można scalić"
 
 #: builtin/merge.c:1311
-#, fuzzy
 msgid "--abort expects no arguments"
-msgstr "%%(body) nie przyjmuje argumentów"
+msgstr "--abort nie przyjmuje argumentów"
 
 #: builtin/merge.c:1315
 msgid "There is no merge to abort (MERGE_HEAD missing)."
@@ -17232,16 +17197,15 @@ msgstr "Nie ma scalenia, które można by przerwać (brak MERGE_HEAD)."
 
 #: builtin/merge.c:1333
 msgid "--quit expects no arguments"
-msgstr ""
+msgstr "--quit nie przyjmuje argumentów"
 
 #: builtin/merge.c:1346
 msgid "--continue expects no arguments"
-msgstr ""
+msgstr "--continue nie przyjmuje argumentów"
 
 #: builtin/merge.c:1350
-#, fuzzy
 msgid "There is no merge in progress (MERGE_HEAD missing)."
-msgstr "Nie ma scalenia, które można by przerwać (brak MERGE_HEAD)."
+msgstr "Nie trwa żadne scalenie (brak MERGE_HEAD)."
 
 #: builtin/merge.c:1366
 msgid ""
@@ -17268,9 +17232,8 @@ msgid "You cannot combine --squash with --no-ff."
 msgstr "--squash i --no-ff się wykluczają."
 
 #: builtin/merge.c:1392
-#, fuzzy
 msgid "You cannot combine --squash with --commit."
-msgstr "--squash i --no-ff się wykluczają."
+msgstr "--squash i --commit się wykluczają."
 
 #: builtin/merge.c:1408
 msgid "No commit specified and merge.defaultToUpstream not set."
@@ -17298,7 +17261,6 @@ msgid "refusing to merge unrelated histories"
 msgstr "odmawiam scalenia niepowiązanych historii"
 
 #: builtin/merge.c:1524
-#, fuzzy
 msgid "Already up to date."
 msgstr "Już aktualne."
 
@@ -17318,7 +17280,6 @@ msgid "Nope.\n"
 msgstr "O nie.\n"
 
 #: builtin/merge.c:1612
-#, fuzzy
 msgid "Already up to date. Yeeah!"
 msgstr "Już aktualne. Hurra!"
 
@@ -17384,22 +17345,23 @@ msgstr ""
 
 #: builtin/multi-pack-index.c:26
 msgid "object directory containing set of packfile and pack-index pairs"
-msgstr ""
+msgstr "katalog obiektu ze zbiorem par pliku paczki i indeksu paczki"
 
 #: builtin/multi-pack-index.c:29
 msgid ""
 "during repack, collect pack-files of smaller size into a batch that is "
 "larger than this size"
 msgstr ""
+"podczas przepakowania zbierz pliki paczek mniejszego rozmiaru w porcję "
+"większą niż ten rozmiar"
 
 #: builtin/multi-pack-index.c:50 builtin/prune-packed.c:25
-#, fuzzy
 msgid "too many arguments"
-msgstr "Zbyt dużo argumentów."
+msgstr "za dużo argumentów"
 
 #: builtin/multi-pack-index.c:60
 msgid "--batch-size option is only for 'repack' subcommand"
-msgstr ""
+msgstr "opcja --batch-size jest tylko do pod-polecenia „repack”"
 
 #: builtin/multi-pack-index.c:69
 #, c-format
@@ -17516,9 +17478,8 @@ msgid "git name-rev [<options>] --stdin"
 msgstr "git name-rev [<opcje>] --stdin"
 
 #: builtin/name-rev.c:524
-#, fuzzy
 msgid "print only ref-based names (no object names)"
-msgstr "wypisz tylko gałęzie obiektu"
+msgstr "wypisz tylko nazwy oparte o referencje (bez nazw obiektów)"
 
 #: builtin/name-rev.c:525
 msgid "only use tags to name the commits"
@@ -17902,7 +17863,7 @@ msgid "unknown -s/--strategy: %s"
 msgstr "nieznana wartość -s/--strategy: %s"
 
 #: builtin/notes.c:873
-#, fuzzy, c-format
+#, c-format
 msgid "a notes merge into %s is already in-progress at %s"
 msgstr "scalenie uwag do %d już trwa w %s"
 
@@ -17993,7 +17954,7 @@ msgstr "wykryto rekurencyjną deltę dla obiektu %s"
 #: builtin/pack-objects.c:796
 #, c-format
 msgid "ordered %u objects, expected %<PRIu32>"
-msgstr ""
+msgstr "zamówiono %u obiektów, oczekiwano %<PRIu32>"
 
 #: builtin/pack-objects.c:1004
 msgid "disabling bitmap writing, packs are split due to pack.packSizeLimit"
@@ -18012,45 +17973,45 @@ msgstr "nie można wykonać stat na „%s”"
 #: builtin/pack-objects.c:1131
 #, c-format
 msgid "wrote %<PRIu32> objects while expecting %<PRIu32>"
-msgstr ""
+msgstr "wypisano %<PRIu32> obiektów, a oczekiwano %<PRIu32>"
 
 #: builtin/pack-objects.c:1348
 msgid "disabling bitmap writing, as some objects are not being packed"
 msgstr "wyłączanie zapisywania bitmapy, niektóre obiekty nie są pakowane"
 
 #: builtin/pack-objects.c:1796
-#, fuzzy, c-format
+#, c-format
 msgid "delta base offset overflow in pack for %s"
-msgstr "podstawowe przesunięcie delty jest poza zakresem"
+msgstr "przepełnienie podstawowego przesunięcia delty w paczce w %s"
 
 #: builtin/pack-objects.c:1805
-#, fuzzy, c-format
+#, c-format
 msgid "delta base offset out of bound for %s"
-msgstr "podstawowe przesunięcie delty jest poza zakresem"
+msgstr "podstawowe przesunięcie delty poza zakresem w %s"
 
 #: builtin/pack-objects.c:2086
 msgid "Counting objects"
 msgstr "Zliczanie obiektów"
 
 #: builtin/pack-objects.c:2231
-#, fuzzy, c-format
+#, c-format
 msgid "unable to parse object header of %s"
-msgstr "nie można przetworzyć obiektu: %s"
+msgstr "nie można przetworzyć nagłówka obiektu %s"
 
 #: builtin/pack-objects.c:2301 builtin/pack-objects.c:2317
 #: builtin/pack-objects.c:2327
-#, fuzzy, c-format
+#, c-format
 msgid "object %s cannot be read"
-msgstr "nie znaleziono obiektu %s"
+msgstr "nie można odczytać obiektu %s"
 
 #: builtin/pack-objects.c:2304 builtin/pack-objects.c:2331
 #, c-format
 msgid "object %s inconsistent object length (%<PRIuMAX> vs %<PRIuMAX>)"
-msgstr ""
+msgstr "niespójna długość obiektu %s (%<PRIuMAX> vs %<PRIuMAX>)"
 
 #: builtin/pack-objects.c:2341
 msgid "suboptimal pack - out of memory"
-msgstr ""
+msgstr "nieoptymalna paczka — brak pamięci"
 
 #: builtin/pack-objects.c:2656
 #, c-format
@@ -18058,9 +18019,9 @@ msgid "Delta compression using up to %d threads"
 msgstr "Kompresja delt z użyciem do %d wątków"
 
 #: builtin/pack-objects.c:2795
-#, fuzzy, c-format
+#, c-format
 msgid "unable to pack objects reachable from tag %s"
-msgstr "uwzględnij obiekty osiągalne z dowolnej referencji"
+msgstr "nie można spakować obiektów osiągalnych z tagu %s"
 
 #: builtin/pack-objects.c:2883
 msgid "Compressing objects"
@@ -18068,7 +18029,7 @@ msgstr "Kompresowanie obiektów"
 
 #: builtin/pack-objects.c:2889
 msgid "inconsistency with delta count"
-msgstr ""
+msgstr "niespójność z liczbą delt"
 
 #: builtin/pack-objects.c:2961
 #, c-format
@@ -18076,12 +18037,15 @@ msgid ""
 "value of uploadpack.blobpackfileuri must be of the form '<object-hash> <pack-"
 "hash> <uri>' (got '%s')"
 msgstr ""
+"wartość uploadpack.blobpackfileuri musi być postaci „<skrót-obiektu> <skrót-"
+"paczki> <uri>” (otrzymano „%s”)"
 
 #: builtin/pack-objects.c:2964
 #, c-format
 msgid ""
 "object already configured in another uploadpack.blobpackfileuri (got '%s')"
 msgstr ""
+"już ustawiono obiekt w innym uploadpack.blobpackfileuri (otrzymano „%s”)"
 
 #: builtin/pack-objects.c:2993
 #, c-format
@@ -18089,6 +18053,8 @@ msgid ""
 "expected edge object ID, got garbage:\n"
 " %s"
 msgstr ""
+"oczekiwano identyfikatora obiektu krawędzi, otrzymano śmieci:\n"
+"%s"
 
 #: builtin/pack-objects.c:2999
 #, c-format
@@ -18096,26 +18062,25 @@ msgid ""
 "expected object ID, got garbage:\n"
 " %s"
 msgstr ""
+"oczekiwano identyfikatora obiektu, otrzymano śmieci:\n"
+"%s"
 
 #: builtin/pack-objects.c:3097
-#, fuzzy
 msgid "invalid value for --missing"
-msgstr "nieprawidłowa wartość %s"
+msgstr "nieprawidłowa wartość --missing"
 
 #: builtin/pack-objects.c:3156 builtin/pack-objects.c:3264
-#, fuzzy
 msgid "cannot open pack index"
-msgstr "nie można zapisać pliku paczki"
+msgstr "nie można otworzyć indeksu paczki"
 
 #: builtin/pack-objects.c:3187
 #, c-format
 msgid "loose object at %s could not be examined"
-msgstr ""
+msgstr "nie można przebadać wolnego obiektu w %s"
 
 #: builtin/pack-objects.c:3272
-#, fuzzy
 msgid "unable to force loose object"
-msgstr "nie można zapisać obiektu uwagi"
+msgstr "nie można wymusić wolnego obiektu"
 
 #: builtin/pack-objects.c:3365
 #, c-format
@@ -18280,7 +18245,7 @@ msgstr "traktowanie brakujących obiektów"
 
 #: builtin/pack-objects.c:3566
 msgid "do not pack objects in promisor packfiles"
-msgstr ""
+msgstr "nie pakuj obiektów w obiecujące pliki paczek"
 
 #: builtin/pack-objects.c:3568
 msgid "respect islands during delta compression"
@@ -18302,7 +18267,7 @@ msgstr "łańcuch delt za głęboki: %d, wymuszanie %d"
 #: builtin/pack-objects.c:3605
 #, c-format
 msgid "pack.deltaCacheLimit is too high, forcing %d"
-msgstr ""
+msgstr "pack.deltaCacheLimit za wysoki, wymuszanie %d"
 
 #: builtin/pack-objects.c:3659
 msgid "--max-pack-size cannot be used to build a pack for transfer"
@@ -18322,9 +18287,8 @@ msgid "--keep-unreachable and --unpack-unreachable are incompatible"
 msgstr "--keep-unreachable i --unpack-unreachable się wykluczają"
 
 #: builtin/pack-objects.c:3675
-#, fuzzy
 msgid "cannot use --filter without --stdout"
-msgstr "-a i -d się wykluczają"
+msgstr "nie można użyć --filter bez --stdout"
 
 #: builtin/pack-objects.c:3735
 msgid "Enumerating objects"
@@ -18370,7 +18334,7 @@ msgstr "wygaś obiekty starsze niż <czas>"
 
 #: builtin/prune.c:138
 msgid "limit traversal to objects outside promisor packfiles"
-msgstr ""
+msgstr "ogranicz przejście do obiektów poza obiecującymi plikami paczek"
 
 #: builtin/prune.c:152
 msgid "cannot prune in a precious-objects repo"
@@ -18438,6 +18402,18 @@ msgid ""
 "or --ff-only on the command line to override the configured default per\n"
 "invocation.\n"
 msgstr ""
+"Odradza się zaciągania bez podania, jak pogodzić rozbieżne gałęzie.\n"
+"Można uciszyć ten komunikat wykonując jedno z poniższych\n"
+"poleceń kiedyś przed następnym zaciągnięciem:\n"
+"\n"
+"  git config pull.rebase false  # scalenie (domyślna strategia)\n"
+"  git config pull.rebase true   # przestawienie\n"
+"  git config pull.ff only       # tylko przewinięcie\n"
+"\n"
+"Można zamienić „git config” na „git config --global”, aby ustawić domyślny\n"
+"wybór do wszystkich repozytoriów. Można też przekazać --rebase, --no-rebase\n"
+"lub --ff-only w wierszu poleceń, aby zmienić ustawione zachowanie\n"
+"w jednym wywołaniu.\n"
 
 #: builtin/pull.c:458
 msgid ""
@@ -18573,7 +18549,7 @@ msgstr "Nie można przestawić na wiele gałęzi."
 
 #: builtin/pull.c:1041
 msgid "cannot rebase with locally recorded submodule modifications"
-msgstr ""
+msgstr "nie można przestawić z lokalnie zapisanymi zmianami pod-modułów"
 
 #: builtin/push.c:19
 msgid "git push [<options>] [<repository> [<refspec>...]]"
@@ -18725,17 +18701,16 @@ msgstr ""
 "chyba że użyjesz opcji „--force”.\n"
 
 #: builtin/push.c:294
-#, fuzzy
 msgid ""
 "Updates were rejected because the tip of the remote-tracking\n"
 "branch has been updated since the last checkout. You may want\n"
 "to integrate those changes locally (e.g., 'git pull ...')\n"
 "before forcing an update.\n"
 msgstr ""
-"Aktualizacje zostały odrzucone, ponieważ czubek bieżącej gałęzi jest\n"
-"w tyle za swoim zdalnym odpowiednikiem. Zintegruj zdalne zmiany (np.\n"
-"„git pull ...”) przed kolejnym wypchnięciem.\n"
-"Zobacz szczegóły w „Uwadze o przewijaniu” w „git push --help”."
+"Aktualizacje zostały odrzucone, ponieważ czubek śledzącej gałęzi\n"
+"został zaktualizowany od ostatniego wybrania. Możesz chcieć\n"
+"zintegrować te zmiany lokalnie (np. „git pull ...”)\n"
+"przed wymuszeniem wypchnięcia.\n"
 
 #: builtin/push.c:364
 #, c-format
@@ -18916,7 +18891,7 @@ msgstr "brak .. w zakresie: „%s”"
 
 #: builtin/range-diff.c:64
 msgid "single arg format must be symmetric range"
-msgstr ""
+msgstr "format w pojedynczym argumencie musi być symetrycznym zakresem"
 
 #: builtin/range-diff.c:79
 msgid "need two commit ranges"
@@ -18997,9 +18972,8 @@ msgid "debug unpack-trees"
 msgstr "odpluskwianie unpack-trees"
 
 #: builtin/read-tree.c:157
-#, fuzzy
 msgid "suppress feedback messages"
-msgstr "pomiń komunikaty informacyjne"
+msgstr "pomiń komunikaty zwrotne"
 
 #: builtin/read-tree.c:188
 msgid "You need to resolve your current index first"
@@ -19026,9 +19000,9 @@ msgid "git rebase --continue | --abort | --skip | --edit-todo"
 msgstr "git rebase --continue | --abort | --skip | --edit-todo"
 
 #: builtin/rebase.c:193 builtin/rebase.c:217 builtin/rebase.c:244
-#, fuzzy, c-format
+#, c-format
 msgid "unusable todo list: '%s'"
-msgstr "plik z instrukcjami się nie nadaje: „%s”"
+msgstr "lista zadań do zrobienia się nie nadaje: „%s”"
 
 #: builtin/rebase.c:310
 #, c-format
@@ -19045,7 +19019,7 @@ msgstr "nie można wygenerować listy zadań do zrobienia"
 
 #: builtin/rebase.c:411
 msgid "a base commit must be provided with --upstream or --onto"
-msgstr ""
+msgstr "zapis podstawy należy podać z --upstream lub --onto"
 
 #: builtin/rebase.c:480
 msgid "git rebase--interactive [<options>]"
@@ -19069,7 +19043,7 @@ msgstr "zachowaj pierwotne rozgałęzienia kuzynów"
 
 #: builtin/rebase.c:503
 msgid "move commits that begin with squash!/fixup!"
-msgstr ""
+msgstr "przenieś zapisy, które zaczynają się od squash!/fixup!"
 
 #: builtin/rebase.c:504
 msgid "sign commits"
@@ -19097,27 +19071,27 @@ msgstr "pokaż bieżącą łatkę"
 
 #: builtin/rebase.c:516
 msgid "shorten commit ids in the todo list"
-msgstr ""
+msgstr "skróć identyfikatory zapisów na liście zadań do zrobienia"
 
 #: builtin/rebase.c:518
 msgid "expand commit ids in the todo list"
-msgstr ""
+msgstr "rozwiń identyfikatory zapisów na liście zadań do zrobienia"
 
 #: builtin/rebase.c:520
 msgid "check the todo list"
-msgstr ""
+msgstr "sprawdź listę zadań do zrobienia"
 
 #: builtin/rebase.c:522
 msgid "rearrange fixup/squash lines"
-msgstr ""
+msgstr "zmień kolejność wierszy fixup/squash"
 
 #: builtin/rebase.c:524
 msgid "insert exec commands in todo list"
-msgstr ""
+msgstr "wstaw polecenia exec na listę zadań do zrobienia"
 
 #: builtin/rebase.c:525
 msgid "onto"
-msgstr ""
+msgstr "na"
 
 #: builtin/rebase.c:528
 msgid "restrict-revision"
@@ -19136,9 +19110,8 @@ msgid "squash onto"
 msgstr "spłaszcz na"
 
 #: builtin/rebase.c:533
-#, fuzzy
 msgid "the upstream commit"
-msgstr "Usuń informacje o gałęzi nadrzędnej"
+msgstr "zapis głównego nurtu"
 
 #: builtin/rebase.c:535
 msgid "head-name"
@@ -19186,7 +19159,7 @@ msgstr "polecenie do wykonania"
 
 #: builtin/rebase.c:549 builtin/rebase.c:1421
 msgid "automatically re-schedule any `exec` that fails"
-msgstr ""
+msgstr "automatycznie przeplanuj każdy nieudany „exec”"
 
 #: builtin/rebase.c:565
 msgid "--[no-]rebase-cousins has no effect without --rebase-merges"
@@ -19195,7 +19168,7 @@ msgstr "--[no-]rebase-cousins nic nie robi bez --rebase-merges"
 #: builtin/rebase.c:581
 #, c-format
 msgid "%s requires the merge backend"
-msgstr ""
+msgstr "%s wymaga silnika scalenia"
 
 #: builtin/rebase.c:624
 #, c-format
@@ -19203,14 +19176,14 @@ msgid "could not get 'onto': '%s'"
 msgstr "nie można uzyskać „onto”: „%s”"
 
 #: builtin/rebase.c:641
-#, fuzzy, c-format
+#, c-format
 msgid "invalid orig-head: '%s'"
-msgstr "nieprawidłowa ścieżka „%s”"
+msgstr "nieprawidłowe pierwotne czoło: „%s”"
 
 #: builtin/rebase.c:666
 #, c-format
 msgid "ignoring invalid allow_rerere_autoupdate: '%s'"
-msgstr ""
+msgstr "pomijanie błędnego allow_rerere_autoupdate: „%s”"
 
 #: builtin/rebase.c:811 git-rebase--preserve-merges.sh:81
 #, fuzzy
@@ -19245,6 +19218,8 @@ msgid ""
 "unrecognized empty type '%s'; valid values are \"drop\", \"keep\", and \"ask"
 "\"."
 msgstr ""
+"nierozpoznany pusty rodzaj „%s”; prawidłowe wartości to „drop”, „keep” i"
+" „ask”."
 
 #: builtin/rebase.c:1238
 #, c-format
@@ -19258,9 +19233,9 @@ msgid ""
 msgstr ""
 "%s\n"
 "Podaj, względem jakiej gałęzi chcesz przestawiać.\n"
-"See git-rebase(1) for details.\n"
+"Więcej szczegółów w git-rebase(1).\n"
 "\n"
-"    git rebase '<branch>'\n"
+"    git rebase '<gałąź>'\n"
 "\n"
 
 #: builtin/rebase.c:1254
@@ -19285,14 +19260,12 @@ msgid "empty exec command"
 msgstr "puste polecenie exec"
 
 #: builtin/rebase.c:1318
-#, fuzzy
 msgid "rebase onto given branch instead of upstream"
-msgstr "zbyt dużo gałęzi do usunięcia nadrzędnej gałęzi"
+msgstr "przestaw na podaną gałąź zamiast na główny nurt"
 
 #: builtin/rebase.c:1320
-#, fuzzy
 msgid "use the merge-base of upstream and branch as the current base"
-msgstr "żądana zdalna gałąź „%s” nie istnieje"
+msgstr "użyj podstawy scalania głównego nurtu i gałęzi jako bieżącej podstawy"
 
 #: builtin/rebase.c:1322
 msgid "allow pre-rebase hook to run"
@@ -19303,37 +19276,32 @@ msgid "be quiet. implies --no-stat"
 msgstr "bądź cicho. zakłada --no-stat"
 
 #: builtin/rebase.c:1330
-#, fuzzy
 msgid "do not show diffstat of what changed upstream"
-msgstr "nie pokazuj statystyk różnic pod koniec scalenia"
+msgstr "nie pokazuj statystyk różnic ze zmian głównego nurtu"
 
 #: builtin/rebase.c:1333
-#, fuzzy
 msgid "add a Signed-off-by trailer to each commit"
-msgstr "dodaj wiersz Signed-off-by do komunikatu zapisu"
+msgstr "dodaj końcówkę Signed-off-by do każdego zapisu"
 
 #: builtin/rebase.c:1336
 msgid "make committer date match author date"
-msgstr ""
+msgstr "ustaw datę złożenia na datę utworzenia"
 
 #: builtin/rebase.c:1338
 msgid "ignore author date and use current date"
-msgstr ""
+msgstr "pomiń datę utworzenia i użyj bieżącej"
 
 #: builtin/rebase.c:1340
-#, fuzzy
 msgid "synonym of --reset-author-date"
-msgstr "zamiennik na --files-with-matches"
+msgstr "zamiennik na --reset-author-date"
 
 #: builtin/rebase.c:1342 builtin/rebase.c:1346
-#, fuzzy
 msgid "passed to 'git apply'"
-msgstr "przepuść przez git-apply"
+msgstr "przekaż do „git apply”"
 
 #: builtin/rebase.c:1344
-#, fuzzy
 msgid "ignore changes in whitespace"
-msgstr "ignoruj zmiany w białych znakach przy znajdywaniu kontekstu"
+msgstr "ignoruj zmiany w białych znakach"
 
 #: builtin/rebase.c:1348 builtin/rebase.c:1351
 msgid "cherry-pick all commits, even if unchanged"
@@ -19348,19 +19316,16 @@ msgid "skip current patch and continue"
 msgstr "pomiń obecną łatkę i kontynuuj"
 
 #: builtin/rebase.c:1358
-#, fuzzy
 msgid "abort and check out the original branch"
-msgstr "  (użyj „git rebase --abort”, aby wybrać pierwotną gałąź)"
+msgstr "przerwij i wybierz pierwotną gałąź"
 
 #: builtin/rebase.c:1361
 msgid "abort but keep HEAD where it is"
 msgstr "przerwij, ale zostaw HEAD, gdzie jest"
 
 #: builtin/rebase.c:1362
-#, fuzzy
 msgid "edit the todo list during an interactive rebase"
-msgstr ""
-"Akcja --edit-todo może być użyta tylko podczas interaktywnego przestawiania."
+msgstr "edytuj listę zadań do zrobienia podczas interaktywnego przestawiania"
 
 #: builtin/rebase.c:1365
 msgid "show the patch file being applied or merged"
@@ -19368,20 +19333,19 @@ msgstr "pokaż plik łatki właśnie stosowanej lub scalanej"
 
 #: builtin/rebase.c:1368
 msgid "use apply strategies to rebase"
-msgstr ""
+msgstr "użyj strategii stosowania do przestawiania"
 
 #: builtin/rebase.c:1372
-#, fuzzy
 msgid "use merging strategies to rebase"
-msgstr "strategia scalania"
+msgstr "użyj strategii scalania do przestawiania"
 
 #: builtin/rebase.c:1376
 msgid "let the user edit the list of commits to rebase"
-msgstr ""
+msgstr "pozwól użytkownikowi edytować listę zapisów do przestawienia"
 
 #: builtin/rebase.c:1380
 msgid "(DEPRECATED) try to recreate merges instead of ignoring them"
-msgstr ""
+msgstr "(PRZESTARZAŁE) spróbuj odtworzyć scalenia zamiast je pomijać"
 
 #: builtin/rebase.c:1385
 msgid "how to handle commits that become empty"
@@ -19389,11 +19353,11 @@ msgstr "jak traktować zapisy, które staną się puste"
 
 #: builtin/rebase.c:1392
 msgid "move commits that begin with squash!/fixup! under -i"
-msgstr ""
+msgstr "przenieś zapisy, które zaczynają się od squash!/fixup! pod -i"
 
 #: builtin/rebase.c:1399
 msgid "add exec lines after each commit of the editable list"
-msgstr ""
+msgstr "dodaj wiersz exec po każdym zapisie z edytowalnej listy"
 
 #: builtin/rebase.c:1403
 msgid "allow rebasing commits with empty messages"
@@ -19401,7 +19365,7 @@ msgstr "pozwól przestawiać zapisy z pustymi komunikatami"
 
 #: builtin/rebase.c:1407
 msgid "try to rebase merges instead of skipping them"
-msgstr ""
+msgstr "spróbuj przestawić scalenia zamiast je pomijać"
 
 #: builtin/rebase.c:1410
 msgid "use 'merge-base --fork-point' to refine upstream"
@@ -19421,17 +19385,19 @@ msgstr "przekaż argument do strategii scalania"
 
 #: builtin/rebase.c:1418
 msgid "rebase all reachable commits up to the root(s)"
-msgstr ""
+msgstr "przestaw wszystkie osiągalne zapisy aż do korzenia"
 
 #: builtin/rebase.c:1423
 msgid "apply all changes, even those already present upstream"
-msgstr ""
+msgstr "zastosuj wszystkie zmiany, nawet te już obecne w głównym nurcie"
 
 #: builtin/rebase.c:1440
 msgid ""
 "the rebase.useBuiltin support has been removed!\n"
 "See its entry in 'git help config' for details."
 msgstr ""
+"wsparcie rebase.useBuiltin zostało usunięte!\n"
+"Zobacz szczegóły pod jego opisem w „git help config”."
 
 #: builtin/rebase.c:1446
 msgid "It looks like 'git am' is in progress. Cannot rebase."
@@ -19525,9 +19491,9 @@ msgid "cannot combine apply options with merge options"
 msgstr "nie można łączyć opcji stosowania z opcjami scalania"
 
 #: builtin/rebase.c:1776
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown rebase backend: %s"
-msgstr "Nieznane pod-polecenie: %s"
+msgstr "Nieznany silnik przestawiania: %s"
 
 #: builtin/rebase.c:1806
 msgid "--reschedule-failed-exec requires --exec or --interactive"
@@ -19578,9 +19544,8 @@ msgid "No such ref: %s"
 msgstr "Nie ma takiej referencji: %s"
 
 #: builtin/rebase.c:1942
-#, fuzzy
 msgid "Could not resolve HEAD to a revision"
-msgstr "nie można rozwiązać zapisu HEAD\n"
+msgstr "Nie można rozwiązać HEAD do rewizji"
 
 #: builtin/rebase.c:1963
 msgid "Please commit or stash them."
@@ -19642,7 +19607,6 @@ msgid "git receive-pack <git-dir>"
 msgstr "git receive-pack <katalog-gita>"
 
 #: builtin/receive-pack.c:1276
-#, fuzzy
 msgid ""
 "By default, updating the current branch in a non-bare repository\n"
 "is denied, because it will make the index and work tree inconsistent\n"
@@ -19742,19 +19706,19 @@ msgid "no reflog specified to delete"
 msgstr "nie podano dziennika referencji do skasowania"
 
 #: builtin/reflog.c:705
-#, fuzzy, c-format
+#, c-format
 msgid "not a reflog: %s"
-msgstr "Nieprawidłowa referencja: %s"
+msgstr "nie jest dziennikiem referencji: %s"
 
 #: builtin/reflog.c:710
-#, fuzzy, c-format
+#, c-format
 msgid "no reflog for '%s'"
-msgstr "nie można wykonać reflog na „%s”: %s\n"
+msgstr "„%s” nie ma dziennika referencji"
 
 #: builtin/reflog.c:756
-#, fuzzy, c-format
+#, c-format
 msgid "invalid ref format: %s"
-msgstr "nieprawidłowy format daty: %s"
+msgstr "nieprawidłowy format referencji: %s"
 
 #: builtin/reflog.c:765
 msgid "git reflog [ show | expire | delete | exists ]"
@@ -20555,7 +20519,7 @@ msgstr ""
 #: builtin/replace.c:469
 #, c-format
 msgid "the original commit '%s' has a gpg signature"
-msgstr "oryginalny zapis „%s” ma podpis GPG"
+msgstr "pierwotny zapis „%s” ma podpis GPG"
 
 #: builtin/replace.c:470
 msgid "the signature will be removed in the replacement commit!"
@@ -20848,7 +20812,7 @@ msgstr "przerwij przetwarzanie po pierwszym argumencie, który nie jest opcją"
 
 #: builtin/rev-parse.c:419
 msgid "output in stuck long form"
-msgstr "wypisz w zbitej długiej formie"
+msgstr "wypisz w zbitej długiej postaci"
 
 #: builtin/rev-parse.c:552
 msgid ""
@@ -23275,17 +23239,17 @@ msgstr "Ograniczenia protokołów niewspierane z cURLem < 7.19.4"
 #: http.c:1132
 #, c-format
 msgid "Unsupported SSL backend '%s'. Supported SSL backends:"
-msgstr ""
+msgstr "Niewspierany silnik SSL „%s”. Wspierane silniki SSL:"
 
 #: http.c:1139
 #, c-format
 msgid "Could not set SSL backend to '%s': cURL was built without SSL backends"
-msgstr ""
+msgstr "Nie można ustawić silnika SSL na „%s”: cURL zbudowano bez silników SSL"
 
 #: http.c:1143
-#, fuzzy, c-format
+#, c-format
 msgid "Could not set SSL backend to '%s': already set"
-msgstr "Nie można cofnąć do $head_name"
+msgstr "Nie można ustawić silnika SSL na „%s”: już ustawiono"
 
 #: http.c:2025
 #, c-format
@@ -23684,7 +23648,7 @@ msgstr "Eksporter danych Gita"
 
 #: command-list.h:93
 msgid "Backend for fast Git data importers"
-msgstr "Zaplecze dla szybkich importerów danych Gita"
+msgstr "Silnik dla szybkich importerów danych Gita"
 
 #: command-list.h:94
 msgid "Download objects and refs from another repository"
@@ -24500,8 +24464,8 @@ msgstr ""
 "l, label <etykietka> = nazwij bieżące HEAD\n"
 "t, reset <etykietka> = zresetuj HEAD do etykietki\n"
 "m, merge [-C <zapis> | -c <zapis>] <etykietka> [# <wiersz>]\n"
-".       utwórz zapis scalenia używając oryginalnego komunikatu scalenia\n"
-".       (albo <wiersza>, jeśli nie podano oryginalnego zapisu scalenia.\n"
+".       utwórz zapis scalenia używając pierwotnego komunikatu scalenia\n"
+".       (albo <wiersza>, jeśli nie podano pierwotnego zapisu scalenia.\n"
 ".       Użyj -c <zapis>, aby przeredagować komunikat zapisu."
 "\n"
 "Kolejność wierszy może być zmieniona; są wykonywane z góry na dół.\n"
@@ -25099,7 +25063,7 @@ msgstr ""
 
 #: git-send-email.perl:145 git-send-email.perl:151
 msgid "local time offset greater than or equal to 24 hours\n"
-msgstr ""
+msgstr "przesunięcie czasu lokalnego większe lub równe 24 godzin\n"
 
 #: git-send-email.perl:223 git-send-email.perl:229
 msgid "the editor exited uncleanly, aborting everything"
@@ -25189,6 +25153,8 @@ msgid ""
 "fatal: %s: %s\n"
 "warning: no patches were sent\n"
 msgstr ""
+"błąd krytyczny: %s: %s\n"
+"ostrzeżenie: nie wysłano żadnych łatek\n"
 
 #: git-send-email.perl:713
 #, fuzzy
@@ -25306,6 +25272,7 @@ msgstr ""
 #: git-send-email.perl:1468
 msgid "Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): "
 msgstr ""
+"Wysłać ten list e-mail? (tak [y]|[n]ie|[e]dytuj|wyjdź [q]|wszystkie [a]):"
 
 #: git-send-email.perl:1471
 msgid "Send this email reply required"
@@ -25323,7 +25290,7 @@ msgstr "Serwer nie wspiera --deepen"
 #: git-send-email.perl:1551 git-send-email.perl:1555
 #, perl-format
 msgid "STARTTLS failed! %s"
-msgstr ""
+msgstr "nie można wykonać STARTTLS! %s"
 
 #: git-send-email.perl:1564
 msgid "Unable to initialize SMTP properly. Check config and use --smtp-debug."
@@ -25337,7 +25304,7 @@ msgstr "nie można odczytać %s"
 #: git-send-email.perl:1585
 #, perl-format
 msgid "Dry-Sent %s\n"
-msgstr ""
+msgstr "Wysłano na sucho %s\n"
 
 #: git-send-email.perl:1585
 #, fuzzy, perl-format
@@ -25346,11 +25313,11 @@ msgstr "Pobieranie %s\n"
 
 #: git-send-email.perl:1587
 msgid "Dry-OK. Log says:\n"
-msgstr ""
+msgstr "OK na sucho. Dziennik mówi:\n"
 
 #: git-send-email.perl:1587
 msgid "OK. Log says:\n"
-msgstr ""
+msgstr "OK. Dziennik mówi:\n"
 
 #: git-send-email.perl:1599
 msgid "Result: "
@@ -25429,7 +25396,7 @@ msgstr ""
 #: git-send-email.perl:1990
 #, perl-format
 msgid "Do you really want to send %s? [y|N]: "
-msgstr ""
+msgstr "Czy na pewno wysłać %s? [y | N]: "
 
 #~ msgid "Or you can abort the rebase with 'git rebase --abort'."
 #~ msgstr "Możesz też przerwać przestawianie przez „git rebase --abort”."
