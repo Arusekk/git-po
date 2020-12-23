@@ -54,7 +54,7 @@ msgstr ""
 "Project-Id-Version: git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-12-15 16:27+0800\n"
-"PO-Revision-Date: 2020-12-23 00:19+0100\n"
+"PO-Revision-Date: 2020-12-23 19:31+0100\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -1734,7 +1734,7 @@ msgstr "Nieznany format archiwum „%s”"
 #: archive.c:619
 #, c-format
 msgid "Argument not supported for format '%s': -%d"
-msgstr "Argument niewpierany w formacie „%s”: -%d"
+msgstr "Argument niewspierany w formacie „%s”: -%d"
 
 #: attr.c:202
 #, c-format
@@ -2174,14 +2174,14 @@ msgid "commit-graph file is too small"
 msgstr "plik grafu zapisów jest za mały"
 
 #: commit-graph.c:311
-#, fuzzy, c-format
+#, c-format
 msgid "commit-graph signature %X does not match signature %X"
-msgstr "Zapis %s nie ma podpisu GPG."
+msgstr "podpis grafu zapisów %X nie zgadza się z podpisem %X"
 
 #: commit-graph.c:318
-#, fuzzy, c-format
+#, c-format
 msgid "commit-graph version %X does not match version %X"
-msgstr "zapis %s nie ma rodzica %d"
+msgstr "wersja grafu zapisów %X nie zgadza się z wersją %X"
 
 #: commit-graph.c:325
 #, c-format
@@ -2191,39 +2191,39 @@ msgstr "wersja skrótu grafu zapisów %X nie zgadza się z wersją %X"
 #: commit-graph.c:342
 #, c-format
 msgid "commit-graph file is too small to hold %u chunks"
-msgstr ""
+msgstr "plik grafu zapisów jest za mały, żeby przechować %u kawałków"
 
 #: commit-graph.c:361
 #, c-format
 msgid "commit-graph improper chunk offset %08x%08x"
-msgstr ""
+msgstr "nieprawidłowe przesunięcie kawałka grafu zapisów %08x%08x"
 
 #: commit-graph.c:433
 #, c-format
 msgid "commit-graph chunk id %08x appears multiple times"
-msgstr ""
+msgstr "identyfikator kawałka grafu zapisów %08x pojawia się wiele razy"
 
 #: commit-graph.c:499
 msgid "commit-graph has no base graphs chunk"
-msgstr ""
+msgstr "graf zapisów nie ma podstawowego kawałka grafów"
 
 #: commit-graph.c:509
 msgid "commit-graph chain does not match"
-msgstr ""
+msgstr "łańcuch grafu zapisów się nie zgadza"
 
 #: commit-graph.c:557
 #, c-format
 msgid "invalid commit-graph chain: line '%s' not a hash"
-msgstr ""
+msgstr "nieprawidłowy łańcuch grafu zapisów: wiersz „%s” nie jest skrótem"
 
 #: commit-graph.c:581
-#, fuzzy
 msgid "unable to find all commit-graph files"
-msgstr "nie można przeanalizować zapisu %s"
+msgstr "nie znaleziono wszystkich plików grafu zapisów"
 
 #: commit-graph.c:721 commit-graph.c:785
 msgid "invalid commit position. commit-graph is likely corrupt"
 msgstr ""
+"nieprawidłowa pozycja zapisu. Graf zapisów jest prawdopodobnie uszkodzony"
 
 #: commit-graph.c:742
 #, c-format
@@ -2507,29 +2507,34 @@ msgid ""
 "\t%s\n"
 "This might be due to circular includes."
 msgstr ""
+"przekroczono maksymalną głębokość załączania (%d) podczas załączania\n"
+"\t%s\n"
+"z\n"
+"\t%s\n"
+"Może to być spowodowane cyklicznymi załączeniami."
 
 #: config.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "could not expand include path '%s'"
-msgstr "nie można przetworzyć łatki „%s”"
+msgstr "nie można rozwinąć ścieżki załączeń (include) „%s”"
 
 #: config.c:152
 msgid "relative config includes must come from files"
-msgstr ""
+msgstr "względne załączenia konfiguracji muszą pochodzić z plików"
 
 #: config.c:198
 msgid "relative config include conditionals must come from files"
-msgstr ""
+msgstr "względne warunkowe załączenia konfiguracji muszą pochodzić z plików"
 
 #: config.c:378
-#, fuzzy, c-format
+#, c-format
 msgid "key does not contain a section: %s"
-msgstr "Nie można usunąć rozdziału konfiguracji „%s”"
+msgstr "klucz nie zawiera rozdziału: %s"
 
 #: config.c:384
 #, c-format
 msgid "key does not contain variable name: %s"
-msgstr ""
+msgstr "klucz nie zawiera nazwy zmiennej: %s"
 
 #: config.c:408 sequencer.c:2580
 #, c-format
@@ -2640,7 +2645,7 @@ msgstr "„%s” do „%s” nie jest prawidłowym znacznikiem czasu"
 #: config.c:1223
 #, c-format
 msgid "abbrev length out of range: %d"
-msgstr ""
+msgstr "długość skrótu poza zakresem: %d"
 
 #: config.c:1237 config.c:1248
 #, c-format
@@ -2649,7 +2654,7 @@ msgstr "zły stopień kompresji zlib %d"
 
 #: config.c:1340
 msgid "core.commentChar should only be one character"
-msgstr ""
+msgstr "core.commentChar powinno być tylko jednym znakiem"
 
 #: config.c:1373
 #, c-format
@@ -2668,32 +2673,32 @@ msgstr "nieprawidłowa wartość %s: %s"
 
 #: config.c:1472
 msgid "must be one of nothing, matching, simple, upstream or current"
-msgstr ""
+msgstr "musi być jednym z nothing, matching, simple, upstream lub current"
 
 #: config.c:1533 builtin/pack-objects.c:3649
-#, fuzzy, c-format
+#, c-format
 msgid "bad pack compression level %d"
-msgstr "stopień kompresji paczki"
+msgstr "zły stopień kompresji paczki %d"
 
 #: config.c:1655
-#, fuzzy, c-format
+#, c-format
 msgid "unable to load config blob object '%s'"
-msgstr "nie można uruchomić „show” na obiekcie „%s”"
+msgstr "nie można wczytać konfiguracyjnego obiektu blobu „%s”"
 
 #: config.c:1658
-#, fuzzy, c-format
+#, c-format
 msgid "reference '%s' does not point to a blob"
-msgstr "„%s” nie wskazuje na zapis"
+msgstr "referencja „%s” nie wskazuje blobu"
 
 #: config.c:1675
-#, fuzzy, c-format
+#, c-format
 msgid "unable to resolve config blob '%s'"
-msgstr "Nie można usunąć rozdziału konfiguracji „%s”"
+msgstr "nie można rozwiązać blobu konfiguracji „%s”"
 
 #: config.c:1705
-#, fuzzy, c-format
+#, c-format
 msgid "failed to parse %s"
-msgstr "nie można odczytać %s"
+msgstr "nie można przetworzyć %s"
 
 #: config.c:1759
 msgid "unable to parse command-line config"
@@ -2711,7 +2716,7 @@ msgstr "Nieprawidłowy %s: „%s”"
 #: config.c:2341
 #, c-format
 msgid "splitIndex.maxPercentChange value '%d' should be between 0 and 100"
-msgstr ""
+msgstr "wartość splitIndex.maxPercentChange „%d” powinna być pomiędzy 0 a 100"
 
 #: config.c:2387
 #, c-format
@@ -2724,9 +2729,9 @@ msgid "bad config variable '%s' in file '%s' at line %d"
 msgstr "zła zmienna konfiguracji „%s” w pliku „%s” w wierszu %d"
 
 #: config.c:2473
-#, fuzzy, c-format
+#, c-format
 msgid "invalid section name '%s'"
-msgstr "Nieprawidłowa nazwa gałęzi: „%s”"
+msgstr "nieprawidłowa nazwa rozdziału „%s”"
 
 #: config.c:2505
 #, c-format
@@ -2734,9 +2739,9 @@ msgid "%s has multiple values"
 msgstr "%s ma wiele wartości"
 
 #: config.c:2534
-#, fuzzy, c-format
+#, c-format
 msgid "failed to write new configuration file %s"
-msgstr "nie można utworzyć pliku konfiguracyjnego %s"
+msgstr "nie można zapisać nowego pliku konfiguracyjnego %s"
 
 #: config.c:2786 config.c:3112
 #, c-format
@@ -2759,9 +2764,9 @@ msgid "invalid config file %s"
 msgstr "nieprawidłowy plik konfiguracyjny %s"
 
 #: config.c:2872 config.c:3125
-#, fuzzy, c-format
+#, c-format
 msgid "fstat on %s failed"
-msgstr "dodanie zmian do schowka nie powiodło się"
+msgstr "fstat na %s nie powiódł się"
 
 #: config.c:2883
 #, c-format
@@ -2774,9 +2779,9 @@ msgid "chmod on %s failed"
 msgstr "chmod na %s nie powiodło się"
 
 #: config.c:2977 config.c:3227
-#, fuzzy, c-format
+#, c-format
 msgid "could not write config file %s"
-msgstr "nie można odczytać pliku dziennika „%s”"
+msgstr "nie można zapisać pliku konfiguracji %s"
 
 #: config.c:3011
 #, c-format
@@ -2799,9 +2804,8 @@ msgid "missing value for '%s'"
 msgstr "brakująca wartość „%s”"
 
 #: connect.c:61
-#, fuzzy
 msgid "the remote end hung up upon initial contact"
-msgstr "Zdalna maszyna rozłączyła się po początkowym kontakcie"
+msgstr "zdalna maszyna rozłączyła się po początkowym kontakcie"
 
 #: connect.c:63
 msgid ""
@@ -2827,52 +2831,52 @@ msgstr "serwer nie wspiera funkcji „%s”"
 
 #: connect.c:129
 msgid "expected flush after capabilities"
-msgstr ""
+msgstr "oczekiwano wypróżnienia po możliwościach (capabilities)"
 
 #: connect.c:263
 #, c-format
 msgid "ignoring capabilities after first line '%s'"
-msgstr ""
+msgstr "pomijanie możliwości (capabilities) po pierwszym wierszu „%s”"
 
 #: connect.c:284
 msgid "protocol error: unexpected capabilities^{}"
-msgstr ""
+msgstr "błąd protokołu: nieoczekiwane możliwości capabilities^{}"
 
 #: connect.c:306
-#, fuzzy, c-format
+#, c-format
 msgid "protocol error: expected shallow sha-1, got '%s'"
-msgstr "oczekiwano shallow/unshallow, otrzymano %s"
+msgstr "błąd protokołu: oczekiwano płytkiego SHA-1, otrzymano „%s”"
 
 #: connect.c:308
 msgid "repository on the other end cannot be shallow"
-msgstr ""
+msgstr "repozytorium po drugiej stronie nie może być płytkie"
 
 #: connect.c:347
 msgid "invalid packet"
 msgstr "nieprawidłowy pakiet"
 
 #: connect.c:367
-#, fuzzy, c-format
+#, c-format
 msgid "protocol error: unexpected '%s'"
-msgstr "błąd protokołu: zły nagłówek paczki"
+msgstr "błąd protokołu: nieoczekiwane „%s”"
 
 #: connect.c:473
 #, c-format
 msgid "unknown object format '%s' specified by server"
-msgstr ""
+msgstr "serwer podał nieznany format obiektu „%s”"
 
 #: connect.c:500
-#, fuzzy, c-format
+#, c-format
 msgid "invalid ls-refs response: %s"
-msgstr "nieprawidłowa referencja: %s"
+msgstr "nieprawidłowa odpowiedź ls-refs: %s"
 
 #: connect.c:504
 msgid "expected flush after ref listing"
-msgstr ""
+msgstr "oczekiwano wypróżnienia po wypisaniu referencji"
 
 #: connect.c:507
 msgid "expected response end packet after ref listing"
-msgstr ""
+msgstr "oczekiwano pakietu końca odpowiedzi po wypisaniu referencji"
 
 #: connect.c:640
 #, c-format
@@ -2881,7 +2885,7 @@ msgstr "protokół „%s” jest niewspierany"
 
 #: connect.c:691
 msgid "unable to set SO_KEEPALIVE on socket"
-msgstr ""
+msgstr "nie można ustawić w gnieździe SO_KEEPALIVE"
 
 #: connect.c:731 connect.c:794
 #, c-format
@@ -2945,19 +2949,19 @@ msgstr "nie można uruchomić pośrednika %s"
 #: connect.c:1024
 msgid "no path specified; see 'git help pull' for valid url syntax"
 msgstr ""
+"nie podano ścieżki; zobacz składnię prawidłowych adresów w „git help pull”"
 
 #: connect.c:1219
 msgid "ssh variant 'simple' does not support -4"
-msgstr ""
+msgstr "wariant SSH „simple” nie wspiera -4"
 
 #: connect.c:1231
 msgid "ssh variant 'simple' does not support -6"
-msgstr ""
+msgstr "wariant SSH „simple” nie wspiera -6"
 
 #: connect.c:1248
-#, fuzzy
 msgid "ssh variant 'simple' does not support setting port"
-msgstr "odbierający koniec nie wspiera podpisanych wypchnięć"
+msgstr "wariant SSH „simple” nie wspiera ustawiania portu"
 
 #: connect.c:1360
 #, c-format
@@ -3020,7 +3024,7 @@ msgstr ""
 #: convert.c:284
 #, c-format
 msgid "BOM is prohibited in '%s' if encoded as %s"
-msgstr ""
+msgstr "Znacznik kolejności bajtów zabroniony, jeśli „%s” zakodowano jako %s"
 
 #: convert.c:291
 #, c-format
@@ -3028,11 +3032,13 @@ msgid ""
 "The file '%s' contains a byte order mark (BOM). Please use UTF-%.*s as "
 "working-tree-encoding."
 msgstr ""
+"Plik „%s” zawiera znacznik kolejności bajtów (BOM). Użyj UTF-%.*s jako "
+"kodowania drzewa roboczego."
 
 #: convert.c:304
 #, c-format
 msgid "BOM is required in '%s' if encoded as %s"
-msgstr ""
+msgstr "Znacznik kolejności bajtów wymagany, jeśli „%s” zakodowano jako %s"
 
 #: convert.c:306
 #, c-format
@@ -3040,6 +3046,8 @@ msgid ""
 "The file '%s' is missing a byte order mark (BOM). Please use UTF-%sBE or UTF-"
 "%sLE (depending on the byte order) as working-tree-encoding."
 msgstr ""
+"W pliku „%s” brakuje znacznika kolejności bajtów (BOM). Użyj UTF-%sBE "
+"lub UTF-%sLE (zależnie od kolejności bajtów) jako kodowania drzewa roboczego."
 
 #: convert.c:419 convert.c:490
 #, c-format
@@ -3284,6 +3292,8 @@ msgid ""
 "color moved setting must be one of 'no', 'default', 'blocks', 'zebra', "
 "'dimmed-zebra', 'plain'"
 msgstr ""
+"ustawienie kolorowania przeniesień musi być jednym z „no”, „default”, "
+"„blocks”, „zebra”, „dimmed-zebra” czy „plain”"
 
 #: diff.c:325
 #, c-format
@@ -3291,12 +3301,16 @@ msgid ""
 "unknown color-moved-ws mode '%s', possible values are 'ignore-space-change', "
 "'ignore-space-at-eol', 'ignore-all-space', 'allow-indentation-change'"
 msgstr ""
+"nieznany tryb color-moved-ws „%s”, możliwe wartości to „ignore-space-change”, "
+"„ignore-space-at-eol”, „ignore-all-space”, „allow-indentation-change”"
 
 #: diff.c:333
 msgid ""
 "color-moved-ws: allow-indentation-change cannot be combined with other "
 "whitespace modes"
 msgstr ""
+"color-moved-ws: allow-indentation-change nie może być łączone z innymi "
+"trybami białych znaków"
 
 #: diff.c:410
 #, c-format
@@ -3352,12 +3366,12 @@ msgstr ""
 #: diff.c:4876
 #, c-format
 msgid "unknown change class '%c' in --diff-filter=%s"
-msgstr ""
+msgstr "nieznana klasa zmian „%c” w --diff-filter=%s"
 
 #: diff.c:4900
 #, c-format
 msgid "unknown value after ws-error-highlight=%.*s"
-msgstr ""
+msgstr "nieznana wartość po ws-error-highlight=%.*s"
 
 #: diff.c:4914
 #, c-format
@@ -3375,14 +3389,14 @@ msgid "%s expects a character, got '%s'"
 msgstr "%s oczekuje znaku, otrzymano „%s”"
 
 #: diff.c:5003
-#, fuzzy, c-format
+#, c-format
 msgid "bad --color-moved argument: %s"
-msgstr "nierozpoznany argument: %s"
+msgstr "zły argument --color-moved: %s"
 
 #: diff.c:5022
-#, fuzzy, c-format
+#, c-format
 msgid "invalid mode '%s' in --color-moved-ws"
-msgstr "podano nieprawidłowy obiekt „%s”."
+msgstr "nieprawidłowy tryb „%s” w --color-moved-ws"
 
 #: diff.c:5062
 msgid ""
@@ -3393,33 +3407,32 @@ msgstr ""
 "„histogram”"
 
 #: diff.c:5098 diff.c:5118
-#, fuzzy, c-format
+#, c-format
 msgid "invalid argument to %s"
-msgstr "nieprawidłowa wartość %s"
+msgstr "nieprawidłowy argument do %s"
 
 #: diff.c:5222
-#, fuzzy, c-format
+#, c-format
 msgid "invalid regex given to -I: '%s'"
-msgstr "nieprawidłowa referencja: %s"
+msgstr "w -I podano nieprawidłowe wyrażenie regularne: „%s”"
 
 #: diff.c:5271
-#, fuzzy, c-format
+#, c-format
 msgid "failed to parse --submodule option parameter: '%s'"
-msgstr "Nie można przetworzyć parametru opcji --submodule: „%s”"
+msgstr "nie można przetworzyć parametru opcji --submodule: „%s”"
 
 #: diff.c:5327
 #, c-format
 msgid "bad --word-diff argument: %s"
-msgstr ""
+msgstr "zły argument --word-diff: %s"
 
 #: diff.c:5350
 msgid "Diff output format options"
-msgstr ""
+msgstr "Opcje formatu wyjściowego różnic"
 
 #: diff.c:5352 diff.c:5358
-#, fuzzy
 msgid "generate patch"
-msgstr "umieść łatkę w treści"
+msgstr "wygeneruj łatkę"
 
 #: diff.c:5355 builtin/log.c:178
 msgid "suppress diff output"
@@ -3430,32 +3443,28 @@ msgid "<n>"
 msgstr "<n>"
 
 #: diff.c:5361 diff.c:5364
-#, fuzzy
 msgid "generate diffs with <n> lines context"
-msgstr "zapewnij przynajmniej <n> wierszy dopasowanego kontekstu"
+msgstr "wygeneruj różnice z <n> wierszami kontekstu"
 
 #: diff.c:5366
 msgid "generate the diff in raw format"
-msgstr ""
+msgstr "wygeneruj różnice w surowym formacie"
 
 #: diff.c:5369
-#, fuzzy
 msgid "synonym for '-p --raw'"
-msgstr "(synonim do --stat)"
+msgstr "synonim do „-p --raw”"
 
 #: diff.c:5373
-#, fuzzy
 msgid "synonym for '-p --stat'"
-msgstr "(synonim do --stat)"
+msgstr "synonim do „-p --stat”"
 
 #: diff.c:5377
-#, fuzzy
 msgid "machine friendly --stat"
-msgstr "wyjście czytelne dla maszyny"
+msgstr "--stat czytelne dla maszyny"
 
 #: diff.c:5380
 msgid "output only the last line of --stat"
-msgstr ""
+msgstr "wypisz tylko ostatni wiersz --stat"
 
 #: diff.c:5382 diff.c:5390
 msgid "<param1,param2>..."
@@ -3464,16 +3473,15 @@ msgstr "<param1,param2>..."
 #: diff.c:5383
 msgid ""
 "output the distribution of relative amount of changes for each sub-directory"
-msgstr ""
+msgstr "wypisz rozkład względnej ilości zmian w każdym podkatalogu"
 
 #: diff.c:5387
-#, fuzzy
 msgid "synonym for --dirstat=cumulative"
-msgstr "zamiennik na --files-with-matches"
+msgstr "zamiennik na --dirstat=cumulative"
 
 #: diff.c:5391
 msgid "synonym for --dirstat=files,param1,param2..."
-msgstr ""
+msgstr "synonim do --dirstat=files,param1,param2..."
 
 #: diff.c:5395
 msgid "warn if changes introduce conflict markers or whitespace errors"
@@ -3484,23 +3492,20 @@ msgid "condensed summary such as creations, renames and mode changes"
 msgstr "zwarte podsumowanie takie jak utworzenia czy zmiany nazw i trybów"
 
 #: diff.c:5401
-#, fuzzy
 msgid "show only names of changed files"
-msgstr "pokazuj tylko nazwy plików zamiast pasujących wierszy"
+msgstr "pokazuj tylko nazwy zmienionych plików"
 
 #: diff.c:5404
-#, fuzzy
 msgid "show only names and status of changed files"
-msgstr "pokazuj tylko nazwy plików zamiast pasujących wierszy"
+msgstr "pokazuj tylko nazwy i stan zmienionych plików"
 
 #: diff.c:5406
 msgid "<width>[,<name-width>[,<count>]]"
 msgstr "<szerokość>[,<szerokość-nazwy>[,<liczba>]]"
 
 #: diff.c:5407
-#, fuzzy
 msgid "generate diffstat"
-msgstr "niespodziewany stan diff %c"
+msgstr "wygeneruj statystyki różnic"
 
 #: diff.c:5409 diff.c:5412 diff.c:5415
 msgid "<width>"
@@ -3579,9 +3584,8 @@ msgid "do not show any source or destination prefix"
 msgstr ""
 
 #: diff.c:5451
-#, fuzzy
 msgid "show context between diff hunks up to the specified number of lines"
-msgstr "Utwórz płytki klon ucięty do podanej liczby rewizji"
+msgstr "pokaż kontekst między skrawkami różnic do podanej liczby wierszy"
 
 #: diff.c:5455 diff.c:5460 diff.c:5465
 msgid "<char>"
@@ -3654,19 +3658,16 @@ msgid "produce the smallest possible diff"
 msgstr "wyprodukuj najmniejsze możliwe różnice"
 
 #: diff.c:5503
-#, fuzzy
 msgid "ignore whitespace when comparing lines"
-msgstr "ignoruj zmiany w białych znakach przy znajdywaniu kontekstu"
+msgstr "ignoruj zmiany w białych znakach przy porównywaniu plików"
 
 #: diff.c:5506
-#, fuzzy
 msgid "ignore changes in amount of whitespace"
-msgstr "ignoruj zmiany w białych znakach przy znajdywaniu kontekstu"
+msgstr "ignoruj zmiany w liczbie białych znaków"
 
 #: diff.c:5509
-#, fuzzy
 msgid "ignore changes in whitespace at EOL"
-msgstr "ignoruj zmiany w białych znakach przy znajdywaniu kontekstu"
+msgstr "ignoruj zmiany w białych znakach na końcu wiersza"
 
 #: diff.c:5512
 msgid "ignore carrier-return at the end of line"
@@ -3809,18 +3810,16 @@ msgid ""
 msgstr ""
 
 #: diff.c:5591
-#, fuzzy
 msgid "show all changes in the changeset with -S or -G"
-msgstr "pokaż pasujące pliki w czytniku"
+msgstr "pokaż wszystkie zmiany w zestawie z -S lub -G"
 
 #: diff.c:5594
 msgid "treat <string> in -S as extended POSIX regular expression"
 msgstr "traktuj <łańcuch> w -S jako rozszerzone wyrażenie regularne POSIX"
 
 #: diff.c:5597
-#, fuzzy
 msgid "control the order in which files appear in the output"
-msgstr "pokazuj pliki innego typu w wyjściu"
+msgstr "ustaw kolejność, w jakiej pliki pojawią się na wyjściu"
 
 #: diff.c:5598
 msgid "<object-id>"
@@ -3875,9 +3874,9 @@ msgid "Performing inexact rename detection"
 msgstr "Wykrywanie niedokładnych zmian nazw"
 
 #: dir.c:578
-#, fuzzy, c-format
+#, c-format
 msgid "pathspec '%s' did not match any file(s) known to git"
-msgstr "ścieżka „%s” nie pasuje do żadnych plików"
+msgstr "ścieżka „%s” nie pasuje do żadnych plików znanych gitowi"
 
 #: dir.c:718 dir.c:747 dir.c:760
 #, c-format
@@ -3885,9 +3884,9 @@ msgid "unrecognized pattern: '%s'"
 msgstr "nierozpoznany wzorzec: %s"
 
 #: dir.c:777 dir.c:791
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized negative pattern: '%s'"
-msgstr "Nierozpoznana opcja z białych znaków: „%s”"
+msgstr "nierozpoznany antywzorzec: „%s”"
 
 #: dir.c:809
 #, c-format
@@ -3899,28 +3898,27 @@ msgid "disabling cone pattern matching"
 msgstr ""
 
 #: dir.c:1198
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use %s as an exclude file"
-msgstr "nie można zapisać pliku indeksu"
+msgstr "nie można użyć %s jako pliku wyłączeń"
 
 #: dir.c:2305
-#, fuzzy, c-format
+#, c-format
 msgid "could not open directory '%s'"
-msgstr "nie można utworzyć katalogu „%s”"
+msgstr "nie można otworzyć katalogu „%s”"
 
 #: dir.c:2605
 msgid "failed to get kernel name and information"
 msgstr "nie można uzyskać nazwy i informacji jądra"
 
 #: dir.c:2729
-#, fuzzy
 msgid "untracked cache is disabled on this system or location"
-msgstr "Pamięć o nieśledzonych jest wyłączona w tym systemie lub położeniu."
+msgstr "pamięć o nieśledzonych jest wyłączona w tym systemie lub położeniu"
 
 #: dir.c:3520
-#, fuzzy, c-format
+#, c-format
 msgid "index file corrupt in repo %s"
-msgstr "uszkodzony plik indeksu"
+msgstr "uszkodzony plik indeksu w repozytorium %s"
 
 #: dir.c:3565 dir.c:3570
 #, c-format
@@ -3952,9 +3950,9 @@ msgid "bad git namespace path \"%s\""
 msgstr "zła ścieżka przestrzeni nazw gita „%s”"
 
 #: environment.c:337
-#, fuzzy, c-format
+#, c-format
 msgid "could not set GIT_DIR to '%s'"
-msgstr "nie można ustawić „%s” na „%s”"
+msgstr "nie można ustawić GIT_DIR na „%s”"
 
 #: exec-cmd.c:363
 #, c-format
@@ -4118,23 +4116,21 @@ msgid "mismatched algorithms: client %s; server %s"
 msgstr "niezgodne algorytmy: klient %s; serwer %s"
 
 #: fetch-pack.c:1218
-#, fuzzy, c-format
+#, c-format
 msgid "the server does not support algorithm '%s'"
-msgstr "Serwer nie wspiera płytkich klientów"
+msgstr "serwer nie wspiera algorytmu „%s”"
 
 #: fetch-pack.c:1238
-#, fuzzy
 msgid "Server does not support shallow requests"
-msgstr "Serwer nie wspiera płytkich klientów"
+msgstr "Serwer nie wspiera płytkich żądań"
 
 #: fetch-pack.c:1245
 msgid "Server supports filter"
 msgstr "Serwer wspiera filtrowanie"
 
 #: fetch-pack.c:1284
-#, fuzzy
 msgid "unable to write request to remote"
-msgstr "nie można zapisać parametrów do pliku konfiguracyjnego"
+msgstr "nie można pisać żądania do zdalnej maszyny"
 
 #: fetch-pack.c:1302
 #, c-format
@@ -4170,14 +4166,14 @@ msgid "error processing shallow info: %d"
 msgstr ""
 
 #: fetch-pack.c:1475
-#, fuzzy, c-format
+#, c-format
 msgid "expected wanted-ref, got '%s'"
-msgstr "oczekiwano shallow/unshallow, otrzymano %s"
+msgstr "oczekiwano wanted-ref, otrzymano %s"
 
 #: fetch-pack.c:1480
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected wanted-ref: '%s'"
-msgstr "nieoczekiwany koniec pliku"
+msgstr "nieoczekiwana wanted-ref: „%s”"
 
 #: fetch-pack.c:1485
 #, c-format
@@ -4996,12 +4992,12 @@ msgstr "nie można zapisać nowego pliku indeksu"
 #: midx.c:80
 #, c-format
 msgid "multi-pack-index file %s is too small"
-msgstr ""
+msgstr "plik indeksu wielu paczek %s jest za mały"
 
 #: midx.c:96
 #, c-format
 msgid "multi-pack-index signature 0x%08x does not match signature 0x%08x"
-msgstr ""
+msgstr "podpis indeksu wielu paczek 0x%08x nie zgadza się z podpisem 0x%08x"
 
 #: midx.c:101
 #, c-format
@@ -5045,11 +5041,12 @@ msgstr ""
 #: midx.c:223
 #, c-format
 msgid "bad pack-int-id: %u (%u total packs)"
-msgstr ""
+msgstr "złe pack-int-id: %u (razem %u paczek)"
 
 #: midx.c:273
 msgid "multi-pack-index stores a 64-bit offset, but off_t is too small"
 msgstr ""
+"indeks wielu paczek przechowuje 64-bitowe przesunięcie, ale off_t jest za małe"
 
 #: midx.c:480
 #, c-format
@@ -5068,7 +5065,7 @@ msgstr "nie można odnaleźć obiektu %d w pliku paczki"
 
 #: midx.c:846
 msgid "Adding packfiles to multi-pack-index"
-msgstr ""
+msgstr "Dodawanie plików paczek do indeksu wielu paczek"
 
 #: midx.c:879
 #, c-format
@@ -5101,6 +5098,7 @@ msgstr ""
 msgid ""
 "oid fanout out of order: fanout[%d] = %<PRIx32> > %<PRIx32> = fanout[%d]"
 msgstr ""
+"fanout oid poza kolejnością: fanout[%d] = %<PRIx32> > %<PRIx32> = fanout[%d]"
 
 #: midx.c:1144
 msgid "the midx contains no oid"
@@ -5113,7 +5111,7 @@ msgstr ""
 #: midx.c:1162
 #, c-format
 msgid "oid lookup out of order: oid[%d] = %s >= %s = oid[%d]"
-msgstr ""
+msgstr "odnajdywanie oid poza kolejnością: oid[%d] = %s >= %s = oid[%d]"
 
 #: midx.c:1182
 msgid "Sorting objects by packfile"
@@ -5124,19 +5122,20 @@ msgid "Verifying object offsets"
 msgstr "Weryfikowanie przesunięć obiektów"
 
 #: midx.c:1205
-#, fuzzy, c-format
+#, c-format
 msgid "failed to load pack entry for oid[%d] = %s"
-msgstr "nie można dodać %s do pamięci podręcznej"
+msgstr "nie można wczytać elementu paczki w oid[%d] = %s"
 
 #: midx.c:1211
-#, fuzzy, c-format
+#, c-format
 msgid "failed to load pack-index for packfile %s"
-msgstr "nie można odczytać pliku kolejności „%s”"
+msgstr "nie można wczytać indeksu paczki z pliku paczki %s"
 
 #: midx.c:1220
 #, c-format
 msgid "incorrect object offset for oid[%d] = %s: %<PRIx64> != %<PRIx64>"
 msgstr ""
+"nieprawidłowe przesunięcie obiektu w oid[%d] = %s: %<PRIx64> != %<PRIx64>"
 
 #: midx.c:1245
 msgid "Counting referenced objects"
@@ -5144,7 +5143,7 @@ msgstr "Zliczanie osiągalnych obiektów"
 
 #: midx.c:1255
 msgid "Finding and deleting unreferenced packfiles"
-msgstr ""
+msgstr "Znajdywanie i usuwanie niewskazywanych plików paczek"
 
 #: midx.c:1446
 msgid "could not start pack-objects"
@@ -5671,14 +5670,14 @@ msgid "unordered stage entries in index"
 msgstr "nieuporządkowane elementy przygotowane w indeksie"
 
 #: read-cache.c:1862
-#, fuzzy, c-format
+#, c-format
 msgid "multiple stage entries for merged file '%s'"
-msgstr "wybierz „ich” wersję niescalonych plików"
+msgstr "wiele elementów w przygotowaniu dla scalonego pliku „%s”"
 
 #: read-cache.c:1865
-#, fuzzy, c-format
+#, c-format
 msgid "unordered stage entries for '%s'"
-msgstr "Włączono pamięć nieśledzonych w „%s”"
+msgstr "nieuporządkowane elementy przygotowane w „%s”"
 
 #: read-cache.c:1971 read-cache.c:2262 rerere.c:565 rerere.c:599 rerere.c:1111
 #: submodule.c:1628 builtin/add.c:538 builtin/check-ignore.c:181
@@ -9814,6 +9813,19 @@ msgid ""
 "\n"
 "See \"git help submodule\" for more information."
 msgstr ""
+"Dodano inne repozytorium wewnątrz bieżącego repozytorium.\n"
+"Klony zewnętrznego repozytorium nie będą zawierać zawartości\n"
+"zawartego repozytorium i nie będą wiedziały, jak ją uzyskać.\n"
+"Jeśli chodziło o dodanie pod-modułu, użyj:\n"
+"\n"
+"\tgit submodule add <url> %s\n"
+"\n"
+"Jeśli dodano tę ścieżkę przez pomyłkę, można ją usunąć\n"
+"z indeksu przez:\n"
+"\n"
+"\tgit rm --cached %s\n"
+"\n"
+"Więcej informacji w „git help submodule”."
 
 #: builtin/add.c:397
 #, c-format
@@ -10421,9 +10433,9 @@ msgid "Bad bisect_write argument: %s"
 msgstr "Błędny argument bisect_write: %s"
 
 #: builtin/bisect--helper.c:260
-#, fuzzy, c-format
+#, c-format
 msgid "couldn't get the oid of the rev '%s'"
-msgstr "nie można utworzyć katalogu drzewa roboczego „%s”"
+msgstr "nie można uzyskać oid rewizji „%s”"
 
 #: builtin/bisect--helper.c:272
 #, c-format
@@ -10669,9 +10681,8 @@ msgid "Show blame entries as we find them, incrementally"
 msgstr "Pokaż elementy oskarżenia w miarę znajdywania, przyrostowo"
 
 #: builtin/blame.c:870
-#, fuzzy
 msgid "Do not show object names of boundary commits (Default: off)"
-msgstr "Pokaż puste SHA-1 w brzegowych zapisach (domyślnie wyłączone)"
+msgstr "Nie pokazuj nazw obiektów w brzegowych zapisach (domyślnie wyłączone)"
 
 #: builtin/blame.c:871
 msgid "Do not treat root commits as boundaries (Default: off)"
@@ -11847,6 +11858,14 @@ msgid ""
 "one remote, e.g. the 'origin' remote, consider setting\n"
 "checkout.defaultRemote=origin in your config."
 msgstr ""
+"Jeśli chodziło o wybranie gałęzi śledzącej, np. na „origin”,\n"
+"możesz to zrobić podając pełną nazwę z opcją --track:\n"
+"\n"
+"    git checkout --track origin/<nazwa>\n"
+"\n"
+"Jeśli chcesz, żeby wybrania wszystkich niejednoznacznych\n"
+"<nazw> preferowały jedno zdalne repozytorium, rozważ ustawienie\n"
+"checkout.defaultRemote=origin w swoich ustawieniach."
 
 #: builtin/checkout.c:1181
 #, c-format
@@ -12779,15 +12798,15 @@ msgstr "zacznij przechodzenie po wszystkich referencjach"
 
 #: builtin/commit-graph.c:215
 msgid "scan pack-indexes listed by stdin for commits"
-msgstr ""
+msgstr "przeskanuj indeksy paczek wymienione na wejściu dla zapisów"
 
 #: builtin/commit-graph.c:217
 msgid "start walk at commits listed by stdin"
-msgstr ""
+msgstr "zacznij przechodzenie od zapisów wypisanych na standardowym wejściu"
 
 #: builtin/commit-graph.c:219
 msgid "include all commits already in the commit-graph file"
-msgstr ""
+msgstr "uwzględnij wszystkie zapisy już w pliku grafu zapisów"
 
 #: builtin/commit-graph.c:221
 msgid "enable computation for changed paths"
@@ -12795,15 +12814,16 @@ msgstr "włącz obliczanie zmienionych ścieżek"
 
 #: builtin/commit-graph.c:224
 msgid "allow writing an incremental commit-graph file"
-msgstr ""
+msgstr "pozwól zapisać przyrostowy plik grafu zapisów"
 
 #: builtin/commit-graph.c:228
 msgid "maximum number of commits in a non-base split commit-graph"
-msgstr ""
+msgstr "maksymalna liczba zapisów w niepodstawowym rozdzieleniu grafu zapisów"
 
 #: builtin/commit-graph.c:230
 msgid "maximum ratio between two levels of a split commit-graph"
 msgstr ""
+"maksymalny stosunek pomiędzy dwoma poziomami rozdzielonego grafu zapisów"
 
 #: builtin/commit-graph.c:232
 msgid "only expire files older than a given date-time"
@@ -12811,15 +12831,15 @@ msgstr "wygaś tylko obiekty starsze niż podany czas"
 
 #: builtin/commit-graph.c:234
 msgid "maximum number of changed-path Bloom filters to compute"
-msgstr ""
+msgstr "maksymalna liczba filtrów Blooma zmienionych ścieżek do obliczenia"
 
 #: builtin/commit-graph.c:255
 msgid "use at most one of --reachable, --stdin-commits, or --stdin-packs"
-msgstr ""
+msgstr "--reachable, --stdin-commits i --stdin-packs wykluczają się"
 
 #: builtin/commit-graph.c:287
 msgid "Collecting commits from input"
-msgstr ""
+msgstr "Zbieranie zapisów z wejścia"
 
 #: builtin/commit-tree.c:18
 msgid ""
@@ -14075,7 +14095,7 @@ msgstr "użyj „diff.guitool” zamiast „diff.tool”"
 
 #: builtin/difftool.c:698
 msgid "perform a full-directory diff"
-msgstr ""
+msgstr "zbadaj różnice całych katalogów"
 
 #: builtin/difftool.c:700
 msgid "do not prompt before launching a diff tool"
@@ -14116,7 +14136,7 @@ msgstr "przekazywane do „diff”"
 
 #: builtin/difftool.c:731
 msgid "difftool requires worktree or --no-index"
-msgstr ""
+msgstr "difftool wymaga drzewa roboczego lub --no-index"
 
 #: builtin/difftool.c:738
 msgid "--dir-diff is incompatible with --no-index"
@@ -14247,6 +14267,8 @@ msgstr "zamień <z> na <na> w zanonimizowanym wyjściu"
 #: builtin/fast-export.c:1230
 msgid "Reference parents which are not in fast-export stream by object id"
 msgstr ""
+"Odwołaj się do rodziców, którzy nie są w strumieniu szybkiego eksportu,"
+" według identyfikatora obiektu"
 
 #: builtin/fast-export.c:1232
 msgid "Show original object ids of blobs/commits"
@@ -14254,7 +14276,7 @@ msgstr "Pokaż pierwotne identyfikatory obiektów blobów/zapisów"
 
 #: builtin/fast-export.c:1234
 msgid "Label tags with mark ids"
-msgstr ""
+msgstr "Oznacz tagi identyfikatorami znaczników"
 
 #: builtin/fast-export.c:1257
 msgid "--anonymize-map without --anonymize does not make sense"
@@ -14287,6 +14309,7 @@ msgstr "Oczekiwano polecenia „do”, otrzymano %s"
 #: builtin/fast-import.c:3322
 msgid "Expected format name:filename for submodule rewrite option"
 msgstr ""
+"W opcji przeredagowania pod-modułu oczekiwano formatu nazwa:nazwa-pliku"
 
 #: builtin/fast-import.c:3377
 #, c-format
@@ -14361,6 +14384,8 @@ msgstr "przytnij gałęzie śledzące usunięte ze zdalnego repozytorium"
 #: builtin/fetch.c:161
 msgid "prune local tags no longer on remote and clobber changed tags"
 msgstr ""
+"przytnij lokalne tagi, których już nie ma w zdalnym repozytorium, i nadpisz"
+" zmienione tagi"
 
 #: builtin/fetch.c:162 builtin/fetch.c:187 builtin/pull.c:122
 msgid "on-demand"
@@ -14404,6 +14429,8 @@ msgid ""
 "default for recursive fetching of submodules (lower priority than config "
 "files)"
 msgstr ""
+"domyślnie w rekurencyjnym pobieraniu pod-modułów (niższy priorytet niż "
+"pliki konfiguracji)"
 
 #: builtin/fetch.c:192 builtin/pull.c:224
 msgid "accept refs that update .git/shallow"
@@ -14422,9 +14449,8 @@ msgid "report that we have only objects reachable from this object"
 msgstr "zgłaszaj, że mamy tylko obiekty osiągalne z tego obiektu"
 
 #: builtin/fetch.c:204 builtin/fetch.c:206
-#, fuzzy
 msgid "run 'maintenance --auto' after fetching"
-msgstr "przytnij zdalne repozytoria po pobraniu"
+msgstr "wykonaj „maintenance --auto” po pobraniu"
 
 #: builtin/fetch.c:208 builtin/pull.c:243
 msgid "check for forced-updates on all updated branches"
@@ -14477,7 +14503,7 @@ msgstr "nie można zaktualizować lokalnej referencji"
 
 #: builtin/fetch.c:808
 msgid "would clobber existing tag"
-msgstr ""
+msgstr "nadpisałoby istniejący tag"
 
 #: builtin/fetch.c:830
 msgid "[new tag]"
@@ -14505,6 +14531,10 @@ msgid ""
 "but that check has been disabled. To re-enable, use '--show-forced-updates'\n"
 "flag or run 'git config fetch.showForcedUpdates true'."
 msgstr ""
+"Pobranie zwykle wskazuje, które gałęzie miały wymuszoną aktualizację,\n"
+"ale to sprawdzenie zostało wyłączone. Aby włączyć je ponownie,\n"
+"użyj flagi „--show-forced-updates” lub wykonaj\n"
+"„git fetch.showForcedUpdates true”."
 
 #: builtin/fetch.c:905
 #, c-format
@@ -14665,11 +14695,13 @@ msgid ""
 "--filter can only be used with the remote configured in extensions."
 "partialclone"
 msgstr ""
+"można użyć --filter tylko ze zdalnym repozytorium ustawionym w "
+"extensions.partialclone"
 
 #: builtin/fetch.c:1891
-#, fuzzy
 msgid "--stdin can only be used when fetching from one remote"
-msgstr "Opcja --exec może być użyta tylko z --remote"
+msgstr ""
+"można użyć --stdin tylko przy pobieraniu z jednego zdalnego repozytorium"
 
 #: builtin/fmt-merge-msg.c:7
 msgid ""
@@ -14823,9 +14855,8 @@ msgid "dangling %s %s"
 msgstr "wiszące %s %s"
 
 #: builtin/fsck.c:340
-#, fuzzy
 msgid "could not create lost-found"
-msgstr "nie można utworzyć pliku „%s”"
+msgstr "nie można utworzyć biura obiektów znalezionych"
 
 #: builtin/fsck.c:351
 #, c-format
@@ -15164,6 +15195,8 @@ msgstr "„git multi-pack-index repack” nie powiodło się"
 msgid ""
 "skipping incremental-repack task because core.multiPackIndex is disabled"
 msgstr ""
+"pomijanie zadania przyrostowego przepakowania, bo core.multiPackIndex jest"
+" wyłączone"
 
 #: builtin/gc.c:1279
 #, c-format
@@ -18239,7 +18272,7 @@ msgstr "protokół"
 
 #: builtin/pack-objects.c:3571
 msgid "exclude any configured uploadpack.blobpackfileuri with this protocol"
-msgstr ""
+msgstr "wyłącz w tym protokole wszystkie ustawione uploadpack.blobpackfileuri"
 
 #: builtin/pack-objects.c:3600
 #, c-format
@@ -18253,11 +18286,11 @@ msgstr "pack.deltaCacheLimit za wysoki, wymuszanie %d"
 
 #: builtin/pack-objects.c:3659
 msgid "--max-pack-size cannot be used to build a pack for transfer"
-msgstr ""
+msgstr "nie można użyć --max-pack-size do budowania paczki do przesyłu"
 
 #: builtin/pack-objects.c:3661
 msgid "minimum pack size limit is 1 MiB"
-msgstr ""
+msgstr "minimalna granica rozmiaru paczki to 1 MiB"
 
 #: builtin/pack-objects.c:3666
 #, fuzzy
@@ -19166,7 +19199,6 @@ msgid "ignoring invalid allow_rerere_autoupdate: '%s'"
 msgstr "pomijanie błędnego allow_rerere_autoupdate: „%s”"
 
 #: builtin/rebase.c:811 git-rebase--preserve-merges.sh:81
-#, fuzzy
 msgid ""
 "Resolve all conflicts manually, mark them as resolved with\n"
 "\"git add/rm <conflicted_files>\", then run \"git rebase --continue\".\n"
@@ -19174,11 +19206,11 @@ msgid ""
 "To abort and get back to the state before \"git rebase\", run \"git rebase --"
 "abort\"."
 msgstr ""
-"Kiedy rozwiążesz ten problem, wykonaj „git rebase --continue”.\n"
-"Jeśli wolisz pominąć tę łatkę/zapis, wykonaj zamiast tego „git rebase --"
-"skip”.\n"
-"Aby wybrać pierwotną gałąź i przerwać przestawianie, wykonaj „git rebase --"
-"abort”."
+"Rozwiąż ręcznie wszystkie konflikty, oznacz je jako rozwiązane przez\n"
+"„git add/rm <skonfliktowane_pliki>” i wykonaj „git rebase --continue”.\n"
+"Możesz zamiast tego pominąć ten zapis: wykonaj „git rebase --skip”.\n"
+"Aby przerwać i powrócić do stanu sprzed „git rebase”, wykonaj „git rebase "
+"--abort”."
 
 #: builtin/rebase.c:894
 #, c-format
@@ -21885,6 +21917,10 @@ msgid ""
 "submodule.alternateErrorStrategy to 'info' or, equivalently, clone with\n"
 "'--reference-if-able' instead of '--reference'."
 msgstr ""
+"Alternatywa obliczona z alternatywy nad-projektu jest nieprawidłowa.\n"
+"Aby pozwolić Gitowi w takim wypadku klonować bez alternatywy, ustaw\n"
+"submodule.alternateErrorStrategy na „info” lub, równoważnie, sklonuj\n"
+"z „--reference-if-able” zamiast „--reference”."
 
 #: builtin/submodule--helper.c:1752 builtin/submodule--helper.c:1755
 #, c-format
@@ -22312,9 +22348,8 @@ msgid "print only tags that contain the commit"
 msgstr "wypisz tylko tagi zawierające ten zapis"
 
 #: builtin/tag.c:427 builtin/tag.c:429
-#, fuzzy
 msgid "print only tags that don't contain the commit"
-msgstr "wypisz tylko tagi zawierające ten zapis"
+msgstr "wypisz tylko tagi nie zawierające tego zapisu"
 
 #: builtin/tag.c:430
 msgid "print only tags that are merged"
@@ -22690,7 +22725,7 @@ msgstr "nie sprawdzaj <katalog>/.git/ jeśli <katalog> nie jest katalogiem Gita"
 
 #: builtin/upload-pack.c:29
 msgid "interrupt transfer after <n> seconds of inactivity"
-msgstr "przerwij łączność po <n> sekundach nieaktywności"
+msgstr "przerwij przesyłanie po <n> sekundach nieaktywności"
 
 #: builtin/verify-commit.c:19
 msgid "git verify-commit [-v | --verbose] <commit>..."
@@ -23143,16 +23178,18 @@ msgid ""
 "alias '%s' changes environment variables.\n"
 "You can use '!git' in the alias to do this"
 msgstr ""
+"skrót „%s” zmienia zmienne środowiska.\n"
+"Aby to zrobić, możesz użyć w skrócie „!git”"
 
 #: git.c:380
 #, c-format
 msgid "empty alias for %s"
-msgstr ""
+msgstr "pusty skrót dla %s"
 
 #: git.c:383
 #, c-format
 msgid "recursive alias: %s"
-msgstr ""
+msgstr "rekurencyjny skrót: %s"
 
 #: git.c:465
 msgid "write failure on standard output"
@@ -23169,7 +23206,7 @@ msgstr "nie można zamknąć standardowego wyjścia"
 #: git.c:820
 #, c-format
 msgid "alias loop detected: expansion of '%s' does not terminate:%s"
-msgstr ""
+msgstr "wykryto pętlę skrótów: rozwijanie „%s” nie kończy się: %s"
 
 #: git.c:870
 #, c-format
@@ -23376,7 +23413,7 @@ msgstr "remote-curl: nieznane polecenie „%s” z gita"
 
 #: compat/compiler.h:26
 msgid "no compiler information available\n"
-msgstr ""
+msgstr "brak dostępnych informacji o kompilatorze\n"
 
 #: compat/compiler.h:38
 msgid "no libc information available\n"
@@ -23886,18 +23923,16 @@ msgid "Reset current HEAD to the specified state"
 msgstr "Zresetuj bieżący HEAD do podanego stanu"
 
 #: command-list.h:158
-#, fuzzy
 msgid "Restore working tree files"
-msgstr "Przełącz gałąź lub przywróć pliki drzewa roboczego"
+msgstr "Przywróć pliki drzewa roboczego"
 
 #: command-list.h:159
 msgid "Revert some existing commits"
 msgstr "Odwróć niektóre istniejące zapisy"
 
 #: command-list.h:160
-#, fuzzy
 msgid "Lists commit objects in reverse chronological order"
-msgstr "pokaż zapisy w kolejności topologicznej"
+msgstr "Wypisz zapisy w odwrotnej kolejności chronologicznej"
 
 #: command-list.h:161
 msgid "Pick out and massage parameters"
@@ -24817,9 +24852,9 @@ msgid ""
 msgstr ""
 
 #: git-add--interactive.perl:1114
-#, fuzzy, perl-format
+#, perl-format
 msgid "failed to open hunk edit file for writing: %s"
-msgstr "nie można rozwinąć katalogu użytkownika w: „%s”"
+msgstr "nie można otworzyć do zapisu pliku edycji skrawka: %s"
 
 #: git-add--interactive.perl:1121
 #, perl-format
@@ -24831,9 +24866,9 @@ msgid ""
 msgstr ""
 
 #: git-add--interactive.perl:1143
-#, fuzzy, perl-format
+#, perl-format
 msgid "failed to open hunk edit file for reading: %s"
-msgstr "nie można rozwinąć katalogu użytkownika w: „%s”"
+msgstr "nie można otworzyć do odczytu pliku edycji skrawka: %s"
 
 #: git-add--interactive.perl:1251
 msgid ""
@@ -24972,9 +25007,8 @@ msgstr ""
 "? - wypisz pomoc\n"
 
 #: git-add--interactive.perl:1345
-#, fuzzy
 msgid "The selected hunks do not apply to the index!\n"
-msgstr "dodaj podany element do indeksu"
+msgstr "Wybrane skrawki nie stosują się do indeksu!\n"
 
 #: git-add--interactive.perl:1360
 #, perl-format
@@ -25028,9 +25062,8 @@ msgid "Malformed search regexp %s: %s\n"
 msgstr ""
 
 #: git-add--interactive.perl:1684
-#, fuzzy
 msgid "No hunk matches the given pattern\n"
-msgstr "zastosuj zmiany pasujące do podanej ścieżki"
+msgstr "Żaden skrawek nie pasuje do podanego wzorca\n"
 
 #: git-add--interactive.perl:1696 git-add--interactive.perl:1718
 msgid "No previous hunk\n"
@@ -25096,18 +25129,18 @@ msgstr "przesunięcie czasu lokalnego większe lub równe 24 godzin\n"
 
 #: git-send-email.perl:223 git-send-email.perl:229
 msgid "the editor exited uncleanly, aborting everything"
-msgstr ""
+msgstr "edytor nie wyszedł gładko, przerywanie wszystkiego"
 
 #: git-send-email.perl:312
 #, perl-format
 msgid ""
 "'%s' contains an intermediate version of the email you were composing.\n"
-msgstr ""
+msgstr "„%s” zawiera pośrednią wersję listu e-mail, który pisałeś/-aś.\n"
 
 #: git-send-email.perl:317
 #, perl-format
 msgid "'%s.final' contains the composed email.\n"
-msgstr ""
+msgstr "„%s.final” zawiera napisany list e-mail.\n"
 
 #: git-send-email.perl:410
 msgid "--dump-aliases incompatible with other options\n"
@@ -25119,11 +25152,14 @@ msgid ""
 "git-send-email is configured with the sendemail.* options - note the 'e'.\n"
 "Set sendemail.forbidSendmailVariables to false to disable this check.\n"
 msgstr ""
+"błąd krytyczny: znaleziono opcje konfiguracji do „sendmail”\n"
+"git-send-email jest skonfigurowany z opcjami sendemail.* — uwaga na „e”.\n"
+"Ustaw sendemail.forbidSendmailVariables na false, aby wyłączyć to"
+" sprawdzenie.\n"
 
 #: git-send-email.perl:489 git-send-email.perl:691
-#, fuzzy
 msgid "Cannot run git format-patch from outside a repository\n"
-msgstr "--cached poza repozytorium"
+msgstr "Nie można wykonać git format-patch poza repozytorium\n"
 
 #: git-send-email.perl:492
 msgid ""
@@ -25136,7 +25172,7 @@ msgstr ""
 #: git-send-email.perl:505
 #, perl-format
 msgid "Unknown --suppress-cc field: '%s'\n"
-msgstr ""
+msgstr "Nieznane pole --suppress-cc: „%s”\n"
 
 #: git-send-email.perl:536
 #, perl-format
@@ -25146,7 +25182,7 @@ msgstr "Nieznane ustawienie --confirm: „%s”\n"
 #: git-send-email.perl:564
 #, perl-format
 msgid "warning: sendmail alias with quotes is not supported: %s\n"
-msgstr ""
+msgstr "ostrzeżenie: skrót sendmaila z cudzysłowami niewspierany: %s\n"
 
 #: git-send-email.perl:566
 #, perl-format
@@ -25241,6 +25277,8 @@ msgid ""
 "The following files are 8bit, but do not declare a Content-Transfer-"
 "Encoding.\n"
 msgstr ""
+"Następujące pliki są ośmiobitowe, ale nie deklarują kodowania "
+"Content-Transfer-Encoding.\n"
 
 #: git-send-email.perl:926
 msgid "Which 8bit encoding should I declare [UTF-8]? "
@@ -25254,19 +25292,24 @@ msgid ""
 "has the template subject '*** SUBJECT HERE ***'. Pass --force if you really "
 "want to send.\n"
 msgstr ""
+"Odmawiam wysłania, bo łatka\n"
+"\t%s\n"
+"ma temat z szablonu „*** SUBJECT HERE ***”. Przekaż --force, jeśli naprawdę "
+"chcesz to wysłać.\n"
 
 #: git-send-email.perl:953
 msgid "To whom should the emails be sent (if anyone)?"
-msgstr ""
+msgstr "Do kogo mają być wysłane listy e-mail (jeśli w ogóle)?"
 
 #: git-send-email.perl:971
 #, perl-format
 msgid "fatal: alias '%s' expands to itself\n"
-msgstr ""
+msgstr "błąd krytyczny: skrót „%s” rozwija się do siebie samego\n"
 
 #: git-send-email.perl:983
 msgid "Message-ID to be used as In-Reply-To for the first email (if any)? "
 msgstr ""
+"Message-ID do użycia w In-Reply-To w pierwszym liście e-mail (jeśli w ogóle)? "
 
 #: git-send-email.perl:1041 git-send-email.perl:1049
 #, perl-format
@@ -25309,11 +25352,11 @@ msgstr ""
 
 #: git-send-email.perl:1471
 msgid "Send this email reply required"
-msgstr ""
+msgstr "Wyślij ten list e-mail z wymaganą odpowiedzią"
 
 #: git-send-email.perl:1499
 msgid "The required SMTP server is not properly defined."
-msgstr ""
+msgstr "Wymagany serwer SMTP nie jest prawidłowo zdefiniowany."
 
 #: git-send-email.perl:1546
 #, perl-format
@@ -25328,6 +25371,8 @@ msgstr "nie można wykonać STARTTLS! %s"
 #: git-send-email.perl:1564
 msgid "Unable to initialize SMTP properly. Check config and use --smtp-debug."
 msgstr ""
+"Nie można prawidłowo zainicjować SMTP. Sprawdź konfigurację i użyj"
+" --smtp-debug."
 
 #: git-send-email.perl:1582
 #, perl-format
@@ -25368,22 +25413,22 @@ msgstr "nie można otworzyć pliku %s"
 #: git-send-email.perl:1667 git-send-email.perl:1687
 #, perl-format
 msgid "(mbox) Adding cc: %s from line '%s'\n"
-msgstr ""
+msgstr "(mbox) Dodawanie DW: %s z wiersza „%s”\n"
 
 #: git-send-email.perl:1673
 #, perl-format
 msgid "(mbox) Adding to: %s from line '%s'\n"
-msgstr ""
+msgstr "(mbox) Dodawanie Do: %s z wiersza „%s”\n"
 
 #: git-send-email.perl:1730
 #, perl-format
 msgid "(non-mbox) Adding cc: %s from line '%s'\n"
-msgstr ""
+msgstr "(nie mbox) Dodawanie DW: %s z wiersza „%s”\n"
 
 #: git-send-email.perl:1765
 #, perl-format
 msgid "(body) Adding cc: %s from line '%s'\n"
-msgstr ""
+msgstr "(treść) Dodawanie DW: %s z wiersza „%s”\n"
 
 #: git-send-email.perl:1876
 #, perl-format
@@ -25393,22 +25438,20 @@ msgstr "(%s) Nie można wykonać „%s”"
 #: git-send-email.perl:1883
 #, perl-format
 msgid "(%s) Adding %s: %s from: '%s'\n"
-msgstr ""
+msgstr "(%s) Dodawanie %s: %s z: „%s”\n"
 
 #: git-send-email.perl:1887
-#, fuzzy, perl-format
+#, perl-format
 msgid "(%s) failed to close pipe to '%s'"
-msgstr "nie można skopiować pliku do „%s”"
+msgstr "(%s) nie można zamknąć potoku do „%s”"
 
 #: git-send-email.perl:1917
-#, fuzzy
 msgid "cannot send message as 7bit"
-msgstr "nie można uzyskać komunikatu zapisu dla %s"
+msgstr "nie można wysłać wiadomości jako siedmiobitowej"
 
 #: git-send-email.perl:1925
-#, fuzzy
 msgid "invalid transfer encoding"
-msgstr "nieprawidłowa referencja: %s"
+msgstr "nieprawidłowe kodowanie przesyłu"
 
 #: git-send-email.perl:1966 git-send-email.perl:2018 git-send-email.perl:2028
 #, perl-format
@@ -25418,12 +25461,12 @@ msgstr "nie można otworzyć %s: %s\n"
 #: git-send-email.perl:1969
 #, perl-format
 msgid "%s: patch contains a line longer than 998 characters"
-msgstr ""
+msgstr "%s: łatka zawiera wiersz dłuższy niż 998 znaków"
 
 #: git-send-email.perl:1986
 #, perl-format
 msgid "Skipping %s with backup suffix '%s'.\n"
-msgstr ""
+msgstr "Pomijanie %s z zapasowym „sufiksem”.\n"
 
 #. TRANSLATORS: please keep "[y|N]" as is.
 #: git-send-email.perl:1990
