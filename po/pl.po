@@ -628,7 +628,7 @@ msgstr ""
 "> - przejdź do następnego pliku, po ostatnim wróć na początek\n"
 "< - przejdź do poprzedniego pliku, po pierwszym przejdź na koniec\n"
 "? - wypisz pomoc\n"
-"PODSUMOWANIE SKRAWKÓW - skrawki: %d, UŻYTE: %d, POMINIĘTE: %d\n"
+"HUNKS SUMMARY - skrawki: %d, UŻYTE: %d, POMINIĘTE: %d\n"
 
 msgid "'git apply' failed"
 msgstr "„git apply” nie powiodło się"
