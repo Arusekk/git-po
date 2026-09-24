@@ -22,7 +22,6 @@ el.po	-filter
 is.po	-filter
 it.po	-filter
 ko.po	-filter
-pl.po	-filter
 pt_PT.po	-filter
 
 # These files use gettext-no-line-number (keep filenames, strip line
