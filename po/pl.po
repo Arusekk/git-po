@@ -1443,7 +1443,7 @@ msgid "prepend <root> to all filenames"
 msgstr "dodaj <korzeń> przed wszystkimi nazwami plików"
 
 msgid "don't return error for empty patches"
-msgstr "nie zwracaj błędu dla pustych łatek"
+msgstr "nie zgłaszaj błędu przy pustych łatkach"
 
 msgid "--ours, --theirs, and --union require --3way"
 msgstr "--ours, --theirs i --union wymagają --3way"
@@ -1853,7 +1853,7 @@ msgstr ""
 
 #, c-format
 msgid "not tracking: ambiguous information for ref '%s'"
-msgstr "brak śledzenia: niejednoznaczne informacje dla referencji „%s”"
+msgstr "brak śledzenia: niejednoznaczne informacje o referencji „%s”"
 
 #. #-#-#-#-#  branch.c.po  #-#-#-#-#
 #. TRANSLATORS: This is a line listing a remote with duplicate
@@ -2331,7 +2331,7 @@ msgid "Use 'git am --show-current-patch=diff' to see the failed patch"
 msgstr "Użyj „git am --show-current-patch=diff”, aby zobaczyć zawodną łatkę"
 
 msgid "No changes - recorded it as an empty commit."
-msgstr "Brak zmian — zapisano to jako pusty zapis."
+msgstr "Brak zmian — łatkę złożono jako pusty zapis."
 
 msgid ""
 "No changes - did you forget to use 'git add'?\n"
@@ -3117,7 +3117,7 @@ msgstr "HEAD (%s) wskazuje poza refs/heads/"
 
 #, c-format
 msgid "branch %s is being rebased at %s"
-msgstr "gałąź %s jest przestawiana na %s"
+msgstr "gałąź %s jest przestawiana w %s"
 
 #, c-format
 msgid "branch %s is being bisected at %s"
