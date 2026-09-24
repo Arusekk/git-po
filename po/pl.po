@@ -2330,9 +2330,8 @@ msgstr "Łatanie nie powiodło się przy %s %.*s"
 msgid "Use 'git am --show-current-patch=diff' to see the failed patch"
 msgstr "Użyj „git am --show-current-patch=diff”, aby zobaczyć zawodną łatkę"
 
-#, fuzzy
 msgid "No changes - recorded it as an empty commit."
-msgstr "brak zmian dodanych do zapisu\n"
+msgstr "Brak zmian — zapisano to jako pusty zapis."
 
 msgid ""
 "No changes - did you forget to use 'git add'?\n"
@@ -2382,9 +2381,8 @@ msgstr "git am [<opcje>] (--continue | --skip | --abort)"
 msgid "run interactively"
 msgstr "uruchom interaktywnie"
 
-#, fuzzy
 msgid "bypass pre-applypatch and applypatch-msg hooks"
-msgstr "omiń skrypty pre-commit i commit-msg"
+msgstr "omiń skrypty pre-applypatch i applypatch-msg"
 
 msgid "historical option -- no-op"
 msgstr "opcja historyczna — nic nie robi"
@@ -2452,12 +2450,11 @@ msgstr "przerwij operację łatania, ale zostaw HEAD, gdzie jest"
 msgid "show the patch being applied"
 msgstr "pokaż właśnie stosowaną łatkę"
 
-#, fuzzy
 msgid "try to apply current patch again"
-msgstr "pomiń obecną łatkę i kontynuuj"
+msgstr "spróbuj ponownie zastosować bieżącą łatkę"
 
 msgid "record the empty patch as an empty commit"
-msgstr ""
+msgstr "zapisz pustą łatkę jako pusty zapis"
 
 msgid "lie about committer date"
 msgstr "zmyśl datę zapisu"
@@ -2471,9 +2468,8 @@ msgstr "id-klucza"
 msgid "GPG-sign commits"
 msgstr "podpisuj zapisy GPG"
 
-#, fuzzy
 msgid "how to handle empty patches"
-msgstr "pokaż bieżącą łatkę"
+msgstr "jak postępować z pustymi łatkami"
 
 msgid "(internal use for git-rebase)"
 msgstr "(użycie wewnętrzne w git-rebase)"
@@ -2530,68 +2526,63 @@ msgid ""
 "git backfill [--min-batch-size=<n>] [--[no-]sparse] [--[no-]include-edges] "
 "[<revision-range>]"
 msgstr ""
+"git backfill [--min-batch-size=<n>] [--[no-]sparse] [--[no-]include-edges] "
+"[<zakres-rewizji>]"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' cannot be used with 'git backfill'"
-msgstr "„%s” i „%s” wykluczają się"
+msgstr "„%s” nie można użyć z „git backfill”"
 
-#, fuzzy
 msgid "cannot backfill with these filter options"
-msgstr "nie można zamknąć zapisanego pliku %s „%s”"
+msgstr "nie można wykonać uzupełniania (backfill) z tymi opcjami filtra"
 
 msgid "cannot backfill with blob size limits"
-msgstr ""
+msgstr "nie można wykonać uzupełniania (backfill) z limitami rozmiaru blobów"
 
-#, fuzzy
 msgid "problem loading sparse-checkout"
-msgstr "nie można załadować istniejących wzorców rzadkiego wybrania"
+msgstr "problem z wczytaniem rzadkiego wybrania"
 
 msgid "Minimum number of objects to request at a time"
-msgstr ""
+msgstr "Minimalna liczba obiektów żądanych naraz"
 
-#, fuzzy
 msgid "Restrict the missing objects to the current sparse-checkout"
-msgstr "Odbierz brakujące obiekty z innego repozytorium"
+msgstr "Ogranicz brakujące obiekty do bieżącego rzadkiego wybrania"
 
 msgid "Include blobs from boundary commits in the backfill"
-msgstr ""
+msgstr "Uwzględnij przy uzupełnianiu bloby z brzegowych zapisów"
 
 #, c-format
 msgid "unrecognized argument: %s"
 msgstr "nierozpoznany argument: %s"
 
-#, fuzzy
 msgid ""
 "git bisect start [--term-(bad|new)=<term-new> --term-(good|old)=<term-old>]\n"
 "                 [--no-checkout] [--first-parent] [--reset-when-"
 "found[=<where>]] [<bad> [<good>...]] [--] [<pathspec>...]"
 msgstr ""
-"git bisect--helper --bisect-start [--term-{new,bad}=<określenie> --term-"
-"{old,good}=<określenie>] [--no-checkout] [--first-parent] [<złe> "
-"[<dobre>...]] [--] [<ścieżki>...]"
+"git bisect start [--term-(bad|new)=<określenie-nowe> --term-(good|"
+"old)=<określenie-stare>]\n"
+"                 [--no-checkout] [--first-parent] [--reset-when-"
+"found[=<gdzie>]] [<złe> [<dobre>...]] [--] [<ścieżki>...]"
 
-#, fuzzy
 msgid "git bisect (bad|new|<term-new>) [<rev>]"
-msgstr "git bisect--helper --bisect-state (bad|new) [<rewizja>]"
+msgstr "git bisect (bad|new|<określenie-nowe>) [<rewizja>]"
 
-#, fuzzy
 msgid "git bisect (good|old|<term-old>) [<rev>...]"
-msgstr "git bisect--helper --bisect-state (good|old) [<rewizja>...]"
+msgstr "git bisect (good|old|<określenie-stare>) [<rewizja>...]"
 
-#, fuzzy
 msgid "git bisect skip [(<rev>|<range>)...]"
-msgstr "git bisect--helper --bisect-skip [(<rewizja>|<zakres>)...]"
+msgstr "git bisect skip [(<rewizja>|<zakres>)...]"
 
-#, fuzzy
 msgid "git bisect reset [<commit>]"
-msgstr "git bisect--helper --bisect-reset [<zapis>]"
+msgstr "git bisect reset [<zapis>]"
 
-#, fuzzy
 msgid "git bisect replay <logfile>"
-msgstr "git bisect--helper --bisect-replay <nazwa-pliku>"
+msgstr "git bisect replay <plik-dziennika>"
 
 msgid "git bisect run [--reset-when-found[=<where>]] <cmd> [<arg>...]"
 msgstr ""
+"git bisect run [--reset-when-found[=<gdzie>]] <polecenie> [<argument>...]"
 
 #, c-format
 msgid "cannot open file '%s' in mode '%s'"
@@ -2634,9 +2625,9 @@ msgid ""
 msgstr ""
 "nie można wybrać pierwotnego HEAD „%s”. Spróbuj „git bisect reset <zapis>”."
 
-#, fuzzy, c-format
+#, c-format
 msgid "invalid value for '--reset-when-found': '%s'"
-msgstr "Nieprawidłowa wartość --patch-format: %s"
+msgstr "nieprawidłowa wartość „--reset-when-found”: „%s”"
 
 #, c-format
 msgid "Bad bisect_write argument: %s"
@@ -2685,29 +2676,29 @@ msgstr "Czy na pewno [Y/n]? "
 
 #, c-format
 msgid "status: waiting for both '%s' and '%s' commits\n"
-msgstr ""
+msgstr "stan: oczekiwanie zarówno na zapis „%s”, jak i „%s”\n"
 
 #, c-format
 msgid "status: waiting for '%s' commit, %d '%s' commit known\n"
 msgid_plural "status: waiting for '%s' commit, %d '%s' commits known\n"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "stan: oczekiwanie na zapis „%s”, znany jest %d zapis „%s”\n"
+msgstr[1] "stan: oczekiwanie na zapis „%s”, znane są %d zapisy „%s”\n"
+msgstr[2] "stan: oczekiwanie na zapis „%s”, znanych jest %d zapisów „%s”\n"
 
 #, c-format
 msgid "status: waiting for '%s' commit(s), '%s' commit known\n"
-msgstr ""
+msgstr "stan: oczekiwanie na zapis(y) „%s”, znany jest zapis „%s”\n"
 
 msgid "no terms defined"
 msgstr "nie zdefiniowano sformułowań"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Your current terms are '%s' for the old state\n"
 "and '%s' for the new state.\n"
 msgstr ""
-"Bieżące sformułowania to %s na stary stan\n"
-"i %s na nowy stan.\n"
+"Bieżące określenia to „%s” dla starego stanu\n"
+"i „%s” dla nowego stanu.\n"
 
 #, c-format
 msgid ""
@@ -2721,9 +2712,9 @@ msgstr ""
 msgid "could not open '%s' for appending"
 msgstr "nie można otworzyć „%s” do dopisywania"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not find commit for '%s'"
-msgstr "nie znaleziono zapisu %s"
+msgstr "nie znaleziono zapisu dla „%s”"
 
 msgid "'' is not a valid term"
 msgstr "„” nie jest prawidłowym sformułowaniem"
@@ -2795,26 +2786,24 @@ msgstr "wykonywanie %s\n"
 msgid "bisect run failed: no command provided."
 msgstr "przeszukanie nie powiodło się: nie podano polecenia."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to verify %s on '%s' revision"
-msgstr "nie można przenieść %s do %s"
+msgstr "nie można sprawdzić %s na rewizji „%s”"
 
 #, c-format
 msgid "bogus exit code %d for '%s' revision"
-msgstr ""
+msgstr "nieprawidłowy kod wyjścia %d dla rewizji „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "bisect run failed: exit code %d from %s is < 0 or >= 128"
-msgstr ""
-"przeszukanie nie powiodło się: kod wyjścia %d z „%s” jest < 0 lub >= 128"
+msgstr "przeszukanie nie powiodło się: kod wyjścia %d z %s jest < 0 lub >= 128"
 
 #, c-format
 msgid "cannot open file '%s' for writing"
 msgstr "nie można otworzyć pliku „%s” do zapisywania"
 
-#, fuzzy
 msgid "could not duplicate stdout"
-msgstr "nie można zaktualizować „%s”"
+msgstr "nie można zduplikować standardowego wyjścia"
 
 msgid "bisect run cannot continue any more"
 msgstr "przeszukanie nie może już kontynuować"
@@ -2822,49 +2811,46 @@ msgstr "przeszukanie nie może już kontynuować"
 msgid "bisect run success"
 msgstr "przeszukanie pomyślne"
 
-#, fuzzy, c-format
+#, c-format
 msgid "bisect found first '%s' commit\n"
-msgstr "przeszukiwanie znalazło pierwszy zły zapis"
+msgstr "przeszukanie znalazło pierwszy zapis „%s”\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "bisect run failed: 'git bisect %s' exited with error code %d"
 msgstr ""
-"przeszukanie nie powiodło się: „git bisect--helper --bisect-state %s” "
-"zakończył się z kodem błędu %d"
+"przeszukanie nie powiodło się: „git bisect %s” zakończyło się kodem błędu %d"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' requires either no argument or a commit"
-msgstr "--bisect-reset wymaga jako argumentu albo niczego albo zapisu"
+msgstr "„%s” wymaga jako argumentu albo niczego, albo zapisu"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' requires 0 or 1 argument"
-msgstr "--bisect-terms wymaga maksymalnie jednego argumentu"
+msgstr "„%s” wymaga 0 lub 1 argumentu"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' requires 0 arguments"
-msgstr "-n wymaga argumentu"
+msgstr "„%s” nie przyjmuje argumentów"
 
 msgid "no logfile given"
 msgstr "nie podano pliku dziennika"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' failed: no command provided."
-msgstr "przeszukanie nie powiodło się: nie podano polecenia."
+msgstr "„%s” nie powiodło się: nie podano polecenia."
 
-#, fuzzy
 msgid "need a command"
-msgstr "polecenie"
+msgstr "wymagane jest polecenie"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown command: '%s'"
-msgstr "nieznane pod-polecenie: %d"
+msgstr "nieznane polecenie: „%s”"
 
 msgid "git blame [<options>] [<rev-opts>] [<rev>] [--] <file>"
 msgstr "git blame [<opcje>] [<opcje-rewizji>] [<rewizja>] [--] <plik>"
 
-#, fuzzy
 msgid "git annotate [<options>] [<rev-opts>] [<rev>] [--] <file>"
-msgstr "git blame [<opcje>] [<opcje-rewizji>] [<rewizja>] [--] <plik>"
+msgstr "git annotate [<opcje>] [<opcje-rewizji>] [<rewizja>] [--] <plik>"
 
 msgid "<rev-opts> are documented in git-rev-list(1)"
 msgstr "<opcje-rewizji> są opisane w git-rev-list(1)"
@@ -2959,7 +2945,6 @@ msgstr "koloruj inaczej zbędne metadane z poprzedniego wiersza"
 msgid "color lines by age"
 msgstr "koloruj wiersze według wieku"
 
-#, fuzzy
 msgid "spend extra cycles to find a better match"
 msgstr "poświęć dodatkowe cykle, aby znaleźć lepsze dopasowanie"
 
@@ -3008,21 +2993,21 @@ msgstr[2] "plik %s ma tylko %lu wierszy"
 msgid "Blaming lines"
 msgstr "Obwinianie wierszy"
 
-#, fuzzy
 msgid ""
 "git branch [<options>] [-r | -a] [--merged] [--no-merged] [(--forked "
 "<branch>)...]"
-msgstr "git branch [<opcje>] [-r | -a] [--merged] [--no-merged]"
+msgstr ""
+"git branch [<opcje>] [-r | -a] [--merged] [--no-merged] [(--forked "
+"<gałąź>)...]"
 
-#, fuzzy
 msgid ""
 "git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-"
 "point>]"
-msgstr "git branch [<opcje>] [-l] [-f] <nazwa-gałęzi> [<początek>]"
+msgstr ""
+"git branch [<opcje>] [-f] [--recurse-submodules] <nazwa-gałęzi> [<początek>]"
 
-#, fuzzy
 msgid "git branch [<options>] [-l] [<pattern>...]"
-msgstr "git for-each-ref [<opcje>] [<wzorzec>]"
+msgstr "git branch [<opcje>] [-l] [<wzorzec>...]"
 
 msgid "git branch [<options>] [-r] (-d | -D) <branch-name>..."
 msgstr "git branch [<opcje>] [-r] (-d | -D) <nazwa-gałęzi>..."
@@ -3039,77 +3024,78 @@ msgstr "git branch [<opcje>] [-r | -a] [--points-at]"
 msgid "git branch [<options>] [-r | -a] [--format]"
 msgstr "git branch [<opcje>] [-r | -a] [--format]"
 
-#, fuzzy
 msgid ""
 "git branch [<options>] (--delete-merged <pattern>)... [<branch-pattern>...]"
-msgstr "git branch [<opcje>] [-r] (-d | -D) <nazwa-gałęzi>..."
+msgstr ""
+"git branch [<opcje>] (--delete-merged <wzorzec>)... [<wzorzec-gałęzi>...]"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "deleting branch '%s' that has been merged to\n"
 "         '%s', but not yet merged to HEAD"
 msgstr ""
 "usuwanie gałęzi „%s” scalonej z\n"
-"        „%s”, ale jeszcze nie scalonej z HEAD."
+"         „%s”, ale jeszcze nie scalonej z HEAD"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "not deleting branch '%s' that is not yet merged to\n"
 "         '%s', even though it is merged to HEAD"
 msgstr ""
-"nie usuwam gałęzi „%s”, która nie jest jeszcze scalona z\n"
-"        „%s”, mimo że jest scalona z HEAD."
+"gałąź „%s” nie zostanie usunięta, bo nie jest jeszcze scalona z\n"
+"         „%s”, mimo że jest scalona z HEAD"
 
-#, fuzzy, c-format
+#, c-format
 msgid "couldn't look up commit object for '%s'"
-msgstr "Nie odnaleziono obiektu zapisu „%s”"
+msgstr "nie można odnaleźć obiektu zapisu dla „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "the branch '%s' is not fully merged"
-msgstr "nie znaleziono gałęzi „%s”."
+msgstr "gałąź „%s” nie jest w pełni scalona"
 
-#, fuzzy, c-format
+#, c-format
 msgid "If you are sure you want to delete it, run 'git branch -D %s'"
-msgstr ""
-"Gałąź „%s” nie jest w pełni scalona.\n"
-"Jeżeli na pewno chcesz ją usunąć, użyj „git branch -D %s”."
+msgstr "Jeśli na pewno chcesz ją usunąć, wykonaj „git branch -D %s”"
 
-#, fuzzy
 msgid "update of config-file failed"
-msgstr "Aktualizacja pliku konfiguracyjnego nie powiodła się"
+msgstr "aktualizacja pliku konfiguracyjnego nie powiodła się"
 
 msgid "cannot use -a with -d"
 msgstr "-a i -d się wykluczają"
 
-#, fuzzy, c-format
+#, c-format
 msgid "cannot delete branch '%s' used by worktree at '%s' for bisect"
-msgstr "Nie można usunąć gałęzi „%s” wybranej w „%s”"
+msgstr ""
+"nie można usunąć gałęzi „%s” używanej do przeszukiwania przez drzewo robocze "
+"w „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "cannot delete branch '%s' used by worktree at '%s'"
-msgstr "Nie można usunąć gałęzi „%s” wybranej w „%s”"
+msgstr "nie można usunąć gałęzi „%s” używanej przez drzewo robocze w „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "remote-tracking branch '%s' not found"
-msgstr "Nie znaleziono gałęzi śledzącej „%s”"
+msgstr "nie znaleziono gałęzi śledzącej „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "branch '%s' not found.\n"
 "Did you forget --remote?"
-msgstr "nie znaleziono gałęzi „%s”."
+msgstr ""
+"nie znaleziono gałęzi „%s”.\n"
+"Czy zapomniano o --remote?"
 
-#, fuzzy, c-format
+#, c-format
 msgid "branch '%s' not found"
-msgstr "nie znaleziono gałęzi „%s”."
+msgstr "nie znaleziono gałęzi „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Would delete remote-tracking branch %s (was %s).\n"
-msgstr "Usunięto gałąź śledzącą %s (wskazywała %s).\n"
+msgstr "Gałąź śledząca %s zostałaby usunięta (wskazywała %s).\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Would delete branch %s (was %s).\n"
-msgstr "Usunięto gałąź %s (wskazywała %s).\n"
+msgstr "Gałąź %s zostałaby usunięta (wskazywała %s).\n"
 
 #, c-format
 msgid "Deleted remote-tracking branch %s (was %s).\n"
@@ -3129,64 +3115,60 @@ msgstr "nie można rozwiązać HEAD"
 msgid "HEAD (%s) points outside of refs/heads/"
 msgstr "HEAD (%s) wskazuje poza refs/heads/"
 
-#, fuzzy, c-format
+#, c-format
 msgid "branch %s is being rebased at %s"
-msgstr "Gałąź %s jest przestawiana na %s"
+msgstr "gałąź %s jest przestawiana na %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "branch %s is being bisected at %s"
-msgstr "Gałąź %s jest przeszukiwana w %s"
+msgstr "gałąź %s jest przeszukiwana w %s"
 
 #, c-format
 msgid "HEAD of working tree %s is not updated"
 msgstr "nie zaktualizowano HEAD drzewa roboczego %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "invalid branch name: '%s'"
-msgstr "Nieprawidłowa nazwa gałęzi: „%s”"
+msgstr "nieprawidłowa nazwa gałęzi: „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "no commit on branch '%s' yet"
-msgstr "Jeszcze nie ma zapisów na gałęzi „%s”."
+msgstr "na gałęzi „%s” nie ma jeszcze zapisów"
 
-#, fuzzy, c-format
+#, c-format
 msgid "no branch named '%s'"
-msgstr "Nie ma gałęzi „%s”."
+msgstr "nie ma gałęzi o nazwie „%s”"
 
-#, fuzzy
 msgid "branch rename failed"
-msgstr "Zmiana nazwy gałęzi nie powiodła się"
+msgstr "zmiana nazwy gałęzi nie powiodła się"
 
-#, fuzzy
 msgid "branch copy failed"
-msgstr "Kopiowanie gałęzi nie powiodło się"
+msgstr "kopiowanie gałęzi nie powiodło się"
 
-#, fuzzy, c-format
+#, c-format
 msgid "created a copy of a misnamed branch '%s'"
-msgstr "Skopiowano źle nazwaną gałąź „%s”"
+msgstr "utworzono kopię źle nazwanej gałęzi „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "renamed a misnamed branch '%s' away"
-msgstr "Poprawiono nazwę gałęzi „%s”"
+msgstr "zmieniono nazwę źle nazwanej gałęzi „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "branch renamed to %s, but HEAD is not updated"
-msgstr "Nazwa gałęzi zmieniona na %s, ale czoło HEAD nie jest zaktualizowane!"
+msgstr "zmieniono nazwę gałęzi na %s, ale HEAD nie jest zaktualizowane"
 
-#, fuzzy
 msgid "branch is renamed, but update of config-file failed"
 msgstr ""
-"Zmieniono nazwę gałęzi, ale aktualizacja pliku konfiguracyjnego nie powiodła "
+"zmieniono nazwę gałęzi, ale aktualizacja pliku konfiguracyjnego nie powiodła "
 "się"
 
-#, fuzzy
 msgid "branch is copied, but update of config-file failed"
 msgstr ""
-"Skopiowano gałąź, ale aktualizacja pliku konfiguracyjnego nie powiodła się"
+"skopiowano gałąź, ale aktualizacja pliku konfiguracyjnego nie powiodła się"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid branch or pattern"
-msgstr "„%s” nie jest prawidłową nazwą gałęzi."
+msgstr "„%s” nie jest prawidłową gałęzią ani wzorcem"
 
 #, c-format
 msgid "Skipping '%s' (branch.%s.deleteMerged is false)\n"
