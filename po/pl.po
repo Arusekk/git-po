@@ -3172,9 +3172,9 @@ msgstr "„%s” nie jest prawidłową gałęzią ani wzorcem"
 
 #, c-format
 msgid "Skipping '%s' (branch.%s.deleteMerged is false)\n"
-msgstr ""
+msgstr "Pomijanie „%s” (branch.%s.deleteMerged ma wartość false)\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Please edit the description for the branch\n"
 "  %s\n"
@@ -3182,14 +3182,15 @@ msgid ""
 msgstr ""
 "Edytuj opis gałęzi\n"
 "  %s\n"
-"Wiersze zaczynające się od „%c” zostaną wycięte.\n"
+"Wiersze zaczynające się od „%s” zostaną wycięte.\n"
 
 msgid "--set-upstream-to takes a single <remote>/<branch> argument"
 msgstr ""
+"--set-upstream-to przyjmuje jeden argument <zdalne-repozytorium>/<gałąź>"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Did you mean to use: git branch --set-upstream-to=%s/%s?"
-msgstr "  (użyj „git branch --unset-upstream”, aby naprawić)\n"
+msgstr "Czy chodziło o: git branch --set-upstream-to=%s/%s?"
 
 msgid "Generic options"
 msgstr "Opcje ogólne"
@@ -3200,9 +3201,8 @@ msgstr "pokaż skrót i temat; podaj dwukrotnie, aby wypisać gałąź nadrzędn
 msgid "suppress informational messages"
 msgstr "pomiń komunikaty informacyjne"
 
-#, fuzzy
 msgid "set branch tracking configuration"
-msgstr "pokaż informacje o gałęzi"
+msgstr "ustaw konfigurację śledzenia gałęzi"
 
 msgid "do not use"
 msgstr "nie używaj"
@@ -3248,6 +3248,7 @@ msgstr "przenieś gałąź / zmień jej nazwę, nawet jeśli cel istnieje"
 
 msgid "do not output a newline after empty formatted refs"
 msgstr ""
+"nie wypisuj znaku nowego wiersza, gdy sformatowana referencja jest pusta"
 
 msgid "copy a branch and its reflog"
 msgstr "skopiuj gałąź i jej dziennik referencji"
@@ -3272,9 +3273,11 @@ msgstr "wzorzec"
 
 msgid "delete merged branches whose upstream matches <pattern> (repeatable)"
 msgstr ""
+"usuń scalone gałęzie, których gałąź nadrzędna pasuje do wzorca <wzorzec> "
+"(można powtarzać)"
 
 msgid "with --delete-merged, only print which branches would be deleted"
-msgstr ""
+msgstr "z --delete-merged tylko wypisz, które gałęzie zostałyby usunięte"
 
 msgid "force creation, move/rename, deletion"
 msgstr "wymuś utworzenie, przeniesienie/zmianę nazwy, usunięcie"
@@ -3290,6 +3293,8 @@ msgstr "gałąź"
 
 msgid "print only branches whose upstream matches <branch> (repeatable)"
 msgstr ""
+"wypisz tylko gałęzie, których gałąź nadrzędna pasuje do gałęzi <gałąź> "
+"(można powtarzać)"
 
 msgid "list branches in columns"
 msgstr "wypisz gałęzie w kolumnach"
@@ -3309,41 +3314,39 @@ msgstr "schodź do podmodułów"
 msgid "format to use for the output"
 msgstr "format do użycia na wyjściu"
 
-#, fuzzy
 msgid "failed to resolve HEAD as a valid ref"
-msgstr "Nie można rozwiązać HEAD jako prawidłowej referencji."
+msgstr "nie można rozwiązać HEAD jako prawidłowej referencji"
 
 msgid "HEAD not found below refs/heads!"
 msgstr "nie znaleziono HEAD w refs/heads!"
 
 msgid "--dry-run requires --delete-merged"
-msgstr ""
+msgstr "--dry-run wymaga --delete-merged"
 
 msgid ""
 "branch with --recurse-submodules can only be used if "
 "submodule.propagateBranches is enabled"
 msgstr ""
+"tworzenia gałęzi z --recurse-submodules można użyć tylko przy włączonym "
+"submodule.propagateBranches"
 
 msgid "--recurse-submodules can only be used to create branches"
-msgstr ""
+msgstr "--recurse-submodules można użyć tylko do tworzenia gałęzi"
 
 msgid "branch name required"
 msgstr "wymagana nazwa gałęzi"
 
-#, fuzzy
 msgid "cannot give description to detached HEAD"
-msgstr "Nie można nadać opisu odłączonemu HEAD"
+msgstr "nie można nadać opisu odłączonemu HEAD"
 
 msgid "cannot edit description of more than one branch"
 msgstr "nie można edytować opisu więcej niż jednej gałęzi"
 
-#, fuzzy
 msgid "cannot copy the current branch while not on any"
-msgstr "nie można skopiować bieżącej gałęzi, gdy nie ma żadnej bieżącej."
+msgstr "nie można skopiować bieżącej gałęzi, gdy nie jest się na żadnej"
 
-#, fuzzy
 msgid "cannot rename the current branch while not on any"
-msgstr "nie można zmienić nazwy bieżącej gałęzi, gdy nie ma żadnej bieżącej."
+msgstr "nie można zmienić nazwy bieżącej gałęzi, gdy nie jest się na żadnej"
 
 msgid "too many branches for a copy operation"
 msgstr "za dużo gałęzi do operacji kopiowania"
@@ -3354,12 +3357,12 @@ msgstr "za dużo argumentów do operacji zmiany nazwy"
 msgid "too many arguments to set new upstream"
 msgstr "za dużo argumentów do ustawienia nadrzędnej gałęzi"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "could not set upstream of HEAD to %s when it does not point to any branch"
 msgstr ""
-"nie można ustawić gałęzi nadrzędnej HEAD na %s, kiedy nie wskazuje ono na "
-"gałąź."
+"nie można ustawić gałęzi nadrzędnej HEAD na %s, gdy nie wskazuje ono żadnej "
+"gałęzi"
 
 #, c-format
 msgid "no such branch '%s'"
@@ -3372,31 +3375,28 @@ msgstr "gałąź „%s” nie istnieje"
 msgid "too many arguments to unset upstream"
 msgstr "za dużo argumentów do usunięcia nadrzędnej gałęzi"
 
-#, fuzzy
 msgid "could not unset upstream of HEAD when it does not point to any branch"
 msgstr ""
-"nie można usunąć ustawienia gałęzi nadrzędnej HEAD, kiedy nie wskazuje ono "
-"żadnej gałęzi."
+"nie można usunąć ustawienia gałęzi nadrzędnej HEAD, gdy nie wskazuje ono "
+"żadnej gałęzi"
 
-#, fuzzy, c-format
+#, c-format
 msgid "branch '%s' has no upstream information"
-msgstr "Gałąź „%s” nie ma informacji o gałęzi nadrzędnej"
+msgstr "gałąź „%s” nie ma informacji o gałęzi nadrzędnej"
 
-#, fuzzy
 msgid ""
 "the -a, and -r, options to 'git branch' do not take a branch name.\n"
 "Did you mean to use: -a|-r --list <pattern>?"
 msgstr ""
-"Opcje -a i -r do „git branch” nie przyjmują nazwy gałęzi.\n"
-"Czy chodziło o: -a | -r --list <wzorzec>?"
+"opcje -a i -r polecenia „git branch” nie przyjmują nazwy gałęzi.\n"
+"Czy chodziło o: -a|-r --list <wzorzec>?"
 
-#, fuzzy
 msgid ""
 "the '--set-upstream' option is no longer supported. Please use '--track' or "
 "'--set-upstream-to' instead"
 msgstr ""
-"opcja „--set-upstream” jest przestarzała i nie jest już wspierana. Użyj "
-"zamiast tego „--track” lub ”--set-upstream-to”."
+"opcja „--set-upstream” nie jest już obsługiwana. Użyj zamiast niej „--track” "
+"lub „--set-upstream-to”"
 
 msgid "git version:\n"
 msgstr "wersja gita:\n"
@@ -3410,12 +3410,14 @@ msgstr "informacje o bibliotece libc: "
 msgid "not run from a git repository - no hooks to show\n"
 msgstr "nie uruchomiono z repozytorium gita — brak skryptów do pokazania\n"
 
-#, fuzzy
 msgid ""
 "git bugreport [(-o | --output-directory) <path>]\n"
 "              [(-s | --suffix) <format> | --no-suffix]\n"
 "              [--diagnose[=<mode>]]"
-msgstr "git bugreport [-o|--output-directory <plik>] [-s|--suffix <format>]"
+msgstr ""
+"git bugreport [(-o | --output-directory) <ścieżka>]\n"
+"              [(-s | --suffix) <format> | --no-suffix]\n"
+"              [--diagnose[=<tryb>]]"
 
 msgid ""
 "Thank you for filling out a Git bug report!\n"
@@ -3456,26 +3458,25 @@ msgstr "tryb"
 msgid ""
 "create an additional zip archive of detailed diagnostics (default 'stats')"
 msgstr ""
+"utwórz dodatkowe archiwum zip ze szczegółową diagnostyką (domyślnie „stats”)"
 
-#, fuzzy
 msgid "specify a destination for the bugreport file(s)"
-msgstr "podaj cel pliku ze zgłoszeniem błędu"
+msgstr "podaj miejsce docelowe plików ze zgłoszeniem błędu"
 
-#, fuzzy
 msgid "specify a strftime format suffix for the filename(s)"
-msgstr "podaj sufiks w formacie strftime do nazwy pliku"
+msgstr "podaj przyrostek nazw plików w formacie strftime"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown argument `%s'"
-msgstr "nieznany argument lustrzany: %s"
+msgstr "nieznany argument „%s”"
 
 #, c-format
 msgid "could not create leading directories for '%s'"
 msgstr "nie można utworzyć wiodących katalogów „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to create diagnostics archive %s"
-msgstr "nie można utworzyć wątku: %s"
+msgstr "nie można utworzyć archiwum diagnostycznego %s"
 
 msgid "System Info"
 msgstr "Informacje o systemie"
@@ -3491,26 +3492,24 @@ msgstr "nie można pisać do %s"
 msgid "Created new report at '%s'.\n"
 msgstr "Utworzono nowe zgłoszenie w „%s”.\n"
 
-#, fuzzy
 msgid ""
 "git bundle create [-q | --quiet | --progress]\n"
 "                  [--version=<version>] <file> <git-rev-list-args>"
-msgstr "git bundle create [<opcje>] <plik> <argumenty git-rev-list>"
+msgstr ""
+"git bundle create [-q | --quiet | --progress]\n"
+"                  [--version=<wersja>] <plik> <argumenty-git-rev-list>"
 
-#, fuzzy
 msgid "git bundle verify [-q | --quiet] <file>"
-msgstr "git bundle verify [<opcje>] <plik>"
+msgstr "git bundle verify [-q | --quiet] <plik>"
 
 msgid "git bundle list-heads <file> [<refname>...]"
 msgstr "git bundle list-heads <plik> [<referencja>...]"
 
-#, fuzzy
 msgid "git bundle unbundle [--progress] <file> [<refname>...]"
-msgstr "git bundle unbundle <plik> [<referencja>...]"
+msgstr "git bundle unbundle [--progress] <plik> [<referencja>...]"
 
-#, fuzzy
 msgid "need a <file> argument"
-msgstr "-d potrzebuje przynajmniej jednego argumentu"
+msgstr "wymagany jest argument <plik>"
 
 msgid "do not show progress meter"
 msgstr "nie pokazuj wskaźnika postępu"
@@ -3519,7 +3518,7 @@ msgid "show progress meter"
 msgstr "pokazuj wskaźnik postępu"
 
 msgid "historical; same as --progress"
-msgstr ""
+msgstr "opcja historyczna; to samo co --progress"
 
 msgid "specify bundle format version"
 msgstr "podaj wersję formatu wiązki"
@@ -3547,36 +3546,35 @@ msgstr "Rozpakowywanie obiektów"
 msgid "cannot read object %s '%s'"
 msgstr "nie można odczytać obiektu %s „%s”"
 
-#, fuzzy
 msgid "must supply valid remote when using remote-object-info"
-msgstr "należy podać zdalne repozytorium przy --negotiate-only"
+msgstr "przy remote-object-info trzeba podać prawidłowe zdalne repozytorium"
 
 #, c-format
 msgid "remote-object-info does not support short oids, %d characters required"
 msgstr ""
+"remote-object-info nie obsługuje skróconych oid, wymaganych jest %d znaków"
 
-#, fuzzy, c-format
+#, c-format
 msgid "not a valid object name '%s'"
-msgstr "nieprawidłowa nazwa obiektu: „%s”"
+msgstr "nieprawidłowa nazwa obiektu „%s”"
 
-#, fuzzy
 msgid "remote-object-info requires objects"
-msgstr "filtrowanie obiektów wymaga --objects"
+msgstr "remote-object-info wymaga obiektów"
 
-#, fuzzy, c-format
+#, c-format
 msgid "mailmap: invalid boolean '%s'"
-msgstr "nieprawidłowy plik: „%s”"
+msgstr "mailmap: nieprawidłowa wartość logiczna „%s”"
 
 msgid "remote-object-info command too long"
-msgstr ""
+msgstr "polecenie remote-object-info jest za długie"
 
 #, c-format
 msgid "remote-object-info: failed to parse command line: %s"
-msgstr ""
+msgstr "remote-object-info: nie można przetworzyć wiersza poleceń: %s"
 
 #, c-format
 msgid "remote-object-info supports at most %d objects"
-msgstr ""
+msgstr "remote-object-info obsługuje najwyżej %d obiektów"
 
 #, fuzzy, c-format
 msgid "failed to get object info from the remote: %s"
