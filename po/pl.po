@@ -3740,16 +3740,17 @@ msgstr "z „-%c” wymagany jest <obiekt>"
 msgid "only two arguments allowed in <type> <object> mode, not %d"
 msgstr "w trybie <rodzaj> <obiekt> dozwolone są tylko dwa argumenty, a nie %d"
 
-#, fuzzy
 msgid ""
 "git check-attr [--source <tree-ish>] [-a | --all | <attr>...] [--] "
 "<pathname>..."
-msgstr "git check-attr [-a | --all | <atrybut>...] [--] <ścieżka>..."
+msgstr ""
+"git check-attr [--source <drzewo>] [-a | --all | <atrybut>...] [--] "
+"<ścieżka>..."
 
-#, fuzzy
 msgid ""
 "git check-attr --stdin [-z] [--source <tree-ish>] [-a | --all | <attr>...]"
-msgstr "git check-attr --stdin [-z] [-a | --all | <atrybut>...]"
+msgstr ""
+"git check-attr --stdin [-z] [--source <drzewo>] [-a | --all | <atrybut>...]"
 
 msgid "report all attributes set on file"
 msgstr "zgłaszaj wszystkie atrybuty ustawione na pliku"
@@ -3763,13 +3764,11 @@ msgstr "wczytaj nazwy plików ze standardowego wejścia"
 msgid "terminate input and output records by a NUL character"
 msgstr "zakończ wpisy wejścia i wyjścia znakiem NUL"
 
-#, fuzzy
 msgid "<tree-ish>"
-msgstr "drzewo"
+msgstr "<drzewo>"
 
-#, fuzzy
 msgid "which tree-ish to check attributes at"
-msgstr "z którego drzewa wybrać"
+msgstr "drzewo, w którym sprawdzić atrybuty"
 
 msgid "suppress progress reporting"
 msgstr "nie zgłaszaj postępu"
@@ -3804,15 +3803,14 @@ msgstr "git check-mailmap [<opcje>] <kontakt>..."
 msgid "also read contacts from stdin"
 msgstr "wczytaj kontakty także ze standardowego wejścia"
 
-#, fuzzy
 msgid "read additional mailmap entries from file"
-msgstr "wczytaj wzorce z pliku"
+msgstr "wczytaj dodatkowe wpisy mailmap z pliku"
 
 msgid "blob"
 msgstr "blob"
 
 msgid "read additional mailmap entries from blob"
-msgstr ""
+msgstr "wczytaj dodatkowe wpisy mailmap z obiektu blob"
 
 msgid "no contacts specified"
 msgstr "nie podano kontaktów"
@@ -3836,7 +3834,7 @@ msgid "check out all files in the index"
 msgstr "wybierz wszystkie pliki z indeksu"
 
 msgid "do not skip files with skip-worktree set"
-msgstr ""
+msgstr "nie pomijaj plików z ustawionym skip-worktree"
 
 msgid "force overwrite of existing files"
 msgstr "wymuś nadpisanie istniejących plików"
@@ -3925,9 +3923,9 @@ msgstr "należy użyć „%s”, jeśli nie podano „%s”"
 msgid "'%s' or '%s' cannot be used with %s"
 msgstr "nie można użyć „%s” ani „%s” z %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s', '%s', or '%s' cannot be used when checking out of a tree"
-msgstr "nie można użyć „%s” ani „%s” z %s"
+msgstr "opcji „%s”, „%s” ani „%s” nie można użyć przy wybieraniu z drzewa"
 
 #, c-format
 msgid "path '%s' is unmerged"
@@ -4042,19 +4040,19 @@ msgstr "Poprzednim wskazaniem HEAD było"
 msgid "You are on a branch yet to be born"
 msgstr "Jesteś na gałęzi, która dopiero ma powstać"
 
-#, fuzzy, c-format
+#, c-format
 msgid "The following paths have local changes:\n"
-msgstr "następujący plik ma lokalne zmiany:"
+msgstr "Następujące ścieżki mają lokalne zmiany:\n"
 
 #, c-format
 msgid "Branch name '%s' appears in multiple remotes:"
-msgstr ""
+msgstr "Nazwa gałęzi „%s” występuje w wielu zdalnych repozytoriach:"
 
-#, fuzzy, c-format
+#, c-format
 msgid "  %s"
-msgstr "    %s"
+msgstr "  %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "If you meant to check out a remote tracking branch on <remote>,\n"
 "you can do so by fully qualifying the name with the --track option:\n"
@@ -4065,14 +4063,14 @@ msgid ""
 "one remote, e.g. the 'origin' remote, consider setting\n"
 "checkout.defaultRemote=origin in your config."
 msgstr ""
-"Jeśli chodziło o wybranie gałęzi śledzącej, np. na „origin”,\n"
-"możesz to zrobić podając pełną nazwę z opcją --track:\n"
+"Jeśli chodziło o wybranie gałęzi śledzącej z <zdalne-repozytorium>,\n"
+"możesz to zrobić, podając pełną nazwę z opcją --track:\n"
 "\n"
-"    git checkout --track origin/<nazwa>\n"
+"    git %s --track <zdalne-repozytorium>/%s\n"
 "\n"
-"Jeśli chcesz, żeby wybrania wszystkich niejednoznacznych\n"
-"<nazw> preferowały jedno zdalne repozytorium, rozważ ustawienie\n"
-"checkout.defaultRemote=origin w swoich ustawieniach."
+"Jeśli przy niejednoznacznej nazwie zawsze ma być wybierane\n"
+"jedno zdalne repozytorium, np. „origin”, rozważ ustawienie\n"
+"checkout.defaultRemote=origin w konfiguracji."
 
 #, c-format
 msgid ""
@@ -4120,6 +4118,7 @@ msgstr "oczekiwano gałęzi, otrzymano zapis „%s”"
 msgid ""
 "If you want to detach HEAD at the commit, try again with the --detach option."
 msgstr ""
+"Jeśli chcesz odłączyć HEAD na tym zapisie, spróbuj ponownie z opcją --detach."
 
 msgid ""
 "cannot switch branch while merging\n"
@@ -4166,9 +4165,9 @@ msgstr "ścieżki nie mogą być podane z przełączaniem gałęzi"
 msgid "'%s' cannot be used with switching branches"
 msgstr "„%s” nie można użyć z przełączaniem gałęzi"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' needs the paths to check out"
-msgstr "„%s” nie ma wybranego zapisu"
+msgstr "„%s” wymaga podania ścieżek do wybrania"
 
 #, c-format
 msgid "'%s' cannot be used with '%s'"
@@ -4185,9 +4184,9 @@ msgstr "Nie można przełączyć gałęzi na nie-zapis „%s”"
 msgid "missing branch or commit argument"
 msgstr "brakuje argumentu gałęzi lub zapisu"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown conflict style '%s'"
-msgstr "nieznana zdolność (capability) „%s”"
+msgstr "nieznany styl konfliktów „%s”"
 
 msgid "perform a 3-way merge with the new branch"
 msgstr "dokonaj trójstronnego scalenia z nową gałęzią"
@@ -4195,9 +4194,8 @@ msgstr "dokonaj trójstronnego scalenia z nową gałęzią"
 msgid "style"
 msgstr "styl"
 
-#, fuzzy
 msgid "conflict style (merge, diff3, or zdiff3)"
-msgstr "styl konfliktów (merge lub diff3)"
+msgstr "styl konfliktów (merge, diff3 lub zdiff3)"
 
 msgid "detach HEAD at named commit"
 msgstr "odłącz HEAD na podanym zapisie"
@@ -4208,16 +4206,14 @@ msgstr "wymuś wybranie (wyrzuć lokalne zmiany)"
 msgid "new-branch"
 msgstr "nowa-gałąź"
 
-#, fuzzy
 msgid "new unborn branch"
-msgstr "nowa gałąź bez rodzica"
+msgstr "nowa nienarodzona gałąź"
 
 msgid "update ignored files (default)"
 msgstr "aktualizuj ignorowane pliki (domyślnie)"
 
-#, fuzzy
 msgid "do not check if another worktree is using this branch"
-msgstr "nie sprawdzaj, czy inne drzewo robocze trzyma podaną referencję"
+msgstr "nie sprawdzaj, czy inne drzewo robocze używa tej gałęzi"
 
 msgid "checkout our version for unmerged files"
 msgstr "wybierz „naszą” wersję niescalonych plików"
@@ -4240,9 +4236,9 @@ msgstr "git switch [<opcje>] <gałąź>"
 msgid "git restore [<options>] [--source=<branch>] <file>..."
 msgstr "git restore [<opcje>] [--source=<gałąź>] <plik>..."
 
-#, fuzzy, c-format
+#, c-format
 msgid "options '-%c', '-%c', and '%s' cannot be used together"
-msgstr "Opcje --squash i --fixup się wykluczają"
+msgstr "opcji „-%c”, „-%c” i „%s” nie można używać razem"
 
 msgid "--track needs a branch name"
 msgstr "--track potrzebuje nazwy gałęzi"
@@ -4318,12 +4314,12 @@ msgstr "pomiń niescalone elementy"
 msgid "use overlay mode"
 msgstr "użyj trybu nakładki"
 
-#, fuzzy
 msgid ""
 "git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] "
 "[<pathspec>...]"
 msgstr ""
-"git clean [-d] [-f] [-i] [-n] [-q] [-e <wzorzec>] [-x | -X] [--] <ścieżki>..."
+"git clean [-d] [-f] [-i] [-n] [-q] [-e <wzorzec>] [-x | -X] [--] "
+"[<ścieżka>...]"
 
 #, c-format
 msgid "Removing %s\n"
@@ -4349,13 +4345,11 @@ msgstr "nie można usunąć %s"
 msgid "could not lstat %s\n"
 msgstr "nie można wykonać lstat na %s\n"
 
-#, fuzzy
 msgid "Refusing to remove current working directory\n"
-msgstr "Nie można uzyskać obecnego katalogu roboczego"
+msgstr "Odmówiono usunięcia bieżącego katalogu roboczego\n"
 
-#, fuzzy
 msgid "Would refuse to remove current working directory\n"
-msgstr "Nie można uzyskać obecnego katalogu roboczego"
+msgstr "Odmówiono by usunięcia bieżącego katalogu roboczego\n"
 
 #, c-format
 msgid ""
@@ -4456,11 +4450,9 @@ msgstr "usuń też ignorowane pliki"
 msgid "remove only ignored files"
 msgstr "usuń tylko ignorowane pliki"
 
-#, fuzzy
 msgid "clean.requireForce is true and -f not given: refusing to clean"
 msgstr ""
-"clean.requireForce ustawione na true, a nie podano -i, -n ani -f; odmawiam "
-"czyszczenia"
+"clean.requireForce ma wartość true, a nie podano -f: odmowa czyszczenia"
 
 #, c-format
 msgid "info: Could not add alternate for '%s': %s\n"
@@ -4476,7 +4468,7 @@ msgstr "%s istnieje i nie jest katalogiem"
 
 #, c-format
 msgid "'%s' is a symlink, refusing to clone with --local"
-msgstr ""
+msgstr "„%s” jest dowiązaniem symbolicznym, odmowa klonowania z --local"
 
 #, c-format
 msgid "failed to start iterator over '%s'"
@@ -4484,19 +4476,19 @@ msgstr "nie można rozpocząć iteracji po „%s”"
 
 #, c-format
 msgid "symlink '%s' exists, refusing to clone with --local"
-msgstr ""
+msgstr "dowiązanie symboliczne „%s” istnieje, odmowa klonowania z --local"
 
 #, c-format
 msgid "failed to unlink '%s'"
 msgstr "nie można wykonać unlink na „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "hardlink cannot be checked at '%s'"
-msgstr "„%s” i „%s” wykluczają się"
+msgstr "nie można sprawdzić dowiązania twardego w „%s”"
 
 #, c-format
 msgid "hardlink different from source at '%s'"
-msgstr ""
+msgstr "dowiązanie twarde w „%s” różni się od źródła"
 
 #, c-format
 msgid "failed to create link '%s'"
@@ -4533,9 +4525,8 @@ msgstr "nie można zaktualizować %s"
 msgid "failed to initialize sparse-checkout"
 msgstr "nie można zainicjować rzadkiego wybrania"
 
-#, fuzzy
 msgid "remote HEAD refers to nonexistent ref, unable to checkout"
-msgstr "zdalne HEAD wskazuje nieistniejącą referencję, nie można wybrać.\n"
+msgstr "zdalne HEAD wskazuje nieistniejącą referencję, nie można wybrać"
 
 msgid "unable to checkout working tree"
 msgstr "nie można wybrać drzewa roboczego"
@@ -4558,9 +4549,8 @@ msgstr "nie wybieraj plików"
 msgid "create a bare repository"
 msgstr "utwórz suche repozytorium"
 
-#, fuzzy
 msgid "create a mirror repository (implies --bare)"
-msgstr "utwórz lustrzane repozytorium (zakłada suche)"
+msgstr "utwórz repozytorium lustrzane (zakłada --bare)"
 
 msgid "to clone from a local repository"
 msgstr "aby sklonować z lokalnego repozytorium"
@@ -4602,7 +4592,7 @@ msgid "checkout <branch> instead of the remote's HEAD"
 msgstr "wybierz <gałąź> zamiast zdalnego HEAD"
 
 msgid "clone single revision <rev> and check out"
-msgstr ""
+msgstr "sklonuj pojedynczą rewizję <rewizja> i ją wybierz"
 
 msgid "path to git-upload-pack on the remote"
 msgstr "ścieżka do git-upload-pack na zdalnej maszynie"
@@ -4616,22 +4606,17 @@ msgstr "utwórz płytki klon o tej głębokości"
 msgid "create a shallow clone since a specific time"
 msgstr "utwórz płytki klon od podanego czasu"
 
-#, fuzzy
 msgid "ref"
-msgstr "rewizja"
+msgstr "referencja"
 
-#, fuzzy
 msgid "deepen history of shallow clone, excluding ref"
-msgstr "pogłęb historię płytkiego klonu pomijając rewizję"
+msgstr "pogłęb historię płytkiego klonu, pomijając referencję"
 
 msgid "clone only one branch, HEAD or --branch"
 msgstr "sklonuj tylko jedną gałąź, HEAD lub --branch"
 
-#, fuzzy
 msgid "clone tags, and make later fetches not to follow them"
-msgstr ""
-"nie klonuj żadnych tagów, i spraw, by późniejsze pobrania za nimi nie "
-"podążały"
+msgstr "klonuj tagi i spraw, by późniejsze pobrania za nimi nie podążały"
 
 msgid "any cloned submodules will be shallow"
 msgstr "wszystkie sklonowane podmoduły będą płytkie"
@@ -4642,9 +4627,8 @@ msgstr "katalog-gita"
 msgid "separate git dir from working tree"
 msgstr "oddziel katalog gita od drzewa roboczego"
 
-#, fuzzy
 msgid "specify the reference format to use"
-msgstr "podaj algorytm skrótu do użycia"
+msgstr "podaj format referencji do użycia"
 
 msgid "key=value"
 msgstr "klucz=wartość"
@@ -4659,7 +4643,7 @@ msgid "option to transmit"
 msgstr "nadaj opcję"
 
 msgid "apply partial clone filters to submodules"
-msgstr ""
+msgstr "zastosuj filtry częściowego klonu do podmodułów"
 
 msgid "any cloned submodules will use their remote-tracking branch"
 msgstr "wszystkie sklonowane podmoduły będą używały swoich gałęzi śledzących"
@@ -4669,12 +4653,12 @@ msgstr ""
 "zainicjuj plik rzadkiego wybrania, żeby zawierał tylko pliki w korzeniu"
 
 msgid "uri"
-msgstr ""
+msgstr "uri"
 
-#, fuzzy
 msgid "a URI for downloading bundles before fetching from origin remote"
 msgstr ""
-"można użyć --atomic tylko przy pobieraniu z jednego zdalnego repozytorium"
+"adres URI do ściągnięcia wiązek przed pobraniem danych ze zdalnego "
+"repozytorium origin"
 
 msgid "git clone [<options>] [--] <repo> [<dir>]"
 msgstr "git clone [<opcje>] [--] <repozytorium> [<katalog>]"
@@ -4685,9 +4669,9 @@ msgstr "Zbyt dużo argumentów."
 msgid "You must specify a repository to clone."
 msgstr "Musisz określić repozytorium do sklonowania."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown ref storage format '%s'"
-msgstr "Nieznany format archiwum „%s”"
+msgstr "nieznany format przechowywania referencji „%s”"
 
 #, c-format
 msgid "repository '%s' does not exist"
@@ -4761,11 +4745,10 @@ msgid "--local is ignored"
 msgstr "--local jest ignorowane"
 
 msgid "cannot clone from filtered bundle"
-msgstr ""
+msgstr "nie można klonować z filtrowanej wiązki"
 
-#, fuzzy
 msgid "failed to initialize the repo, skipping bundle URI"
-msgstr "nie można zwieńczyć scalenia uwag"
+msgstr "nie można zainicjować repozytorium, pomijanie URI wiązki"
 
 #, fuzzy, c-format
 msgid "failed to fetch objects from bundle URI '%s'"
