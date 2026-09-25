@@ -3576,72 +3576,69 @@ msgstr "remote-object-info: nie można przetworzyć wiersza poleceń: %s"
 msgid "remote-object-info supports at most %d objects"
 msgstr "remote-object-info obsługuje najwyżej %d obiektów"
 
-#, fuzzy, c-format
+#, c-format
 msgid "failed to get object info from the remote: %s"
-msgstr "nie pobieraj nowych obiektów ze zdalnego miejsca"
+msgstr "nie można pobrać informacji o obiektach ze zdalnego repozytorium: %s"
 
 msgid "flush is only for --buffer mode"
-msgstr ""
+msgstr "polecenie flush jest dostępne tylko w trybie --buffer"
 
-#, fuzzy
 msgid "empty command in input"
-msgstr "puste polecenie exec"
+msgstr "puste polecenie na wejściu"
 
-#, fuzzy, c-format
+#, c-format
 msgid "whitespace before command: '%s'"
-msgstr "edytuj komunikat przed złożeniem"
+msgstr "biały znak przed poleceniem: „%s”"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s requires arguments"
-msgstr "-n wymaga argumentu"
+msgstr "%s wymaga argumentów"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s takes no arguments"
-msgstr "%s nie przyjmuje wartości"
+msgstr "%s nie przyjmuje argumentów"
 
 msgid "only one batch option may be specified"
 msgstr "można podać tylko jedną opcję wsadową „batch”"
 
-#, fuzzy
 msgid "git cat-file <type> <object>"
-msgstr "git notes edit [<obiekt>]"
+msgstr "git cat-file <rodzaj> <obiekt>"
 
 msgid "git cat-file (-e | -p | -t | -s) <object>"
-msgstr ""
+msgstr "git cat-file (-e | -p | -t | -s) <obiekt>"
 
 msgid ""
 "git cat-file (--textconv | --filters)\n"
 "             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"
 msgstr ""
+"git cat-file (--textconv | --filters)\n"
+"             [<rewizja>:<ścieżka|drzewo> | --path=<ścieżka|drzewo> <rewizja>]"
 
-#, fuzzy
 msgid ""
 "git cat-file (--batch | --batch-check | --batch-command) [--batch-all-"
 "objects]\n"
 "             [--buffer] [--follow-symlinks] [--unordered]\n"
 "             [--textconv | --filters] [-Z]"
 msgstr ""
-"git cat-file (--batch[=<format>] | --batch-check[=<format>]) [--follow-"
-"symlinks] [--textconv | --filters]"
+"git cat-file (--batch | --batch-check | --batch-command) [--batch-all-"
+"objects]\n"
+"             [--buffer] [--follow-symlinks] [--unordered]\n"
+"             [--textconv | --filters] [-Z]"
 
-#, fuzzy
 msgid "Check object existence or emit object contents"
-msgstr "dla obiektów blob, wykonaj textconv na zawartości obiektu"
+msgstr "Sprawdzanie istnienia obiektu lub wypisywanie jego zawartości"
 
-#, fuzzy
 msgid "check if <object> exists"
-msgstr "Sprawdzanie obiektów"
+msgstr "sprawdź, czy <obiekt> istnieje"
 
-#, fuzzy
 msgid "pretty-print <object> content"
-msgstr "ładnie wypisz zawartość obiektu"
+msgstr "ładnie wypisz zawartość obiektu <obiekt>"
 
 msgid "Emit [broken] object attributes"
-msgstr ""
+msgstr "Wypisywanie atrybutów [uszkodzonych] obiektów"
 
-#, fuzzy
 msgid "show object type (one of 'blob', 'tree', 'commit', 'tag', ...)"
-msgstr "<rodzaj> może być jednym z: blob, tree, commit, tag"
+msgstr "pokaż rodzaj obiektu (jeden z: „blob”, „tree”, „commit”, „tag”, ...)"
 
 msgid "show object size"
 msgstr "pokaż rozmiar obiektu"
@@ -3651,101 +3648,97 @@ msgstr "użyj pliku mapy adresów"
 
 msgid "Batch objects requested on stdin (or --batch-all-objects)"
 msgstr ""
+"Przetwarzanie wsadowe obiektów podanych na standardowym wejściu (lub --batch-"
+"all-objects)"
 
 msgid "show full <object> or <rev> contents"
-msgstr ""
+msgstr "pokaż pełną zawartość obiektu <obiekt> lub rewizji <rewizja>"
 
 msgid "like --batch, but don't emit <contents>"
-msgstr ""
+msgstr "jak --batch, ale bez wypisywania zawartości"
 
-#, fuzzy
 msgid "stdin is NUL-terminated"
-msgstr "wejście jest zakończone znakiem NUL"
+msgstr "wpisy na standardowym wejściu są zakończone znakiem NUL"
 
-#, fuzzy
 msgid "stdin and stdout is NUL-terminated"
-msgstr "wejście jest zakończone znakiem NUL"
+msgstr "wpisy na standardowym wejściu i wyjściu są zakończone znakiem NUL"
 
-#, fuzzy
 msgid "read commands from stdin"
-msgstr "wczytaj paczki ze standardowego wejścia"
+msgstr "wczytuj polecenia ze standardowego wejścia"
 
 msgid "with --batch[-check]: ignores stdin, batches all known objects"
 msgstr ""
+"z --batch[-check]: pomija standardowe wejście, przetwarza wsadowo wszystkie "
+"znane obiekty"
 
 msgid "Change or optimize batch output"
-msgstr ""
+msgstr "Zmiana lub optymalizacja wyjścia wsadowego"
 
 msgid "buffer --batch output"
 msgstr "buforuj wyjście --batch"
 
-#, fuzzy
 msgid "follow in-tree symlinks"
-msgstr "nie można odczytać dowiązania symbolicznego %s"
+msgstr "podążaj za dowiązaniami symbolicznymi wewnątrz drzewa"
 
-#, fuzzy
 msgid "do not order objects before emitting them"
-msgstr "nie można odczytać obiektu %s dowiązania symbolicznego %s"
+msgstr "nie porządkuj obiektów przed ich wypisaniem"
 
 msgid ""
 "Emit object (blob or tree) with conversion or filter (stand-alone, or with "
 "batch)"
 msgstr ""
+"Wypisywanie obiektu (blob lub drzewo) z konwersją lub filtrem (samodzielnie "
+"lub w trybie wsadowym)"
 
-#, fuzzy
 msgid "run textconv on object's content"
-msgstr "dla obiektów blob, wykonaj textconv na zawartości obiektu"
+msgstr "uruchom textconv na zawartości obiektu"
 
-#, fuzzy
 msgid "run filters on object's content"
-msgstr "dla obiektów blob, wykonaj filtry na zawartości obiektu"
+msgstr "uruchom filtry na zawartości obiektu"
 
-#, fuzzy
 msgid "blob|tree"
-msgstr "blob"
+msgstr "blob|drzewo"
 
-#, fuzzy
 msgid "use a <path> for (--textconv | --filters); Not with 'batch'"
-msgstr "użyj podanej ścieżki do --textconv/--filters"
+msgstr ""
+"użyj ścieżki <ścieżka> przy (--textconv | --filters); nie w trybie wsadowym"
 
 msgid "objects filter only supported in batch mode"
-msgstr ""
+msgstr "filtr obiektów jest obsługiwany tylko w trybie wsadowym"
 
-#, fuzzy, c-format
+#, c-format
 msgid "objects filter not supported: '%s'"
-msgstr "nie znaleziono obiektu: %s"
+msgstr "nieobsługiwany filtr obiektów: „%s”"
 
 #, c-format
 msgid "'%s=<%s>' needs '%s' or '%s'"
-msgstr ""
+msgstr "„%s=<%s>” wymaga „%s” lub „%s”"
 
-#, fuzzy
 msgid "path|tree-ish"
-msgstr "drzewo"
+msgstr "ścieżka|drzewo"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' requires a batch mode"
-msgstr "%s wymaga wartości"
+msgstr "„%s” wymaga trybu wsadowego"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'-%c' is incompatible with batch mode"
-msgstr "%s i %s się wykluczają"
+msgstr "opcja „-%c” jest niezgodna z trybem wsadowym"
 
-#, fuzzy
 msgid "batch modes take no arguments"
-msgstr "ta opcja nie przyjmuje innych argumentów"
+msgstr "tryby wsadowe nie przyjmują argumentów"
 
 #, c-format
 msgid "<rev> required with '%s'"
-msgstr ""
+msgstr "z „%s” wymagana jest <rewizja>"
 
 #, c-format
 msgid "<object> required with '-%c'"
-msgstr ""
+msgstr "z „-%c” wymagany jest <obiekt>"
 
 #, c-format
 msgid "only two arguments allowed in <type> <object> mode, not %d"
-msgstr ""
+msgstr "w trybie <rodzaj> <obiekt> dozwolone są tylko dwa argumenty, a nie %d"
 
 #, fuzzy
 msgid ""
